@@ -1,0 +1,839 @@
+{
+ "updated": "2026-09-22",
+ "note": "雪季月份、交通時間皆為概略值，verify=true 者出發前請以官網為準。不收錢排名。",
+ "schema": {
+  "area": [
+   "hokkaido",
+   "tohoku",
+   "nagano",
+   "niigata"
+  ],
+  "levelFit": [
+   "beginner",
+   "intermediate",
+   "advanced"
+  ],
+  "tags": [
+   "powder",
+   "tree",
+   "onsen",
+   "night",
+   "family",
+   "international",
+   "skiinout",
+   "backcountry",
+   "daytrip",
+   "snowmonster",
+   "longseason"
+  ],
+  "months": "開放月份（概略）",
+  "peak": "粉雪/雪況最佳月份（概略）",
+  "accessMin": "從 hub 出發的大約分鐘數"
+ },
+ "resorts": [
+  {
+   "id": "niseko",
+   "name": "二世古 Grand Hirafu",
+   "nameJa": "ニセコグラン・ヒラフ",
+   "area": "hokkaido",
+   "place": "北海道・倶知安町",
+   "lat": 42.86,
+   "lng": 140.7,
+   "months": [
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "peak": [
+    1,
+    2
+   ],
+   "levelFit": [
+    "beginner",
+    "intermediate",
+    "advanced"
+   ],
+   "tags": [
+    "powder",
+    "tree",
+    "night",
+    "international",
+    "skiinout",
+    "backcountry"
+   ],
+   "hub": "新千歲機場",
+   "access": "新千歲機場巴士約 2.5–3 小時",
+   "accessMin": 165,
+   "see": "世界級 JAPOW。四個雪場共用 Niseko United 聯票，山頂有依規定開放的 gate 通往非壓雪區，還有夜滑。",
+   "note": "外國旅客最多，住宿和物價都偏高。gate 外是非壓雪地形，需要雪崩裝備與經驗。",
+   "url": "https://www.niseko.ne.jp/",
+   "verify": true
+  },
+  {
+   "id": "rusutsu",
+   "name": "留壽都 Rusutsu",
+   "nameJa": "ルスツリゾート",
+   "area": "hokkaido",
+   "place": "北海道・留壽都村",
+   "lat": 42.75,
+   "lng": 140.9,
+   "months": [
+    12,
+    1,
+    2,
+    3
+   ],
+   "peak": [
+    1,
+    2
+   ],
+   "levelFit": [
+    "beginner",
+    "intermediate",
+    "advanced"
+   ],
+   "tags": [
+    "powder",
+    "tree",
+    "family",
+    "skiinout",
+    "international"
+   ],
+   "hub": "新千歲機場",
+   "access": "新千歲機場巴士約 2 小時",
+   "accessMin": 120,
+   "see": "三座山相連，樹林滑出名；飯店直通雪場，親子設施齊全。",
+   "note": "雪場分散在三座山，之間要靠纜車或接駁移動。",
+   "url": "https://rusutsu.com/",
+   "verify": true
+  },
+  {
+   "id": "kiroro",
+   "name": "喜樂樂 Kiroro",
+   "nameJa": "キロロリゾート",
+   "area": "hokkaido",
+   "place": "北海道・赤井川村",
+   "lat": 43.08,
+   "lng": 140.98,
+   "months": [
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "peak": [
+    1,
+    2
+   ],
+   "levelFit": [
+    "beginner",
+    "intermediate",
+    "advanced"
+   ],
+   "tags": [
+    "powder",
+    "tree",
+    "skiinout",
+    "family"
+   ],
+   "hub": "札幌",
+   "access": "札幌市區約 1.5 小時、新千歲機場約 2 小時",
+   "accessMin": 90,
+   "see": "北海道降雪量數一數二的雪場之一，粉雪穩定。",
+   "note": "天候差時山頂纜車容易停駛。",
+   "url": "https://www.kiroro.co.jp/",
+   "verify": true
+  },
+  {
+   "id": "teine",
+   "name": "札幌手稻 Sapporo Teine",
+   "nameJa": "サッポロテイネ",
+   "area": "hokkaido",
+   "place": "北海道・札幌市",
+   "lat": 43.08,
+   "lng": 141.2,
+   "months": [
+    12,
+    1,
+    2,
+    3
+   ],
+   "peak": [
+    1,
+    2
+   ],
+   "levelFit": [
+    "beginner",
+    "intermediate",
+    "advanced"
+   ],
+   "tags": [
+    "daytrip",
+    "night",
+    "family"
+   ],
+   "hub": "札幌",
+   "access": "札幌市區開車或巴士約 40–60 分",
+   "accessMin": 50,
+   "see": "1972 札幌冬奧場地，邊滑邊看石狩灣海景；住札幌也能當天來回。",
+   "note": "週末札幌在地人多。",
+   "url": "https://www.sapporo-teine.com/",
+   "verify": true
+  },
+  {
+   "id": "furano",
+   "name": "富良野 Furano",
+   "nameJa": "富良野スキー場",
+   "area": "hokkaido",
+   "place": "北海道・富良野市",
+   "lat": 43.33,
+   "lng": 142.35,
+   "months": [
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "peak": [
+    1,
+    2
+   ],
+   "levelFit": [
+    "beginner",
+    "intermediate",
+    "advanced"
+   ],
+   "tags": [
+    "powder",
+    "night",
+    "family"
+   ],
+   "hub": "旭川機場",
+   "access": "旭川機場約 1 小時",
+   "accessMin": 60,
+   "see": "北海道內陸氣候乾冷，雪質輕；長滑道適合練技術。",
+   "note": "壓雪道以外的區域有管制，請遵守雪場規定。",
+   "url": "https://www.princehotels.co.jp/ski/furano/",
+   "verify": true
+  },
+  {
+   "id": "tomamu",
+   "name": "星野 Tomamu",
+   "nameJa": "星野リゾート トマム",
+   "area": "hokkaido",
+   "place": "北海道・占冠村",
+   "lat": 43.07,
+   "lng": 142.62,
+   "months": [
+    12,
+    1,
+    2,
+    3
+   ],
+   "peak": [
+    1,
+    2
+   ],
+   "levelFit": [
+    "beginner",
+    "intermediate",
+    "advanced"
+   ],
+   "tags": [
+    "powder",
+    "family",
+    "skiinout",
+    "international"
+   ],
+   "hub": "新千歲機場",
+   "access": "新千歲機場搭 JR 到 Tomamu 站約 1.5 小時",
+   "accessMin": 90,
+   "see": "度假村型雪場，有冰之村等雪上活動，親子友善。",
+   "note": "氣溫非常低，保暖要做足。",
+   "url": "https://www.snowtomamu.jp/",
+   "verify": true
+  },
+  {
+   "id": "appi",
+   "name": "安比高原 APPI",
+   "nameJa": "安比高原スキー場",
+   "area": "tohoku",
+   "place": "岩手・八幡平市",
+   "lat": 39.97,
+   "lng": 140.98,
+   "months": [
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "peak": [
+    1,
+    2
+   ],
+   "levelFit": [
+    "beginner",
+    "intermediate",
+    "advanced"
+   ],
+   "tags": [
+    "powder",
+    "family",
+    "skiinout"
+   ],
+   "hub": "盛岡",
+   "access": "盛岡站巴士約 1 小時",
+   "accessMin": 60,
+   "see": "長滑道多、雪質乾爽，東北最大級的度假村型雪場。",
+   "note": "",
+   "url": "https://www.appi.co.jp/",
+   "verify": true
+  },
+  {
+   "id": "zao",
+   "name": "藏王溫泉 Zao",
+   "nameJa": "蔵王温泉スキー場",
+   "area": "tohoku",
+   "place": "山形・山形市",
+   "lat": 38.17,
+   "lng": 140.4,
+   "months": [
+    12,
+    1,
+    2,
+    3
+   ],
+   "peak": [
+    1,
+    2
+   ],
+   "levelFit": [
+    "beginner",
+    "intermediate",
+    "advanced"
+   ],
+   "tags": [
+    "onsen",
+    "snowmonster",
+    "family"
+   ],
+   "hub": "山形",
+   "access": "山形站巴士約 40 分",
+   "accessMin": 40,
+   "see": "樹冰（冰怪）冬季最壯觀，滑完直接泡硫磺溫泉。",
+   "note": "樹冰的最佳觀賞期受天候影響，出發前請確認。",
+   "url": "https://zao-ski.or.jp/",
+   "verify": true
+  },
+  {
+   "id": "hakkoda",
+   "name": "八甲田 Hakkoda",
+   "nameJa": "八甲田ロープウェー",
+   "area": "tohoku",
+   "place": "青森・青森市",
+   "lat": 40.66,
+   "lng": 140.86,
+   "months": [
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "peak": [
+    1,
+    2,
+    3
+   ],
+   "levelFit": [
+    "advanced"
+   ],
+   "tags": [
+    "powder",
+    "backcountry",
+    "snowmonster"
+   ],
+   "hub": "青森",
+   "access": "青森站巴士約 1 小時",
+   "accessMin": 60,
+   "see": "整座山只有一條纜車，滑的是非壓雪的自然地形與樹冰林。",
+   "note": "幾乎都是非壓雪地形，新手不適合。建議請嚮導，並帶齊雪崩裝備。",
+   "url": "https://www.hakkoda-ropeway.jp/",
+   "verify": true
+  },
+  {
+   "id": "happo",
+   "name": "白馬八方尾根 Happo-one",
+   "nameJa": "白馬八方尾根",
+   "area": "nagano",
+   "place": "長野・白馬村",
+   "lat": 36.7,
+   "lng": 137.83,
+   "months": [
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "peak": [
+    1,
+    2
+   ],
+   "levelFit": [
+    "intermediate",
+    "advanced"
+   ],
+   "tags": [
+    "powder",
+    "international",
+    "backcountry"
+   ],
+   "hub": "長野",
+   "access": "長野站巴士約 70 分",
+   "accessMin": 70,
+   "see": "1998 長野冬奧場地，北阿爾卑斯大景＋長距離滑降。",
+   "note": "上層天氣變化快；白馬山谷各雪場另有通用聯票。",
+   "url": "https://www.happo-one.jp/",
+   "verify": true
+  },
+  {
+   "id": "hakuba47",
+   "name": "白馬 47 & 五竜",
+   "nameJa": "Hakuba47・白馬五竜",
+   "area": "nagano",
+   "place": "長野・白馬村",
+   "lat": 36.67,
+   "lng": 137.83,
+   "months": [
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "peak": [
+    1,
+    2
+   ],
+   "levelFit": [
+    "beginner",
+    "intermediate",
+    "advanced"
+   ],
+   "tags": [
+    "powder",
+    "family",
+    "international"
+   ],
+   "hub": "長野",
+   "access": "長野站巴士約 60 分",
+   "accessMin": 60,
+   "see": "兩個雪場相連、可互通；Hakuba47 的地形公園有名。",
+   "note": "",
+   "url": "https://www.hakuba47.co.jp/",
+   "verify": true
+  },
+  {
+   "id": "tsugaike",
+   "name": "白馬栂池高原 Tsugaike",
+   "nameJa": "白馬つがいけマウンテンリゾート",
+   "area": "nagano",
+   "place": "長野・小谷村",
+   "lat": 36.78,
+   "lng": 137.84,
+   "months": [
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "peak": [
+    1,
+    2
+   ],
+   "levelFit": [
+    "beginner",
+    "intermediate"
+   ],
+   "tags": [
+    "family",
+    "international"
+   ],
+   "hub": "長野",
+   "access": "長野站巴士約 80 分",
+   "accessMin": 80,
+   "see": "山腳下是超寬的緩坡，新手與親子的首選之一。",
+   "note": "",
+   "url": "https://www.tsugaike.gr.jp/",
+   "verify": true
+  },
+  {
+   "id": "cortina",
+   "name": "白馬 Cortina",
+   "nameJa": "白馬コルチナ",
+   "area": "nagano",
+   "place": "長野・小谷村",
+   "lat": 36.83,
+   "lng": 137.87,
+   "months": [
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "peak": [
+    1,
+    2
+   ],
+   "levelFit": [
+    "intermediate",
+    "advanced"
+   ],
+   "tags": [
+    "powder",
+    "tree"
+   ],
+   "hub": "長野",
+   "access": "長野站巴士約 90 分",
+   "accessMin": 90,
+   "see": "白馬山谷最北端、降雪量多，樹林滑出名。",
+   "note": "樹林區有開放規定，請遵守雪場公告。",
+   "url": null,
+   "verify": true
+  },
+  {
+   "id": "nozawa",
+   "name": "野澤溫泉 Nozawa Onsen",
+   "nameJa": "野沢温泉スキー場",
+   "area": "nagano",
+   "place": "長野・野沢温泉村",
+   "lat": 36.92,
+   "lng": 138.45,
+   "months": [
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "peak": [
+    1,
+    2
+   ],
+   "levelFit": [
+    "beginner",
+    "intermediate",
+    "advanced"
+   ],
+   "tags": [
+    "onsen",
+    "powder",
+    "international"
+   ],
+   "hub": "飯山",
+   "access": "飯山站巴士約 25 分（東京→飯山 北陸新幹線約 1 小時 45 分）",
+   "accessMin": 25,
+   "see": "雪場就在溫泉街上方，村裡有 13 座免費的公共溫泉「外湯」。",
+   "note": "溫泉街坡道多，路面容易結冰。",
+   "url": "https://www.nozawaski.com/",
+   "verify": true
+  },
+  {
+   "id": "shiga",
+   "name": "志賀高原 Shiga Kogen",
+   "nameJa": "志賀高原",
+   "area": "nagano",
+   "place": "長野・山ノ内町",
+   "lat": 36.72,
+   "lng": 138.5,
+   "months": [
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "peak": [
+    1,
+    2
+   ],
+   "levelFit": [
+    "beginner",
+    "intermediate",
+    "advanced"
+   ],
+   "tags": [
+    "powder",
+    "family"
+   ],
+   "hub": "長野",
+   "access": "長野站巴士約 70 分",
+   "accessMin": 70,
+   "see": "日本最大級的雪場群，海拔高、雪質乾，雪季也長。",
+   "note": "雪場範圍非常大，先看好地圖和接駁方式。",
+   "url": "https://www.shigakogen-ski.or.jp/",
+   "verify": true
+  },
+  {
+   "id": "madarao",
+   "name": "斑尾高原 Madarao",
+   "nameJa": "斑尾高原スキー場",
+   "area": "nagano",
+   "place": "長野・飯山市",
+   "lat": 36.86,
+   "lng": 138.31,
+   "months": [
+    12,
+    1,
+    2,
+    3
+   ],
+   "peak": [
+    1,
+    2
+   ],
+   "levelFit": [
+    "beginner",
+    "intermediate",
+    "advanced"
+   ],
+   "tags": [
+    "powder",
+    "tree"
+   ],
+   "hub": "飯山",
+   "access": "飯山站接駁約 30 分",
+   "accessMin": 30,
+   "see": "樹林滑與非壓雪區規劃得完整，粉雪玩家很愛。",
+   "note": "",
+   "url": "https://www.madarao.jp/",
+   "verify": true
+  },
+  {
+   "id": "karuizawa",
+   "name": "輕井澤王子 Karuizawa Prince",
+   "nameJa": "軽井沢プリンスホテルスキー場",
+   "area": "nagano",
+   "place": "長野・軽井沢町",
+   "lat": 36.34,
+   "lng": 138.63,
+   "months": [
+    11,
+    12,
+    1,
+    2,
+    3
+   ],
+   "peak": [
+    1,
+    2
+   ],
+   "levelFit": [
+    "beginner",
+    "intermediate"
+   ],
+   "tags": [
+    "daytrip",
+    "family"
+   ],
+   "hub": "東京",
+   "access": "輕井澤站步行約 10 分（東京→輕井澤 北陸新幹線約 1 小時）",
+   "accessMin": 70,
+   "see": "東京出發約 1 小時；人工造雪讓它開季早，旁邊就是 outlet。",
+   "note": "以人工雪為主，雪質偏硬。",
+   "url": "https://www.princehotels.co.jp/ski/karuizawa/",
+   "verify": true
+  },
+  {
+   "id": "akakura",
+   "name": "妙高 赤倉溫泉 Akakura",
+   "nameJa": "赤倉温泉スキー場",
+   "area": "niigata",
+   "place": "新潟・妙高市",
+   "lat": 36.88,
+   "lng": 138.18,
+   "months": [
+    12,
+    1,
+    2,
+    3
+   ],
+   "peak": [
+    1,
+    2
+   ],
+   "levelFit": [
+    "beginner",
+    "intermediate",
+    "advanced"
+   ],
+   "tags": [
+    "powder",
+    "onsen",
+    "international"
+   ],
+   "hub": "上越妙高",
+   "access": "妙高高原站巴士約 15 分（東京→上越妙高 北陸新幹線約 2 小時）",
+   "accessMin": 40,
+   "see": "日本數一數二的豪雪地帶，山腳就是溫泉街。",
+   "note": "",
+   "url": "https://www.akakura-ski.com/",
+   "verify": true
+  },
+  {
+   "id": "arai",
+   "name": "Lotte Arai",
+   "nameJa": "ロッテアライリゾート",
+   "area": "niigata",
+   "place": "新潟・妙高市",
+   "lat": 37.0,
+   "lng": 138.19,
+   "months": [
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "peak": [
+    1,
+    2
+   ],
+   "levelFit": [
+    "intermediate",
+    "advanced"
+   ],
+   "tags": [
+    "powder",
+    "backcountry",
+    "skiinout"
+   ],
+   "hub": "上越妙高",
+   "access": "上越妙高站巴士約 40 分",
+   "accessMin": 40,
+   "see": "降雪量大，開放的非壓雪區多。",
+   "note": "非壓雪區風險高，請遵守雪場規定與開放公告。",
+   "url": null,
+   "verify": true
+  },
+  {
+   "id": "gala",
+   "name": "GALA 湯澤",
+   "nameJa": "ガーラ湯沢スキー場",
+   "area": "niigata",
+   "place": "新潟・湯沢町",
+   "lat": 36.95,
+   "lng": 138.8,
+   "months": [
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "peak": [
+    1,
+    2
+   ],
+   "levelFit": [
+    "beginner",
+    "intermediate"
+   ],
+   "tags": [
+    "daytrip",
+    "family",
+    "international"
+   ],
+   "hub": "東京",
+   "access": "東京站搭上越新幹線，直達 GALA 湯澤站約 75–90 分（雪季限定）",
+   "accessMin": 80,
+   "see": "新幹線直接停在雪場纜車站，東京出發一日來回最方便。",
+   "note": "週末人潮多；新幹線只在雪季停靠這一站。",
+   "url": "https://gala.co.jp/",
+   "verify": true
+  },
+  {
+   "id": "naeba",
+   "name": "苗場 Naeba",
+   "nameJa": "苗場スキー場",
+   "area": "niigata",
+   "place": "新潟・湯沢町",
+   "lat": 36.79,
+   "lng": 138.78,
+   "months": [
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "peak": [
+    1,
+    2
+   ],
+   "levelFit": [
+    "beginner",
+    "intermediate",
+    "advanced"
+   ],
+   "tags": [
+    "family",
+    "night",
+    "skiinout"
+   ],
+   "hub": "越後湯澤",
+   "access": "越後湯澤站巴士約 40 分",
+   "accessMin": 40,
+   "see": "王子飯店直通雪場；可搭 Dragondola 纜車到隔壁的神樂。",
+   "note": "",
+   "url": "https://www.princehotels.co.jp/ski/naeba/",
+   "verify": true
+  },
+  {
+   "id": "kagura",
+   "name": "神樂 Kagura",
+   "nameJa": "かぐらスキー場",
+   "area": "niigata",
+   "place": "新潟・湯沢町",
+   "lat": 36.85,
+   "lng": 138.76,
+   "months": [
+    12,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "peak": [
+    1,
+    2,
+    3
+   ],
+   "levelFit": [
+    "intermediate",
+    "advanced"
+   ],
+   "tags": [
+    "powder",
+    "backcountry",
+    "longseason"
+   ],
+   "hub": "越後湯澤",
+   "access": "越後湯澤站巴士約 40 分",
+   "accessMin": 40,
+   "see": "雪季可以滑到 5 月，有粉雪和非壓雪區。",
+   "note": "非壓雪區要自行判斷雪崩風險。",
+   "url": "https://www.princehotels.co.jp/ski/kagura/",
+   "verify": true
+  }
+ ]
+}

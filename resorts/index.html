@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="按月份、程度、地區與滑雪體驗，篩選日本雪場。">
+<title>找雪場｜Sarayuki さら雪</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&amp;family=Noto+Sans+TC:wght@400;700&amp;family=Noto+Serif+TC:wght@900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+<style>
+  :root{--paper:#f6f5f1;--ink:#16202a;--dim:#5b6673;--line:rgba(22,32,42,.12);--card:#fff;--shu:#d9412b;--ice:#7fa7c2;--filters-height:190px;--switch-height:55px}
+  *{box-sizing:border-box}
+  html{background:var(--paper);scroll-behavior:smooth}
+  body{margin:0;overflow-x:hidden;background:var(--paper);color:var(--ink);font-family:"Noto Sans TC",sans-serif;-webkit-font-smoothing:antialiased}
+  button,select{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}
+  .mono{font-family:"IBM Plex Mono",monospace}
+  .app-header{padding:26px max(18px,calc((100vw - 1440px)/2)) 30px;border-bottom:1px solid var(--line)}
+  .back{display:inline-flex;align-items:center;min-height:36px;margin-bottom:19px;color:var(--shu);font:700 13px/1 "IBM Plex Mono",monospace;letter-spacing:.04em}
+  .lab{display:flex;align-items:center;gap:12px;margin-bottom:9px;color:var(--shu);font:700 12px/1.4 "IBM Plex Mono",monospace;letter-spacing:.1em}
+  .lab::before{content:"";width:36px;height:1px;background:currentColor}
+  h1{margin:0;font-family:"Noto Serif TC",serif;font-size:clamp(42px,6vw,72px);font-weight:900;line-height:1.08;letter-spacing:-.01em}
+  .intro{max-width:650px;margin:11px 0 0;color:var(--dim);font-size:15px;line-height:1.75}
+  .filters{position:sticky;top:0;z-index:1000;background:var(--paper);border-bottom:1px solid var(--line)}
+  .filters-inner{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:7px 20px;max-width:1440px;margin:0 auto;padding:11px 18px}
+  .filter-group{display:flex;align-items:center;gap:9px;min-width:0}
+  .filter-group.months,.filter-group.tags{grid-column:1/-1}
+  .filter-label{flex:0 0 77px;color:var(--dim);font:700 11px/1.4 "IBM Plex Mono",monospace;letter-spacing:.05em;white-space:nowrap}
+  .chip-track{display:flex;gap:6px;min-width:0;overflow-x:auto;padding:2px;scrollbar-width:none}
+  .chip-track::-webkit-scrollbar{display:none}
+  .chip{flex:0 0 auto;min-height:31px;padding:5px 10px;border:1px solid rgba(22,32,42,.2);border-radius:99px;background:transparent;color:var(--ink);font-size:12px;font-weight:700;white-space:nowrap;transition:.18s}
+  .chip:hover{border-color:var(--shu);color:var(--shu)}
+  .chip.active{border-color:var(--shu);background:var(--shu);color:#fff}
+  .chip.shortcut{border-color:rgba(217,65,43,.45);color:var(--shu)}
+  .chip.shortcut.active{color:#fff}
+  .season-hint{display:none;flex:0 0 auto;color:var(--shu);font-size:10px;white-space:nowrap}.season-hint.show{display:inline}
+  .filter-actions{display:flex;align-items:center;gap:10px;min-width:0}
+  select{min-height:33px;max-width:190px;padding:4px 31px 4px 10px;border:1px solid rgba(22,32,42,.22);border-radius:4px;background:var(--card);color:var(--ink)}
+  .clear{display:none;flex:0 0 auto;padding:5px;border:0;background:none;color:var(--shu);font-size:12px;font-weight:700;white-space:nowrap}.clear.show{display:inline-block}
+  .mobile-switch{display:none;position:sticky;top:0;z-index:900;padding:7px 14px;background:var(--paper);border-bottom:1px solid var(--line)}
+  .switch-shell{display:flex;align-items:center;gap:7px;max-width:460px;margin:0 auto}
+  .view-tabs{display:grid;grid-template-columns:1fr 1fr;flex:0 0 132px;border:1px solid var(--line);border-radius:4px;padding:2px;background:#fff}
+  .view-button{min-height:33px;border:0;border-radius:2px;background:transparent;color:var(--dim);font-size:13px;font-weight:700}.view-button.active{background:var(--ink);color:#fff}
+  .mobile-summary{display:flex;align-items:center;justify-content:flex-end;gap:7px;min-width:0;margin-left:auto}
+  .mobile-count{color:var(--dim);font:700 10px/1.3 "IBM Plex Mono",monospace;white-space:nowrap}.mobile-count strong{color:var(--shu)}
+  .filter-jump{flex:0 0 auto;min-height:31px;padding:4px 7px;border:1px solid rgba(217,65,43,.38);border-radius:4px;background:transparent;color:var(--shu);font-size:10px;font-weight:700;white-space:nowrap}
+  .workspace{display:grid;grid-template-columns:440px minmax(0,1fr);height:calc(100dvh - var(--filters-height));min-height:500px}
+  .results-pane{min-width:0;overflow-y:auto;border-right:1px solid var(--line);background:var(--paper)}
+  .results-head{position:sticky;top:0;z-index:5;padding:15px 17px 11px;background:rgba(246,245,241,.96);border-bottom:1px solid var(--line)}
+  .result-count{font:700 13px/1.4 "IBM Plex Mono",monospace}.result-count strong{color:var(--shu)}
+  .cards{display:grid;gap:11px;padding:13px}
+  .resort-card{padding:17px;background:var(--card);border:1px solid var(--line);border-radius:4px;outline:none;transition:transform .2s,box-shadow .2s,border-color .2s}
+  .resort-card:hover,.resort-card.marker-active{transform:translateY(-2px);border-color:rgba(217,65,43,.34);box-shadow:0 13px 25px rgba(22,32,42,.08)}
+  .resort-card:focus-visible{border-color:var(--shu);box-shadow:0 0 0 2px rgba(217,65,43,.17)}
+  .resort-card.flash{animation:card-flash 1.5s ease}
+  @keyframes card-flash{0%,100%{box-shadow:none}25%,70%{border-color:var(--shu);box-shadow:0 0 0 3px rgba(217,65,43,.14)}}
+  .resort-card h2{margin:0;font-family:"Noto Serif TC",serif;font-size:18px;font-weight:900;line-height:1.35;letter-spacing:-.01em}
+  .place{margin-top:5px;color:var(--dim);font-size:12px;line-height:1.5}
+  .level-list{display:flex;flex-wrap:wrap;gap:5px;margin-top:11px}
+  .level-badge,.pop-badge{padding:3px 7px;border:1px solid rgba(127,167,194,.55);border-radius:99px;background:rgba(127,167,194,.08);color:#425f72;font-size:10px;font-weight:700}
+  .tag-icons{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;font-size:16px;line-height:1}
+  .month-chart{margin-top:13px}
+  .month-bars,.month-labels{display:grid;grid-template-columns:repeat(7,1fr);gap:2px}
+  .month-bar{height:6px;border-radius:1px;background:var(--line)}.month-bar.open{background:var(--ice)}.month-bar.peak{background:var(--shu)}.month-bar.selected{outline:1px solid var(--ink);outline-offset:1px}
+  .month-labels{margin-top:5px;color:var(--dim);font:400 10px/1 "IBM Plex Mono",monospace;text-align:center}
+  .month-legend{margin-top:7px;color:var(--dim);font-size:10px;line-height:1.4}
+  .access{margin:11px 0 0;color:var(--ink);font-size:12px;line-height:1.55}
+  .see{display:-webkit-box;margin:8px 0 0;overflow:hidden;color:var(--ink);font-size:13px;line-height:1.6;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+  .card-foot{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;min-height:25px;margin-top:10px;padding-top:9px;border-top:1px solid var(--line)}
+  .warning{color:#9a3a2c;font-size:10px;font-weight:700}
+  .official-link,.map-link{padding:4px 0;border:0;background:none;color:var(--shu);font-size:11px;font-weight:700;white-space:nowrap}.official-link{margin-left:auto}.official-link+.map-link{margin-left:0}.map-link:only-child{margin-left:auto}
+  .empty{padding:45px 22px;text-align:center;color:var(--dim);font-size:14px;line-height:1.8}.empty .chip{display:block;margin:16px auto 0;background:var(--shu);border-color:var(--shu);color:#fff}
+  .data-note{padding:18px 17px 25px;border-top:1px solid var(--line);color:var(--dim);font-size:11px;line-height:1.75}
+  .map-pane{position:sticky;top:var(--filters-height);height:100%;min-width:0;background:#e9ecec}
+  #map{width:100%;height:100%;background:#e9ecec}.leaflet-container{font-family:"Noto Sans TC",sans-serif}
+  .leaflet-control-attribution{background:rgba(255,255,255,.9)!important;color:var(--dim)!important}.leaflet-control-attribution a{color:var(--shu)!important}
+  .leaflet-bar a{background:#fff!important;color:var(--ink)!important;border-color:var(--line)!important}
+  .leaflet-popup-content-wrapper{border:1px solid var(--line);border-radius:4px;background:#fff;box-shadow:0 16px 38px rgba(22,32,42,.16);color:var(--ink)}.leaflet-popup-tip{background:#fff}.leaflet-popup-close-button{color:var(--dim)!important}
+  .pop{min-width:230px;color:var(--ink)}.pop h3{margin:0 0 3px;font-family:"Noto Serif TC",serif;font-size:17px;font-weight:900;line-height:1.3}.pop-name-ja{margin-bottom:7px;color:var(--dim);font-size:11px}
+  .pop-levels{display:flex;flex-wrap:wrap;gap:4px}.pop p{margin:7px 0 0;padding-top:7px;border-top:1px solid var(--line);font-size:12px;line-height:1.6}.pop b{margin-right:5px;color:var(--shu);white-space:nowrap}.pop a{color:var(--shu);font-weight:700}
+  .resort-marker{background:none!important;border:0!important}.resort-marker .pin{width:14px;height:14px;border:2px solid #fff;border-radius:50%;background:var(--shu);box-shadow:0 2px 8px rgba(22,32,42,.35);transition:transform .18s}.resort-marker.marker-hot .pin{transform:scale(1.55)}
+  .marker-cluster{background:transparent!important}.marker-cluster .resort-cluster{display:flex;align-items:center;justify-content:center;margin:0;border:1.5px solid var(--ice);border-radius:50%;background:#fff;box-shadow:0 3px 12px rgba(22,32,42,.16);color:var(--ink);font:700 12px/1 "IBM Plex Mono",monospace;transition:transform .18s}.marker-cluster.marker-hot .resort-cluster{transform:scale(1.15)}
+  .load-error{display:flex;align-items:center;justify-content:center;height:100%;padding:24px;color:var(--dim);text-align:center}
+  @media(max-width:959px){
+    .app-header{padding:20px 16px 24px}.back{margin-bottom:13px}h1{font-size:43px}.intro{font-size:14px}
+    .filters{position:static}.filters-inner{display:block;padding:8px 14px}.filter-group{min-height:40px;gap:6px}.filter-label{flex-basis:68px}.chip-track{flex:1}.chip{min-height:29px;padding:4px 9px}.season-hint{font-size:9px}
+    .filter-actions{flex:1;overflow:hidden}select{min-width:120px;max-width:150px}
+    .mobile-switch{display:block;min-height:52px}.workspace{display:block;height:auto;min-height:0}.results-pane{display:block;overflow:visible;border-right:0}.results-head{display:none}
+    .map-pane{display:none;position:relative;top:auto;height:calc(100dvh - var(--switch-height));min-height:330px}body.view-map .results-pane{display:none}body.view-map .map-pane{display:block}
+    .cards{padding:12px 14px}.data-note{padding-left:16px;padding-right:16px}
+  }
+  @media(max-width:380px){.view-tabs{flex-basis:116px}.mobile-count{font-size:9px}.filter-jump{padding-left:5px;padding-right:5px}.official-link{margin-left:0}.card-foot{align-items:flex-start}}
+  @media(min-width:960px){.mobile-only{display:none!important}}
+</style>
+</head>
+<body class="view-list">
+<header class="app-header">
+  <a class="back" href="../">← Sarayuki</a>
+  <div class="lab">— RESORTS / 雪場</div>
+  <h1>找雪場</h1>
+  <p class="intro">選月份、程度、想要的，找出適合你的雪場。</p>
+</header>
+
+<section class="filters" id="filters" aria-label="雪場篩選">
+  <div class="filters-inner">
+    <div class="filter-group months">
+      <div class="filter-label">月份</div>
+      <div class="chip-track" data-group="month">
+        <button class="chip shortcut" id="thisMonth" type="button">這個月</button>
+        <button class="chip active" type="button" data-filter="month" data-value="">全部</button>
+        <button class="chip" type="button" data-filter="month" data-value="11">11月</button><button class="chip" type="button" data-filter="month" data-value="12">12月</button>
+        <button class="chip" type="button" data-filter="month" data-value="1">1月</button><button class="chip" type="button" data-filter="month" data-value="2">2月</button>
+        <button class="chip" type="button" data-filter="month" data-value="3">3月</button><button class="chip" type="button" data-filter="month" data-value="4">4月</button><button class="chip" type="button" data-filter="month" data-value="5">5月</button>
+      </div>
+      <small class="season-hint" id="seasonHint">雪季從 12 月開始</small>
+    </div>
+    <div class="filter-group">
+      <div class="filter-label">我的程度</div>
+      <div class="chip-track" data-group="level">
+        <button class="chip active" type="button" data-filter="level" data-value="">全部</button>
+        <button class="chip" type="button" data-filter="level" data-value="beginner">第一次滑</button>
+        <button class="chip" type="button" data-filter="level" data-value="intermediate">會轉彎</button>
+        <button class="chip" type="button" data-filter="level" data-value="advanced">老手</button>
+      </div>
+    </div>
+    <div class="filter-group">
+      <label class="filter-label" for="area">地區</label>
+      <div class="filter-actions"><select id="area"><option value="">全部地區</option><option value="hokkaido">北海道</option><option value="tohoku">東北</option><option value="nagano">長野</option><option value="niigata">新潟</option></select><button class="clear" id="clearFilters" type="button">清除篩選</button></div>
+    </div>
+    <div class="filter-group tags">
+      <div class="filter-label">想要</div>
+      <div class="chip-track" data-group="tag">
+        <button class="chip" type="button" data-filter="tag" data-value="powder">❄️ 粉雪</button><button class="chip" type="button" data-filter="tag" data-value="tree">🌲 樹林滑</button>
+        <button class="chip" type="button" data-filter="tag" data-value="onsen">♨️ 溫泉</button><button class="chip" type="button" data-filter="tag" data-value="night">🌙 夜滑</button>
+        <button class="chip" type="button" data-filter="tag" data-value="family">👨‍👩‍👧 親子</button><button class="chip" type="button" data-filter="tag" data-value="international">🌐 外語友善</button>
+        <button class="chip" type="button" data-filter="tag" data-value="skiinout">🏨 住宿直通雪場</button><button class="chip" type="button" data-filter="tag" data-value="backcountry">⛰ 非壓雪區</button>
+        <button class="chip" type="button" data-filter="tag" data-value="daytrip">🚄 城市一日來回</button><button class="chip" type="button" data-filter="tag" data-value="snowmonster">🌨 樹冰</button>
+        <button class="chip" type="button" data-filter="tag" data-value="longseason">📅 滑到春天</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<nav class="mobile-switch" id="viewSwitch" aria-label="檢視模式">
+  <div class="switch-shell"><div class="view-tabs"><button class="view-button active" type="button" data-view="list">清單</button><button class="view-button" type="button" data-view="map">地圖</button></div><div class="mobile-summary"><div class="mobile-count" id="mobileResultCount">載入中…</div><button class="filter-jump" id="backToFilters" type="button">篩選 ↑</button></div></div>
+</nav>
+
+<main class="workspace">
+  <section class="results-pane" id="resultsPane" aria-label="雪場清單">
+    <div class="results-head"><div class="result-count" id="resultCount">載入雪場中…</div></div>
+    <div class="cards" id="cards"></div>
+    <footer class="data-note" id="dataNote">季節、交通與票價每年變動，出發前請以各雪場官網為準。Sarayuki 不收費排名。</footer>
+  </section>
+  <section class="map-pane" aria-label="雪場地圖"><div id="map"></div></section>
+</main>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script>
+const LEVELS={beginner:"第一次 OK",intermediate:"會轉彎",advanced:"老手"};
+const AREAS={hokkaido:"北海道",tohoku:"東北",nagano:"長野",niigata:"新潟"};
+const AREA_ORDER={hokkaido:0,tohoku:1,nagano:2,niigata:3};
+const TAGS={powder:["❄️","粉雪"],tree:["🌲","樹林滑"],onsen:["♨️","溫泉"],night:["🌙","夜滑"],family:["👨‍👩‍👧","親子"],international:["🌐","外語友善"],skiinout:["🏨","住宿直通雪場"],backcountry:["⛰","非壓雪區"],daytrip:["🚄","城市一日來回"],snowmonster:["🌨","樹冰"],longseason:["📅","滑到春天"]};
+const MONTHS=[11,12,1,2,3,4,5];
+const VALID={level:new Set(Object.keys(LEVELS)),tag:new Set(Object.keys(TAGS)),area:new Set(Object.keys(AREAS))};
+const currentMonth=Number(new Intl.DateTimeFormat("en-US",{month:"numeric",timeZone:"Asia/Tokyo"}).format(new Date()));
+const state={month:null,level:null,tags:new Set(),area:null};
+let allResorts=[],filteredResorts=[],map,clusters,markers=new Map(),mapReady=false;
+const mobileQuery=matchMedia("(max-width: 959px)");
+const esc=value=>String(value??"").replace(/[&<>\"]/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"})[char]);
+
+function restoreState(){
+  const query=new URLSearchParams(location.search),month=Number(query.get("m"));
+  state.month=MONTHS.includes(month)?month:null;
+  state.level=VALID.level.has(query.get("lv"))?query.get("lv"):null;
+  (query.get("t")||"").split(",").filter(tag=>VALID.tag.has(tag)).forEach(tag=>state.tags.add(tag));
+  state.area=VALID.area.has(query.get("a"))?query.get("a"):null;
+}
+function syncUrl(){
+  const query=new URLSearchParams();
+  if(state.month)query.set("m",state.month);if(state.level)query.set("lv",state.level);
+  if(state.tags.size)query.set("t",[...state.tags].join(","));if(state.area)query.set("a",state.area);
+  history.replaceState(null,"",location.pathname+(query.size?"?"+query.toString().replace(/%2C/gi,","):"")+location.hash);
+}
+function hasFilters(){return Boolean(state.month||state.level||state.tags.size||state.area)}
+function updateControls(){
+  document.querySelectorAll('[data-filter="month"]').forEach(button=>button.classList.toggle("active",String(state.month||"")===button.dataset.value));
+  document.querySelectorAll('[data-filter="level"]').forEach(button=>button.classList.toggle("active",String(state.level||"")===button.dataset.value));
+  document.querySelectorAll('[data-filter="tag"]').forEach(button=>button.classList.toggle("active",state.tags.has(button.dataset.value)));
+  document.getElementById("area").value=state.area||"";document.getElementById("clearFilters").classList.toggle("show",hasFilters());
+}
+function matches(resort){
+  if(state.month&&!resort.months.includes(state.month))return false;
+  if(state.level&&!resort.levelFit.includes(state.level))return false;
+  if(state.tags.size&&![...state.tags].some(tag=>resort.tags.includes(tag)))return false;
+  return !state.area||resort.area===state.area;
+}
+function monthChart(resort){
+  const bars=MONTHS.map(month=>`<span class="month-bar${resort.months.includes(month)?" open":""}${resort.peak.includes(month)?" peak":""}${state.month===month?" selected":""}"></span>`).join("");
+  const labels=MONTHS.map(month=>`<span>${month}</span>`).join("");
+  return `<div class="month-chart" aria-label="開放月份：${resort.months.join("、")}月；雪況最佳：${resort.peak.join("、")}月"><div class="month-bars">${bars}</div><div class="month-labels">${labels}</div><div class="month-legend">朱＝雪況最好 · 藍＝開放</div></div>`;
+}
+function cardHtml(resort){
+  const levels=resort.levelFit.map(level=>`<span class="level-badge">${LEVELS[level]}</span>`).join("");
+  const tags=resort.tags.map(tag=>`<span title="${TAGS[tag][1]}" aria-label="${TAGS[tag][1]}">${TAGS[tag][0]}</span>`).join("");
+  const website=resort.url?`<a class="official-link" href="${esc(resort.url)}" target="_blank" rel="noopener">官網 ↗</a>`:"";
+  return `<article class="resort-card" id="card-${esc(resort.id)}" data-id="${esc(resort.id)}" tabindex="0"><h2>${esc(resort.name)}</h2><div class="place">${esc(resort.nameJa)} · ${esc(resort.place)}</div><div class="level-list">${levels}</div><div class="tag-icons">${tags}</div>${monthChart(resort)}<p class="access">🚃 ${esc(resort.access)}</p><p class="see">${esc(resort.see)}</p><div class="card-foot">${resort.verify?'<span class="warning">⚠️ 出發前以官網為準</span>':""}${website}<button class="map-link" type="button" data-map-id="${esc(resort.id)}">在地圖上看 →</button></div></article>`;
+}
+function render(){
+  filteredResorts=allResorts.filter(matches).sort((a,b)=>(AREA_ORDER[a.area]-AREA_ORDER[b.area])||(a.accessMin-b.accessMin)||a.name.localeCompare(b.name,"zh-Hant"));
+  document.getElementById("resultCount").innerHTML=`符合 <strong>${filteredResorts.length}</strong> / ${allResorts.length} 個雪場`;
+  document.getElementById("mobileResultCount").innerHTML=`符合 <strong>${filteredResorts.length}</strong> / ${allResorts.length} 個雪場`;
+  document.getElementById("cards").innerHTML=filteredResorts.length?filteredResorts.map(cardHtml).join(""):`<div class="empty">這個組合目前沒有雪場。試試放寬月份或程度？<button class="chip" type="button" data-empty-clear>清除篩選</button></div>`;
+  syncUrl();updateControls();updateMap();
+}
+function popupHtml(resort){
+  const levels=resort.levelFit.map(level=>`<span class="pop-badge">${LEVELS[level]}</span>`).join("");
+  const note=resort.note?`<p><b>注意</b>${esc(resort.note)}</p>`:"";
+  const website=resort.url?`<p><a href="${esc(resort.url)}" target="_blank" rel="noopener">官網 ↗</a></p>`:"";
+  return `<div class="pop"><h3>${esc(resort.name)}</h3><div class="pop-name-ja">${esc(resort.nameJa)}</div><div class="pop-levels">${levels}</div><p><b>交通</b>${esc(resort.access)}</p><p><b>亮點</b>${esc(resort.see)}</p>${note}${website}</div>`;
+}
+function initMap(){
+  map=L.map("map",{scrollWheelZoom:false,touchZoom:true,minZoom:3,maxZoom:16,worldCopyJump:true}).setView([38.2,138],5);
+  map.attributionControl.setPrefix(false);
+  L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",{maxZoom:16,attribution:"Tiles © Esri"}).addTo(map);
+  L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}",{maxZoom:16,pane:"overlayPane"}).addTo(map);
+  clusters=L.markerClusterGroup({maxClusterRadius:44,showCoverageOnHover:false,spiderfyOnMaxZoom:true,iconCreateFunction:cluster=>{const count=cluster.getChildCount(),size=count<10?32:count<20?38:44;return L.divIcon({html:`<div class="resort-cluster" style="width:${size}px;height:${size}px">${count}</div>`,className:"marker-cluster",iconSize:[size,size]})}}).addTo(map);
+  const icon=L.divIcon({className:"resort-marker",html:'<div class="pin"></div>',iconSize:[14,14],iconAnchor:[7,7],popupAnchor:[0,-8]});
+  allResorts.forEach(resort=>{const marker=L.marker([resort.lat,resort.lng],{icon,title:resort.name}).bindPopup(popupHtml(resort));marker.on("mouseover",()=>document.getElementById(`card-${resort.id}`)?.classList.add("marker-active"));marker.on("mouseout",()=>document.getElementById(`card-${resort.id}`)?.classList.remove("marker-active"));marker.on("click",()=>highlightCard(resort.id));markers.set(resort.id,marker)});
+  const container=map.getContainer();container.addEventListener("wheel",event=>{if(event.ctrlKey||event.metaKey){event.preventDefault();map.setZoomAround(map.mouseEventToLatLng(event),map.getZoom()-event.deltaY*.02)}},{passive:false});
+  mapReady=true;updateMap();
+}
+function mapIsVisible(){return !mobileQuery.matches||document.body.classList.contains("view-map")}
+function updateMap(){
+  if(!mapReady)return;clusters.clearLayers();filteredResorts.forEach(resort=>clusters.addLayer(markers.get(resort.id)));
+  if(filteredResorts.length&&mapIsVisible()){map.invalidateSize(false);map.fitBounds(L.latLngBounds(filteredResorts.map(resort=>[resort.lat,resort.lng])),{padding:[40,40],maxZoom:9})}
+}
+function highlightCard(id){const card=document.getElementById(`card-${id}`);if(!card)return;card.scrollIntoView({behavior:"smooth",block:"center"});card.classList.remove("flash");void card.offsetWidth;card.classList.add("flash");setTimeout(()=>card.classList.remove("flash"),1500)}
+function setView(view,{scroll=true}={}){document.body.classList.toggle("view-map",view==="map");document.body.classList.toggle("view-list",view==="list");document.querySelectorAll("[data-view]").forEach(button=>button.classList.toggle("active",button.dataset.view===view));if(view==="map"&&mapReady)setTimeout(()=>{map.invalidateSize();if(filteredResorts.length)map.fitBounds(L.latLngBounds(filteredResorts.map(resort=>[resort.lat,resort.lng])),{padding:[40,40],maxZoom:9})},50);if(scroll&&mobileQuery.matches)document.getElementById("viewSwitch").scrollIntoView({behavior:"smooth",block:"start"})}
+function focusResort(id){const resort=allResorts.find(item=>item.id===id),marker=markers.get(id);if(!resort||!marker)return;if(mobileQuery.matches)setView("map");setTimeout(()=>{map.invalidateSize();map.once("moveend",()=>map.openPopup(marker.getPopup().setLatLng([resort.lat,resort.lng])));map.flyTo([resort.lat,resort.lng],10,{duration:.8})},mobileQuery.matches?100:0)}
+function hotMarker(id,on){const marker=markers.get(id),visible=marker&&clusters.getVisibleParent(marker),element=visible?.getElement();if(element)element.classList.toggle("marker-hot",on)}
+function clearAll(){state.month=null;state.level=null;state.tags.clear();state.area=null;document.getElementById("seasonHint").classList.remove("show");render()}
+function measureChrome(){document.documentElement.style.setProperty("--filters-height",document.getElementById("filters").offsetHeight+"px");document.documentElement.style.setProperty("--switch-height",document.getElementById("viewSwitch").offsetHeight+"px")}
+
+document.querySelectorAll("[data-filter]").forEach(button=>button.addEventListener("click",()=>{const type=button.dataset.filter,value=button.dataset.value;document.getElementById("seasonHint").classList.remove("show");if(type==="month")state.month=value?Number(value):null;else if(type==="level")state.level=value||null;else state.tags.has(value)?state.tags.delete(value):state.tags.add(value);render()}));
+document.getElementById("thisMonth").addEventListener("click",()=>{if(MONTHS.includes(currentMonth)){state.month=currentMonth;document.getElementById("seasonHint").classList.remove("show")}else{state.month=12;document.getElementById("seasonHint").classList.add("show")}render()});
+document.getElementById("area").addEventListener("change",event=>{state.area=event.target.value||null;render()});
+document.getElementById("clearFilters").addEventListener("click",clearAll);
+document.getElementById("backToFilters").addEventListener("click",()=>document.getElementById("filters").scrollIntoView({behavior:"smooth",block:"start"}));
+document.getElementById("cards").addEventListener("click",event=>{if(event.target.closest("a"))return;if(event.target.closest("[data-empty-clear]")){clearAll();return}const card=event.target.closest(".resort-card");if(card)focusResort(card.dataset.id)});
+document.getElementById("cards").addEventListener("keydown",event=>{const card=event.target.closest(".resort-card");if(card&&(event.key==="Enter"||event.key===" ")){event.preventDefault();focusResort(card.dataset.id)}});
+document.getElementById("cards").addEventListener("mouseover",event=>{const card=event.target.closest(".resort-card");if(card)hotMarker(card.dataset.id,true)});
+document.getElementById("cards").addEventListener("mouseout",event=>{const card=event.target.closest(".resort-card");if(card&&!card.contains(event.relatedTarget))hotMarker(card.dataset.id,false)});
+document.querySelectorAll("[data-view]").forEach(button=>button.addEventListener("click",()=>setView(button.dataset.view)));
+new ResizeObserver(measureChrome).observe(document.getElementById("filters"));addEventListener("resize",()=>{measureChrome();if(mapReady)setTimeout(()=>map.invalidateSize(),50)});
+
+restoreState();updateControls();measureChrome();
+fetch("../data/resorts.json").then(response=>{if(!response.ok)throw new Error("resorts.json");return response.json()}).then(data=>{allResorts=data.resorts;document.getElementById("dataNote").textContent=`季節、交通與票價每年變動，出發前請以各雪場官網為準。Sarayuki 不收費排名。資料更新：${data.updated}`;render();initMap()}).catch(()=>{document.getElementById("resultCount").textContent="雪場資料載入失敗";document.getElementById("mobileResultCount").textContent="載入失敗";document.getElementById("cards").innerHTML='<div class="empty">目前無法讀取雪場資料，請稍後再試。</div>';document.getElementById("map").innerHTML='<div class="load-error">地圖資料暫時無法載入。</div>'});
+</script>
+</body>
+</html>
