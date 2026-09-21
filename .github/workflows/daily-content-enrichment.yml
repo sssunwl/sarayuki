@@ -1,0 +1,112 @@
+name: Sarayuki 每日內容豐富化
+
+on:
+  schedule:
+    # 每天 02:00 UTC = 日本時間 11:00（跟 SakiDive 的 10:00 錯開，共用同一把 Gemini key）
+    - cron: "0 2 * * *"
+  workflow_dispatch:
+    inputs:
+      task_override:
+        description: 測試用題目（選填，格式 slug｜題目；有值時不從路線圖選題）
+        required: false
+        type: string
+      category:
+        description: 搭配測試題目的分類
+        required: false
+        type: choice
+        default: beginner
+        options: [beginner, resort, advanced, travel]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sarayuki-daily-content-enrichment
+  cancel-in-progress: false
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: 設定提交身分
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: 研究並寫入今日內容
+        id: enrich_content
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TASK_OVERRIDE: ${{ inputs.task_override }}
+          CATEGORY: ${{ inputs.category }}
+        shell: bash
+        run: |
+          args=()
+          if [[ -n "${TASK_OVERRIDE}" ]]; then
+            args+=(--task "${TASK_OVERRIDE}" --category "${CATEGORY:-beginner}")
+          fi
+          set +e
+          python3 _pipeline/enrich_content.py "${args[@]}" 2>&1 | tee /tmp/enrich.log
+          code=${PIPESTATUS[0]}
+          set -e
+
+          if [[ "${code}" -eq 0 ]]; then
+            echo "status=ok" >> "${GITHUB_OUTPUT}"
+            exit 0
+          fi
+
+          # 刻意不讓 job 變紅：GitHub 的失敗通知信是帳號層級設定，無法只關這條
+          # workflow。失敗改為完整留在本次執行的 Summary 與 log，不寄信。
+          echo "status=failed" >> "${GITHUB_OUTPUT}"
+          echo "::warning::每日內容豐富化失敗（exit ${code}），詳見本次執行的 Summary"
+          {
+            echo "## ❌ 每日內容豐富化失敗"
+            echo
+            echo "- 時間：$(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M') JST"
+            echo "- 退出碼：\`${code}\`"
+            echo
+            echo "### 執行輸出（末 30 行）"
+            echo '```'
+            tail -n 30 /tmp/enrich.log
+            echo '```'
+          } >> "${GITHUB_STEP_SUMMARY}"
+          exit 0
+
+      - name: 顯示 Gemini 執行後狀態
+        if: always()
+        shell: bash
+        run: |
+          echo "git status --porcelain"
+          git status --porcelain
+          echo "git diff --stat"
+          git diff --stat
+
+      - name: 標記完成並提交
+        if: steps.enrich_content.outputs.status == 'ok'
+        env:
+          TASK: ${{ steps.enrich_content.outputs.task }}
+        shell: bash
+        run: |
+          # 只看內容路徑，避免暫存雜物被誤認為產出。
+          CONTENT_PATHS=(content/articles content/index.json)
+          if [[ -z "$(git status --porcelain -- "${CONTENT_PATHS[@]}")" ]]; then
+            echo "::notice::本次沒有產出內容"
+            exit 0
+          fi
+
+          summary="$(python3 -c 'import os; print(os.environ["TASK"][:30])')"
+          # 明確列出路徑，不用 -A，以免暫存檔進版控。
+          git add -- "${CONTENT_PATHS[@]}" content/ROADMAP.md
+          if git diff --cached --quiet; then
+            echo "::notice::沒有可提交的內容變更"
+            exit 0
+          fi
+          git commit -m "每日內容豐富: ${summary}"
+          git pull --rebase origin main
+          git push origin main
