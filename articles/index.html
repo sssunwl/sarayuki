@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sarayuki 滑雪文章，每一篇都查證過，附上來源與抓取日期。">
+<title>文章｜Sarayuki さら雪</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&amp;family=Noto+Sans+TC:wght@400;700&amp;family=Noto+Serif+TC:wght@900&amp;display=swap" rel="stylesheet">
+<style>
+  :root{--paper:#f6f5f1;--ink:#16202a;--dim:#5b6673;--line:rgba(22,32,42,.12);--card:#fff;--shu:#d9412b;--ice:#7fa7c2}
+  *{box-sizing:border-box}
+  html{background:var(--paper);scroll-behavior:smooth}
+  body{margin:0;overflow-x:hidden;background:var(--paper);color:var(--ink);font-family:"Noto Sans TC",sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}button{font:inherit}
+  .page-header{padding:26px max(20px,calc((100vw - 760px)/2)) 38px;border-bottom:1px solid var(--line)}
+  .back{display:inline-flex;align-items:center;min-height:36px;margin-bottom:19px;color:var(--shu);font:700 13px/1 "IBM Plex Mono",monospace;letter-spacing:.04em}
+  .lab{display:flex;align-items:center;gap:12px;margin-bottom:9px;color:var(--shu);font:700 12px/1.4 "IBM Plex Mono",monospace;letter-spacing:.1em}
+  .lab::before{content:"";width:36px;height:1px;background:currentColor}
+  h1{margin:0;font-family:"Noto Serif TC",serif;font-size:clamp(42px,6vw,72px);font-weight:900;line-height:1.08;letter-spacing:-.01em}
+  .intro{margin:11px 0 0;color:var(--dim);font-size:15px;line-height:1.75}
+  main{width:min(760px,calc(100% - 40px));margin:0 auto;padding:34px 0 90px}
+  .categories{display:flex;gap:8px;overflow-x:auto;padding:1px 1px 18px;scrollbar-width:none}.categories::-webkit-scrollbar{display:none}
+  .chip{flex:0 0 auto;min-height:36px;padding:7px 13px;border:1px solid rgba(22,32,42,.2);border-radius:99px;background:transparent;color:var(--ink);font-size:13px;font-weight:700;white-space:nowrap;cursor:pointer;transition:.18s}
+  .chip:hover{border-color:var(--shu);color:var(--shu)}.chip.active{border-color:var(--shu);background:var(--shu);color:#fff}
+  .article-list{display:grid;gap:14px}
+  .article-card{display:flex;min-height:196px;flex-direction:column;padding:24px;border:1px solid var(--line);border-radius:4px;background:var(--card);transition:transform .2s,box-shadow .2s,border-color .2s}
+  .article-card:hover{transform:translateY(-2px);border-color:rgba(217,65,43,.38);box-shadow:0 16px 30px rgba(22,32,42,.08)}
+  .article-meta{color:var(--shu);font:500 11px/1.5 "IBM Plex Mono",monospace;letter-spacing:.03em}
+  .article-card h2{margin:10px 0 8px;font-family:"Noto Serif TC",serif;font-size:20px;font-weight:900;line-height:1.42;letter-spacing:-.01em}
+  .summary{display:-webkit-box;margin:0;overflow:hidden;color:var(--dim);font-size:14px;line-height:1.75;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+  .card-foot{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-top:auto;padding-top:20px}
+  .resort-tag{color:var(--dim);font-size:11px;font-weight:700;line-height:1.5}.read{margin-left:auto;color:var(--shu);font:700 12px/1.5 "IBM Plex Mono",monospace;white-space:nowrap}
+  .empty{display:none;padding:64px 22px;border:1px solid var(--line);border-radius:4px;background:var(--card);color:var(--dim);text-align:center;font-size:14px;line-height:1.8}.empty.show{display:block}
+  @media(max-width:600px){.page-header{padding:20px 16px 28px}.back{margin-bottom:13px}h1{font-size:43px}.intro{font-size:14px}main{width:calc(100% - 32px);padding-top:25px}.article-card{min-height:205px;padding:20px}}
+</style>
+</head>
+<body>
+<header class="page-header">
+  <a class="back" href="../">← Sarayuki</a>
+  <div class="lab">— JOURNAL / 文章</div>
+  <h1>文章</h1>
+  <p class="intro">每一篇都查證過，附上來源與抓取日期。</p>
+</header>
+<main>
+  <nav class="categories" aria-label="文章分類">
+    <button class="chip active" type="button" data-category="">全部</button>
+    <button class="chip" type="button" data-category="beginner">新手入門</button>
+    <button class="chip" type="button" data-category="resort">雪場攻略</button>
+    <button class="chip" type="button" data-category="advanced">老手進階</button>
+    <button class="chip" type="button" data-category="travel">行程交通</button>
+  </nav>
+  <div class="article-list" id="articleList" aria-live="polite"></div>
+  <div class="empty" id="empty">這個分類還沒有文章，每天會新增一篇。</div>
+</main>
+<script>
+const CATEGORIES={beginner:"新手入門",resort:"雪場攻略",advanced:"老手進階",travel:"行程交通"};
+const VALID_CATEGORIES=new Set(Object.keys(CATEGORIES));
+const query=new URLSearchParams(location.search);
+let selectedCategory=VALID_CATEGORIES.has(query.get("c"))?query.get("c"):"";
+let articles=[],resortNames=new Map();
+const esc=value=>String(value??"").replace(/[&<>\"]/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"})[char]);
+
+function syncCategory(){
+  const next=new URLSearchParams();if(selectedCategory)next.set("c",selectedCategory);
+  history.replaceState(null,"",location.pathname+(next.size?"?"+next.toString():"")+location.hash);
+  document.querySelectorAll("[data-category]").forEach(button=>button.classList.toggle("active",button.dataset.category===selectedCategory));
+}
+function cardHtml(article){
+  const resortName=article.resort&&resortNames.get(article.resort);
+  return `<a class="article-card" href="view.html?slug=${encodeURIComponent(article.slug)}"><div class="article-meta">${esc(article.date)} · ${esc(CATEGORIES[article.category]||article.category)}</div><h2>${esc(article.title)}</h2><p class="summary">${esc(article.summary)}</p><div class="card-foot">${resortName?`<span class="resort-tag">📍 ${esc(resortName)}</span>`:""}<span class="read">讀文章 →</span></div></a>`;
+}
+function render(){
+  const visible=selectedCategory?articles.filter(article=>article.category===selectedCategory):articles;
+  document.getElementById("articleList").innerHTML=visible.map(cardHtml).join("");
+  document.getElementById("empty").classList.toggle("show",visible.length===0);
+  syncCategory();
+}
+document.querySelector(".categories").addEventListener("click",event=>{const button=event.target.closest("[data-category]");if(!button)return;selectedCategory=button.dataset.category;render()});
+
+Promise.allSettled([
+  fetch("../content/index.json").then(response=>{if(!response.ok)throw new Error("index");return response.json()}),
+  fetch("../data/resorts.json").then(response=>{if(!response.ok)throw new Error("resorts");return response.json()})
+]).then(([articleResult,resortResult])=>{
+  if(articleResult.status==="fulfilled"&&Array.isArray(articleResult.value.articles))articles=articleResult.value.articles;
+  if(resortResult.status==="fulfilled")resortNames=new Map((resortResult.value.resorts||[]).map(resort=>[resort.id,resort.name]));
+  render();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sarayuki 滑雪文章">
+<title>文章｜Sarayuki さら雪</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&amp;family=Noto+Sans+TC:wght@400;700&amp;family=Noto+Serif+TC:wght@900&amp;display=swap" rel="stylesheet">
+<style>
+  :root{--paper:#f6f5f1;--ink:#16202a;--dim:#5b6673;--line:rgba(22,32,42,.12);--card:#fff;--shu:#d9412b;--ice:#7fa7c2}
+  *{box-sizing:border-box}
+  html{background:var(--paper);scroll-behavior:smooth}
+  body{margin:0;overflow-x:hidden;background:var(--paper);color:var(--ink);font-family:"Noto Sans TC",sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .top{width:min(680px,calc(100% - 40px));margin:0 auto;padding:26px 0 16px}
+  .back{display:inline-flex;align-items:center;min-height:36px;color:var(--shu);font:700 13px/1 "IBM Plex Mono",monospace;letter-spacing:.04em}
+  main{width:min(680px,calc(100% - 40px));margin:0 auto;padding:42px 0 92px}
+  .article-meta{margin-bottom:14px;color:var(--shu);font:500 11px/1.6 "IBM Plex Mono",monospace;letter-spacing:.03em}
+  .article-body{font-size:17px;line-height:1.85;overflow-wrap:anywhere}
+  .article-body h1{margin:0 0 27px;font-family:"Noto Serif TC",serif;font-size:32px;font-weight:900;line-height:1.34;letter-spacing:-.01em}
+  .article-body h2{position:relative;margin:40px 0 17px;padding-left:15px;font-family:"Noto Serif TC",serif;font-size:22px;font-weight:900;line-height:1.45;letter-spacing:-.01em}
+  .article-body h2::before{content:"";position:absolute;top:.28em;bottom:.22em;left:0;width:3px;border-radius:1px;background:var(--shu)}
+  .article-body p{margin:0 0 19px}.article-body ul,.article-body ol{margin:0 0 22px;padding-left:1.45em}.article-body li{margin:7px 0;padding-left:.15em}
+  .article-body strong{font-weight:700}.article-body a{color:var(--shu);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+  .article-body sup{font:500 11px/1 "IBM Plex Mono",monospace}.article-body sup a{color:var(--shu);text-decoration:none}
+  .article-body .sources-title{margin-top:52px}.article-body .sources-list{color:var(--dim);font-size:13px;line-height:1.7}.article-body .sources-list li{margin:9px 0;transition:background-color .3s}.article-body .sources-list a{color:var(--dim);overflow-wrap:anywhere}
+  .article-body .source-flash{background:rgba(217,65,43,.12)}
+  .notice{margin-top:48px;padding:17px 19px;border:1px solid var(--line);border-radius:4px;background:rgba(22,32,42,.045);color:var(--dim);font-size:13px;line-height:1.7}
+  .resort-card{display:block;margin-top:18px;padding:20px;border:1px solid var(--line);border-radius:4px;background:var(--card);transition:border-color .2s,box-shadow .2s}
+  .resort-card:hover{border-color:rgba(217,65,43,.38);box-shadow:0 12px 26px rgba(22,32,42,.07)}.resort-card h2{margin:0;font-family:"Noto Serif TC",serif;font-size:20px;font-weight:900;line-height:1.4}.resort-ja{margin-top:3px;color:var(--dim);font-size:12px}.resort-access{margin:13px 0 0;font-size:13px;line-height:1.65}.resort-link{display:block;margin-top:15px;color:var(--shu);font:700 12px/1.5 "IBM Plex Mono",monospace;text-align:right}
+  .error{padding:80px 0;text-align:center}.error h1{margin:0 0 20px;font-family:"Noto Serif TC",serif;font-size:32px;font-weight:900}.error a{color:var(--shu);font-weight:700}
+  [hidden]{display:none!important}
+  @media(max-width:600px){.top,main{width:calc(100% - 32px)}.top{padding-top:20px}main{padding-top:31px}.article-body{font-size:16px;line-height:1.85}.article-body h1{font-size:26px}.article-body h2{font-size:21px}.error h1{font-size:27px}}
+</style>
+</head>
+<body>
+<header class="top"><a class="back" href="./">← 文章列表</a></header>
+<main>
+  <article id="article" hidden>
+    <div class="article-meta" id="articleMeta"></div>
+    <div class="article-body" id="articleBody"></div>
+    <div class="notice">票價、營業期間與交通每年變動，出發前請以官網為準。</div>
+    <div id="resortCard"></div>
+  </article>
+  <div class="error" id="error" hidden><h1>找不到這篇文章</h1><a href="./">回文章列表 →</a></div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
+<script>
+const CATEGORIES={beginner:"新手入門",resort:"雪場攻略",advanced:"老手進階",travel:"行程交通"};
+const slug=new URLSearchParams(location.search).get("slug")||"";
+const esc=value=>String(value??"").replace(/[&<>\"]/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"})[char]);
+const showError=()=>{document.getElementById("article").hidden=true;document.getElementById("error").hidden=false};
+
+function decorateArticle(){
+  const body=document.getElementById("articleBody");
+  body.querySelectorAll('a[href^="http://"],a[href^="https://"]').forEach(link=>{link.target="_blank";link.rel="noopener"});
+  const sourceTitle=[...body.querySelectorAll("h2")].find(heading=>heading.textContent.trim()==="來源");
+  if(sourceTitle){sourceTitle.classList.add("sources-title");const list=sourceTitle.nextElementSibling;if(list?.matches("ul,ol"))list.classList.add("sources-list")}
+  body.querySelectorAll('sup a[href^="#src-"]').forEach(link=>link.addEventListener("click",event=>{
+    const target=document.getElementById(link.getAttribute("href").slice(1));if(!target)return;
+    event.preventDefault();target.scrollIntoView({behavior:"smooth",block:"center"});
+    const row=target.closest("li")||target;row.classList.remove("source-flash");void row.offsetWidth;row.classList.add("source-flash");setTimeout(()=>row.classList.remove("source-flash"),1500);
+  }));
+}
+function renderResort(resort,id){
+  if(!resort)return;
+  document.getElementById("resortCard").innerHTML=`<a class="resort-card" href="../resorts/?focus=${encodeURIComponent(id)}"><h2>${esc(resort.name)}</h2><div class="resort-ja">${esc(resort.nameJa)}</div><p class="resort-access">🚃 ${esc(resort.access)}</p><span class="resort-link">在地圖上看 →</span></a>`;
+}
+async function loadArticle(){
+  if(!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(slug)){showError();return}
+  try{
+    const indexResponse=await fetch("../content/index.json");if(!indexResponse.ok)throw new Error("index");
+    const index=await indexResponse.json(),entry=(index.articles||[]).find(article=>article.slug===slug);if(!entry)throw new Error("missing");
+    const [markdownResponse,resortResult]=await Promise.all([
+      fetch(`../content/articles/${slug}.md`),
+      entry.resort?fetch("../data/resorts.json").then(response=>response.ok?response.json():null).catch(()=>null):Promise.resolve(null)
+    ]);
+    if(!markdownResponse.ok)throw new Error("markdown");
+    const markdown=await markdownResponse.text();
+    const rendered=marked.parse(markdown);
+    document.getElementById("articleBody").innerHTML=DOMPurify.sanitize(rendered,{ADD_TAGS:["sup"],ADD_ATTR:["id"]});
+    document.getElementById("articleMeta").textContent=`${entry.date} · ${CATEGORIES[entry.category]||entry.category} · ${entry.sources} 個來源`;
+    document.title=`${entry.title}｜Sarayuki さら雪`;
+    document.querySelector('meta[name="description"]').setAttribute("content",entry.summary||"");
+    if(entry.resort)renderResort((resortResult?.resorts||[]).find(resort=>resort.id===entry.resort),entry.resort);
+    decorateArticle();document.getElementById("article").hidden=false;
+  }catch(error){showError()}
+}
+loadArticle();
+</script>
+</body>
+</html>

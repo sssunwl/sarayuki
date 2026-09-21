@@ -41,6 +41,16 @@
   .off-season{display:none;margin:22px 0 0;color:var(--dim);font-size:14px;line-height:1.7}
   .off-season.show{display:block}
   .off-season a{color:var(--shu);font-weight:700}
+  .journal-section{display:none}.journal-section.show{display:block}
+  .journal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .article-card{display:flex;min-height:230px;flex-direction:column;padding:24px;border:1px solid var(--line);border-radius:4px;background:var(--card);transition:transform .2s,box-shadow .2s,border-color .2s}
+  .article-card:hover{transform:translateY(-2px);border-color:rgba(217,65,43,.38);box-shadow:0 16px 30px rgba(22,32,42,.08)}
+  .article-meta{color:var(--shu);font:500 11px/1.5 "IBM Plex Mono",monospace;letter-spacing:.03em}
+  .article-card h3{margin:11px 0 9px;font-size:20px;line-height:1.42}
+  .article-summary{display:-webkit-box;margin:0;overflow:hidden;color:var(--dim);font-size:14px;line-height:1.75;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+  .article-foot{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-top:auto;padding-top:20px}
+  .article-resort{color:var(--dim);font-size:11px;font-weight:700;line-height:1.5}.article-read{margin-left:auto;color:var(--shu);font:700 12px/1.5 "IBM Plex Mono",monospace;white-space:nowrap}
+  .all-articles{display:inline-flex;margin-top:26px;color:var(--shu);font-weight:700}
   .accordion{border-top:1px solid var(--line)}
   .accordion-item{border-bottom:1px solid var(--line)}
   .accordion-button{display:grid;width:100%;grid-template-columns:54px 1fr auto;align-items:center;gap:12px;padding:24px 0;border:0;background:none;color:var(--ink);text-align:left;cursor:pointer}
@@ -71,7 +81,7 @@
     .subline{max-width:270px;font-size:13px}
     .kana{position:absolute;top:30px;right:14px;margin:0;font-size:54px;opacity:.95}
     .section{padding:78px 0}.eyebrow{margin-bottom:27px}.section-title{margin-bottom:28px}
-    .start-grid{grid-template-columns:1fr}.entry-card{min-height:220px}.entry-card h2{margin-top:34px}
+    .start-grid,.journal-grid{grid-template-columns:1fr}.entry-card{min-height:220px}.entry-card h2{margin-top:34px}.article-card{min-height:205px}
     .month-chip{min-width:60px}
     .accordion-button{grid-template-columns:38px 1fr auto;padding:21px 0}.accordion-button h3{font-size:18px}
     .accordion-panel p{padding:0 24px 24px 50px;font-size:14px}
@@ -116,9 +126,18 @@
     </div>
   </section>
 
+  <section class="section journal-section" id="journal" aria-labelledby="journal-title">
+    <div class="wrap">
+      <div class="eyebrow">— 03 / JOURNAL</div>
+      <h2 class="section-title" id="journal-title">最新文章</h2>
+      <div class="journal-grid" id="journalGrid"></div>
+      <a class="all-articles" href="articles/">看全部文章 →</a>
+    </div>
+  </section>
+
   <section class="section" id="first" aria-labelledby="first-title">
     <div class="wrap">
-      <div class="eyebrow">— 03 / FIRST TIME</div>
+      <div class="eyebrow">— 04 / FIRST TIME</div>
       <h2 class="section-title" id="first-title">第一次滑雪 8 件事</h2>
       <div class="accordion">
         <div class="accordion-item"><button class="accordion-button" type="button" aria-expanded="false"><span class="accordion-no">01</span><h3>雙板還是單板？</h3><span class="accordion-plus">+</span></button><div class="accordion-panel"><div><p>雙板入門比較快；單板前兩天摔最多，但上手後很好玩。拿不定主意就先選雙板。</p></div></div></div>
@@ -135,7 +154,7 @@
 
   <section class="section beyond" aria-labelledby="beyond-title">
     <div class="wrap">
-      <div class="eyebrow">— 04 / BEYOND THE PISTE</div>
+      <div class="eyebrow">— 05 / BEYOND THE PISTE</div>
       <h2 class="beyond-copy" id="beyond-title">粉雪、樹林、非壓雪區——日本最迷人的地方，也是最危險的地方。</h2>
       <a class="primary-link" href="resorts/?lv=advanced&amp;t=powder,tree,backcountry">看老手雪場 →</a>
       <p class="safety">非壓雪區務必遵守雪場公告，建議請嚮導並攜帶雪崩三件套（探測器、探桿、雪鏟）。</p>
@@ -144,7 +163,7 @@
 
   <section class="section" aria-labelledby="about-title">
     <div class="wrap">
-      <div class="eyebrow">— 05 / ABOUT</div>
+      <div class="eyebrow">— 06 / ABOUT</div>
       <div class="about-grid"><h2 class="about-copy" id="about-title">Sarayuki 是給華語滑雪客的日本雪場中立指南。我們不收錢排名，資料標明出處與覆核日期。</h2><p class="resort-total" id="resortTotal">收錄 — 個雪場</p></div>
     </div>
   </section>
@@ -154,6 +173,8 @@
 
 <script>
 const snowMonths=new Set([11,12,1,2,3,4,5]);
+const articleCategories={beginner:"新手入門",resort:"雪場攻略",advanced:"老手進階",travel:"行程交通"};
+const escapeHtml=value=>String(value??"").replace(/[&<>\"]/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"})[char]);
 const currentMonth=Number(new Intl.DateTimeFormat("en-US",{month:"numeric",timeZone:"Asia/Tokyo"}).format(new Date()));
 if(snowMonths.has(currentMonth))document.querySelector(`[data-month="${currentMonth}"]`)?.classList.add("current");
 else document.getElementById("offSeason").classList.add("show");
@@ -165,9 +186,22 @@ document.querySelectorAll(".accordion-button").forEach(button=>button.addEventLi
   if(!wasOpen){button.setAttribute("aria-expanded","true");button.nextElementSibling.classList.add("open")}
 }));
 
-fetch("data/resorts.json").then(response=>{if(!response.ok)throw new Error("resorts.json");return response.json()})
-  .then(data=>{document.getElementById("resortTotal").textContent=`收錄 ${data.resorts.length} 個雪場`})
-  .catch(()=>{document.getElementById("resortTotal").textContent="雪場資料載入中"});
+Promise.allSettled([
+  fetch("content/index.json").then(response=>{if(!response.ok)throw new Error("index.json");return response.json()}),
+  fetch("data/resorts.json").then(response=>{if(!response.ok)throw new Error("resorts.json");return response.json()})
+]).then(([articleResult,resortResult])=>{
+  const resorts=resortResult.status==="fulfilled"?(resortResult.value.resorts||[]):[];
+  const resortNames=new Map(resorts.map(resort=>[resort.id,resort.name]));
+  if(resortResult.status==="fulfilled")document.getElementById("resortTotal").textContent=`收錄 ${resorts.length} 個雪場`;
+  else document.getElementById("resortTotal").textContent="雪場資料載入中";
+  if(articleResult.status!=="fulfilled")return;
+  const articles=(articleResult.value.articles||[]).slice(0,3);if(!articles.length)return;
+  document.getElementById("journalGrid").innerHTML=articles.map(article=>{
+    const resortName=article.resort&&resortNames.get(article.resort);
+    return `<a class="article-card" href="articles/view.html?slug=${encodeURIComponent(article.slug)}"><div class="article-meta">${escapeHtml(article.date)} · ${escapeHtml(articleCategories[article.category]||article.category)}</div><h3>${escapeHtml(article.title)}</h3><p class="article-summary">${escapeHtml(article.summary)}</p><div class="article-foot">${resortName?`<span class="article-resort">📍 ${escapeHtml(resortName)}</span>`:""}<span class="article-read">讀文章 →</span></div></a>`;
+  }).join("");
+  document.getElementById("journal").classList.add("show");
+});
 </script>
 </body>
 </html>

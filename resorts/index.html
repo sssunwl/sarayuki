@@ -71,7 +71,7 @@
   .see{display:-webkit-box;margin:8px 0 0;overflow:hidden;color:var(--ink);font-size:13px;line-height:1.6;-webkit-box-orient:vertical;-webkit-line-clamp:2}
   .card-foot{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;min-height:25px;margin-top:10px;padding-top:9px;border-top:1px solid var(--line)}
   .warning{color:#9a3a2c;font-size:10px;font-weight:700}
-  .official-link,.map-link{padding:4px 0;border:0;background:none;color:var(--shu);font-size:11px;font-weight:700;white-space:nowrap}.official-link{margin-left:auto}.official-link+.map-link{margin-left:0}.map-link:only-child{margin-left:auto}
+  .official-link,.guide-link,.map-link{padding:4px 0;border:0;background:none;color:var(--shu);font-size:11px;font-weight:700;white-space:nowrap}.official-link{margin-left:auto}.official-link+.map-link,.official-link+.guide-link,.guide-link+.map-link{margin-left:0}.map-link:only-child{margin-left:auto}
   .empty{padding:45px 22px;text-align:center;color:var(--dim);font-size:14px;line-height:1.8}.empty .chip{display:block;margin:16px auto 0;background:var(--shu);border-color:var(--shu);color:#fff}
   .data-note{padding:18px 17px 25px;border-top:1px solid var(--line);color:var(--dim);font-size:11px;line-height:1.75}
   .map-pane{position:sticky;top:var(--filters-height);height:100%;min-width:0;background:#e9ecec}
@@ -167,8 +167,9 @@ const TAGS={powder:["❄️","粉雪"],tree:["🌲","樹林滑"],onsen:["♨️"
 const MONTHS=[11,12,1,2,3,4,5];
 const VALID={level:new Set(Object.keys(LEVELS)),tag:new Set(Object.keys(TAGS)),area:new Set(Object.keys(AREAS))};
 const currentMonth=Number(new Intl.DateTimeFormat("en-US",{month:"numeric",timeZone:"Asia/Tokyo"}).format(new Date()));
+const requestedFocus=new URLSearchParams(location.search).get("focus");
 const state={month:null,level:null,tags:new Set(),area:null};
-let allResorts=[],filteredResorts=[],map,clusters,markers=new Map(),mapReady=false;
+let allResorts=[],filteredResorts=[],map,clusters,markers=new Map(),mapReady=false,articlesByResort=new Map();
 const mobileQuery=matchMedia("(max-width: 959px)");
 const esc=value=>String(value??"").replace(/[&<>\"]/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"})[char]);
 
@@ -183,6 +184,7 @@ function syncUrl(){
   const query=new URLSearchParams();
   if(state.month)query.set("m",state.month);if(state.level)query.set("lv",state.level);
   if(state.tags.size)query.set("t",[...state.tags].join(","));if(state.area)query.set("a",state.area);
+  if(requestedFocus)query.set("focus",requestedFocus);
   history.replaceState(null,"",location.pathname+(query.size?"?"+query.toString().replace(/%2C/gi,","):"")+location.hash);
 }
 function hasFilters(){return Boolean(state.month||state.level||state.tags.size||state.area)}
@@ -207,7 +209,8 @@ function cardHtml(resort){
   const levels=resort.levelFit.map(level=>`<span class="level-badge">${LEVELS[level]}</span>`).join("");
   const tags=resort.tags.map(tag=>`<span title="${TAGS[tag][1]}" aria-label="${TAGS[tag][1]}">${TAGS[tag][0]}</span>`).join("");
   const website=resort.url?`<a class="official-link" href="${esc(resort.url)}" target="_blank" rel="noopener">官網 ↗</a>`:"";
-  return `<article class="resort-card" id="card-${esc(resort.id)}" data-id="${esc(resort.id)}" tabindex="0"><h2>${esc(resort.name)}</h2><div class="place">${esc(resort.nameJa)} · ${esc(resort.place)}</div><div class="level-list">${levels}</div><div class="tag-icons">${tags}</div>${monthChart(resort)}<p class="access">🚃 ${esc(resort.access)}</p><p class="see">${esc(resort.see)}</p><div class="card-foot">${resort.verify?'<span class="warning">⚠️ 出發前以官網為準</span>':""}${website}<button class="map-link" type="button" data-map-id="${esc(resort.id)}">在地圖上看 →</button></div></article>`;
+  const guide=articlesByResort.get(resort.id),guideLink=guide?`<a class="guide-link" href="../articles/view.html?slug=${encodeURIComponent(guide.slug)}">攻略 →</a>`:"";
+  return `<article class="resort-card" id="card-${esc(resort.id)}" data-id="${esc(resort.id)}" tabindex="0"><h2>${esc(resort.name)}</h2><div class="place">${esc(resort.nameJa)} · ${esc(resort.place)}</div><div class="level-list">${levels}</div><div class="tag-icons">${tags}</div>${monthChart(resort)}<p class="access">🚃 ${esc(resort.access)}</p><p class="see">${esc(resort.see)}</p><div class="card-foot">${resort.verify?'<span class="warning">⚠️ 出發前以官網為準</span>':""}${website}${guideLink}<button class="map-link" type="button" data-map-id="${esc(resort.id)}">在地圖上看 →</button></div></article>`;
 }
 function render(){
   filteredResorts=allResorts.filter(matches).sort((a,b)=>(AREA_ORDER[a.area]-AREA_ORDER[b.area])||(a.accessMin-b.accessMin)||a.name.localeCompare(b.name,"zh-Hant"));
@@ -239,8 +242,8 @@ function updateMap(){
   if(filteredResorts.length&&mapIsVisible()){map.invalidateSize(false);map.fitBounds(L.latLngBounds(filteredResorts.map(resort=>[resort.lat,resort.lng])),{padding:[40,40],maxZoom:9})}
 }
 function highlightCard(id){const card=document.getElementById(`card-${id}`);if(!card)return;card.scrollIntoView({behavior:"smooth",block:"center"});card.classList.remove("flash");void card.offsetWidth;card.classList.add("flash");setTimeout(()=>card.classList.remove("flash"),1500)}
-function setView(view,{scroll=true}={}){document.body.classList.toggle("view-map",view==="map");document.body.classList.toggle("view-list",view==="list");document.querySelectorAll("[data-view]").forEach(button=>button.classList.toggle("active",button.dataset.view===view));if(view==="map"&&mapReady)setTimeout(()=>{map.invalidateSize();if(filteredResorts.length)map.fitBounds(L.latLngBounds(filteredResorts.map(resort=>[resort.lat,resort.lng])),{padding:[40,40],maxZoom:9})},50);if(scroll&&mobileQuery.matches)document.getElementById("viewSwitch").scrollIntoView({behavior:"smooth",block:"start"})}
-function focusResort(id){const resort=allResorts.find(item=>item.id===id),marker=markers.get(id);if(!resort||!marker)return;if(mobileQuery.matches)setView("map");setTimeout(()=>{map.invalidateSize();map.once("moveend",()=>map.openPopup(marker.getPopup().setLatLng([resort.lat,resort.lng])));map.flyTo([resort.lat,resort.lng],10,{duration:.8})},mobileQuery.matches?100:0)}
+function setView(view,{scroll=true,fit=true}={}){document.body.classList.toggle("view-map",view==="map");document.body.classList.toggle("view-list",view==="list");document.querySelectorAll("[data-view]").forEach(button=>button.classList.toggle("active",button.dataset.view===view));if(view==="map"&&mapReady)setTimeout(()=>{map.invalidateSize();if(fit&&filteredResorts.length)map.fitBounds(L.latLngBounds(filteredResorts.map(resort=>[resort.lat,resort.lng])),{padding:[40,40],maxZoom:9})},50);if(scroll&&mobileQuery.matches)document.getElementById("viewSwitch").scrollIntoView({behavior:"smooth",block:"start"})}
+function focusResort(id){const resort=allResorts.find(item=>item.id===id),marker=markers.get(id);if(!resort||!marker)return;if(mobileQuery.matches)setView("map",{fit:false});setTimeout(()=>{map.invalidateSize();map.once("moveend",()=>map.openPopup(marker.getPopup().setLatLng([resort.lat,resort.lng])));map.flyTo([resort.lat,resort.lng],10,{duration:.8})},mobileQuery.matches?100:0)}
 function hotMarker(id,on){const marker=markers.get(id),visible=marker&&clusters.getVisibleParent(marker),element=visible?.getElement();if(element)element.classList.toggle("marker-hot",on)}
 function clearAll(){state.month=null;state.level=null;state.tags.clear();state.area=null;document.getElementById("seasonHint").classList.remove("show");render()}
 function measureChrome(){document.documentElement.style.setProperty("--filters-height",document.getElementById("filters").offsetHeight+"px");document.documentElement.style.setProperty("--switch-height",document.getElementById("viewSwitch").offsetHeight+"px")}
@@ -258,7 +261,15 @@ document.querySelectorAll("[data-view]").forEach(button=>button.addEventListener
 new ResizeObserver(measureChrome).observe(document.getElementById("filters"));addEventListener("resize",()=>{measureChrome();if(mapReady)setTimeout(()=>map.invalidateSize(),50)});
 
 restoreState();updateControls();measureChrome();
-fetch("../data/resorts.json").then(response=>{if(!response.ok)throw new Error("resorts.json");return response.json()}).then(data=>{allResorts=data.resorts;document.getElementById("dataNote").textContent=`季節、交通與票價每年變動，出發前請以各雪場官網為準。Sarayuki 不收費排名。資料更新：${data.updated}`;render();initMap()}).catch(()=>{document.getElementById("resultCount").textContent="雪場資料載入失敗";document.getElementById("mobileResultCount").textContent="載入失敗";document.getElementById("cards").innerHTML='<div class="empty">目前無法讀取雪場資料，請稍後再試。</div>';document.getElementById("map").innerHTML='<div class="load-error">地圖資料暫時無法載入。</div>'});
+Promise.allSettled([
+  fetch("../data/resorts.json").then(response=>{if(!response.ok)throw new Error("resorts.json");return response.json()}),
+  fetch("../content/index.json").then(response=>{if(!response.ok)throw new Error("index.json");return response.json()})
+]).then(([resortResult,articleResult])=>{
+  if(resortResult.status!=="fulfilled")throw new Error("resorts.json");
+  if(articleResult.status==="fulfilled")for(const article of articleResult.value.articles||[]){if(article.resort&&!articlesByResort.has(article.resort))articlesByResort.set(article.resort,article)}
+  const data=resortResult.value;allResorts=data.resorts;document.getElementById("dataNote").textContent=`季節、交通與票價每年變動，出發前請以各雪場官網為準。Sarayuki 不收費排名。資料更新：${data.updated}`;render();initMap();
+  if(requestedFocus&&allResorts.some(resort=>resort.id===requestedFocus))focusResort(requestedFocus);
+}).catch(()=>{document.getElementById("resultCount").textContent="雪場資料載入失敗";document.getElementById("mobileResultCount").textContent="載入失敗";document.getElementById("cards").innerHTML='<div class="empty">目前無法讀取雪場資料，請稍後再試。</div>';document.getElementById("map").innerHTML='<div class="load-error">地圖資料暫時無法載入。</div>'});
 </script>
 </body>
 </html>
