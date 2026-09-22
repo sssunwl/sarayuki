@@ -2,169 +2,361 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="description" content="Sarayuki さら雪，日本雪場的華語中立指南。新手看得懂，老手找到真正的粉雪資訊。">
+<meta name="theme-color" content="#0a1628">
 <title>Sarayuki さら雪｜日本雪場中立指南</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&amp;family=Noto+Sans+TC:wght@400;700&amp;family=Noto+Serif+TC:wght@900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;500;700&amp;family=Noto+Sans+TC:wght@400;500;700&amp;family=Noto+Serif+TC:wght@700;900&amp;display=swap" rel="stylesheet">
 <style>
-  :root{--paper:#f6f5f1;--ink:#16202a;--dim:#5b6673;--line:rgba(22,32,42,.12);--card:#fff;--shu:#d9412b;--ice:#7fa7c2}
+  :root{
+    --night:#0a1628;--deep:#12284a;--dusk:#2b4a7a;
+    --snow:#f5f8fc;--frost:#e7eff8;--card:#ffffff;
+    --ink:#0f1e33;--dim:#5a6a80;--line:rgba(15,30,51,.1);
+    --ice:#3d9bff;--glacier:#1f6fd1;--aqua:#8fd3ff;
+    --glow:#ffb8a8; /* alpenglow：清晨照在雪峰上的粉光 */
+    --ease:cubic-bezier(.2,.8,.2,1);
+  }
   *{box-sizing:border-box}
-  html{scroll-behavior:smooth;background:var(--paper)}
-  body{margin:0;overflow-x:hidden;background:var(--paper);color:var(--ink);font-family:"Noto Sans TC",sans-serif;-webkit-font-smoothing:antialiased}
+  html{scroll-behavior:smooth;background:var(--night)}
+  body{margin:0;overflow-x:hidden;background:var(--snow);color:var(--ink);font-family:"Noto Sans TC",sans-serif;-webkit-font-smoothing:antialiased}
   a{color:inherit;text-decoration:none}
   button{font:inherit}
-  .mono{font-family:"IBM Plex Mono",monospace}
-  .serif,h1,h2,h3{font-family:"Noto Serif TC",serif;font-weight:900;letter-spacing:-.01em}
+  .latin{font-family:"Outfit",sans-serif}
+  h1,h2,h3,.serif{font-family:"Noto Serif TC",serif;font-weight:900;letter-spacing:-.01em;line-height:1.2}
   .wrap{width:min(1180px,calc(100% - 40px));margin:0 auto}
-  .hero{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;min-height:85svh;padding:64px max(20px,calc((100vw - 1180px)/2));border-bottom:1px solid var(--line);overflow:hidden}
-  .hero-copy{position:relative;z-index:1;padding:70px 0}
-  .wordmark{margin:0;font-family:"IBM Plex Mono",monospace;font-size:clamp(54px,10.5vw,150px);font-weight:500;line-height:.92;letter-spacing:.09em;white-space:nowrap}
-  .tagline{margin:38px 0 0;font-family:"Noto Serif TC",serif;font-size:clamp(22px,2.7vw,36px);font-weight:900;line-height:1.35;letter-spacing:-.01em}
-  .subline{margin:13px 0 0;color:var(--dim);font-size:15px;line-height:1.8}
-  .kana{position:relative;z-index:0;margin-left:38px;color:var(--shu);font-family:"Noto Serif TC",serif;font-size:min(18vw,132px);font-weight:900;line-height:1;letter-spacing:.08em;writing-mode:vertical-rl}
-  .section{padding:112px 0;border-bottom:1px solid var(--line)}
-  .eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:34px;color:var(--shu);font:700 12px/1.4 "IBM Plex Mono",monospace;letter-spacing:.1em}
-  .eyebrow::before{content:"";width:40px;height:1px;background:currentColor}
-  .section-title{margin:0 0 36px;font-size:clamp(34px,5vw,58px);line-height:1.12}
-  .start-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-  .entry-card{display:flex;min-height:260px;flex-direction:column;padding:27px;border:1px solid var(--line);border-radius:4px;background:var(--card);transition:transform .2s,box-shadow .2s,border-color .2s}
-  .entry-card:hover{transform:translateY(-2px);border-color:rgba(217,65,43,.38);box-shadow:0 16px 30px rgba(22,32,42,.08)}
-  .entry-no{color:var(--shu);font:500 31px/1 "IBM Plex Mono",monospace}
-  .entry-card h2{margin:48px 0 11px;font-size:25px;line-height:1.2}
-  .entry-card p{margin:0;color:var(--dim);font-size:14px;line-height:1.75}
-  .arrow{margin-top:auto;padding-top:24px;color:var(--shu);font:700 18px/1 "IBM Plex Mono",monospace}
-  .months{display:flex;flex-wrap:wrap;gap:9px}
-  .month-chip{display:inline-flex;align-items:center;justify-content:center;min-width:66px;min-height:42px;padding:8px 14px;border:1px solid var(--line);border-radius:99px;background:transparent;font:700 13px/1 "IBM Plex Mono",monospace;transition:.18s}
-  .month-chip:hover,.month-chip.current{border-color:var(--shu);background:var(--shu);color:#fff}
-  .off-season{display:none;margin:22px 0 0;color:var(--dim);font-size:14px;line-height:1.7}
+
+  /* ---------- 導覽 ---------- */
+  .nav{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:calc(14px + env(safe-area-inset-top,0px)) max(20px,calc((100vw - 1180px)/2)) 14px;color:#fff;transition:background .35s,color .35s,box-shadow .35s,backdrop-filter .35s}
+  .nav.solid{background:rgba(245,248,252,.78);color:var(--ink);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);box-shadow:0 1px 0 var(--line)}
+  .brand{display:flex;align-items:baseline;gap:10px;font:500 15px/1 "Outfit",sans-serif;letter-spacing:.32em}
+  .brand small{font:700 13px/1 "Noto Serif TC",serif;letter-spacing:.12em;opacity:.75}
+  .nav-links{display:flex;gap:6px}
+  .nav-links a{padding:9px 14px;border-radius:99px;font-size:14px;font-weight:500;transition:background .2s}
+  .nav-links a:hover{background:rgba(255,255,255,.14)}
+  .nav.solid .nav-links a:hover{background:var(--frost)}
+
+  /* ---------- 首屏：夜空→晨光→雪山 ---------- */
+  .hero{position:relative;min-height:100svh;overflow:hidden;color:#fff;
+    background:
+      radial-gradient(120% 70% at 70% 105%,rgba(255,184,168,.55),rgba(255,184,168,0) 55%),
+      radial-gradient(80% 60% at 15% 10%,rgba(61,155,255,.25),transparent 60%),
+      linear-gradient(180deg,var(--night) 0%,var(--deep) 45%,var(--dusk) 78%,#6d7fa8 100%)}
+  .stars{position:absolute;inset:0;background-image:
+      radial-gradient(1px 1px at 12% 18%,#fff9,transparent),radial-gradient(1px 1px at 32% 8%,#fff7,transparent),
+      radial-gradient(1.5px 1.5px at 58% 22%,#fffa,transparent),radial-gradient(1px 1px at 76% 12%,#fff8,transparent),
+      radial-gradient(1px 1px at 88% 30%,#fff6,transparent),radial-gradient(1px 1px at 44% 34%,#fff5,transparent),
+      radial-gradient(1.5px 1.5px at 6% 40%,#fff6,transparent),radial-gradient(1px 1px at 66% 4%,#fff8,transparent);
+    animation:twinkle 6s ease-in-out infinite alternate}
+  @keyframes twinkle{from{opacity:.55}to{opacity:1}}
+  .ridge{position:absolute;left:-5%;width:110%;bottom:0;will-change:transform;pointer-events:none}
+  .ridge svg{display:block;width:100%;height:auto}
+  .ridge.r1{bottom:14%}.ridge.r2{bottom:5%}.ridge.r3{bottom:-1px}
+  .snowfx{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:3}
+  .hero-inner{position:relative;z-index:4;display:flex;flex-direction:column;justify-content:center;min-height:100svh;padding:120px max(20px,calc((100vw - 1180px)/2)) 30vh}
+  .kicker{display:inline-flex;align-items:center;gap:10px;width:max-content;padding:7px 14px 7px 10px;border:1px solid rgba(255,255,255,.25);border-radius:99px;background:rgba(255,255,255,.08);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);font:500 12px/1 "Outfit",sans-serif;letter-spacing:.18em}
+  .kicker i{width:7px;height:7px;border-radius:50%;background:var(--aqua);box-shadow:0 0 0 0 rgba(143,211,255,.7);animation:ping 2.2s infinite}
+  @keyframes ping{70%{box-shadow:0 0 0 9px rgba(143,211,255,0)}100%{box-shadow:0 0 0 0 rgba(143,211,255,0)}}
+  .title{margin:26px 0 0;font-family:"Noto Serif TC",serif;font-size:clamp(76px,15vw,200px);font-weight:900;line-height:1.05;letter-spacing:.02em;text-shadow:0 10px 60px rgba(10,22,40,.45)}
+  .title span{display:inline-block;opacity:0;transform:translateY(-40px) rotate(-8deg);filter:blur(8px);animation:settle 1.2s var(--ease) forwards}
+  .title span:nth-child(2){animation-delay:.18s}.title span:nth-child(3){animation-delay:.36s}
+  @keyframes settle{to{opacity:1;transform:none;filter:none}}
+  .latin-mark{margin:6px 0 0 6px;font:200 clamp(16px,2vw,24px)/1 "Outfit",sans-serif;letter-spacing:.62em;opacity:0;animation:fadein 1s .7s forwards}
+  .tagline{max-width:560px;margin:34px 0 0;font:700 clamp(20px,2.4vw,30px)/1.5 "Noto Serif TC",serif;opacity:0;animation:rise 1s .9s var(--ease) forwards}
+  .subline{margin:10px 0 0;color:rgba(255,255,255,.72);font-size:15px;line-height:1.8;opacity:0;animation:rise 1s 1.05s var(--ease) forwards}
+  .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px;opacity:0;animation:rise 1s 1.2s var(--ease) forwards}
+  @keyframes fadein{to{opacity:.85}}
+  @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+  .btn{position:relative;display:inline-flex;align-items:center;gap:10px;min-height:50px;padding:0 24px;border-radius:99px;font-weight:700;font-size:15px;overflow:hidden;transition:transform .25s var(--ease),box-shadow .25s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-primary{background:#fff;color:var(--night);box-shadow:0 10px 30px rgba(10,22,40,.3)}
+  .btn-primary:hover{box-shadow:0 16px 40px rgba(143,211,255,.45)}
+  .btn-ghost{border:1px solid rgba(255,255,255,.4);color:#fff;background:rgba(255,255,255,.06);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+  .btn-ghost:hover{background:rgba(255,255,255,.16)}
+  .btn .arr{transition:transform .25s var(--ease)}.btn:hover .arr{transform:translateX(4px)}
+  .wind-hint{position:absolute;z-index:4;right:max(20px,calc((100vw - 1180px)/2));bottom:calc(24px + env(safe-area-inset-bottom,0px));color:var(--dim);font:500 11px/1 "Outfit",sans-serif;letter-spacing:.2em}
+  .scroll-cue{position:absolute;z-index:4;left:50%;bottom:calc(22px + env(safe-area-inset-bottom,0px));width:24px;height:38px;margin-left:-12px;border:1.5px solid rgba(15,30,51,.35);border-radius:12px}
+  .scroll-cue::after{content:"";position:absolute;left:50%;top:7px;width:3px;height:7px;margin-left:-1.5px;border-radius:2px;background:rgba(15,30,51,.5);animation:cue 1.8s infinite}
+  @keyframes cue{0%{opacity:0;transform:translateY(0)}40%{opacity:1}100%{opacity:0;transform:translateY(12px)}}
+
+  /* ---------- 通用段落 ---------- */
+  .section{position:relative;padding:120px 0}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;margin-bottom:18px;color:var(--glacier);font:700 12px/1 "Outfit",sans-serif;letter-spacing:.26em}
+  .eyebrow::before{content:"";width:18px;height:18px;background:currentColor;-webkit-mask:var(--flake) center/contain no-repeat;mask:var(--flake) center/contain no-repeat}
+  :root{--flake:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round'%3E%3Cpath d='M12 2v20M3.3 7l17.4 10M3.3 17l17.4-10M12 5l-2.5-2M12 5l2.5-2M12 19l-2.5 2M12 19l2.5 2'/%3E%3C/svg%3E")}
+  .section-title{margin:0 0 14px;font-size:clamp(34px,5vw,58px);line-height:1.15}
+  .section-lead{max-width:600px;margin:0 0 48px;color:var(--dim);font-size:16px;line-height:1.8}
+  .reveal{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ---------- 三入口：冰晶卡 ---------- */
+  .start{background:linear-gradient(180deg,var(--snow),var(--frost))}
+  .start-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;perspective:1200px}
+  .entry-card{--mx:50%;--my:50%;position:relative;display:flex;min-height:320px;flex-direction:column;padding:30px;border-radius:24px;overflow:hidden;color:#fff;isolation:isolate;transform-style:preserve-3d;transition:transform .5s var(--ease),box-shadow .5s;box-shadow:0 20px 50px -20px rgba(15,30,51,.45)}
+  .entry-card::before{content:"";position:absolute;inset:0;z-index:-2;background:var(--bg)}
+  .entry-card::after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(260px circle at var(--mx) var(--my),rgba(255,255,255,.32),transparent 60%);opacity:0;transition:opacity .35s}
+  .entry-card:hover::after{opacity:1}
+  .entry-card:hover{box-shadow:0 34px 70px -24px rgba(15,30,51,.55)}
+  .entry-card.c1{--bg:linear-gradient(150deg,#7cc4ff 0%,#3d7fe0 55%,#28428f 100%)}
+  .entry-card.c2{--bg:linear-gradient(150deg,#5bd0c9 0%,#2b8fb0 55%,#1c4b7a 100%)}
+  .entry-card.c3{--bg:linear-gradient(150deg,#ffc2b4 0%,#9277c9 50%,#1f2d5c 100%)}
+  .entry-icon{width:56px;height:56px;display:grid;place-items:center;border-radius:16px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);transform:translateZ(30px)}
+  .entry-icon svg{width:28px;height:28px}
+  .entry-card:hover .entry-icon svg{animation:spin 3s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .entry-no{position:absolute;right:22px;top:14px;font:200 88px/1 "Outfit",sans-serif;opacity:.22}
+  .entry-card h2{margin:auto 0 10px;font-size:28px;transform:translateZ(40px)}
+  .entry-card p{margin:0;color:rgba(255,255,255,.85);font-size:14.5px;line-height:1.75;transform:translateZ(20px)}
+  .entry-go{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font:700 13px/1 "Outfit",sans-serif;letter-spacing:.14em}
+  .entry-go .arr{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#fff;color:var(--night);transition:transform .3s var(--ease)}
+  .entry-card:hover .entry-go .arr{transform:translateX(6px)}
+  .cap{position:absolute;left:-2px;right:-2px;top:-2px;height:26px;z-index:-1;pointer-events:none;opacity:.95}
+
+  /* ---------- 雪季儀表 ---------- */
+  .season{background:var(--frost)}
+  .season-box{position:relative;padding:36px 32px 26px;border-radius:28px;background:var(--card);box-shadow:0 30px 60px -30px rgba(15,30,51,.25)}
+  .meter{display:grid;grid-template-columns:repeat(7,1fr);gap:14px;align-items:end;height:260px}
+  .bar{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;cursor:pointer}
+  .bar-col{position:relative;width:100%;max-width:74px;height:0;border-radius:16px 16px 8px 8px;background:linear-gradient(180deg,#d9ecff,#a9cff7);transition:height 1.2s var(--ease),filter .25s,transform .25s var(--ease);overflow:hidden}
+  .bar-peak{position:absolute;left:0;right:0;bottom:0;height:0;background:linear-gradient(180deg,var(--ice),var(--glacier));border-radius:0 0 8px 8px;transition:height 1.2s .15s var(--ease)}
+  .bar-col::before{content:"";position:absolute;top:0;left:0;right:0;height:12px;z-index:1;background:#fff;border-radius:16px 16px 50% 50%/16px 16px 10px 10px;opacity:.9}
+  .bar:hover .bar-col{transform:translateY(-4px);filter:brightness(1.05)}
+  .bar-num{margin-bottom:8px;color:var(--ink);font:700 20px/1 "Outfit",sans-serif;opacity:0;transition:opacity .5s .9s}
+  .season-box.in .bar-num{opacity:1}
+  .bar-m{margin-top:12px;color:var(--dim);font:500 14px/1 "Outfit",sans-serif}
+  .bar.current .bar-m{color:#fff;background:var(--glacier);padding:6px 10px;margin-top:6px;border-radius:99px}
+  .bar.current .bar-col{box-shadow:0 0 0 3px #fff,0 0 0 5px var(--ice)}
+  .legend{display:flex;flex-wrap:wrap;gap:18px;margin-top:22px;padding-top:18px;border-top:1px dashed var(--line);color:var(--dim);font-size:13px}
+  .legend i{display:inline-block;width:12px;height:12px;margin-right:6px;border-radius:4px;vertical-align:-1px}
+  .off-season{display:none;margin:22px 0 0;color:var(--dim);font-size:15px;line-height:1.7}
   .off-season.show{display:block}
-  .off-season a{color:var(--shu);font-weight:700}
-  .journal-section{display:none}.journal-section.show{display:block}
-  .journal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-  .article-card{display:flex;min-height:230px;flex-direction:column;padding:24px;border:1px solid var(--line);border-radius:4px;background:var(--card);transition:transform .2s,box-shadow .2s,border-color .2s}
-  .article-card:hover{transform:translateY(-2px);border-color:rgba(217,65,43,.38);box-shadow:0 16px 30px rgba(22,32,42,.08)}
-  .article-meta{color:var(--shu);font:500 11px/1.5 "IBM Plex Mono",monospace;letter-spacing:.03em}
-  .article-card h3{margin:11px 0 9px;font-size:20px;line-height:1.42}
+  .off-season a{color:var(--glacier);font-weight:700}
+
+  /* ---------- 文章 ---------- */
+  .journal-section{display:none;background:var(--snow)}.journal-section.show{display:block}
+  .journal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .article-card{position:relative;display:flex;min-height:270px;flex-direction:column;border-radius:22px;background:var(--card);overflow:hidden;box-shadow:0 1px 0 var(--line),0 18px 40px -26px rgba(15,30,51,.35);transition:transform .4s var(--ease),box-shadow .4s}
+  .article-card:hover{transform:translateY(-6px);box-shadow:0 30px 60px -28px rgba(15,30,51,.45)}
+  .article-band{position:relative;height:96px;background:var(--band,linear-gradient(135deg,#8fd3ff,#3d7fe0));overflow:hidden}
+  .article-band svg{position:absolute;bottom:-1px;left:0;width:100%;height:46px;transition:transform .6s var(--ease)}
+  .article-card:hover .article-band svg{transform:translateY(-6px)}
+  .article-body{display:flex;flex:1;flex-direction:column;padding:20px 24px 22px}
+  .article-meta{color:var(--glacier);font:700 12px/1.5 "Outfit",sans-serif;letter-spacing:.06em}
+  .article-card h3{margin:8px 0 8px;font-size:20px;line-height:1.45}
   .article-summary{display:-webkit-box;margin:0;overflow:hidden;color:var(--dim);font-size:14px;line-height:1.75;-webkit-box-orient:vertical;-webkit-line-clamp:2}
-  .article-foot{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-top:auto;padding-top:20px}
-  .article-resort{color:var(--dim);font-size:11px;font-weight:700;line-height:1.5}.article-read{margin-left:auto;color:var(--shu);font:700 12px/1.5 "IBM Plex Mono",monospace;white-space:nowrap}
-  .all-articles{display:inline-flex;margin-top:26px;color:var(--shu);font-weight:700}
-  .accordion{border-top:1px solid var(--line)}
-  .accordion-item{border-bottom:1px solid var(--line)}
-  .accordion-button{display:grid;width:100%;grid-template-columns:54px 1fr auto;align-items:center;gap:12px;padding:24px 0;border:0;background:none;color:var(--ink);text-align:left;cursor:pointer}
-  .accordion-no{color:var(--shu);font:500 12px/1 "IBM Plex Mono",monospace}
-  .accordion-button h3{margin:0;font-size:20px;line-height:1.35}
-  .accordion-plus{font:400 23px/1 "IBM Plex Mono",monospace;transition:transform .2s}
-  .accordion-button[aria-expanded="true"] .accordion-plus{transform:rotate(45deg)}
-  .accordion-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .24s ease}
+  .article-foot{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-top:auto;padding-top:18px}
+  .article-resort{color:var(--dim);font-size:12px;font-weight:700}
+  .article-read{margin-left:auto;color:var(--glacier);font:700 13px/1.5 "Outfit",sans-serif;letter-spacing:.06em}
+  .all-articles{display:inline-flex;align-items:center;gap:8px;margin-top:32px;color:var(--glacier);font-weight:700}
+
+  /* ---------- 8 件事 ---------- */
+  .first{background:linear-gradient(180deg,var(--snow),var(--frost))}
+  .first-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:60px;align-items:start}
+  .first-side{position:sticky;top:110px}
+  .progress{display:flex;gap:6px;margin-top:26px}
+  .progress i{flex:1;height:6px;border-radius:3px;background:#d4e2f1;transition:background .4s}
+  .progress i.on{background:var(--ice)}
+  .progress-t{margin-top:10px;color:var(--dim);font:500 13px/1 "Outfit",sans-serif;letter-spacing:.1em}
+  .accordion{display:grid;gap:12px}
+  .accordion-item{border-radius:18px;background:var(--card);box-shadow:0 1px 0 var(--line);transition:box-shadow .3s,transform .3s var(--ease)}
+  .accordion-item:hover{transform:translateX(4px)}
+  .accordion-item.open{box-shadow:0 20px 44px -24px rgba(31,111,209,.45)}
+  .accordion-button{display:grid;width:100%;grid-template-columns:48px 1fr auto;align-items:center;gap:12px;padding:20px 22px;border:0;background:none;color:var(--ink);text-align:left;cursor:pointer}
+  .accordion-no{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--frost);color:var(--glacier);font:700 14px/1 "Outfit",sans-serif;transition:background .3s,color .3s}
+  .accordion-item.open .accordion-no,.accordion-item.seen .accordion-no{background:var(--glacier);color:#fff}
+  .accordion-button h3{margin:0;font-size:19px;line-height:1.4}
+  .accordion-plus{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--frost);color:var(--glacier);font:300 22px/1 "Outfit",sans-serif;transition:transform .35s var(--ease),background .3s,color .3s}
+  .accordion-button[aria-expanded="true"] .accordion-plus{transform:rotate(135deg);background:var(--glacier);color:#fff}
+  .accordion-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s var(--ease)}
   .accordion-panel.open{grid-template-rows:1fr}
   .accordion-panel>div{overflow:hidden}
-  .accordion-panel p{max-width:760px;margin:0;padding:0 42px 26px 66px;color:var(--dim);font-size:15px;line-height:1.9}
-  .beyond{background:var(--ink);color:var(--paper)}
-  .beyond .eyebrow{color:#f06a55}
-  .beyond-copy{max-width:820px;margin:0;font-family:"Noto Serif TC",serif;font-size:clamp(26px,4vw,45px);font-weight:900;line-height:1.45;letter-spacing:-.01em}
-  .primary-link{display:inline-flex;align-items:center;min-height:46px;margin-top:32px;padding:11px 19px;border:1px solid #f06a55;border-radius:4px;background:#f06a55;color:#fff;font-weight:700;transition:.18s}
-  .primary-link:hover{background:transparent}
-  .safety{max-width:790px;margin:26px 0 0;color:#c3c9ce;font-size:13px;line-height:1.8}
-  .about-grid{display:grid;grid-template-columns:1fr auto;align-items:end;gap:50px}
-  .about-copy{max-width:720px;margin:0;font-family:"Noto Serif TC",serif;font-size:clamp(24px,3.2vw,38px);font-weight:900;line-height:1.55;letter-spacing:-.01em}
-  .resort-total{margin:0;color:var(--shu);font:500 clamp(18px,2.2vw,28px)/1.4 "IBM Plex Mono",monospace;white-space:nowrap}
-  footer{display:flex;justify-content:space-between;gap:24px;padding:30px max(20px,calc((100vw - 1180px)/2));color:var(--dim);font-size:12px;line-height:1.7}
-  @media(max-width:760px){
-    .wrap{width:min(100% - 32px,1180px)}
-    .hero{display:block;min-height:78svh;padding:48px 16px}
-    .hero-copy{padding:96px 0 52px}
-    .wordmark{font-size:clamp(42px,14vw,72px);letter-spacing:.04em}
-    .tagline{max-width:290px;margin-top:28px;font-size:24px}
-    .subline{max-width:270px;font-size:13px}
-    .kana{position:absolute;top:30px;right:14px;margin:0;font-size:54px;opacity:.95}
-    .section{padding:78px 0}.eyebrow{margin-bottom:27px}.section-title{margin-bottom:28px}
-    .start-grid,.journal-grid{grid-template-columns:1fr}.entry-card{min-height:220px}.entry-card h2{margin-top:34px}.article-card{min-height:205px}
-    .month-chip{min-width:60px}
-    .accordion-button{grid-template-columns:38px 1fr auto;padding:21px 0}.accordion-button h3{font-size:18px}
-    .accordion-panel p{padding:0 24px 24px 50px;font-size:14px}
-    .about-grid{grid-template-columns:1fr;align-items:start;gap:28px}.resort-total{white-space:normal}
-    footer{display:block;padding:25px 16px}footer span{display:block}footer span+span{margin-top:5px}
+  .accordion-panel p{margin:0;padding:0 28px 24px 82px;color:var(--dim);font-size:15px;line-height:1.9}
+
+  /* ---------- 粉雪夜 ---------- */
+  .beyond{overflow:hidden;color:#fff;background:linear-gradient(180deg,#0a1628 0%,#0e2140 60%,#16305a 100%)}
+  .beyond .eyebrow{color:var(--aqua)}
+  .beyond .wrap{position:relative;z-index:4}
+  .beyond-copy{max-width:860px;margin:0;font-size:clamp(28px,4.2vw,50px);line-height:1.4}
+  .beyond-copy em{font-style:normal;background:linear-gradient(90deg,var(--aqua),var(--glow));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .beyond .btn{margin-top:36px}
+  .safety{display:flex;gap:12px;max-width:760px;margin:30px 0 0;padding:16px 18px;border:1px solid rgba(255,184,168,.35);border-radius:16px;background:rgba(255,184,168,.08);color:#dfe6ef;font-size:14px;line-height:1.8}
+  .safety b{color:var(--glow)}
+  .trees{position:absolute;left:0;right:0;bottom:-1px;z-index:2;pointer-events:none}
+  .trees svg{display:block;width:100%;height:auto}
+
+  /* ---------- 關於 ---------- */
+  .about{background:var(--snow)}
+  .about-grid{display:grid;grid-template-columns:1fr auto;align-items:center;gap:60px}
+  .about-copy{max-width:720px;margin:0;font-size:clamp(24px,3.2vw,38px);line-height:1.55}
+  .stat{text-align:center;padding:30px 36px;border-radius:28px;background:linear-gradient(160deg,#e3f1ff,#fff);box-shadow:0 24px 50px -30px rgba(31,111,209,.5)}
+  .stat-n{font:200 clamp(64px,8vw,104px)/1 "Outfit",sans-serif;color:var(--glacier)}
+  .stat-l{margin-top:6px;color:var(--dim);font-size:14px;font-weight:700}
+  footer{display:flex;justify-content:space-between;gap:24px;padding:30px max(20px,calc((100vw - 1180px)/2)) calc(30px + env(safe-area-inset-bottom,0px));background:var(--night);color:rgba(255,255,255,.6);font-size:13px;line-height:1.7}
+
+  @media(max-width:860px){
+    .nav-links a.opt{display:none}
+    .start-grid,.journal-grid{grid-template-columns:1fr}
+    .entry-card{min-height:250px}
+    .first-grid{grid-template-columns:1fr;gap:28px}.first-side{position:static}
+    .about-grid{grid-template-columns:1fr;gap:30px}.stat{justify-self:start}
+  }
+  @media(max-width:560px){
+    .wrap{width:calc(100% - 32px)}
+    .nav{padding-left:16px;padding-right:16px}
+    .brand small{display:none}
+    .hero-inner{padding:110px 16px 34vh}
+    .title{font-size:clamp(72px,24vw,110px)}
+    .latin-mark{letter-spacing:.45em}
+    .section{padding:84px 0}
+    .season-box{padding:24px 14px 18px;border-radius:22px}
+    .meter{gap:6px;height:200px}
+    .bar-num{font-size:15px}.bar-m{font-size:12px}
+    .bar.current .bar-m{padding:5px 7px}
+    .accordion-button{grid-template-columns:40px 1fr auto;padding:16px}
+    .accordion-no{width:34px;height:34px}
+    .accordion-button h3{font-size:17px}
+    .accordion-panel p{padding:0 20px 20px 68px;font-size:14px}
+    .wind-hint{display:none}
+    footer{display:block}footer span{display:block}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+    .reveal{opacity:1;transform:none}
   }
 </style>
 </head>
 <body>
-<header class="hero">
-  <div class="hero-copy">
-    <h1 class="wordmark">SARAYUKI</h1>
-    <p class="tagline">日本雪場，從剛下的那一層開始。</p>
-    <p class="subline">新手看得懂，老手不無聊。中立，不收錢排名。</p>
+
+<nav class="nav" id="nav">
+  <a class="brand" href="./">SARAYUKI<small>さら雪</small></a>
+  <div class="nav-links">
+    <a href="resorts/">找雪場</a>
+    <a class="opt" href="articles/">文章</a>
+    <a class="opt" href="#first">第一次滑雪</a>
   </div>
-  <div class="kana" aria-label="さら雪">さら雪</div>
+</nav>
+
+<header class="hero" id="hero">
+  <div class="stars"></div>
+  <div class="ridge r1" data-speed=".35" aria-hidden="true">
+    <svg viewBox="0 0 1440 320" preserveAspectRatio="none"><path fill="#3a5688" fill-opacity=".55" d="M0 250 L120 170 L210 210 L330 90 L420 150 L520 60 L640 170 L760 110 L880 190 L1000 70 L1110 150 L1220 100 L1330 180 L1440 130 L1440 320 L0 320Z"/><path fill="#fff" fill-opacity=".35" d="M330 90 L300 118 L318 114 L336 126 L352 110 L372 118Z M520 60 L488 94 L510 88 L528 100 L546 86 L566 94Z M1000 70 L968 104 L990 98 L1008 110 L1026 96 L1044 104Z"/></svg>
+  </div>
+  <div class="ridge r2" data-speed=".2" aria-hidden="true">
+    <svg viewBox="0 0 1440 300" preserveAspectRatio="none"><defs><linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9d9f0"/><stop offset="1" stop-color="#8ea7cf"/></linearGradient></defs><path fill="url(#g2)" d="M0 220 L90 160 L200 200 L310 120 L400 170 L470 140 L590 60 L700 150 L800 120 L930 190 L1050 100 L1160 160 L1270 120 L1380 180 L1440 150 L1440 300 L0 300Z"/><path fill="#fff" d="M590 60 L548 98 L574 92 L596 108 L618 90 L642 100Z M1050 100 L1016 130 L1038 126 L1056 138 L1074 124 L1092 130Z M310 120 L284 144 L302 140 L318 150 L332 138 L348 144Z"/></svg>
+  </div>
+  <div class="ridge r3" data-speed=".08" aria-hidden="true">
+    <svg viewBox="0 0 1440 220" preserveAspectRatio="none"><path fill="#f5f8fc" d="M0 150 C160 110 260 60 420 90 C560 116 640 170 800 140 C960 110 1060 50 1220 80 C1320 100 1390 130 1440 120 L1440 220 L0 220Z"/></svg>
+  </div>
+  <canvas class="snowfx" data-density="1" aria-hidden="true"></canvas>
+
+  <div class="hero-inner">
+    <span class="kicker"><i></i>JAPAN SNOW GUIDE</span>
+    <h1 class="title" aria-label="さら雪"><span>さ</span><span>ら</span><span>雪</span></h1>
+    <div class="latin-mark">SARAYUKI</div>
+    <p class="tagline">日本雪場，從剛下、還沒人碰過的那一層開始。</p>
+    <p class="subline">新手看得懂，老手不無聊。中立，不收錢排名。</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="resorts/">找雪場 <span class="arr">→</span></a>
+      <a class="btn btn-ghost" href="#first">第一次滑雪</a>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"></div>
+  <div class="wind-hint" aria-hidden="true">MOVE TO BLOW THE SNOW ❄</div>
 </header>
 
 <main>
-  <section class="section" aria-labelledby="start-title">
+  <section class="section start" aria-labelledby="start-title">
     <div class="wrap">
-      <div class="eyebrow">— 01 / START</div>
-      <div class="start-grid" id="start-title">
-        <a class="entry-card" href="#first"><span class="entry-no">01</span><h2>第一次滑雪</h2><p>從裝備、穿法到雪道規矩，八件事先看懂。</p><span class="arrow">→</span></a>
-        <a class="entry-card" href="resorts/"><span class="entry-no">02</span><h2>找雪場</h2><p>按月份、程度與想要的體驗，找到適合你的山。</p><span class="arrow">→</span></a>
-        <a class="entry-card" href="resorts/?lv=advanced&amp;t=powder,tree"><span class="entry-no">03</span><h2>老手的粉雪</h2><p>粉雪、樹林與真正值得專程前往的雪場。</p><span class="arrow">→</span></a>
+      <div class="eyebrow reveal">START HERE</div>
+      <h2 class="section-title reveal" id="start-title">你是哪一種滑雪人？</h2>
+      <p class="section-lead reveal">三個入口，挑一個開始。</p>
+      <div class="start-grid">
+        <a class="entry-card c1 reveal" href="#first">
+          <span class="entry-no">01</span>
+          <span class="entry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"><path d="M12 2v20M3.3 7l17.4 10M3.3 17l17.4-10M12 5l-2.5-2M12 5l2.5-2M12 19l-2.5 2M12 19l2.5 2"/></svg></span>
+          <h2>第一次滑雪</h2><p>從裝備、穿法到雪道規矩，八件事先看懂。</p>
+          <span class="entry-go">START <span class="arr">→</span></span>
+        </a>
+        <a class="entry-card c2 reveal" href="resorts/" style="transition-delay:.08s">
+          <span class="entry-no">02</span>
+          <span class="entry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"><path d="M2 20 9 7l4 6 3-4 6 11Z"/><path d="m7.5 10 1.5 1.5L10.5 10"/></svg></span>
+          <h2>找雪場</h2><p>按月份、程度與想要的體驗，找到適合你的山。</p>
+          <span class="entry-go">EXPLORE <span class="arr">→</span></span>
+        </a>
+        <a class="entry-card c3 reveal" href="resorts/?lv=advanced&amp;t=powder,tree" style="transition-delay:.16s">
+          <span class="entry-no">03</span>
+          <span class="entry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"><path d="M12 2 6 10h3l-4 6h5v6h4v-6h5l-4-6h3Z"/></svg></span>
+          <h2>老手的粉雪</h2><p>粉雪、樹林與真正值得專程前往的雪場。</p>
+          <span class="entry-go">DEEP POWDER <span class="arr">→</span></span>
+        </a>
       </div>
     </div>
   </section>
 
-  <section class="section" aria-labelledby="season-title">
+  <section class="section season" aria-labelledby="season-title">
     <div class="wrap">
-      <div class="eyebrow">— 02 / THIS SEASON</div>
-      <h2 class="section-title" id="season-title">這個月去哪</h2>
-      <div class="months" aria-label="依月份找雪場">
-        <a class="month-chip" data-month="11" href="resorts/?m=11">11月</a><a class="month-chip" data-month="12" href="resorts/?m=12">12月</a>
-        <a class="month-chip" data-month="1" href="resorts/?m=1">1月</a><a class="month-chip" data-month="2" href="resorts/?m=2">2月</a>
-        <a class="month-chip" data-month="3" href="resorts/?m=3">3月</a><a class="month-chip" data-month="4" href="resorts/?m=4">4月</a>
-        <a class="month-chip" data-month="5" href="resorts/?m=5">5月</a>
+      <div class="eyebrow reveal">THIS SEASON</div>
+      <h2 class="section-title reveal" id="season-title">這個月去哪</h2>
+      <p class="section-lead reveal">每根柱子是那個月有開的雪場數，深藍是雪況最好的。點月份直接篩選。</p>
+      <div class="season-box reveal" id="seasonBox">
+        <div class="meter" id="meter" aria-label="依月份找雪場"></div>
+        <div class="legend"><span><i style="background:#bcdcfb"></i>當月有開</span><span><i style="background:var(--glacier)"></i>雪況最佳</span><span>資料為概略值，出發前以官網為準</span></div>
       </div>
-      <p class="off-season" id="offSeason">雪季從 12 月開始，<a href="resorts/?m=12">先看看 12 月能去哪 →</a></p>
+      <p class="off-season" id="offSeason">現在是雪季外，雪季從 12 月開始。<a href="resorts/?m=12">先看看 12 月能去哪 →</a></p>
     </div>
   </section>
 
   <section class="section journal-section" id="journal" aria-labelledby="journal-title">
     <div class="wrap">
-      <div class="eyebrow">— 03 / JOURNAL</div>
-      <h2 class="section-title" id="journal-title">最新文章</h2>
+      <div class="eyebrow reveal">JOURNAL</div>
+      <h2 class="section-title reveal" id="journal-title">最新文章</h2>
+      <p class="section-lead reveal">每一篇都查證過，附上來源與抓取日期。</p>
       <div class="journal-grid" id="journalGrid"></div>
-      <a class="all-articles" href="articles/">看全部文章 →</a>
+      <a class="all-articles" href="articles/">看全部文章 <span>→</span></a>
     </div>
   </section>
 
-  <section class="section" id="first" aria-labelledby="first-title">
-    <div class="wrap">
-      <div class="eyebrow">— 04 / FIRST TIME</div>
-      <h2 class="section-title" id="first-title">第一次滑雪 8 件事</h2>
+  <section class="section first" id="first" aria-labelledby="first-title">
+    <div class="wrap first-grid">
+      <div class="first-side">
+        <div class="eyebrow reveal">FIRST TIME</div>
+        <h2 class="section-title reveal" id="first-title">第一次滑雪<br>8 件事</h2>
+        <p class="section-lead reveal" style="margin-bottom:0">出發前五分鐘看完，第一天少摔一半。</p>
+        <div class="progress reveal" id="progress"></div>
+        <div class="progress-t" id="progressT">已看 0 / 8</div>
+      </div>
       <div class="accordion">
-        <div class="accordion-item"><button class="accordion-button" type="button" aria-expanded="false"><span class="accordion-no">01</span><h3>雙板還是單板？</h3><span class="accordion-plus">+</span></button><div class="accordion-panel"><div><p>雙板入門比較快；單板前兩天摔最多，但上手後很好玩。拿不定主意就先選雙板。</p></div></div></div>
-        <div class="accordion-item"><button class="accordion-button" type="button" aria-expanded="false"><span class="accordion-no">02</span><h3>第一天一定要上課</h3><span class="accordion-plus">+</span></button><div class="accordion-panel"><div><p>請教練教半天，比自己摔一整天有效。很多雪場有英文課，部分雪場也有中文教練。</p></div></div></div>
-        <div class="accordion-item"><button class="accordion-button" type="button" aria-expanded="false"><span class="accordion-no">03</span><h3>裝備用租的就好</h3><span class="accordion-plus">+</span></button><div class="accordion-panel"><div><p>雪板、雪鞋、雪杖、安全帽，雪場或周邊店家都租得到。自己準備雪衣雪褲、防水手套、雪鏡、脖圍就夠了。</p></div></div></div>
-        <div class="accordion-item"><button class="accordion-button" type="button" aria-expanded="false"><span class="accordion-no">04</span><h3>穿法像洋蔥</h3><span class="accordion-plus">+</span></button><div class="accordion-panel"><div><p>排汗內層＋保暖中層＋防水外層。不要穿棉質內衣，一流汗就濕冷。</p></div></div></div>
-        <div class="accordion-item"><button class="accordion-button" type="button" aria-expanded="false"><span class="accordion-no">05</span><h3>選山腳有緩坡的雪場</h3><span class="accordion-plus">+</span></button><div class="accordion-panel"><div><p>新手需要寬、緩、有魔毯（輸送帶）的練習區。在「找雪場」選「第一次滑」就能篩出來。</p></div></div></div>
-        <div class="accordion-item"><button class="accordion-button" type="button" aria-expanded="false"><span class="accordion-no">06</span><h3>票買半天就好</h3><span class="accordion-plus">+</span></button><div class="accordion-panel"><div><p>第一次先買半日票或一日票，在初級滑道練到能控制速度、會停，再往上走。</p></div></div></div>
-        <div class="accordion-item"><button class="accordion-button" type="button" aria-expanded="false"><span class="accordion-no">07</span><h3>雪道上的規矩</h3><span class="accordion-plus">+</span></button><div class="accordion-panel"><div><p>下方（前方）的人有優先權；要停就停在滑道邊，不要停在中間或死角；跌倒後盡快起身移到旁邊。</p></div></div></div>
-        <div class="accordion-item"><button class="accordion-button" type="button" aria-expanded="false"><span class="accordion-no">08</span><h3>什麼時候去</h3><span class="accordion-plus">+</span></button><div class="accordion-panel"><div><p>12 月初雪量常不穩；1–2 月雪最好也最冷；3 月比較暖，適合新手；4 月之後是春雪，只剩部分高海拔雪場。</p></div></div></div>
+        <div class="accordion-item reveal"><button class="accordion-button" type="button" aria-expanded="false"><span class="accordion-no">01</span><h3>雙板還是單板？</h3><span class="accordion-plus">+</span></button><div class="accordion-panel"><div><p>雙板入門比較快；單板前兩天摔最多，但上手後很好玩。拿不定主意就先選雙板。</p></div></div></div>
+        <div class="accordion-item reveal"><button class="accordion-button" type="button" aria-expanded="false"><span class="accordion-no">02</span><h3>第一天一定要上課</h3><span class="accordion-plus">+</span></button><div class="accordion-panel"><div><p>請教練教半天，比自己摔一整天有效。很多雪場有英文課，部分雪場也有中文教練。</p></div></div></div>
+        <div class="accordion-item reveal"><button class="accordion-button" type="button" aria-expanded="false"><span class="accordion-no">03</span><h3>裝備用租的就好</h3><span class="accordion-plus">+</span></button><div class="accordion-panel"><div><p>雪板、雪鞋、雪杖、安全帽，雪場或周邊店家都租得到。自己準備雪衣雪褲、防水手套、雪鏡、脖圍就夠了。</p></div></div></div>
+        <div class="accordion-item reveal"><button class="accordion-button" type="button" aria-expanded="false"><span class="accordion-no">04</span><h3>穿法像洋蔥</h3><span class="accordion-plus">+</span></button><div class="accordion-panel"><div><p>排汗內層＋保暖中層＋防水外層。不要穿棉質內衣，一流汗就濕冷。</p></div></div></div>
+        <div class="accordion-item reveal"><button class="accordion-button" type="button" aria-expanded="false"><span class="accordion-no">05</span><h3>選山腳有緩坡的雪場</h3><span class="accordion-plus">+</span></button><div class="accordion-panel"><div><p>新手需要寬、緩、有魔毯（輸送帶）的練習區。在「找雪場」選「第一次滑」就能篩出來。</p></div></div></div>
+        <div class="accordion-item reveal"><button class="accordion-button" type="button" aria-expanded="false"><span class="accordion-no">06</span><h3>票買半天就好</h3><span class="accordion-plus">+</span></button><div class="accordion-panel"><div><p>第一次先買半日票或一日票，在初級滑道練到能控制速度、會停，再往上走。</p></div></div></div>
+        <div class="accordion-item reveal"><button class="accordion-button" type="button" aria-expanded="false"><span class="accordion-no">07</span><h3>雪道上的規矩</h3><span class="accordion-plus">+</span></button><div class="accordion-panel"><div><p>下方（前方）的人有優先權；要停就停在滑道邊，不要停在中間或死角；跌倒後盡快起身移到旁邊。</p></div></div></div>
+        <div class="accordion-item reveal"><button class="accordion-button" type="button" aria-expanded="false"><span class="accordion-no">08</span><h3>什麼時候去</h3><span class="accordion-plus">+</span></button><div class="accordion-panel"><div><p>12 月初雪量常不穩；1–2 月雪最好也最冷；3 月比較暖，適合新手；4 月之後是春雪，只剩部分高海拔雪場。</p></div></div></div>
       </div>
     </div>
   </section>
 
   <section class="section beyond" aria-labelledby="beyond-title">
+    <canvas class="snowfx" data-density=".7" aria-hidden="true"></canvas>
     <div class="wrap">
-      <div class="eyebrow">— 05 / BEYOND THE PISTE</div>
-      <h2 class="beyond-copy" id="beyond-title">粉雪、樹林、非壓雪區——日本最迷人的地方，也是最危險的地方。</h2>
-      <a class="primary-link" href="resorts/?lv=advanced&amp;t=powder,tree,backcountry">看老手雪場 →</a>
-      <p class="safety">非壓雪區務必遵守雪場公告，建議請嚮導並攜帶雪崩三件套（探測器、探桿、雪鏟）。</p>
+      <div class="eyebrow reveal">BEYOND THE PISTE</div>
+      <h2 class="beyond-copy reveal" id="beyond-title"><em>粉雪、樹林、非壓雪區</em>——日本最迷人的地方，也是最危險的地方。</h2>
+      <a class="btn btn-primary reveal" href="resorts/?lv=advanced&amp;t=powder,tree,backcountry">看老手雪場 <span class="arr">→</span></a>
+      <p class="safety reveal"><b>⚠</b><span>非壓雪區務必遵守雪場公告，建議請嚮導並攜帶雪崩三件套（探測器、探桿、雪鏟）。</span></p>
+      <div style="height:140px"></div>
+    </div>
+    <div class="trees" aria-hidden="true">
+      <svg viewBox="0 0 1440 180" preserveAspectRatio="none"><g fill="#081222"><path d="M40 180 L70 90 L100 180Z M60 180 L90 60 L120 180Z M150 180 L175 110 L200 180Z M1180 180 L1210 70 L1240 180Z M1230 180 L1255 100 L1280 180Z M1320 180 L1355 50 L1390 180Z M1380 180 L1405 110 L1430 180Z"/></g><path fill="#f5f8fc" d="M0 150 C200 120 380 170 620 150 C860 130 1060 170 1260 145 C1340 136 1400 140 1440 146 L1440 180 L0 180Z"/></svg>
     </div>
   </section>
 
-  <section class="section" aria-labelledby="about-title">
-    <div class="wrap">
-      <div class="eyebrow">— 06 / ABOUT</div>
-      <div class="about-grid"><h2 class="about-copy" id="about-title">Sarayuki 是給華語滑雪客的日本雪場中立指南。我們不收錢排名，資料標明出處與覆核日期。</h2><p class="resort-total" id="resortTotal">收錄 — 個雪場</p></div>
+  <section class="section about" aria-labelledby="about-title">
+    <div class="wrap about-grid">
+      <h2 class="about-copy reveal" id="about-title">Sarayuki 是給華語滑雪客的日本雪場中立指南。不收錢排名，資料標明出處與覆核日期。</h2>
+      <div class="stat reveal"><div class="stat-n" id="resortTotal">—</div><div class="stat-l">個日本雪場已收錄</div></div>
     </div>
   </section>
 </main>
@@ -172,35 +364,111 @@
 <footer><span>© Sarayuki さら雪</span><span>季節與交通資訊每年變動，出發前請以官網為準</span></footer>
 
 <script>
-const snowMonths=new Set([11,12,1,2,3,4,5]);
+const reduceMotion=matchMedia("(prefers-reduced-motion: reduce)").matches;
+const snowMonths=[11,12,1,2,3,4,5];
 const articleCategories={beginner:"新手入門",resort:"雪場攻略",advanced:"老手進階",travel:"行程交通"};
-const escapeHtml=value=>String(value??"").replace(/[&<>\"]/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"})[char]);
+const bandColors={beginner:"linear-gradient(135deg,#9fdcff,#3d7fe0)",resort:"linear-gradient(135deg,#7ce0d3,#2b8fb0)",advanced:"linear-gradient(135deg,#ffc2b4,#6b5bbf)",travel:"linear-gradient(135deg,#ffe0a8,#e98a7a)"};
+const escapeHtml=v=>String(v??"").replace(/[&<>\"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"})[c]);
 const currentMonth=Number(new Intl.DateTimeFormat("en-US",{month:"numeric",timeZone:"Asia/Tokyo"}).format(new Date()));
-if(snowMonths.has(currentMonth))document.querySelector(`[data-month="${currentMonth}"]`)?.classList.add("current");
-else document.getElementById("offSeason").classList.add("show");
+if(!snowMonths.includes(currentMonth))document.getElementById("offSeason").classList.add("show");
 
-document.querySelectorAll(".accordion-button").forEach(button=>button.addEventListener("click",()=>{
-  const wasOpen=button.getAttribute("aria-expanded")==="true";
-  document.querySelectorAll(".accordion-button").forEach(other=>other.setAttribute("aria-expanded","false"));
-  document.querySelectorAll(".accordion-panel").forEach(panel=>panel.classList.remove("open"));
-  if(!wasOpen){button.setAttribute("aria-expanded","true");button.nextElementSibling.classList.add("open")}
+/* ---- 飄雪：三層景深，滑鼠/手指帶風，靠近會被吹開 ---- */
+function snowfall(canvas){
+  const ctx=canvas.getContext("2d");const host=canvas.parentElement;const density=Number(canvas.dataset.density||1);
+  let w=0,h=0,dpr=1,flakes=[],wind=0,windTarget=0,pointer={x:-999,y:-999},running=false,visible=true,raf=0;
+  function make(y){const z=Math.random();return{x:Math.random()*w,y:y??Math.random()*h,z,r:.6+z*2.6,vy:.25+z*1.1,vx:0,ph:Math.random()*6.28,sw:.4+Math.random()*.8}}
+  function resize(){dpr=Math.min(devicePixelRatio||1,2);w=host.clientWidth;h=host.clientHeight;canvas.width=w*dpr;canvas.height=h*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
+    const n=Math.min(260,Math.round(w*h/7000*density));flakes=Array.from({length:n},()=>make())}
+  function draw(t){
+    ctx.clearRect(0,0,w,h);wind+=(windTarget-wind)*.02;
+    for(const f of flakes){
+      f.ph+=.01*f.sw;
+      const dx=f.x-pointer.x,dy=f.y-pointer.y,d2=dx*dx+dy*dy;
+      if(d2<12000){const d=Math.sqrt(d2)||1,p=(1-d/110)*1.6;f.vx+=dx/d*p;f.y+=dy/d*p*.6}
+      f.vx*=.94;
+      f.x+=Math.sin(f.ph)*.35*f.sw+wind*(.4+f.z)+f.vx;f.y+=f.vy;
+      if(f.y>h+5){Object.assign(f,make(-5))}
+      if(f.x>w+5)f.x=-5;else if(f.x<-5)f.x=w+5;
+      ctx.globalAlpha=.35+f.z*.6;ctx.beginPath();ctx.arc(f.x,f.y,f.r,0,6.283);ctx.fillStyle="#fff";ctx.fill();
+    }
+    if(running)raf=requestAnimationFrame(draw);
+  }
+  function start(){if(running||reduceMotion||!visible)return;running=true;raf=requestAnimationFrame(draw)}
+  function stop(){running=false;cancelAnimationFrame(raf)}
+  resize();addEventListener("resize",()=>{resize();if(reduceMotion)draw()});
+  host.addEventListener("pointermove",e=>{const r=canvas.getBoundingClientRect();pointer.x=e.clientX-r.left;pointer.y=e.clientY-r.top;windTarget=((pointer.x/w)-.5)*3});
+  host.addEventListener("pointerleave",()=>{pointer.x=pointer.y=-999;windTarget=0});
+  new IntersectionObserver(([en])=>{visible=en.isIntersecting;visible?start():stop()}).observe(host);
+  document.addEventListener("visibilitychange",()=>document.hidden?stop():start());
+  if(reduceMotion)draw();else start();
+}
+document.querySelectorAll(".snowfx").forEach(snowfall);
+
+/* ---- 山脈視差 + 導覽列 ---- */
+const ridges=[...document.querySelectorAll(".ridge")],nav=document.getElementById("nav"),hero=document.getElementById("hero");
+let ticking=false;
+function onScroll(){const y=scrollY;
+  if(!reduceMotion&&y<innerHeight*1.2)ridges.forEach(r=>r.style.transform=`translate3d(0,${y*Number(r.dataset.speed)}px,0)`);
+  nav.classList.toggle("solid",y>hero.offsetHeight-80);ticking=false}
+addEventListener("scroll",()=>{if(!ticking){ticking=true;requestAnimationFrame(onScroll)}},{passive:true});onScroll();
+
+/* ---- 捲動浮現 ---- */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.15,rootMargin:"0px 0px -40px"});
+const observeReveal=root=>root.querySelectorAll(".reveal:not(.in)").forEach(el=>io.observe(el));
+observeReveal(document);
+
+/* ---- 入口卡 3D 傾斜 + 追光 ---- */
+if(matchMedia("(hover:hover)").matches&&!reduceMotion)document.querySelectorAll(".entry-card").forEach(card=>{
+  card.addEventListener("pointermove",e=>{const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+    card.style.setProperty("--mx",x*100+"%");card.style.setProperty("--my",y*100+"%");
+    card.style.transform=`rotateX(${(.5-y)*10}deg) rotateY(${(x-.5)*12}deg) translateY(-4px)`});
+  card.addEventListener("pointerleave",()=>card.style.transform="");
+});
+
+/* ---- 8 件事：手風琴 + 閱讀進度 ---- */
+const items=[...document.querySelectorAll(".accordion-item")];
+document.getElementById("progress").innerHTML=items.map(()=>"<i></i>").join("");
+const bars=[...document.querySelectorAll("#progress i")],progressT=document.getElementById("progressT");
+items.forEach((item,i)=>item.querySelector(".accordion-button").addEventListener("click",()=>{
+  const wasOpen=item.classList.contains("open");
+  items.forEach(o=>{o.classList.remove("open");o.querySelector(".accordion-button").setAttribute("aria-expanded","false");o.querySelector(".accordion-panel").classList.remove("open")});
+  if(!wasOpen){item.classList.add("open","seen");item.querySelector(".accordion-button").setAttribute("aria-expanded","true");item.querySelector(".accordion-panel").classList.add("open");bars[i].classList.add("on")}
+  const seen=items.filter(x=>x.classList.contains("seen")).length;progressT.textContent=seen===8?"全部看完了，可以出發 ⛷":`已看 ${seen} / 8`;
 }));
 
+/* ---- 數字滾動 ---- */
+function countUp(el,to){if(reduceMotion){el.textContent=to;return}const t0=performance.now();
+  (function step(t){const p=Math.min(1,(t-t0)/1400),e=1-Math.pow(1-p,3);el.textContent=Math.round(to*e);if(p<1)requestAnimationFrame(step)})(t0)}
+
+/* ---- 雪季儀表：由 resorts.json 算 ---- */
+function renderMeter(resorts){
+  const open=m=>resorts.filter(r=>(r.months||[]).includes(m)).length,peak=m=>resorts.filter(r=>(r.peak||[]).includes(m)).length;
+  const max=Math.max(1,...snowMonths.map(open));
+  const meter=document.getElementById("meter");
+  meter.innerHTML=snowMonths.map(m=>`<a class="bar${m===currentMonth?" current":""}" href="resorts/?m=${m}" data-open="${open(m)}" data-peak="${peak(m)}" data-max="${max}" aria-label="${m}月：${open(m)} 個雪場有開，${peak(m)} 個雪況最佳"><span class="bar-num">${open(m)}</span><span class="bar-col"><span class="bar-peak"></span></span><span class="bar-m">${m}月</span></a>`).join("");
+  const box=document.getElementById("seasonBox");
+  new IntersectionObserver(([e],obs)=>{if(!e.isIntersecting)return;obs.disconnect();box.classList.add("in");
+    meter.querySelectorAll(".bar").forEach(b=>{const o=+b.dataset.open,p=+b.dataset.peak,mx=+b.dataset.max;
+      b.querySelector(".bar-col").style.height=`${Math.max(6,o/mx*78)}%`;b.querySelector(".bar-peak").style.height=o?`${p/o*100}%`:"0"})},{threshold:.35}).observe(box);
+}
+
+const bandWave='<svg viewBox="0 0 400 46" preserveAspectRatio="none"><path fill="#fff" d="M0 30 C60 10 110 40 170 24 C230 8 280 34 340 20 C370 13 390 18 400 22 L400 46 L0 46Z"/></svg>';
 Promise.allSettled([
-  fetch("content/index.json").then(response=>{if(!response.ok)throw new Error("index.json");return response.json()}),
-  fetch("data/resorts.json").then(response=>{if(!response.ok)throw new Error("resorts.json");return response.json()})
+  fetch("content/index.json").then(r=>{if(!r.ok)throw new Error("index.json");return r.json()}),
+  fetch("data/resorts.json").then(r=>{if(!r.ok)throw new Error("resorts.json");return r.json()})
 ]).then(([articleResult,resortResult])=>{
   const resorts=resortResult.status==="fulfilled"?(resortResult.value.resorts||[]):[];
-  const resortNames=new Map(resorts.map(resort=>[resort.id,resort.name]));
-  if(resortResult.status==="fulfilled")document.getElementById("resortTotal").textContent=`收錄 ${resorts.length} 個雪場`;
-  else document.getElementById("resortTotal").textContent="雪場資料載入中";
+  const resortNames=new Map(resorts.map(r=>[r.id,r.name]));
+  renderMeter(resorts);
+  const total=document.getElementById("resortTotal");
+  if(resorts.length)new IntersectionObserver(([e],obs)=>{if(e.isIntersecting){obs.disconnect();countUp(total,resorts.length)}}).observe(total);
   if(articleResult.status!=="fulfilled")return;
   const articles=(articleResult.value.articles||[]).slice(0,3);if(!articles.length)return;
-  document.getElementById("journalGrid").innerHTML=articles.map(article=>{
-    const resortName=article.resort&&resortNames.get(article.resort);
-    return `<a class="article-card" href="articles/view.html?slug=${encodeURIComponent(article.slug)}"><div class="article-meta">${escapeHtml(article.date)} · ${escapeHtml(articleCategories[article.category]||article.category)}</div><h3>${escapeHtml(article.title)}</h3><p class="article-summary">${escapeHtml(article.summary)}</p><div class="article-foot">${resortName?`<span class="article-resort">📍 ${escapeHtml(resortName)}</span>`:""}<span class="article-read">讀文章 →</span></div></a>`;
+  document.getElementById("journalGrid").innerHTML=articles.map((a,i)=>{
+    const resortName=a.resort&&resortNames.get(a.resort);
+    return `<a class="article-card reveal" style="transition-delay:${i*.08}s;--band:${bandColors[a.category]||bandColors.beginner}" href="articles/view.html?slug=${encodeURIComponent(a.slug)}"><div class="article-band">${bandWave}</div><div class="article-body"><div class="article-meta">${escapeHtml(a.date)} · ${escapeHtml(articleCategories[a.category]||a.category)}</div><h3>${escapeHtml(a.title)}</h3><p class="article-summary">${escapeHtml(a.summary)}</p><div class="article-foot">${resortName?`<span class="article-resort">📍 ${escapeHtml(resortName)}</span>`:""}<span class="article-read">READ →</span></div></div></a>`;
   }).join("");
-  document.getElementById("journal").classList.add("show");
+  const j=document.getElementById("journal");j.classList.add("show");observeReveal(j);
 });
 </script>
 </body>
