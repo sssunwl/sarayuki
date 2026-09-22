@@ -1,0 +1,108 @@
+name: Sarayuki 雪場資料覆核
+
+on:
+  schedule:
+    # 每天 03:00 UTC = 日本時間 12:00，與每日內容的 02:00 UTC 錯開
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+    inputs:
+      resort:
+        description: 單一雪場 id（選填；有值時忽略 batch）
+        required: false
+        type: string
+      batch:
+        description: 本次覆核數量
+        required: false
+        type: number
+        default: 6
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sarayuki-resort-verification
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: 設定提交身分
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: 覆核雪場資料並產生報告
+        id: verify_resorts
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          RESORT: ${{ inputs.resort }}
+          BATCH: ${{ inputs.batch }}
+        shell: bash
+        run: |
+          args=()
+          if [[ -n "${RESORT}" ]]; then
+            args+=(--resort "${RESORT}")
+          else
+            args+=(--batch "${BATCH:-6}")
+          fi
+          set +e
+          python3 _pipeline/verify_resorts.py "${args[@]}" 2>&1 | tee /tmp/verify-resorts.log
+          code=${PIPESTATUS[0]}
+          set -e
+
+          if [[ "${code}" -eq 0 ]]; then
+            echo "status=ok" >> "${GITHUB_OUTPUT}"
+            exit 0
+          fi
+
+          # 刻意不讓 job 變紅：失敗完整留在本次執行的 Summary 與 log，不寄信。
+          echo "status=failed" >> "${GITHUB_OUTPUT}"
+          echo "::warning::雪場資料覆核失敗（exit ${code}），詳見本次執行的 Summary"
+          {
+            echo "## ❌ 雪場資料覆核失敗（未套用到 resorts.json）"
+            echo
+            echo "- 時間：$(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M') JST"
+            echo "- 退出碼：\`${code}\`"
+            echo
+            echo "### 執行輸出（末 30 行）"
+            echo '```'
+            tail -n 30 /tmp/verify-resorts.log
+            echo '```'
+          } >> "${GITHUB_STEP_SUMMARY}"
+          exit 0
+
+      - name: 顯示執行後狀態
+        if: always()
+        shell: bash
+        run: |
+          echo "git status --porcelain -- data/verify_report.json"
+          git status --porcelain -- data/verify_report.json
+          echo "git diff --stat -- data/verify_report.json"
+          git diff --stat -- data/verify_report.json
+
+      - name: 提交覆核報告
+        if: steps.verify_resorts.outputs.status == 'ok'
+        shell: bash
+        run: |
+          REPORT_PATH=data/verify_report.json
+          if [[ -z "$(git status --porcelain -- "${REPORT_PATH}")" ]]; then
+            echo "::notice::本次覆核報告沒有變更"
+            exit 0
+          fi
+
+          # 明確只加入報告；來源資料永遠不在提交範圍。
+          git add -- "${REPORT_PATH}"
+          if git diff --cached --quiet; then
+            echo "::notice::沒有可提交的覆核報告"
+            exit 0
+          fi
+          git commit -m "每日雪場資料覆核"
+          git pull --rebase origin main
+          git push origin main
