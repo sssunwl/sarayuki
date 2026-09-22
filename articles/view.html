@@ -2,66 +2,69 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="description" content="Sarayuki 滑雪文章">
+<meta name="theme-color" content="#0a1628">
 <title>文章｜Sarayuki さら雪</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&amp;family=Noto+Sans+TC:wght@400;700&amp;family=Noto+Serif+TC:wght@900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;500;700&amp;family=Noto+Sans+TC:wght@400;500;700&amp;family=Noto+Serif+TC:wght@700;900&amp;display=swap" rel="stylesheet">
 <style>
-  :root{--paper:#f6f5f1;--ink:#16202a;--dim:#5b6673;--line:rgba(22,32,42,.12);--card:#fff;--shu:#d9412b;--ice:#7fa7c2}
-  *{box-sizing:border-box}
-  html{background:var(--paper);scroll-behavior:smooth}
-  body{margin:0;overflow-x:hidden;background:var(--paper);color:var(--ink);font-family:"Noto Sans TC",sans-serif;-webkit-font-smoothing:antialiased}
-  a{color:inherit;text-decoration:none}
-  .top{width:min(680px,calc(100% - 40px));margin:0 auto;padding:26px 0 16px}
-  .back{display:inline-flex;align-items:center;min-height:36px;color:var(--shu);font:700 13px/1 "IBM Plex Mono",monospace;letter-spacing:.04em}
-  main{width:min(680px,calc(100% - 40px));margin:0 auto;padding:42px 0 92px}
-  .article-meta{margin-bottom:14px;color:var(--shu);font:500 11px/1.6 "IBM Plex Mono",monospace;letter-spacing:.03em}
-  .article-body{font-size:17px;line-height:1.85;overflow-wrap:anywhere}
-  .article-body h1{margin:0 0 27px;font-family:"Noto Serif TC",serif;font-size:32px;font-weight:900;line-height:1.34;letter-spacing:-.01em}
-  .article-body h2{position:relative;margin:40px 0 17px;padding-left:15px;font-family:"Noto Serif TC",serif;font-size:22px;font-weight:900;line-height:1.45;letter-spacing:-.01em}
-  .article-body h2::before{content:"";position:absolute;top:.28em;bottom:.22em;left:0;width:3px;border-radius:1px;background:var(--shu)}
-  .article-body p{margin:0 0 19px}.article-body ul,.article-body ol{margin:0 0 22px;padding-left:1.45em}.article-body li{margin:7px 0;padding-left:.15em}
-  .article-body strong{font-weight:700}.article-body a{color:var(--shu);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
-  .article-body sup{font:500 11px/1 "IBM Plex Mono",monospace}.article-body sup a{color:var(--shu);text-decoration:none}
-  .article-body .sources-title{margin-top:52px}.article-body .sources-list{color:var(--dim);font-size:13px;line-height:1.7}.article-body .sources-list li{margin:9px 0;transition:background-color .3s}.article-body .sources-list a{color:var(--dim);overflow-wrap:anywhere}
-  .article-body .source-flash{background:rgba(217,65,43,.12)}
-  .notice{margin-top:48px;padding:17px 19px;border:1px solid var(--line);border-radius:4px;background:rgba(22,32,42,.045);color:var(--dim);font-size:13px;line-height:1.7}
-  .resort-card{display:block;margin-top:18px;padding:20px;border:1px solid var(--line);border-radius:4px;background:var(--card);transition:border-color .2s,box-shadow .2s}
-  .resort-card:hover{border-color:rgba(217,65,43,.38);box-shadow:0 12px 26px rgba(22,32,42,.07)}.resort-card h2{margin:0;font-family:"Noto Serif TC",serif;font-size:20px;font-weight:900;line-height:1.4}.resort-ja{margin-top:3px;color:var(--dim);font-size:12px}.resort-access{margin:13px 0 0;font-size:13px;line-height:1.65}.resort-link{display:block;margin-top:15px;color:var(--shu);font:700 12px/1.5 "IBM Plex Mono",monospace;text-align:right}
-  .error{padding:80px 0;text-align:center}.error h1{margin:0 0 20px;font-family:"Noto Serif TC",serif;font-size:32px;font-weight:900}.error a{color:var(--shu);font-weight:700}
-  [hidden]{display:none!important}
-  @media(max-width:600px){.top,main{width:calc(100% - 32px)}.top{padding-top:20px}main{padding-top:31px}.article-body{font-size:16px;line-height:1.85}.article-body h1{font-size:26px}.article-body h2{font-size:21px}.error h1{font-size:27px}}
+  :root{--night:#0a1628;--deep:#12284a;--dusk:#2b4a7a;--snow:#f5f8fc;--frost:#e7eff8;--card:#ffffff;--ink:#0f1e33;--dim:#5a6a80;--line:rgba(15,30,51,.1);--ice:#3d9bff;--glacier:#1f6fd1;--aqua:#8fd3ff;--glow:#ffb8a8;--ease:cubic-bezier(.2,.8,.2,1);--flake:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round'%3E%3Cpath d='M12 2v20M3.3 7l17.4 10M3.3 17l17.4-10M12 5l-2.5-2M12 5l2.5-2M12 19l-2.5 2M12 19l2.5 2'/%3E%3C/svg%3E")}
+  *{box-sizing:border-box}html{background:var(--night);scroll-behavior:smooth}body{margin:0;overflow-x:hidden;background:var(--card);color:var(--ink);font-family:"Noto Sans TC",sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}h1,h2,h3{font-family:"Noto Serif TC",serif;font-weight:900;letter-spacing:-.01em;line-height:1.2}
+  .nav{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:calc(14px + env(safe-area-inset-top,0px)) max(20px,calc((100vw - 1180px)/2)) 14px;color:#fff;transition:background .35s,color .35s,box-shadow .35s,backdrop-filter .35s}.nav.solid{background:rgba(245,248,252,.78);color:var(--ink);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);box-shadow:0 1px 0 var(--line)}.brand{display:flex;align-items:baseline;gap:10px;font:500 15px/1 "Outfit",sans-serif;letter-spacing:.32em}.brand small{font:700 13px/1 "Noto Serif TC",serif;letter-spacing:.12em;opacity:.75}.nav-links{display:flex;gap:6px}.nav-links a{padding:9px 14px;border-radius:99px;font-size:14px;font-weight:500;transition:background .2s}.nav-links a:hover{background:rgba(255,255,255,.14)}.nav.solid .nav-links a:hover{background:var(--frost)}.reading-progress{position:absolute;right:0;bottom:-2px;left:0;height:2px;background:transparent}.reading-progress span{display:block;width:100%;height:100%;background:var(--ice);transform:scaleX(0);transform-origin:left center;will-change:transform}
+  .article-header{position:relative;display:flex;min-height:360px;align-items:flex-end;overflow:hidden;padding:118px max(20px,calc((100vw - 720px)/2)) 82px;color:#fff;background:radial-gradient(100% 90% at 78% 110%,rgba(255,184,168,.35),transparent 56%),radial-gradient(70% 80% at 15% 0,rgba(61,155,255,.25),transparent 62%),linear-gradient(180deg,var(--night),var(--deep) 56%,var(--dusk))}.stars{position:absolute;inset:0;background-image:radial-gradient(1px 1px at 12% 22%,#fff9,transparent),radial-gradient(1px 1px at 32% 12%,#fff7,transparent),radial-gradient(1.5px 1.5px at 58% 26%,#fffa,transparent),radial-gradient(1px 1px at 76% 14%,#fff8,transparent),radial-gradient(1px 1px at 88% 34%,#fff6,transparent);animation:twinkle 6s ease-in-out infinite alternate}@keyframes twinkle{from{opacity:.55}to{opacity:1}}.snowfx{position:absolute;inset:0;z-index:2;width:100%;height:100%;pointer-events:none}.header-inner{position:relative;z-index:4;width:min(720px,100%)}.article-meta{display:flex;flex-wrap:wrap;gap:7px 16px;margin-bottom:15px;color:var(--aqua);font:700 12px/1.5 "Outfit",sans-serif;letter-spacing:.08em}.article-meta span+span::before{content:"·";margin-right:16px;color:rgba(255,255,255,.45)}.article-header h1{margin:0;font-size:clamp(34px,5vw,54px);line-height:1.2;letter-spacing:-.01em;text-wrap:balance}.ridge{position:absolute;z-index:3;right:-2%;bottom:-1px;left:-2%;height:56px;pointer-events:none}.ridge svg{display:block;width:100%;height:100%}
+  main{width:min(720px,calc(100% - 40px));margin:0 auto;padding:54px 0 100px;background:var(--card)}.article-body{font-size:17px;line-height:1.95;overflow-wrap:anywhere}.article-body>h1:first-child{display:none}.article-body h2{position:relative;margin:2.2em 0 .8em;padding-left:30px;font-size:23px;line-height:1.4}.article-body h2::before{content:"";position:absolute;top:.34em;left:0;width:19px;height:19px;background:var(--glacier);-webkit-mask:var(--flake) center/contain no-repeat;mask:var(--flake) center/contain no-repeat}.article-body p{margin:0 0 1.5em}.article-body ul,.article-body ol{margin:0 0 1.5em;padding-left:1.45em}.article-body li{margin:.45em 0;padding-left:.15em}.article-body strong{font-weight:700}.article-body a{color:var(--glacier);text-decoration:none}.article-body a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}.article-body sup{font:700 11px/1 "Outfit",sans-serif}.article-body sup a{color:var(--glacier);text-decoration:none}.article-body blockquote{margin:1.8em 0;padding:18px 22px;border-left:3px solid var(--ice);border-radius:0 14px 14px 0;background:var(--frost);color:var(--dim)}.article-body blockquote p:last-child{margin-bottom:0}.source-card{margin-top:3em;padding:24px;border-radius:20px;background:var(--frost)}.article-body .source-card .sources-title{margin:0 0 14px}.article-body .source-card .sources-list{margin-bottom:0;color:var(--dim);font-size:13px;line-height:1.7}.article-body .sources-list li{margin:9px 0;border-radius:5px;transition:background-color .3s}.article-body .sources-list a{color:var(--dim);overflow-wrap:anywhere}.article-body .source-flash{background:rgba(61,155,255,.14)}.notice{margin-top:48px;padding:18px 20px;border-radius:16px;background:var(--frost);color:var(--dim);font-size:13px;line-height:1.7}.resort-card{display:block;margin-top:18px;padding:22px;border-radius:22px;background:var(--card);box-shadow:0 1px 0 var(--line),0 18px 40px -26px rgba(15,30,51,.35);transition:transform .4s var(--ease),box-shadow .4s}.resort-card:hover{transform:translateY(-6px);box-shadow:0 30px 60px -28px rgba(15,30,51,.45)}.resort-card h2{margin:0;font-size:20px;line-height:1.4}.resort-ja{margin-top:3px;color:var(--dim);font-size:12px}.resort-access{margin:13px 0 0;font-size:13px;line-height:1.65}.resort-link{display:block;margin-top:15px;color:var(--glacier);font:700 12px/1.5 "Outfit",sans-serif;text-align:right}.article-nav{margin-top:36px}.btn{position:relative;display:inline-flex;align-items:center;gap:10px;min-height:50px;padding:0 24px;border-radius:99px;font-weight:700;font-size:15px;overflow:hidden;transition:transform .25s var(--ease),box-shadow .25s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--glacier);color:#fff;box-shadow:0 10px 30px rgba(31,111,209,.25)}.btn-primary:hover{box-shadow:0 16px 40px rgba(61,155,255,.35)}.error{padding:80px 0;text-align:center}.error h2{margin:0 0 20px;font-size:32px}.error a{color:var(--glacier);font-weight:700}[hidden]{display:none!important}
+  @media(max-width:600px){.nav{padding-left:16px;padding-right:16px}.brand small{display:none}.nav-links a{padding:9px 10px}.nav-links a.opt{display:none}.article-header{min-height:330px;padding:108px 16px 70px}.article-header h1{font-size:32px}.article-meta{font-size:11px}.ridge{height:42px}main{width:calc(100% - 32px);padding-top:40px}.article-body{font-size:16px;line-height:1.9}.article-body h2{font-size:21px}.source-card{padding:20px}.error h2{font-size:27px}}
+  @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.reading-progress span{will-change:auto}}
 </style>
 </head>
 <body>
-<header class="top"><a class="back" href="./">← 文章列表</a></header>
+<nav class="nav" id="nav"><a class="brand" href="../">SARAYUKI<small>さら雪</small></a><div class="nav-links"><a href="../resorts/">找雪場</a><a class="opt" href="./">文章</a><a class="opt" href="../#first">第一次滑雪</a></div><div class="reading-progress" aria-hidden="true"><span id="readingProgress"></span></div></nav>
+<header class="article-header">
+  <div class="stars" aria-hidden="true"></div><canvas class="snowfx" data-density=".6" aria-hidden="true"></canvas>
+  <div class="header-inner"><div class="article-meta" id="headerMeta"><span>JOURNAL</span></div><h1 id="headerTitle">文章</h1></div>
+  <div class="ridge" aria-hidden="true"><svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path fill="#dbe8f5" fill-opacity=".45" d="M0 64L150 28l130 35 150-46 170 48 150-34 165 39 150-52 170 45 225-30v57H0Z"/><path fill="#fff" d="M0 72C180 55 270 85 450 68s285 15 445 0 310 13 545-7v29H0Z"/></svg></div>
+</header>
 <main>
   <article id="article" hidden>
-    <div class="article-meta" id="articleMeta"></div>
     <div class="article-body" id="articleBody"></div>
     <div class="notice">票價、營業期間與交通每年變動，出發前請以官網為準。</div>
     <div id="resortCard"></div>
+    <nav class="article-nav" aria-label="文章導覽"><a class="btn btn-primary" href="./">← 回文章列表</a></nav>
   </article>
-  <div class="error" id="error" hidden><h1>找不到這篇文章</h1><a href="./">回文章列表 →</a></div>
+  <div class="error" id="error" hidden><h2>找不到這篇文章</h2><a href="./">回文章列表 →</a></div>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
 <script>
+const reduceMotion=matchMedia("(prefers-reduced-motion: reduce)").matches;
+function snowfall(canvas){
+  const ctx=canvas.getContext("2d");const host=canvas.parentElement;const density=Number(canvas.dataset.density||1);
+  let w=0,h=0,dpr=1,flakes=[],wind=0,windTarget=0,pointer={x:-999,y:-999},running=false,visible=true,raf=0;
+  function make(y){const z=Math.random();return{x:Math.random()*w,y:y??Math.random()*h,z,r:.6+z*2.6,vy:.25+z*1.1,vx:0,ph:Math.random()*6.28,sw:.4+Math.random()*.8}}
+  function resize(){dpr=Math.min(devicePixelRatio||1,2);w=host.clientWidth;h=host.clientHeight;canvas.width=w*dpr;canvas.height=h*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);const n=Math.min(260,Math.round(w*h/7000*density));flakes=Array.from({length:n},()=>make())}
+  function draw(){ctx.clearRect(0,0,w,h);wind+=(windTarget-wind)*.02;for(const f of flakes){f.ph+=.01*f.sw;const dx=f.x-pointer.x,dy=f.y-pointer.y,d2=dx*dx+dy*dy;if(d2<12000){const d=Math.sqrt(d2)||1,p=(1-d/110)*1.6;f.vx+=dx/d*p;f.y+=dy/d*p*.6}f.vx*=.94;f.x+=Math.sin(f.ph)*.35*f.sw+wind*(.4+f.z)+f.vx;f.y+=f.vy;if(f.y>h+5)Object.assign(f,make(-5));if(f.x>w+5)f.x=-5;else if(f.x<-5)f.x=w+5;ctx.globalAlpha=.35+f.z*.6;ctx.beginPath();ctx.arc(f.x,f.y,f.r,0,6.283);ctx.fillStyle="#fff";ctx.fill()}if(running)raf=requestAnimationFrame(draw)}
+  function start(){if(running||reduceMotion||!visible)return;running=true;raf=requestAnimationFrame(draw)}function stop(){running=false;cancelAnimationFrame(raf)}
+  resize();addEventListener("resize",()=>{resize();if(reduceMotion)draw()});host.addEventListener("pointermove",event=>{const rect=canvas.getBoundingClientRect();pointer.x=event.clientX-rect.left;pointer.y=event.clientY-rect.top;windTarget=((pointer.x/w)-.5)*3});host.addEventListener("pointerleave",()=>{pointer.x=pointer.y=-999;windTarget=0});new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;visible?start():stop()}).observe(host);document.addEventListener("visibilitychange",()=>document.hidden?stop():start());if(reduceMotion)draw();else start();
+}
+document.querySelectorAll(".snowfx").forEach(snowfall);
+const nav=document.getElementById("nav"),pageHeader=document.querySelector(".article-header"),progress=document.getElementById("readingProgress");let scrollTicking=false;
+function updateScrollUi(){nav.classList.toggle("solid",scrollY>pageHeader.offsetHeight-80);const available=document.documentElement.scrollHeight-innerHeight,ratio=available>0?Math.min(1,Math.max(0,scrollY/available)):1;progress.style.transform=`scaleX(${ratio})`;scrollTicking=false}
+addEventListener("scroll",()=>{if(!scrollTicking){scrollTicking=true;requestAnimationFrame(updateScrollUi)}},{passive:true});addEventListener("resize",updateScrollUi);updateScrollUi();
 const CATEGORIES={beginner:"新手入門",resort:"雪場攻略",advanced:"老手進階",travel:"行程交通"};
 const slug=new URLSearchParams(location.search).get("slug")||"";
 const esc=value=>String(value??"").replace(/[&<>\"]/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"})[char]);
-const showError=()=>{document.getElementById("article").hidden=true;document.getElementById("error").hidden=false};
+const showError=()=>{document.getElementById("article").hidden=true;document.getElementById("error").hidden=false;document.getElementById("headerTitle").textContent="找不到這篇文章";document.getElementById("headerMeta").innerHTML="<span>JOURNAL</span>";updateScrollUi()};
 
 function decorateArticle(){
   const body=document.getElementById("articleBody");
   body.querySelectorAll('a[href^="http://"],a[href^="https://"]').forEach(link=>{link.target="_blank";link.rel="noopener"});
   const sourceTitle=[...body.querySelectorAll("h2")].find(heading=>heading.textContent.trim()==="來源");
-  if(sourceTitle){sourceTitle.classList.add("sources-title");const list=sourceTitle.nextElementSibling;if(list?.matches("ul,ol"))list.classList.add("sources-list")}
+  if(sourceTitle){sourceTitle.classList.add("sources-title");const list=sourceTitle.nextElementSibling;if(list?.matches("ul,ol")){list.classList.add("sources-list");const card=document.createElement("section");card.className="source-card";sourceTitle.before(card);card.append(sourceTitle,list)}}
   body.querySelectorAll('sup a[href^="#src-"]').forEach(link=>link.addEventListener("click",event=>{
     const target=document.getElementById(link.getAttribute("href").slice(1));if(!target)return;
-    event.preventDefault();target.scrollIntoView({behavior:"smooth",block:"center"});
+    event.preventDefault();target.scrollIntoView({behavior:reduceMotion?"auto":"smooth",block:"center"});
     const row=target.closest("li")||target;row.classList.remove("source-flash");void row.offsetWidth;row.classList.add("source-flash");setTimeout(()=>row.classList.remove("source-flash"),1500);
   }));
 }
@@ -82,11 +85,13 @@ async function loadArticle(){
     const markdown=await markdownResponse.text();
     const rendered=marked.parse(markdown);
     document.getElementById("articleBody").innerHTML=DOMPurify.sanitize(rendered,{ADD_TAGS:["sup"],ADD_ATTR:["id"]});
-    document.getElementById("articleMeta").textContent=`${entry.date} · ${CATEGORIES[entry.category]||entry.category} · ${entry.sources} 個來源`;
+    const resort=(resortResult?.resorts||[]).find(item=>item.id===entry.resort);
+    document.getElementById("headerTitle").textContent=entry.title;
+    document.getElementById("headerMeta").innerHTML=`<span>${esc(entry.date)}</span><span>${esc(CATEGORIES[entry.category]||entry.category)}</span>${resort?`<span>${esc(resort.name)}</span>`:""}<span>${esc(entry.sources)} 個來源</span>`;
     document.title=`${entry.title}｜Sarayuki さら雪`;
     document.querySelector('meta[name="description"]').setAttribute("content",entry.summary||"");
-    if(entry.resort)renderResort((resortResult?.resorts||[]).find(resort=>resort.id===entry.resort),entry.resort);
-    decorateArticle();document.getElementById("article").hidden=false;
+    if(entry.resort)renderResort(resort,entry.resort);
+    decorateArticle();document.getElementById("article").hidden=false;requestAnimationFrame(updateScrollUi);
   }catch(error){showError()}
 }
 loadArticle();

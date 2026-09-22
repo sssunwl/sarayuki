@@ -2,46 +2,30 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="description" content="Sarayuki 滑雪文章，每一篇都查證過，附上來源與抓取日期。">
+<meta name="theme-color" content="#0a1628">
 <title>文章｜Sarayuki さら雪</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&amp;family=Noto+Sans+TC:wght@400;700&amp;family=Noto+Serif+TC:wght@900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;500;700&amp;family=Noto+Sans+TC:wght@400;500;700&amp;family=Noto+Serif+TC:wght@700;900&amp;display=swap" rel="stylesheet">
 <style>
-  :root{--paper:#f6f5f1;--ink:#16202a;--dim:#5b6673;--line:rgba(22,32,42,.12);--card:#fff;--shu:#d9412b;--ice:#7fa7c2}
-  *{box-sizing:border-box}
-  html{background:var(--paper);scroll-behavior:smooth}
-  body{margin:0;overflow-x:hidden;background:var(--paper);color:var(--ink);font-family:"Noto Sans TC",sans-serif;-webkit-font-smoothing:antialiased}
-  a{color:inherit;text-decoration:none}button{font:inherit}
-  .page-header{padding:26px max(20px,calc((100vw - 760px)/2)) 38px;border-bottom:1px solid var(--line)}
-  .back{display:inline-flex;align-items:center;min-height:36px;margin-bottom:19px;color:var(--shu);font:700 13px/1 "IBM Plex Mono",monospace;letter-spacing:.04em}
-  .lab{display:flex;align-items:center;gap:12px;margin-bottom:9px;color:var(--shu);font:700 12px/1.4 "IBM Plex Mono",monospace;letter-spacing:.1em}
-  .lab::before{content:"";width:36px;height:1px;background:currentColor}
-  h1{margin:0;font-family:"Noto Serif TC",serif;font-size:clamp(42px,6vw,72px);font-weight:900;line-height:1.08;letter-spacing:-.01em}
-  .intro{margin:11px 0 0;color:var(--dim);font-size:15px;line-height:1.75}
-  main{width:min(760px,calc(100% - 40px));margin:0 auto;padding:34px 0 90px}
-  .categories{display:flex;gap:8px;overflow-x:auto;padding:1px 1px 18px;scrollbar-width:none}.categories::-webkit-scrollbar{display:none}
-  .chip{flex:0 0 auto;min-height:36px;padding:7px 13px;border:1px solid rgba(22,32,42,.2);border-radius:99px;background:transparent;color:var(--ink);font-size:13px;font-weight:700;white-space:nowrap;cursor:pointer;transition:.18s}
-  .chip:hover{border-color:var(--shu);color:var(--shu)}.chip.active{border-color:var(--shu);background:var(--shu);color:#fff}
-  .article-list{display:grid;gap:14px}
-  .article-card{display:flex;min-height:196px;flex-direction:column;padding:24px;border:1px solid var(--line);border-radius:4px;background:var(--card);transition:transform .2s,box-shadow .2s,border-color .2s}
-  .article-card:hover{transform:translateY(-2px);border-color:rgba(217,65,43,.38);box-shadow:0 16px 30px rgba(22,32,42,.08)}
-  .article-meta{color:var(--shu);font:500 11px/1.5 "IBM Plex Mono",monospace;letter-spacing:.03em}
-  .article-card h2{margin:10px 0 8px;font-family:"Noto Serif TC",serif;font-size:20px;font-weight:900;line-height:1.42;letter-spacing:-.01em}
-  .summary{display:-webkit-box;margin:0;overflow:hidden;color:var(--dim);font-size:14px;line-height:1.75;-webkit-box-orient:vertical;-webkit-line-clamp:2}
-  .card-foot{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-top:auto;padding-top:20px}
-  .resort-tag{color:var(--dim);font-size:11px;font-weight:700;line-height:1.5}.read{margin-left:auto;color:var(--shu);font:700 12px/1.5 "IBM Plex Mono",monospace;white-space:nowrap}
-  .empty{display:none;padding:64px 22px;border:1px solid var(--line);border-radius:4px;background:var(--card);color:var(--dim);text-align:center;font-size:14px;line-height:1.8}.empty.show{display:block}
-  @media(max-width:600px){.page-header{padding:20px 16px 28px}.back{margin-bottom:13px}h1{font-size:43px}.intro{font-size:14px}main{width:calc(100% - 32px);padding-top:25px}.article-card{min-height:205px;padding:20px}}
+  :root{--night:#0a1628;--deep:#12284a;--dusk:#2b4a7a;--snow:#f5f8fc;--frost:#e7eff8;--card:#ffffff;--ink:#0f1e33;--dim:#5a6a80;--line:rgba(15,30,51,.1);--ice:#3d9bff;--glacier:#1f6fd1;--aqua:#8fd3ff;--glow:#ffb8a8;--ease:cubic-bezier(.2,.8,.2,1);--flake:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round'%3E%3Cpath d='M12 2v20M3.3 7l17.4 10M3.3 17l17.4-10M12 5l-2.5-2M12 5l2.5-2M12 19l-2.5 2M12 19l2.5 2'/%3E%3C/svg%3E")}
+  *{box-sizing:border-box}html{background:var(--night);scroll-behavior:smooth}body{margin:0;overflow-x:hidden;background:var(--snow);color:var(--ink);font-family:"Noto Sans TC",sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit}h1,h2,h3{font-family:"Noto Serif TC",serif;font-weight:900;letter-spacing:-.01em;line-height:1.2}
+  .nav{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:calc(14px + env(safe-area-inset-top,0px)) max(20px,calc((100vw - 1180px)/2)) 14px;color:#fff;transition:background .35s,color .35s,box-shadow .35s,backdrop-filter .35s}.nav.solid{background:rgba(245,248,252,.78);color:var(--ink);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);box-shadow:0 1px 0 var(--line)}.brand{display:flex;align-items:baseline;gap:10px;font:500 15px/1 "Outfit",sans-serif;letter-spacing:.32em}.brand small{font:700 13px/1 "Noto Serif TC",serif;letter-spacing:.12em;opacity:.75}.nav-links{display:flex;gap:6px}.nav-links a{padding:9px 14px;border-radius:99px;font-size:14px;font-weight:500;transition:background .2s}.nav-links a:hover{background:rgba(255,255,255,.14)}.nav.solid .nav-links a:hover{background:var(--frost)}
+  .page-header{position:relative;display:flex;min-height:260px;align-items:center;overflow:hidden;padding:96px max(20px,calc((100vw - 1180px)/2)) 62px;color:#fff;background:radial-gradient(100% 90% at 78% 110%,rgba(255,184,168,.35),transparent 56%),radial-gradient(70% 80% at 15% 0,rgba(61,155,255,.25),transparent 62%),linear-gradient(180deg,var(--night),var(--deep) 56%,var(--dusk))}.stars{position:absolute;inset:0;background-image:radial-gradient(1px 1px at 12% 22%,#fff9,transparent),radial-gradient(1px 1px at 32% 12%,#fff7,transparent),radial-gradient(1.5px 1.5px at 58% 26%,#fffa,transparent),radial-gradient(1px 1px at 76% 14%,#fff8,transparent),radial-gradient(1px 1px at 88% 34%,#fff6,transparent);animation:twinkle 6s ease-in-out infinite alternate}@keyframes twinkle{from{opacity:.55}to{opacity:1}}.snowfx{position:absolute;inset:0;z-index:2;width:100%;height:100%;pointer-events:none}.header-inner{position:relative;z-index:4;width:min(1180px,100%)}.eyebrow{display:inline-flex;align-items:center;gap:10px;margin-bottom:14px;color:var(--aqua);font:700 12px/1 "Outfit",sans-serif;letter-spacing:.26em}.eyebrow::before{content:"";width:18px;height:18px;background:currentColor;-webkit-mask:var(--flake) center/contain no-repeat;mask:var(--flake) center/contain no-repeat}.page-header h1{margin:0;font-size:clamp(46px,6vw,70px);line-height:1.08}.intro{margin:12px 0 0;color:rgba(255,255,255,.75);font-size:15px;line-height:1.75}.ridge{position:absolute;z-index:3;right:-2%;bottom:-1px;left:-2%;height:52px;pointer-events:none}.ridge svg{display:block;width:100%;height:100%}
+  main{width:min(1180px,calc(100% - 40px));margin:0 auto;padding:38px 0 100px}.categories{display:flex;gap:8px;overflow-x:auto;padding:1px 1px 24px;scrollbar-width:none}.categories::-webkit-scrollbar{display:none}.chip{flex:0 0 auto;min-height:34px;padding:6px 13px;border:0;border-radius:99px;background:var(--frost);color:var(--ink);font-size:13px;font-weight:700;white-space:nowrap;cursor:pointer;transition:background .2s,color .2s,transform .2s var(--ease)}.chip:hover{background:#d8eaff;color:var(--glacier)}.chip.active{background:var(--glacier);color:#fff}.article-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.article-card{position:relative;display:flex;min-height:300px;flex-direction:column;overflow:hidden;border-radius:22px;background:var(--card);box-shadow:0 1px 0 var(--line),0 18px 40px -26px rgba(15,30,51,.35);transition:transform .4s var(--ease),box-shadow .4s}.article-card:hover{transform:translateY(-6px);box-shadow:0 30px 60px -28px rgba(15,30,51,.45)}.article-band{position:relative;height:96px;background:var(--band);overflow:hidden}.article-band svg{position:absolute;bottom:-1px;left:0;width:100%;height:46px;transition:transform .6s var(--ease)}.article-card:hover .article-band svg{transform:translateY(-6px)}.article-body{display:flex;flex:1;flex-direction:column;padding:20px 24px 22px}.article-meta{color:var(--glacier);font:700 12px/1.5 "Outfit",sans-serif;letter-spacing:.06em}.article-card h2{margin:8px 0;font-size:20px;line-height:1.45}.summary{display:-webkit-box;margin:0;overflow:hidden;color:var(--dim);font-size:14px;line-height:1.75;-webkit-box-orient:vertical;-webkit-line-clamp:2}.card-foot{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-top:auto;padding-top:18px}.resort-tag{color:var(--dim);font-size:12px;font-weight:700;line-height:1.5}.read{margin-left:auto;color:var(--glacier);font:700 13px/1.5 "Outfit",sans-serif;letter-spacing:.06em;white-space:nowrap}.empty{display:none;grid-column:1/-1;padding:64px 22px;border-radius:22px;background:var(--card);box-shadow:0 1px 0 var(--line);color:var(--dim);text-align:center;font-size:14px;line-height:1.8}.empty.show{display:block}.reveal{opacity:0;transform:translateY(34px);transition:opacity .9s var(--ease),transform .9s var(--ease)}.reveal.in{opacity:1;transform:none}
+  @media(max-width:900px){.article-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media(max-width:600px){.nav{padding-left:16px;padding-right:16px}.brand small{display:none}.nav-links a{padding:9px 10px}.nav-links a.opt{display:none}.page-header{min-height:250px;padding:92px 16px 58px}.page-header h1{font-size:43px}.intro{font-size:14px}.ridge{height:40px}main{width:calc(100% - 32px);padding-top:28px}.article-list{grid-template-columns:1fr}.article-card{min-height:285px}}
+  @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
 </style>
 </head>
 <body>
+<nav class="nav" id="nav"><a class="brand" href="../">SARAYUKI<small>さら雪</small></a><div class="nav-links"><a href="../resorts/">找雪場</a><a class="opt" href="./">文章</a><a class="opt" href="../#first">第一次滑雪</a></div></nav>
 <header class="page-header">
-  <a class="back" href="../">← Sarayuki</a>
-  <div class="lab">— JOURNAL / 文章</div>
-  <h1>文章</h1>
-  <p class="intro">每一篇都查證過，附上來源與抓取日期。</p>
+  <div class="stars" aria-hidden="true"></div><canvas class="snowfx" data-density=".6" aria-hidden="true"></canvas>
+  <div class="header-inner"><div class="eyebrow">JOURNAL / 文章</div><h1>文章</h1><p class="intro">每一篇都查證過，附上來源與抓取日期。</p></div>
+  <div class="ridge" aria-hidden="true"><svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path fill="#dbe8f5" fill-opacity=".45" d="M0 64L150 28l130 35 150-46 170 48 150-34 165 39 150-52 170 45 225-30v57H0Z"/><path fill="#f5f8fc" d="M0 72C180 55 270 85 450 68s285 15 445 0 310 13 545-7v29H0Z"/></svg></div>
 </header>
 <main>
   <nav class="categories" aria-label="文章分類">
@@ -55,7 +39,23 @@
   <div class="empty" id="empty">這個分類還沒有文章，每天會新增一篇。</div>
 </main>
 <script>
+const reduceMotion=matchMedia("(prefers-reduced-motion: reduce)").matches;
+function snowfall(canvas){
+  const ctx=canvas.getContext("2d");const host=canvas.parentElement;const density=Number(canvas.dataset.density||1);
+  let w=0,h=0,dpr=1,flakes=[],wind=0,windTarget=0,pointer={x:-999,y:-999},running=false,visible=true,raf=0;
+  function make(y){const z=Math.random();return{x:Math.random()*w,y:y??Math.random()*h,z,r:.6+z*2.6,vy:.25+z*1.1,vx:0,ph:Math.random()*6.28,sw:.4+Math.random()*.8}}
+  function resize(){dpr=Math.min(devicePixelRatio||1,2);w=host.clientWidth;h=host.clientHeight;canvas.width=w*dpr;canvas.height=h*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);const n=Math.min(260,Math.round(w*h/7000*density));flakes=Array.from({length:n},()=>make())}
+  function draw(){ctx.clearRect(0,0,w,h);wind+=(windTarget-wind)*.02;for(const f of flakes){f.ph+=.01*f.sw;const dx=f.x-pointer.x,dy=f.y-pointer.y,d2=dx*dx+dy*dy;if(d2<12000){const d=Math.sqrt(d2)||1,p=(1-d/110)*1.6;f.vx+=dx/d*p;f.y+=dy/d*p*.6}f.vx*=.94;f.x+=Math.sin(f.ph)*.35*f.sw+wind*(.4+f.z)+f.vx;f.y+=f.vy;if(f.y>h+5)Object.assign(f,make(-5));if(f.x>w+5)f.x=-5;else if(f.x<-5)f.x=w+5;ctx.globalAlpha=.35+f.z*.6;ctx.beginPath();ctx.arc(f.x,f.y,f.r,0,6.283);ctx.fillStyle="#fff";ctx.fill()}if(running)raf=requestAnimationFrame(draw)}
+  function start(){if(running||reduceMotion||!visible)return;running=true;raf=requestAnimationFrame(draw)}function stop(){running=false;cancelAnimationFrame(raf)}
+  resize();addEventListener("resize",()=>{resize();if(reduceMotion)draw()});host.addEventListener("pointermove",event=>{const rect=canvas.getBoundingClientRect();pointer.x=event.clientX-rect.left;pointer.y=event.clientY-rect.top;windTarget=((pointer.x/w)-.5)*3});host.addEventListener("pointerleave",()=>{pointer.x=pointer.y=-999;windTarget=0});new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;visible?start():stop()}).observe(host);document.addEventListener("visibilitychange",()=>document.hidden?stop():start());if(reduceMotion)draw();else start();
+}
+document.querySelectorAll(".snowfx").forEach(snowfall);
+const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("in");revealObserver.unobserve(entry.target)}}),{threshold:.15,rootMargin:"0px 0px -40px"});
+const observeReveal=root=>root.querySelectorAll(".reveal:not(.in)").forEach(element=>revealObserver.observe(element));
+const nav=document.getElementById("nav"),pageHeader=document.querySelector(".page-header");let navTicking=false;function updateNav(){nav.classList.toggle("solid",scrollY>pageHeader.offsetHeight-80);navTicking=false}addEventListener("scroll",()=>{if(!navTicking){navTicking=true;requestAnimationFrame(updateNav)}},{passive:true});updateNav();
 const CATEGORIES={beginner:"新手入門",resort:"雪場攻略",advanced:"老手進階",travel:"行程交通"};
+const bandColors={beginner:"linear-gradient(135deg,#9fdcff,#3d7fe0)",resort:"linear-gradient(135deg,#7ce0d3,#2b8fb0)",advanced:"linear-gradient(135deg,#ffc2b4,#6b5bbf)",travel:"linear-gradient(135deg,#ffe0a8,#e98a7a)"};
+const bandWave='<svg viewBox="0 0 400 46" preserveAspectRatio="none" aria-hidden="true"><path fill="#fff" d="M0 30 C60 10 110 40 170 24 C230 8 280 34 340 20 C370 13 390 18 400 22 L400 46 L0 46Z"/></svg>';
 const VALID_CATEGORIES=new Set(Object.keys(CATEGORIES));
 const query=new URLSearchParams(location.search);
 let selectedCategory=VALID_CATEGORIES.has(query.get("c"))?query.get("c"):"";
@@ -67,13 +67,13 @@ function syncCategory(){
   history.replaceState(null,"",location.pathname+(next.size?"?"+next.toString():"")+location.hash);
   document.querySelectorAll("[data-category]").forEach(button=>button.classList.toggle("active",button.dataset.category===selectedCategory));
 }
-function cardHtml(article){
+function cardHtml(article,index){
   const resortName=article.resort&&resortNames.get(article.resort);
-  return `<a class="article-card" href="view.html?slug=${encodeURIComponent(article.slug)}"><div class="article-meta">${esc(article.date)} · ${esc(CATEGORIES[article.category]||article.category)}</div><h2>${esc(article.title)}</h2><p class="summary">${esc(article.summary)}</p><div class="card-foot">${resortName?`<span class="resort-tag">📍 ${esc(resortName)}</span>`:""}<span class="read">讀文章 →</span></div></a>`;
+  return `<a class="article-card reveal" style="transition-delay:${index*.08}s;--band:${bandColors[article.category]||bandColors.beginner}" href="view.html?slug=${encodeURIComponent(article.slug)}"><div class="article-band">${bandWave}</div><div class="article-body"><div class="article-meta">${esc(article.date)} · ${esc(CATEGORIES[article.category]||article.category)}</div><h2>${esc(article.title)}</h2><p class="summary">${esc(article.summary)}</p><div class="card-foot">${resortName?`<span class="resort-tag">📍 ${esc(resortName)}</span>`:""}<span class="read">READ →</span></div></div></a>`;
 }
 function render(){
   const visible=selectedCategory?articles.filter(article=>article.category===selectedCategory):articles;
-  document.getElementById("articleList").innerHTML=visible.map(cardHtml).join("");
+  document.getElementById("articleList").innerHTML=visible.map(cardHtml).join("");observeReveal(document.getElementById("articleList"));
   document.getElementById("empty").classList.toggle("show",visible.length===0);
   syncCategory();
 }
