@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-22",
+ "updated": "2026-09-23",
  "note": "雪季月份、交通時間皆為概略值，verify=true 者出發前請以官網為準。不收錢排名。",
  "schema": {
   "area": [
@@ -34,17 +34,19 @@
   {
    "id": "niseko",
    "name": "二世古 Grand Hirafu",
-   "nameJa": "ニセコグラン・ヒラフ",
+   "nameJa": "ニセコ東急 グラン・ヒラフ",
    "area": "hokkaido",
    "place": "北海道・倶知安町",
    "lat": 42.86,
    "lng": 140.7,
    "months": [
+    11,
     12,
     1,
     2,
     3,
-    4
+    4,
+    5
    ],
    "peak": [
     1,
