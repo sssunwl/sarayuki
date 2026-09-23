@@ -1,0 +1,329 @@
+{
+  "generated": "2026-09-23T17:15:07+09:00",
+  "checked": [
+    "niseko",
+    "rusutsu",
+    "kiroro",
+    "teine",
+    "furano",
+    "tomamu"
+  ],
+  "last_checked": {
+    "niseko": "2026-09-23T17:15:07+09:00",
+    "rusutsu": "2026-09-23T17:15:07+09:00",
+    "kiroro": "2026-09-23T17:15:07+09:00",
+    "teine": "2026-09-23T17:15:07+09:00",
+    "furano": "2026-09-23T17:15:07+09:00",
+    "tomamu": "2026-09-23T17:15:07+09:00"
+  },
+  "results": [
+    {
+      "id": "niseko",
+      "status": "unverified",
+      "url_check": {
+        "code": 200,
+        "final_url": "https://www.niseko.ne.jp/en/"
+      },
+      "findings": [
+        {
+          "field": "months",
+          "current": [
+            11,
+            12,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
+            1,
+            2
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "新千歲機場巴士約 2.5–3 小時",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 165,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "二世古 Grand Hirafu",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "ニセコ東急 グラン・ヒラフ",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "北海道・倶知安町",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "rusutsu",
+      "status": "yellow",
+      "url_check": {
+        "code": 200,
+        "final_url": "https://rusutsu.com/"
+      },
+      "findings": [
+        {
+          "field": "months",
+          "current": [
+            12,
+            1,
+            2,
+            3
+          ],
+          "suggested": [
+            11,
+            12,
+            1,
+            2,
+            3
+          ],
+          "severity": "yellow",
+          "note": "2026-2027 雪季預計從 11 月 28 日開始營業至 3 月 30 日/31 日。",
+          "sources": [
+            "https://hapisnow.jp/snowresort/rusutsu-resort/",
+            "https://surfsnow.jp/guide/htm/r0331s.htm",
+            "https://bigruns.com/basu_group/%E5%86%AC%E5%AD%A3%E9%81%8B%E8%A1%8C-%E3%83%93%E3%83%83%E3%82%B0%E3%83%A9%E3%83%B3%E3%82%BA%E5%8F%B7-%E6%96%B0%E5%8D%83%E6%AD%B3%E7%A9%BA%E6%B8%AF",
+            "https://rusutsu.com/en/news-and-topics/skipackage/",
+            "https://bigs.jp/hokkaido_ski/gelande/b2005.html",
+            "https://www.skiing-hokkaido.com/ja/resorts/rusutsu-resort/",
+            "https://rusutsu.com/access-shuttle-bus-new-chitose-airport/",
+            "https://www.japantalkers.com/locations/401",
+            "https://rusutsu.com/corporate-overview/",
+            "https://kamori.co.jp/kamori_group/rusutsu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kiroro",
+      "status": "red",
+      "url_check": {
+        "code": 200,
+        "final_url": "https://www.kiroro.co.jp/"
+      },
+      "findings": [
+        {
+          "field": "months",
+          "current": [
+            12,
+            1,
+            2,
+            3,
+            4
+          ],
+          "suggested": [
+            11,
+            12,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "severity": "red",
+          "note": "根據2025-2026雪季的官方資訊，營業期間為11月下旬至5月上旬。",
+          "sources": [
+            "https://www.resortbaito.co.jp/special/ski-job/kirororesort/",
+            "https://www.kiroro.co.jp/ja/news/notice-2025-26-closure/",
+            "https://www.snownavi.com/topics/news_25090601",
+            "https://livejapan.com/ja/in-hokkaido/in-pref-hokkaido/in-sapporo_chitose/article-a1000334/",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7joQv99GjjwE8lTYFKl6xyenPOzFgMp2UtEh0ZRH7Sl6jHhLDt00MS65xsprtet5feZ54lSGvR09JtI23zRJFUxOfEDjhX0kzbkV_rRpZ9a9ahGLrEer5uatG-nM1ZdBMU_hkRoLU0eww",
+            "http://love-snow.jp/kiroro/access.html",
+            "https://www.kiroro.co.jp/ja/about_us/",
+            "https://www.kiroro.co.jp/seasonswitch/current-season/",
+            "https://www.kiroro.co.jp/snowworld/",
+            "https://www.mapion.co.jp/phonebook/M04013/01409/20130353522/",
+            "https://www.gutabi.jp/spot/detail/586"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "teine",
+      "status": "red",
+      "url_check": {
+        "code": 200,
+        "final_url": "https://www.sapporo-teine.com/"
+      },
+      "findings": [
+        {
+          "field": "months",
+          "current": [
+            12,
+            1,
+            2,
+            3
+          ],
+          "suggested": [
+            11,
+            12,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "severity": "red",
+          "note": "2026-2027雪季預計從11月21日開放至5月5日，其中Olympia Zone於12月5日開放至3月28日，Highland Zone開放至5月5日。",
+          "sources": [
+            "https://www.fuyuski.co/en/blog/teine-ski-guide",
+            "https://watabi.org/en/articles/sapporo-teine-ski-guide",
+            "https://sapporo-teine.com/snow/lang/en/?ref=uchijapan",
+            "https://sapporo-teine.com/snow/access",
+            "https://www.japan-guide.com/e/e5318.html",
+            "https://sapporo-teine.com/snow/lang/en/access/",
+            "https://sapporo-teine.com/snow/access/other"
+          ]
+        },
+        {
+          "field": "access",
+          "current": "札幌市區開車或巴士約 40–60 分",
+          "suggested": "從札幌車站搭乘JR列車至手稻站 (約11-18分)，轉乘JR北海道巴士至雪場 (約16-30分)。",
+          "severity": "yellow",
+          "note": "官方資訊指出從札幌車站搭乘JR列車至手稻站約11-18分鐘，再轉乘JR北海道巴士至雪場約16-30分鐘。",
+          "sources": [
+            "https://www.fuyuski.co/en/blog/teine-ski-guide",
+            "https://watabi.org/en/articles/sapporo-teine-ski-guide",
+            "https://sapporo-teine.com/snow/lang/en/?ref=uchijapan",
+            "https://sapporo-teine.com/snow/access",
+            "https://www.japan-guide.com/e/e5318.html",
+            "https://sapporo-teine.com/snow/lang/en/access/",
+            "https://sapporo-teine.com/snow/access/other"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "furano",
+      "status": "red",
+      "url_check": {
+        "code": 200,
+        "final_url": "https://www.princehotels.co.jp/ski/furano/"
+      },
+      "findings": [
+        {
+          "field": "months",
+          "current": [
+            12,
+            1,
+            2,
+            3,
+            4
+          ],
+          "suggested": [
+            11,
+            12,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "severity": "red",
+          "note": "2026-2027 雪季預計從 11 月 28 日開始，至 5 月 5 日結束 (富良野區域)。",
+          "sources": [
+            "https://www.princehotels.co.jp/ski/furano/winter/",
+            "https://www.jal.co.jp/jp/ja/domtour/jaldp/skisp/hok/furano_full/",
+            "https://www.ana.co.jp/domestic/theme/promo_ski/pdf/260917/ski-bus_furano.pdf"
+          ]
+        },
+        {
+          "field": "access",
+          "current": "旭川機場約 1 小時",
+          "suggested": "旭川機場巴士約 1 小時 40 分鐘",
+          "severity": "yellow",
+          "note": "官方巴士從旭川機場到新富良野王子大飯店約需 1 小時 40 分鐘。",
+          "sources": [
+            "https://www.princehotels.co.jp/ski/furano/winter/",
+            "https://www.jal.co.jp/jp/ja/domtour/jaldp/skisp/hok/furano_full/",
+            "https://www.ana.co.jp/domestic/theme/promo_ski/pdf/260917/ski-bus_furano.pdf"
+          ]
+        },
+        {
+          "field": "accessMin",
+          "current": 60,
+          "suggested": 100,
+          "severity": "yellow",
+          "note": "官方巴士從旭川機場到新富良野王子大飯店約需 100 分鐘。",
+          "sources": [
+            "https://www.princehotels.co.jp/ski/furano/winter/",
+            "https://www.jal.co.jp/jp/ja/domtour/jaldp/skisp/hok/furano_full/",
+            "https://www.ana.co.jp/domestic/theme/promo_ski/pdf/260917/ski-bus_furano.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tomamu",
+      "status": "yellow",
+      "url_check": {
+        "code": 200,
+        "final_url": "https://www.snowtomamu.jp/summer/"
+      },
+      "findings": [
+        {
+          "field": "months",
+          "current": [
+            12,
+            1,
+            2,
+            3
+          ],
+          "suggested": [
+            12,
+            1,
+            2,
+            3,
+            4
+          ],
+          "severity": "yellow",
+          "note": "2026-2027 雪季官方營業期間為 2026年12月1日 至 2027年4月5日。",
+          "sources": [
+            "https://www.snowtomamu.jp/winter/",
+            "https://hoshinoresorts.com/jp/information/cxaa81x7g3/"
+          ]
+        }
+      ]
+    }
+  ]
+}
