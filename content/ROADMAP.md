@@ -12,7 +12,7 @@
 
 ## 雪場攻略 (resort)
 
-- [ ] gala-guide｜GALA 湯澤攻略：從東京搭新幹線一日來回怎麼玩
+- [x] 2026-09-23 gala-guide｜GALA 湯澤攻略：從東京搭新幹線一日來回怎麼玩
 - [ ] niseko-guide｜二世古 Grand Hirafu 攻略：聯票、gate 規則、住宿區與交通
 
 ## 新手入門 (beginner)

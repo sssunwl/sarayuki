@@ -1,6 +1,15 @@
 {
- "updated": "2026-09-22",
+ "updated": "2026-09-23",
  "articles": [
+  {
+   "slug": "gala-guide",
+   "title": "GALA 湯澤攻略：從東京搭新幹線一日來回怎麼玩",
+   "category": "resort",
+   "resort": "gala",
+   "date": "2026-09-23",
+   "summary": "GALA湯澤（GALA湯沢スキー場）是位於新潟縣湯澤町的滑雪度假村，以其從東京搭乘新幹線即可一日來回的便利性而聞名，非常適合想要輕鬆體驗滑雪或玩雪的旅客。",
+   "sources": 12
+  },
   {
    "slug": "ski-or-snowboard",
    "title": "雙板還是單板？第一次怎麼選、各自的學習曲線",
