@@ -1,12 +1,12 @@
 {
-  "generated": "2026-09-23T17:15:07+09:00",
+  "generated": "2026-09-24T17:06:27+09:00",
   "checked": [
-    "niseko",
-    "rusutsu",
-    "kiroro",
-    "teine",
-    "furano",
-    "tomamu"
+    "appi",
+    "zao",
+    "hakkoda",
+    "happo",
+    "hakuba47",
+    "tsugaike"
   ],
   "last_checked": {
     "niseko": "2026-09-23T17:15:07+09:00",
@@ -14,7 +14,13 @@
     "kiroro": "2026-09-23T17:15:07+09:00",
     "teine": "2026-09-23T17:15:07+09:00",
     "furano": "2026-09-23T17:15:07+09:00",
-    "tomamu": "2026-09-23T17:15:07+09:00"
+    "tomamu": "2026-09-23T17:15:07+09:00",
+    "appi": "2026-09-24T17:06:27+09:00",
+    "zao": "2026-09-24T17:06:27+09:00",
+    "hakkoda": "2026-09-24T17:06:27+09:00",
+    "happo": "2026-09-24T17:06:27+09:00",
+    "hakuba47": "2026-09-24T17:06:27+09:00",
+    "tsugaike": "2026-09-24T17:06:27+09:00"
   },
   "results": [
     {
@@ -322,6 +328,394 @@
             "https://www.snowtomamu.jp/winter/",
             "https://hoshinoresorts.com/jp/information/cxaa81x7g3/"
           ]
+        }
+      ]
+    },
+    {
+      "id": "appi",
+      "status": "unverified",
+      "url_check": {
+        "code": 200,
+        "final_url": "https://www.appi.co.jp/"
+      },
+      "findings": [
+        {
+          "field": "months",
+          "current": [
+            12,
+            1,
+            2,
+            3,
+            4
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
+            1,
+            2
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "盛岡站巴士約 1 小時",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 60,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "安比高原 APPI",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "安比高原スキー場",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "岩手・八幡平市",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "zao",
+      "status": "red",
+      "url_check": {
+        "code": 200,
+        "final_url": "https://zaomountainresort.com/ski/"
+      },
+      "findings": [
+        {
+          "field": "url",
+          "current": "https://zao-ski.or.jp/",
+          "suggested": "https://zaomountainresort.com/ski/",
+          "severity": "yellow",
+          "note": "官網轉址到不同網域，請人工確認是否換址",
+          "sources": [
+            "https://zaomountainresort.com/ski/"
+          ]
+        },
+        {
+          "field": "months",
+          "current": [
+            12,
+            1,
+            2,
+            3
+          ],
+          "suggested": [
+            12,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "severity": "red",
+          "note": "根據2026-2027雪季及過往雪季資訊，營業期間通常從12月中旬持續到5月上旬，包含4月和5月。",
+          "sources": [
+            "https://www.travel-inn.co.jp/ski/gelande/zao/",
+            "https://surfsnow.jp/search/list/spl_area01.php?kencd=15"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hakkoda",
+      "status": "red",
+      "url_check": {
+        "code": 200,
+        "final_url": "https://hakkoda-ropeway.jp/"
+      },
+      "findings": [
+        {
+          "field": "months",
+          "current": [
+            12,
+            1,
+            2,
+            3,
+            4
+          ],
+          "suggested": [
+            11,
+            12,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "severity": "red",
+          "note": "官方資訊指出冬季滑雪期間為11月下旬至5月中旬。",
+          "sources": [
+            "https://aomori-tourism.com/spot/detail_122.html",
+            "https://hakkoda9spa.com/sightseeing/hakkodaropeway/",
+            "https://www.tohokukanko.jp/transport/detail_1001187.html",
+            "https://hakkoda-ropeway.jp/",
+            "https://hakkoda-ropeway.jp/about/"
+          ]
+        },
+        {
+          "field": "access",
+          "current": "青森站巴士約 1 小時",
+          "suggested": "青森站巴士約 80 分鐘",
+          "severity": "yellow",
+          "note": "根據官方觀光機構資訊，冬季從青森站搭乘巴士至八甲田纜車站約需80分鐘。",
+          "sources": [
+            "https://aomori-tourism.com/spot/detail_122.html",
+            "https://hakkoda9spa.com/sightseeing/hakkodaropeway/",
+            "https://www.tohokukanko.jp/transport/detail_1001187.html",
+            "https://hakkoda-ropeway.jp/",
+            "https://hakkoda-ropeway.jp/about/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "happo",
+      "status": "unverified",
+      "url_check": {
+        "code": 200,
+        "final_url": "https://www.happo-one.jp/"
+      },
+      "findings": [
+        {
+          "field": "months",
+          "current": [
+            12,
+            1,
+            2,
+            3,
+            4
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
+            1,
+            2
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "長野站巴士約 70 分",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 70,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "白馬八方尾根 Happo-one",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "白馬八方尾根",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "長野・白馬村",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "hakuba47",
+      "status": "yellow",
+      "url_check": {
+        "code": 200,
+        "final_url": "https://www.hakuba47.co.jp/"
+      },
+      "findings": [
+        {
+          "field": "months",
+          "current": [
+            12,
+            1,
+            2,
+            3,
+            4
+          ],
+          "suggested": [
+            12,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "severity": "yellow",
+          "note": "Hakuba47 and Hakuba Goryu consistently operate from December to May, often until Golden Week.",
+          "sources": [
+            "https://www.hakuba47.co.jp/winter/en/mountain/mountain_info/",
+            "https://yukiyama-web.com/skiarea/230",
+            "https://bus-tabi.net/pref/nagano/nagano-hakubagoryuskiresort/",
+            "https://goryu47.com/",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENdv7XagCwk1NayvkXBWO0naweAu9MMMptwTGS4nZjvdax-uhzfnWinsKJy5Ob-Ym1YAAsxsJm-iHrZeZuB21UXFWV3wCrnnBesJVbFtEIsVJcTRlASUdXBSMwE-fnXrI13WJWKzpWtpiVKQ==",
+            "https://www.hakuba47.co.jp/winter/ticket/season_pass/entry-75.html",
+            "https://yukinohara70.com/%E3%80%90%E3%81%A9%E3%81%86%E8%A1%8C%E3%81%8F%EF%BC%9F%E3%80%91%E7%99%BD%E9%A6%AC%E4%BA%94%E7%AB%9C%E3%83%BBhakuba%EF%BC%94%EF%BC%97%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4/",
+            "https://snow365open.jugem.jp/?eid=7625"
+          ]
+        },
+        {
+          "field": "peak",
+          "current": [
+            1,
+            2
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "官方資料中未明確指出雪況最佳月份。",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "長野站巴士約 60 分",
+          "suggested": "長野站特急巴士約 65 分",
+          "severity": "yellow",
+          "note": "從JR長野站東口搭乘Alpico交通特急巴士至白馬五竜巴士站約需1小時5分鐘 (65分鐘)。",
+          "sources": [
+            "https://www.hakuba47.co.jp/winter/en/mountain/mountain_info/",
+            "https://yukiyama-web.com/skiarea/230",
+            "https://bus-tabi.net/pref/nagano/nagano-hakubagoryuskiresort/",
+            "https://goryu47.com/",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENdv7XagCwk1NayvkXBWO0naweAu9MMMptwTGS4nZjvdax-uhzfnWinsKJy5Ob-Ym1YAAsxsJm-iHrZeZuB21UXFWV3wCrnnBesJVbFtEIsVJcTRlASUdXBSMwE-fnXrI13WJWKzpWtpiVKQ==",
+            "https://www.hakuba47.co.jp/winter/ticket/season_pass/entry-75.html",
+            "https://yukinohara70.com/%E3%80%90%E3%81%A9%E3%81%86%E8%A1%8C%E3%81%8F%EF%BC%9F%E3%80%91%E7%99%BD%E9%A6%AC%E4%BA%94%E7%AB%9C%E3%83%BBhakuba%EF%BC%94%EF%BC%97%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4/",
+            "https://snow365open.jugem.jp/?eid=7625"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tsugaike",
+      "status": "unverified",
+      "url_check": {
+        "code": 200,
+        "final_url": "https://www.tsugaike.gr.jp/"
+      },
+      "findings": [
+        {
+          "field": "months",
+          "current": [
+            12,
+            1,
+            2,
+            3,
+            4
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
+            1,
+            2
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "長野站巴士約 80 分",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 80,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "白馬栂池高原 Tsugaike",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "白馬つがいけマウンテンリゾート",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "長野・小谷村",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
+          "sources": []
         }
       ]
     }
