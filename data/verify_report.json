@@ -1,12 +1,12 @@
 {
-  "generated": "2026-09-24T17:06:27+09:00",
+  "generated": "2026-09-25T17:29:58+09:00",
   "checked": [
-    "appi",
-    "zao",
-    "hakkoda",
-    "happo",
-    "hakuba47",
-    "tsugaike"
+    "cortina",
+    "nozawa",
+    "shiga",
+    "madarao",
+    "karuizawa",
+    "akakura"
   ],
   "last_checked": {
     "niseko": "2026-09-23T17:15:07+09:00",
@@ -20,7 +20,13 @@
     "hakkoda": "2026-09-24T17:06:27+09:00",
     "happo": "2026-09-24T17:06:27+09:00",
     "hakuba47": "2026-09-24T17:06:27+09:00",
-    "tsugaike": "2026-09-24T17:06:27+09:00"
+    "tsugaike": "2026-09-24T17:06:27+09:00",
+    "cortina": "2026-09-25T17:29:58+09:00",
+    "nozawa": "2026-09-25T17:29:58+09:00",
+    "shiga": "2026-09-25T17:29:58+09:00",
+    "madarao": "2026-09-25T17:29:58+09:00",
+    "karuizawa": "2026-09-25T17:29:58+09:00",
+    "akakura": "2026-09-25T17:29:58+09:00"
   },
   "results": [
     {
@@ -715,6 +721,417 @@
           "suggested": null,
           "severity": "unverified",
           "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "cortina",
+      "status": "red",
+      "url_check": {
+        "code": null,
+        "final_url": null,
+        "error": "未提供官網 URL"
+      },
+      "findings": [
+        {
+          "field": "url",
+          "current": null,
+          "suggested": null,
+          "severity": "red",
+          "note": "目前資料未提供官網 URL",
+          "sources": []
+        },
+        {
+          "field": "months",
+          "current": [
+            12,
+            1,
+            2,
+            3,
+            4
+          ],
+          "suggested": [
+            12,
+            1,
+            2,
+            3
+          ],
+          "severity": "yellow",
+          "note": "2026-2027 雪季預計營業期間為 12 月 12 日至 3 月 29 日。",
+          "sources": [
+            "https://www.hgp.co.jp/cortina/ski/",
+            "https://www.snownavi.co.jp/news/news-4159",
+            "https://bus-tabi.net/pref/nagano/nagano-hakubacortinasnowresort/"
+          ]
+        },
+        {
+          "field": "access",
+          "current": "長野站巴士約 90 分",
+          "suggested": "長野站巴士約 110 分",
+          "severity": "yellow",
+          "note": "從 JR 長野站東口搭乘 Alpico 交通的特急巴士（需預約）至白馬 Cortina 巴士站，雪季約需 1 小時 50 分鐘 (110 分鐘)。",
+          "sources": [
+            "https://www.hgp.co.jp/cortina/ski/",
+            "https://www.snownavi.co.jp/news/news-4159",
+            "https://bus-tabi.net/pref/nagano/nagano-hakubacortinasnowresort/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nozawa",
+      "status": "red",
+      "url_check": {
+        "code": 200,
+        "final_url": "https://nozawaski.com/"
+      },
+      "findings": [
+        {
+          "field": "months",
+          "current": [
+            12,
+            1,
+            2,
+            3,
+            4
+          ],
+          "suggested": [
+            11,
+            12,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "severity": "red",
+          "note": "根據2025-2026雪季官方資訊，營業期間為11月下旬至5月上旬。",
+          "sources": [
+            "https://japan-skiguide.com/guide/htm/r0028ens.htm",
+            "https://www.japan-guide.com/destinations/nozawa-onsen/nozawa-ski-resort.html",
+            "https://www.famiski.jp/gelande_guide/nozawa-onsen/",
+            "https://www.snowjapan.com/ski-areas-in-japan/nagano-prefecture/nozawa-onsen-village/nozawa-onsen",
+            "https://db.go-nagano.net/topics_detail6/id=17008",
+            "https://en.nozawaski.com/access/coming-train-bus/",
+            "https://www.rome2rio.com/s/Nozawaonsen/Iiyama-Station",
+            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00455802&arrival=00083659&line=00079980",
+            "https://www.vill.nozawaonsen.nagano.jp/www/contents/1050000000201/index.html",
+            "https://www.travel-inn.co.jp/ski/gelande/nozawa/",
+            "https://nozawaski.com/winter/access/train-bus/",
+            "https://www.vill.nozawaonsen.nagano.jp/www/index.html"
+          ]
+        },
+        {
+          "field": "peak",
+          "current": [
+            1,
+            2
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "官方資訊未明確指出雪況最佳月份。",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "飯山站巴士約 25 分（東京→飯山 北陸新幹線約 1 小時 45 分）",
+          "suggested": "飯山站巴士約 25 分",
+          "severity": "yellow",
+          "note": "官方交通資訊確認飯山站巴士約25分鐘，移除括號內的新幹線資訊以符合格式要求。",
+          "sources": [
+            "https://japan-skiguide.com/guide/htm/r0028ens.htm",
+            "https://www.japan-guide.com/destinations/nozawa-onsen/nozawa-ski-resort.html",
+            "https://www.famiski.jp/gelande_guide/nozawa-onsen/",
+            "https://www.snowjapan.com/ski-areas-in-japan/nagano-prefecture/nozawa-onsen-village/nozawa-onsen",
+            "https://db.go-nagano.net/topics_detail6/id=17008",
+            "https://en.nozawaski.com/access/coming-train-bus/",
+            "https://www.rome2rio.com/s/Nozawaonsen/Iiyama-Station",
+            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00455802&arrival=00083659&line=00079980",
+            "https://www.vill.nozawaonsen.nagano.jp/www/contents/1050000000201/index.html",
+            "https://www.travel-inn.co.jp/ski/gelande/nozawa/",
+            "https://nozawaski.com/winter/access/train-bus/",
+            "https://www.vill.nozawaonsen.nagano.jp/www/index.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shiga",
+      "status": "unverified",
+      "url_check": {
+        "code": 200,
+        "final_url": "https://www.shigakogen-ski.or.jp/"
+      },
+      "findings": [
+        {
+          "field": "months",
+          "current": [
+            12,
+            1,
+            2,
+            3,
+            4
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
+            1,
+            2
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "長野站巴士約 70 分",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 70,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "志賀高原 Shiga Kogen",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "志賀高原",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "長野・山ノ内町",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "madarao",
+      "status": "unverified",
+      "url_check": {
+        "code": 200,
+        "final_url": "https://www.madarao.jp/"
+      },
+      "findings": [
+        {
+          "field": "months",
+          "current": [
+            12,
+            1,
+            2,
+            3
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
+            1,
+            2
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "飯山站接駁約 30 分",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 30,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "斑尾高原 Madarao",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "斑尾高原スキー場",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "長野・飯山市",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "karuizawa",
+      "status": "yellow",
+      "url_check": {
+        "code": 200,
+        "final_url": "https://www.princehotels.co.jp/ski/karuizawa/"
+      },
+      "findings": [
+        {
+          "field": "months",
+          "current": [
+            11,
+            12,
+            1,
+            2,
+            3
+          ],
+          "suggested": [
+            10,
+            11,
+            12,
+            1,
+            2,
+            3
+          ],
+          "severity": "yellow",
+          "note": "2026-2027 雪季預計於 2026 年 10 月 31 日開放部分雪道，主要區域則於 12 月下旬至 3 月下旬開放。",
+          "sources": [
+            "https://www.princehotels.co.jp/ski/karuizawa/winter/coursemap/",
+            "https://prtimes.jp/main/html/rd/p/000004021.000024668.html",
+            "https://db.go-nagano.net/topics_detail6/id=16963",
+            "https://www.youtube.com/watch?v=PVQRt5F4DWY",
+            "https://surfsnow.jp/guide/htm/r0129m.htm",
+            "https://hapisnow.jp/snowresort/karuizawa-princehotel/",
+            "https://www.travel-inn.co.jp/ski/gelande/karuizawaprince/",
+            "https://www.princehotels.com/en/ski/karuizawa/"
+          ]
+        },
+        {
+          "field": "access",
+          "current": "輕井澤站步行約 10 分（東京→輕井澤 北陸新幹線約 1 小時）",
+          "suggested": "輕井澤站免費接駁巴士約 2-3 分鐘（東京→輕井澤 北陸新幹線約 1 小時）",
+          "severity": "yellow",
+          "note": "輕井澤站南口有免費接駁巴士前往雪場，車程約 2-3 分鐘。",
+          "sources": [
+            "https://www.princehotels.co.jp/ski/karuizawa/winter/coursemap/",
+            "https://prtimes.jp/main/html/rd/p/000004021.000024668.html",
+            "https://db.go-nagano.net/topics_detail6/id=16963",
+            "https://www.youtube.com/watch?v=PVQRt5F4DWY",
+            "https://surfsnow.jp/guide/htm/r0129m.htm",
+            "https://hapisnow.jp/snowresort/karuizawa-princehotel/",
+            "https://www.travel-inn.co.jp/ski/gelande/karuizawaprince/",
+            "https://www.princehotels.com/en/ski/karuizawa/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "akakura",
+      "status": "unverified",
+      "url_check": {
+        "code": 200,
+        "final_url": "https://akakura-ski.com/"
+      },
+      "findings": [
+        {
+          "field": "months",
+          "current": [
+            12,
+            1,
+            2,
+            3
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
+            1,
+            2
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "妙高高原站巴士約 15 分（東京→上越妙高 北陸新幹線約 2 小時）",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 40,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "妙高 赤倉溫泉 Akakura",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "赤倉温泉スキー場",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "新潟・妙高市",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
         }
       ]
