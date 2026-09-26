@@ -1,16 +1,16 @@
 {
-  "generated": "2026-09-25T17:29:58+09:00",
+  "generated": "2026-09-26T17:17:04+09:00",
   "checked": [
-    "cortina",
-    "nozawa",
-    "shiga",
-    "madarao",
-    "karuizawa",
-    "akakura"
+    "arai",
+    "gala",
+    "naeba",
+    "kagura",
+    "niseko",
+    "rusutsu"
   ],
   "last_checked": {
-    "niseko": "2026-09-23T17:15:07+09:00",
-    "rusutsu": "2026-09-23T17:15:07+09:00",
+    "niseko": "2026-09-26T17:17:04+09:00",
+    "rusutsu": "2026-09-26T17:17:04+09:00",
     "kiroro": "2026-09-23T17:15:07+09:00",
     "teine": "2026-09-23T17:15:07+09:00",
     "furano": "2026-09-23T17:15:07+09:00",
@@ -26,85 +26,21 @@
     "shiga": "2026-09-25T17:29:58+09:00",
     "madarao": "2026-09-25T17:29:58+09:00",
     "karuizawa": "2026-09-25T17:29:58+09:00",
-    "akakura": "2026-09-25T17:29:58+09:00"
+    "akakura": "2026-09-25T17:29:58+09:00",
+    "arai": "2026-09-26T17:17:04+09:00",
+    "gala": "2026-09-26T17:17:04+09:00",
+    "naeba": "2026-09-26T17:17:04+09:00",
+    "kagura": "2026-09-26T17:17:04+09:00"
   },
   "results": [
     {
       "id": "niseko",
-      "status": "unverified",
+      "status": "green",
       "url_check": {
         "code": 200,
         "final_url": "https://www.niseko.ne.jp/en/"
       },
-      "findings": [
-        {
-          "field": "months",
-          "current": [
-            11,
-            12,
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "peak",
-          "current": [
-            1,
-            2
-          ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "access",
-          "current": "新千歲機場巴士約 2.5–3 小時",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "accessMin",
-          "current": 165,
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "name",
-          "current": "二世古 Grand Hirafu",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "nameJa",
-          "current": "ニセコ東急 グラン・ヒラフ",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "place",
-          "current": "北海道・倶知安町",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        }
-      ]
+      "findings": []
     },
     {
       "id": "rusutsu",
@@ -130,18 +66,26 @@
             3
           ],
           "severity": "yellow",
-          "note": "2026-2027 雪季預計從 11 月 28 日開始營業至 3 月 30 日/31 日。",
+          "note": "根據官方資訊，2026-2027 雪季預計從 11 月下旬開始至 3 月底/4 月初結束，因此應包含 11 月份。",
           "sources": [
+            "https://rusutsu.com/en/access-shuttle-bus-new-chitose-airport/",
             "https://hapisnow.jp/snowresort/rusutsu-resort/",
-            "https://surfsnow.jp/guide/htm/r0331s.htm",
-            "https://bigruns.com/basu_group/%E5%86%AC%E5%AD%A3%E9%81%8B%E8%A1%8C-%E3%83%93%E3%83%83%E3%82%B0%E3%83%A9%E3%83%B3%E3%82%BA%E5%8F%B7-%E6%96%B0%E5%8D%83%E6%AD%B3%E7%A9%BA%E6%B8%AF",
             "https://rusutsu.com/en/news-and-topics/skipackage/",
-            "https://bigs.jp/hokkaido_ski/gelande/b2005.html",
+            "https://nisade.com/news/when-does-rusutsu-ski-resort-open",
+            "https://japanskiexperience.com/blog/japan-ski-resort-opening-dates/",
+            "https://rusutsu.com/news-and-topics/skipackage/",
+            "https://surfsnow.jp/guide/htm/r0331fa.htm",
+            "https://bigruns.com/basu_group/%E5%86%AC%E5%AD%A3%E9%81%8B%E8%A1%8C-%E3%83%93%E3%83%83%E3%82%B0%E3%83%A9%E3%83%B3%E3%82%BA%E5%8F%B7-%E6%96%B0%E5%8D%83%E6%AD%B3%E7%A9%BA%E6%B8%AF",
             "https://www.skiing-hokkaido.com/ja/resorts/rusutsu-resort/",
+            "https://www.jtb.co.jp/kokunai-hotel/htl/1567001/access/",
             "https://rusutsu.com/access-shuttle-bus-new-chitose-airport/",
-            "https://www.japantalkers.com/locations/401",
-            "https://rusutsu.com/corporate-overview/",
-            "https://kamori.co.jp/kamori_group/rusutsu"
+            "https://www.snowjapan.com/ski-areas-in-japan/hokkaido/rusutsu-village/rusutsu-resort",
+            "https://rusutsu.com/en/",
+            "https://rusutsu.com/",
+            "https://travel.yahoo.co.jp/kanko/spot-00014248/",
+            "https://yado.knt.co.jp/st/S010277/",
+            "https://rusutsu.com/en/all-deals-and-packages/",
+            "https://rusutsu.com/en/rusutsu-resort-hotel-and-convention/"
           ]
         }
       ]
@@ -1133,6 +1077,190 @@
           "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
+        }
+      ]
+    },
+    {
+      "id": "arai",
+      "status": "red",
+      "url_check": {
+        "code": null,
+        "final_url": null,
+        "error": "未提供官網 URL"
+      },
+      "findings": [
+        {
+          "field": "url",
+          "current": null,
+          "suggested": null,
+          "severity": "red",
+          "note": "目前資料未提供官網 URL",
+          "sources": []
+        },
+        {
+          "field": "months",
+          "current": [
+            12,
+            1,
+            2,
+            3,
+            4
+          ],
+          "suggested": [
+            12,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "severity": "yellow",
+          "note": "根據2025-2026雪季官方相關資訊，營業期間為12月中旬至5月上旬。",
+          "sources": [
+            "https://myoko.bona.jp/myokojp/single-post5.html",
+            "https://www.lottehotel.com/arai-resort/en/snow-season",
+            "https://www.lottehotel.com/arai-resort/en/facilities/shuttle-bus-service",
+            "https://www.lottehotel.com/arai-resort/ja/facilities/shuttle-bus-service"
+          ]
+        },
+        {
+          "field": "peak",
+          "current": [
+            1,
+            2
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "官方資訊未明確指出雪況最佳月份，但提及擁有極佳粉雪。",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "上越妙高站巴士約 40 分",
+          "suggested": "上越妙高站免費預約巴士約 30 分",
+          "severity": "yellow",
+          "note": "羅ッテアライリゾート提供從上越妙高站西口出發的免費預約制接駁巴士，車程約30分鐘。",
+          "sources": [
+            "https://myoko.bona.jp/myokojp/single-post5.html",
+            "https://www.lottehotel.com/arai-resort/en/snow-season",
+            "https://www.lottehotel.com/arai-resort/en/facilities/shuttle-bus-service",
+            "https://www.lottehotel.com/arai-resort/ja/facilities/shuttle-bus-service"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gala",
+      "status": "red",
+      "url_check": {
+        "code": null,
+        "final_url": "https://gala.co.jp/",
+        "error": "<urlopen error timed out>"
+      },
+      "findings": [
+        {
+          "field": "url",
+          "current": "https://gala.co.jp/",
+          "suggested": null,
+          "severity": "red",
+          "note": "<urlopen error timed out>",
+          "sources": []
+        },
+        {
+          "field": "months",
+          "current": [
+            12,
+            1,
+            2,
+            3,
+            4
+          ],
+          "suggested": [
+            12,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "severity": "yellow",
+          "note": "根據官方資訊，雪場營業期間通常從12月持續到5月上旬，因此將5月加入營業月份。",
+          "sources": [
+            "https://canyons.jp/en/news-en/blog/tokyo-to-gala-yuzawa-day-trip-guide/",
+            "https://www.e-yuzawa.gr.jp/sys/ski_p/gala_yuzawa_ski_resort/",
+            "https://snow.japanvoyage.jp/guides/when-does-japan-ski-season-start-2026-2027-guide",
+            "https://www.e-yuzawa.gr.jp/yuzawa_snow/gala",
+            "https://www.yukoyuko.net/onsen/spot/s0001117",
+            "https://prtimes.jp/main/html/rd/p/000000029.000115189.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "naeba",
+      "status": "yellow",
+      "url_check": {
+        "code": 200,
+        "final_url": "https://www.princehotels.co.jp/ski/naeba/"
+      },
+      "findings": [
+        {
+          "field": "access",
+          "current": "越後湯澤站巴士約 40 分",
+          "suggested": "越後湯澤站路線巴士約 45 分",
+          "severity": "yellow",
+          "note": "官方路線巴士時間約為 45-50 分鐘，而非所有巴士皆為 40 分鐘。40 分鐘通常指飯店住客專用接駁巴士。",
+          "sources": [
+            "https://www.jalan.net/kankou/spt_15461ca3372107434/",
+            "https://www.naeba.gr.jp/access/",
+            "https://www.e-yuzawa.gr.jp/sys/sightseeing_p/naebadragondola/",
+            "https://hapisnow.jp/snowresort/naeba/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kagura",
+      "status": "yellow",
+      "url_check": {
+        "code": 200,
+        "final_url": "https://www.princehotels.co.jp/ski/kagura/"
+      },
+      "findings": [
+        {
+          "field": "months",
+          "current": [
+            12,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "suggested": [
+            11,
+            12,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "severity": "yellow",
+          "note": "官方資訊指出雪場營業期間為11月下旬至5月中下旬，因此11月應納入營業月份。",
+          "sources": [
+            "https://www.seibuprince.com/ja/mtnaeba-kagura-ski-resort",
+            "https://japan-skiguide.com/guide/htm/r0070ens.htm",
+            "https://www.princehotels.co.jp/ski/kagura/",
+            "https://roadplan.net/blog/kagura-ski/",
+            "https://www.navitime.co.jp/route/comparison?orvName=%E3%81%8B%E3%81%90%E3%82%89%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4&orvSpotCode=02301-1300160&dnvName=%E8%B6%8A%E5%BE%8C%E6%B9%AF%E6%B2%A2&dnvSpotCode=02011-00000702&from=carRouteRankingList",
+            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00492015&arrival=00492448&line=00077485",
+            "https://kaguramc.jp/about-the-mountain/",
+            "https://www.e-yuzawa.gr.jp/sys/ski_p/kagura_ski_resort_tashiro_starion/",
+            "https://niigata-kankou.or.jp/ski/10682",
+            "https://surfsnow.jp/guide/htm/r0070m.htm",
+            "https://travel.yahoo.co.jp/kanko/spot-00002639/"
+          ]
         }
       ]
     }
