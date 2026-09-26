@@ -1,6 +1,15 @@
 {
- "updated": "2026-09-24",
+ "updated": "2026-09-26",
  "articles": [
+  {
+   "slug": "ski-school",
+   "title": "日本雪場的滑雪課：團體課與私人課怎麼選、中英文教練怎麼找",
+   "category": "beginner",
+   "resort": null,
+   "date": "2026-09-26",
+   "summary": "在日本雪場學習滑雪，選擇適合自己的滑雪課程是確保安全與享受樂趣的關鍵。本篇將協助你了解團體課與私人課的差異，以及如何找到合適的中英文教練。",
+   "sources": 12
+  },
   {
    "slug": "niseko-guide",
    "title": "二世古 Grand Hirafu 攻略：聯票、gate 規則、住宿區與交通",
