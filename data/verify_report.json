@@ -1,22 +1,22 @@
 {
-  "generated": "2026-09-26T17:17:04+09:00",
+  "generated": "2026-09-27T17:54:17+09:00",
   "checked": [
-    "arai",
-    "gala",
-    "naeba",
-    "kagura",
-    "niseko",
-    "rusutsu"
+    "kiroro",
+    "teine",
+    "furano",
+    "tomamu",
+    "appi",
+    "zao"
   ],
   "last_checked": {
     "niseko": "2026-09-26T17:17:04+09:00",
     "rusutsu": "2026-09-26T17:17:04+09:00",
-    "kiroro": "2026-09-23T17:15:07+09:00",
-    "teine": "2026-09-23T17:15:07+09:00",
-    "furano": "2026-09-23T17:15:07+09:00",
-    "tomamu": "2026-09-23T17:15:07+09:00",
-    "appi": "2026-09-24T17:06:27+09:00",
-    "zao": "2026-09-24T17:06:27+09:00",
+    "kiroro": "2026-09-27T17:54:17+09:00",
+    "teine": "2026-09-27T17:54:17+09:00",
+    "furano": "2026-09-27T17:54:17+09:00",
+    "tomamu": "2026-09-27T17:54:17+09:00",
+    "appi": "2026-09-27T17:54:17+09:00",
+    "zao": "2026-09-27T17:54:17+09:00",
     "hakkoda": "2026-09-24T17:06:27+09:00",
     "happo": "2026-09-24T17:06:27+09:00",
     "hakuba47": "2026-09-24T17:06:27+09:00",
@@ -94,10 +94,19 @@
       "id": "kiroro",
       "status": "red",
       "url_check": {
-        "code": 200,
-        "final_url": "https://www.kiroro.co.jp/"
+        "code": null,
+        "final_url": "https://www.kiroro.co.jp/",
+        "error": "<urlopen error timed out>"
       },
       "findings": [
+        {
+          "field": "url",
+          "current": "https://www.kiroro.co.jp/",
+          "suggested": null,
+          "severity": "red",
+          "note": "<urlopen error timed out>",
+          "sources": []
+        },
         {
           "field": "months",
           "current": [
@@ -117,19 +126,20 @@
             5
           ],
           "severity": "red",
-          "note": "根據2025-2026雪季的官方資訊，營業期間為11月下旬至5月上旬。",
+          "note": "2026-2027雪季預計營業期間為11月下旬至5月上旬。",
           "sources": [
-            "https://www.resortbaito.co.jp/special/ski-job/kirororesort/",
-            "https://www.kiroro.co.jp/ja/news/notice-2025-26-closure/",
-            "https://www.snownavi.com/topics/news_25090601",
+            "https://www.clubmed.co.jp/r/kiroro-grand/w?locale=en-JP",
+            "https://hapisnow.jp/snowresort/kiroro-snowworld/",
+            "https://travelution.com.my/best-time-to-ski-at-club-med-kiroro",
             "https://livejapan.com/ja/in-hokkaido/in-pref-hokkaido/in-sapporo_chitose/article-a1000334/",
-            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7joQv99GjjwE8lTYFKl6xyenPOzFgMp2UtEh0ZRH7Sl6jHhLDt00MS65xsprtet5feZ54lSGvR09JtI23zRJFUxOfEDjhX0kzbkV_rRpZ9a9ahGLrEer5uatG-nM1ZdBMU_hkRoLU0eww",
-            "http://love-snow.jp/kiroro/access.html",
-            "https://www.kiroro.co.jp/ja/about_us/",
-            "https://www.kiroro.co.jp/seasonswitch/current-season/",
-            "https://www.kiroro.co.jp/snowworld/",
-            "https://www.mapion.co.jp/phonebook/M04013/01409/20130353522/",
-            "https://www.gutabi.jp/spot/detail/586"
+            "https://powderfreak.jtrip.co.jp/gelande-information/kiroro/",
+            "https://yukiroro.com/ja/access",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHqVusAkyErrE3vg-H8WLZmoMwWbKTtdVitlPHj4oPgf9TMkjPkkP1GMBMOdW70J_ubsDLC-IogYkRniVSSi8QEIZBGbQ2-BTGCwU6NsnGti7Chh4vMCTq1Cnf-y9u-n-O-adDUhz3KFTKQ",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQED-frhBl0VIgov4_Bl5Qd_JwOdRdPpAHHX1M-BkyokReoOOShrlloC2FEyj07gSwUYj7exw_nGJuPIuDLMzgs12ZX2L-RpMoMQ4VBcHs-PUNwPUewTmXP76VTh-agzOPmw",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUu0iVzeQWPdjdTrNgr_rPjo4q61sEXe7PbS_vpXpgpyArU_LdkDhNeZoewiO7YC7G3-WU0YRcU2sLwa7WOBml9LZC2kcI2nJP9h1I4jCTz8ySXQ6HBlPFVMbDnMqxYc1s2_47AGI6cnYAv2Pb9lrVdg0Q",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxOmUTPjHisvTDJzx_6mTWR-rMB8pvtfWd3_wytpg6e8gmQGcHgZzXetKgpc83ZX3WSz0Ryqj9_3Ig11Jv0S-906_CNAcfIl7Z4uF08wng8FHv8DQlPu1DZALVC2gifc5UXMiTFlr9ROS_H1NkbM3ZqRBnvCDy",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEC78On65EkKzYOoGu02o04I89R0RJEWd83doi-Sv9OcXYHkw3rZv7VecMiXaxDaFU9hpIp6XKzB7CB_pbvjmqQHLzBp1UlRmPcOLNA7_3w7kBjS9yTxV1FscEj9g==",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGgWRsJQHN3yqoakgyObEXvhUkXCKnvmV3P9penLmKsY-kk30sHxA3ZzTXpfB6hns71tEDjtTxNk4-olcGaUFSB2vXu3F3ukSjdOD8Hm4Gkt3Qu5Ck12gHjh0-zQYnTBAXfdASnaxQltdFVKP7cWnzI1TxIAGhY5Y0KuDzt9YZ0zTr_-Q=="
           ]
         }
       ]
@@ -138,10 +148,19 @@
       "id": "teine",
       "status": "red",
       "url_check": {
-        "code": 200,
-        "final_url": "https://www.sapporo-teine.com/"
+        "code": null,
+        "final_url": "https://www.sapporo-teine.com/",
+        "error": "<urlopen error timed out>"
       },
       "findings": [
+        {
+          "field": "url",
+          "current": "https://www.sapporo-teine.com/",
+          "suggested": null,
+          "severity": "red",
+          "note": "<urlopen error timed out>",
+          "sources": []
+        },
         {
           "field": "months",
           "current": [
@@ -160,31 +179,9 @@
             5
           ],
           "severity": "red",
-          "note": "2026-2027雪季預計從11月21日開放至5月5日，其中Olympia Zone於12月5日開放至3月28日，Highland Zone開放至5月5日。",
+          "note": "根據2026-2027雪季資訊，營業期間包含11月至5月。",
           "sources": [
-            "https://www.fuyuski.co/en/blog/teine-ski-guide",
-            "https://watabi.org/en/articles/sapporo-teine-ski-guide",
-            "https://sapporo-teine.com/snow/lang/en/?ref=uchijapan",
-            "https://sapporo-teine.com/snow/access",
-            "https://www.japan-guide.com/e/e5318.html",
-            "https://sapporo-teine.com/snow/lang/en/access/",
-            "https://sapporo-teine.com/snow/access/other"
-          ]
-        },
-        {
-          "field": "access",
-          "current": "札幌市區開車或巴士約 40–60 分",
-          "suggested": "從札幌車站搭乘JR列車至手稻站 (約11-18分)，轉乘JR北海道巴士至雪場 (約16-30分)。",
-          "severity": "yellow",
-          "note": "官方資訊指出從札幌車站搭乘JR列車至手稻站約11-18分鐘，再轉乘JR北海道巴士至雪場約16-30分鐘。",
-          "sources": [
-            "https://www.fuyuski.co/en/blog/teine-ski-guide",
-            "https://watabi.org/en/articles/sapporo-teine-ski-guide",
-            "https://sapporo-teine.com/snow/lang/en/?ref=uchijapan",
-            "https://sapporo-teine.com/snow/access",
-            "https://www.japan-guide.com/e/e5318.html",
-            "https://sapporo-teine.com/snow/lang/en/access/",
-            "https://sapporo-teine.com/snow/access/other"
+            "https://www.orion-tour.co.jp/air/fair/hokkaido/ski/gelande/teine/?area=tokai"
           ]
         }
       ]
@@ -216,42 +213,38 @@
             5
           ],
           "severity": "red",
-          "note": "2026-2027 雪季預計從 11 月 28 日開始，至 5 月 5 日結束 (富良野區域)。",
+          "note": "富良野スキー場2026-2027雪季預計於2026年11月28日開放，並於2027年5月5日結束營業。",
           "sources": [
-            "https://www.princehotels.co.jp/ski/furano/winter/",
-            "https://www.jal.co.jp/jp/ja/domtour/jaldp/skisp/hok/furano_full/",
-            "https://www.ana.co.jp/domestic/theme/promo_ski/pdf/260917/ski-bus_furano.pdf"
+            "https://www.princehotels.com/en/ski/furano/",
+            "https://www.facebook.com/furanoskiarea/photos/1395721982703970/",
+            "https://www.onthesnow.com/hokkaido/furano-ski-resort/ski-resort",
+            "https://livejapan.com/en/in-hokkaido/in-pref-hokkaido/in-furano_biei_sounkyo/article-a1000333/",
+            "https://japan-skiguide.com/guide/htm/r0118ens.htm",
+            "https://www.rome2rio.com/s/Asahikawa-Airport-AKJ/Furano-Ski-Resort",
+            "https://japanspecialists.com/getting-here/airport-shuttle-bus-to-furano"
           ]
         },
         {
           "field": "access",
           "current": "旭川機場約 1 小時",
-          "suggested": "旭川機場巴士約 1 小時 40 分鐘",
+          "suggested": "旭川機場巴士約 1 小時 20 分鐘",
           "severity": "yellow",
-          "note": "官方巴士從旭川機場到新富良野王子大飯店約需 1 小時 40 分鐘。",
+          "note": "從旭川機場搭乘巴士至富良野滑雪場（新富良野王子大飯店）約需1小時18分鐘至1.5小時。",
           "sources": [
-            "https://www.princehotels.co.jp/ski/furano/winter/",
-            "https://www.jal.co.jp/jp/ja/domtour/jaldp/skisp/hok/furano_full/",
-            "https://www.ana.co.jp/domestic/theme/promo_ski/pdf/260917/ski-bus_furano.pdf"
-          ]
-        },
-        {
-          "field": "accessMin",
-          "current": 60,
-          "suggested": 100,
-          "severity": "yellow",
-          "note": "官方巴士從旭川機場到新富良野王子大飯店約需 100 分鐘。",
-          "sources": [
-            "https://www.princehotels.co.jp/ski/furano/winter/",
-            "https://www.jal.co.jp/jp/ja/domtour/jaldp/skisp/hok/furano_full/",
-            "https://www.ana.co.jp/domestic/theme/promo_ski/pdf/260917/ski-bus_furano.pdf"
+            "https://www.princehotels.com/en/ski/furano/",
+            "https://www.facebook.com/furanoskiarea/photos/1395721982703970/",
+            "https://www.onthesnow.com/hokkaido/furano-ski-resort/ski-resort",
+            "https://livejapan.com/en/in-hokkaido/in-pref-hokkaido/in-furano_biei_sounkyo/article-a1000333/",
+            "https://japan-skiguide.com/guide/htm/r0118ens.htm",
+            "https://www.rome2rio.com/s/Asahikawa-Airport-AKJ/Furano-Ski-Resort",
+            "https://japanspecialists.com/getting-here/airport-shuttle-bus-to-furano"
           ]
         }
       ]
     },
     {
       "id": "tomamu",
-      "status": "yellow",
+      "status": "unverified",
       "url_check": {
         "code": 200,
         "final_url": "https://www.snowtomamu.jp/summer/"
@@ -265,19 +258,61 @@
             2,
             3
           ],
-          "suggested": [
-            12,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
             1,
-            2,
-            3,
-            4
+            2
           ],
-          "severity": "yellow",
-          "note": "2026-2027 雪季官方營業期間為 2026年12月1日 至 2027年4月5日。",
-          "sources": [
-            "https://www.snowtomamu.jp/winter/",
-            "https://hoshinoresorts.com/jp/information/cxaa81x7g3/"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "新千歲機場搭 JR 到 Tomamu 站約 1.5 小時",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 90,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "星野 Tomamu",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "星野リゾート トマム",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "北海道・占冠村",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
         }
       ]
     },
@@ -300,7 +335,7 @@
           ],
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
           "sources": []
         },
         {
@@ -311,7 +346,7 @@
           ],
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
           "sources": []
         },
         {
@@ -319,7 +354,7 @@
           "current": "盛岡站巴士約 1 小時",
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
           "sources": []
         },
         {
@@ -327,7 +362,7 @@
           "current": 60,
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
           "sources": []
         },
         {
@@ -335,7 +370,7 @@
           "current": "安比高原 APPI",
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
           "sources": []
         },
         {
@@ -343,7 +378,7 @@
           "current": "安比高原スキー場",
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
           "sources": []
         },
         {
@@ -351,14 +386,14 @@
           "current": "岩手・八幡平市",
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
           "sources": []
         }
       ]
     },
     {
       "id": "zao",
-      "status": "red",
+      "status": "yellow",
       "url_check": {
         "code": 200,
         "final_url": "https://zaomountainresort.com/ski/"
@@ -382,20 +417,61 @@
             2,
             3
           ],
-          "suggested": [
-            12,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
             1,
-            2,
-            3,
-            4,
-            5
+            2
           ],
-          "severity": "red",
-          "note": "根據2026-2027雪季及過往雪季資訊，營業期間通常從12月中旬持續到5月上旬，包含4月和5月。",
-          "sources": [
-            "https://www.travel-inn.co.jp/ski/gelande/zao/",
-            "https://surfsnow.jp/search/list/spl_area01.php?kencd=15"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "山形站巴士約 40 分",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 40,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "藏王溫泉 Zao",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "蔵王温泉スキー場",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "山形・山形市",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "sources": []
         }
       ]
     },
