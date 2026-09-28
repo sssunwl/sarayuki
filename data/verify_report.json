@@ -1,12 +1,12 @@
 {
-  "generated": "2026-09-27T17:54:17+09:00",
+  "generated": "2026-09-28T18:19:21+09:00",
   "checked": [
-    "kiroro",
-    "teine",
-    "furano",
-    "tomamu",
-    "appi",
-    "zao"
+    "hakkoda",
+    "happo",
+    "hakuba47",
+    "tsugaike",
+    "cortina",
+    "nozawa"
   ],
   "last_checked": {
     "niseko": "2026-09-26T17:17:04+09:00",
@@ -17,12 +17,12 @@
     "tomamu": "2026-09-27T17:54:17+09:00",
     "appi": "2026-09-27T17:54:17+09:00",
     "zao": "2026-09-27T17:54:17+09:00",
-    "hakkoda": "2026-09-24T17:06:27+09:00",
-    "happo": "2026-09-24T17:06:27+09:00",
-    "hakuba47": "2026-09-24T17:06:27+09:00",
-    "tsugaike": "2026-09-24T17:06:27+09:00",
-    "cortina": "2026-09-25T17:29:58+09:00",
-    "nozawa": "2026-09-25T17:29:58+09:00",
+    "hakkoda": "2026-09-28T18:19:21+09:00",
+    "happo": "2026-09-28T18:19:21+09:00",
+    "hakuba47": "2026-09-28T18:19:21+09:00",
+    "tsugaike": "2026-09-28T18:19:21+09:00",
+    "cortina": "2026-09-28T18:19:21+09:00",
+    "nozawa": "2026-09-28T18:19:21+09:00",
     "shiga": "2026-09-25T17:29:58+09:00",
     "madarao": "2026-09-25T17:29:58+09:00",
     "karuizawa": "2026-09-25T17:29:58+09:00",
@@ -502,27 +502,27 @@
             5
           ],
           "severity": "red",
-          "note": "官方資訊指出冬季滑雪期間為11月下旬至5月中旬。",
+          "note": "官方資訊顯示冬季滑雪期間為11月下旬至5月中旬。",
           "sources": [
             "https://aomori-tourism.com/spot/detail_122.html",
             "https://hakkoda9spa.com/sightseeing/hakkodaropeway/",
+            "https://aomori-tourism.com/itineraries/detail_30.html",
             "https://www.tohokukanko.jp/transport/detail_1001187.html",
-            "https://hakkoda-ropeway.jp/",
-            "https://hakkoda-ropeway.jp/about/"
+            "https://hakkoda-ropeway.jp/access/"
           ]
         },
         {
           "field": "access",
           "current": "青森站巴士約 1 小時",
-          "suggested": "青森站巴士約 80 分鐘",
+          "suggested": "JR東北巴士「みずうみ號」約 80 分鐘",
           "severity": "yellow",
-          "note": "根據官方觀光機構資訊，冬季從青森站搭乘巴士至八甲田纜車站約需80分鐘。",
+          "note": "從青森站搭乘JR東北巴士「みずうみ號」至「ロープウェイ駅前」站，冬季約需80分鐘。",
           "sources": [
             "https://aomori-tourism.com/spot/detail_122.html",
             "https://hakkoda9spa.com/sightseeing/hakkodaropeway/",
+            "https://aomori-tourism.com/itineraries/detail_30.html",
             "https://www.tohokukanko.jp/transport/detail_1001187.html",
-            "https://hakkoda-ropeway.jp/",
-            "https://hakkoda-ropeway.jp/about/"
+            "https://hakkoda-ropeway.jp/access/"
           ]
         }
       ]
@@ -604,7 +604,7 @@
     },
     {
       "id": "hakuba47",
-      "status": "yellow",
+      "status": "unverified",
       "url_check": {
         "code": 200,
         "final_url": "https://www.hakuba47.co.jp/"
@@ -619,26 +619,10 @@
             3,
             4
           ],
-          "suggested": [
-            12,
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "severity": "yellow",
-          "note": "Hakuba47 and Hakuba Goryu consistently operate from December to May, often until Golden Week.",
-          "sources": [
-            "https://www.hakuba47.co.jp/winter/en/mountain/mountain_info/",
-            "https://yukiyama-web.com/skiarea/230",
-            "https://bus-tabi.net/pref/nagano/nagano-hakubagoryuskiresort/",
-            "https://goryu47.com/",
-            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENdv7XagCwk1NayvkXBWO0naweAu9MMMptwTGS4nZjvdax-uhzfnWinsKJy5Ob-Ym1YAAsxsJm-iHrZeZuB21UXFWV3wCrnnBesJVbFtEIsVJcTRlASUdXBSMwE-fnXrI13WJWKzpWtpiVKQ==",
-            "https://www.hakuba47.co.jp/winter/ticket/season_pass/entry-75.html",
-            "https://yukinohara70.com/%E3%80%90%E3%81%A9%E3%81%86%E8%A1%8C%E3%81%8F%EF%BC%9F%E3%80%91%E7%99%BD%E9%A6%AC%E4%BA%94%E7%AB%9C%E3%83%BBhakuba%EF%BC%94%EF%BC%97%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4/",
-            "https://snow365open.jugem.jp/?eid=7625"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
         },
         {
           "field": "peak",
@@ -648,25 +632,48 @@
           ],
           "suggested": null,
           "severity": "unverified",
-          "note": "官方資料中未明確指出雪況最佳月份。",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
         },
         {
           "field": "access",
           "current": "長野站巴士約 60 分",
-          "suggested": "長野站特急巴士約 65 分",
-          "severity": "yellow",
-          "note": "從JR長野站東口搭乘Alpico交通特急巴士至白馬五竜巴士站約需1小時5分鐘 (65分鐘)。",
-          "sources": [
-            "https://www.hakuba47.co.jp/winter/en/mountain/mountain_info/",
-            "https://yukiyama-web.com/skiarea/230",
-            "https://bus-tabi.net/pref/nagano/nagano-hakubagoryuskiresort/",
-            "https://goryu47.com/",
-            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENdv7XagCwk1NayvkXBWO0naweAu9MMMptwTGS4nZjvdax-uhzfnWinsKJy5Ob-Ym1YAAsxsJm-iHrZeZuB21UXFWV3wCrnnBesJVbFtEIsVJcTRlASUdXBSMwE-fnXrI13WJWKzpWtpiVKQ==",
-            "https://www.hakuba47.co.jp/winter/ticket/season_pass/entry-75.html",
-            "https://yukinohara70.com/%E3%80%90%E3%81%A9%E3%81%86%E8%A1%8C%E3%81%8F%EF%BC%9F%E3%80%91%E7%99%BD%E9%A6%AC%E4%BA%94%E7%AB%9C%E3%83%BBhakuba%EF%BC%94%EF%BC%97%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4/",
-            "https://snow365open.jugem.jp/?eid=7625"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 60,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "白馬 47 & 五竜",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "Hakuba47・白馬五竜",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "長野・白馬村",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
         }
       ]
     },
@@ -689,7 +696,7 @@
           ],
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
         },
         {
@@ -700,7 +707,7 @@
           ],
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
         },
         {
@@ -708,7 +715,7 @@
           "current": "長野站巴士約 80 分",
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
         },
         {
@@ -716,7 +723,7 @@
           "current": 80,
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
         },
         {
@@ -724,7 +731,7 @@
           "current": "白馬栂池高原 Tsugaike",
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
         },
         {
@@ -732,7 +739,7 @@
           "current": "白馬つがいけマウンテンリゾート",
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
         },
         {
@@ -740,7 +747,7 @@
           "current": "長野・小谷村",
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
         }
       ]
@@ -778,11 +785,14 @@
             3
           ],
           "severity": "yellow",
-          "note": "2026-2027 雪季預計營業期間為 12 月 12 日至 3 月 29 日。",
+          "note": "2026-2027雪季預計營業期間為2026年12月12日至2027年3月29日。",
           "sources": [
             "https://www.hgp.co.jp/cortina/ski/",
-            "https://www.snownavi.co.jp/news/news-4159",
-            "https://bus-tabi.net/pref/nagano/nagano-hakubacortinasnowresort/"
+            "https://www.hgp.co.jp/cortina/ski/charge/",
+            "https://www.atpress.ne.jp/news/1910428",
+            "https://bus-tabi.net/pref/nagano/nagano-hakubacortinasnowresort/",
+            "https://www.hgp.co.jp/cortina/ski/plan/",
+            "https://www.hgp.co.jp/cortina/ski/access/"
           ]
         },
         {
@@ -790,18 +800,21 @@
           "current": "長野站巴士約 90 分",
           "suggested": "長野站巴士約 110 分",
           "severity": "yellow",
-          "note": "從 JR 長野站東口搭乘 Alpico 交通的特急巴士（需預約）至白馬 Cortina 巴士站，雪季約需 1 小時 50 分鐘 (110 分鐘)。",
+          "note": "從JR長野站東口搭乘Alpico交通的特急巴士至白馬Cortina巴士站約需1小時50分鐘（110分鐘）。",
           "sources": [
             "https://www.hgp.co.jp/cortina/ski/",
-            "https://www.snownavi.co.jp/news/news-4159",
-            "https://bus-tabi.net/pref/nagano/nagano-hakubacortinasnowresort/"
+            "https://www.hgp.co.jp/cortina/ski/charge/",
+            "https://www.atpress.ne.jp/news/1910428",
+            "https://bus-tabi.net/pref/nagano/nagano-hakubacortinasnowresort/",
+            "https://www.hgp.co.jp/cortina/ski/plan/",
+            "https://www.hgp.co.jp/cortina/ski/access/"
           ]
         }
       ]
     },
     {
       "id": "nozawa",
-      "status": "red",
+      "status": "unverified",
       "url_check": {
         "code": 200,
         "final_url": "https://nozawaski.com/"
@@ -816,31 +829,10 @@
             3,
             4
           ],
-          "suggested": [
-            11,
-            12,
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "severity": "red",
-          "note": "根據2025-2026雪季官方資訊，營業期間為11月下旬至5月上旬。",
-          "sources": [
-            "https://japan-skiguide.com/guide/htm/r0028ens.htm",
-            "https://www.japan-guide.com/destinations/nozawa-onsen/nozawa-ski-resort.html",
-            "https://www.famiski.jp/gelande_guide/nozawa-onsen/",
-            "https://www.snowjapan.com/ski-areas-in-japan/nagano-prefecture/nozawa-onsen-village/nozawa-onsen",
-            "https://db.go-nagano.net/topics_detail6/id=17008",
-            "https://en.nozawaski.com/access/coming-train-bus/",
-            "https://www.rome2rio.com/s/Nozawaonsen/Iiyama-Station",
-            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00455802&arrival=00083659&line=00079980",
-            "https://www.vill.nozawaonsen.nagano.jp/www/contents/1050000000201/index.html",
-            "https://www.travel-inn.co.jp/ski/gelande/nozawa/",
-            "https://nozawaski.com/winter/access/train-bus/",
-            "https://www.vill.nozawaonsen.nagano.jp/www/index.html"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
         },
         {
           "field": "peak",
@@ -850,29 +842,48 @@
           ],
           "suggested": null,
           "severity": "unverified",
-          "note": "官方資訊未明確指出雪況最佳月份。",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
         },
         {
           "field": "access",
           "current": "飯山站巴士約 25 分（東京→飯山 北陸新幹線約 1 小時 45 分）",
-          "suggested": "飯山站巴士約 25 分",
-          "severity": "yellow",
-          "note": "官方交通資訊確認飯山站巴士約25分鐘，移除括號內的新幹線資訊以符合格式要求。",
-          "sources": [
-            "https://japan-skiguide.com/guide/htm/r0028ens.htm",
-            "https://www.japan-guide.com/destinations/nozawa-onsen/nozawa-ski-resort.html",
-            "https://www.famiski.jp/gelande_guide/nozawa-onsen/",
-            "https://www.snowjapan.com/ski-areas-in-japan/nagano-prefecture/nozawa-onsen-village/nozawa-onsen",
-            "https://db.go-nagano.net/topics_detail6/id=17008",
-            "https://en.nozawaski.com/access/coming-train-bus/",
-            "https://www.rome2rio.com/s/Nozawaonsen/Iiyama-Station",
-            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00455802&arrival=00083659&line=00079980",
-            "https://www.vill.nozawaonsen.nagano.jp/www/contents/1050000000201/index.html",
-            "https://www.travel-inn.co.jp/ski/gelande/nozawa/",
-            "https://nozawaski.com/winter/access/train-bus/",
-            "https://www.vill.nozawaonsen.nagano.jp/www/index.html"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 25,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "野澤溫泉 Nozawa Onsen",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "野沢温泉スキー場",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "長野・野沢温泉村",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
         }
       ]
     },
