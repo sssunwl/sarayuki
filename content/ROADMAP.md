@@ -22,7 +22,7 @@
 
 ## 雪場攻略 (resort)
 
-- [ ] nozawa-guide｜野澤溫泉攻略：滑雪加外湯溫泉怎麼安排
+- [x] 2026-09-29 nozawa-guide｜野澤溫泉攻略：滑雪加外湯溫泉怎麼安排
 - [ ] tsugaike-guide｜白馬栂池高原攻略：新手與親子怎麼玩
 
 ## 行程交通 (travel)
