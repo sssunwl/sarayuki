@@ -1,6 +1,15 @@
 {
- "updated": "2026-09-29",
+ "updated": "2026-10-01",
  "articles": [
+  {
+   "slug": "tsugaike-guide",
+   "title": "白馬栂池高原攻略：新手與親子怎麼玩",
+   "category": "resort",
+   "resort": "tsugaike",
+   "date": "2026-10-01",
+   "summary": "白馬栂池高原（Hakuba Tsugaike Kogen）滑雪場以其寬廣平緩的雪道聞名，非常適合滑雪新手與親子家庭。",
+   "sources": 13
+  },
   {
    "slug": "nozawa-guide",
    "title": "野澤溫泉攻略：滑雪加外湯溫泉怎麼安排",
