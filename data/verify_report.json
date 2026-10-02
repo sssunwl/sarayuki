@@ -1,16 +1,16 @@
 {
-  "generated": "2026-10-01T18:44:16+09:00",
+  "generated": "2026-10-02T18:18:36+09:00",
   "checked": [
-    "furano",
-    "tomamu",
-    "appi",
-    "zao",
-    "hakkoda",
-    "happo"
+    "hakuba47",
+    "tsugaike",
+    "cortina",
+    "nozawa",
+    "niseko",
+    "rusutsu"
   ],
   "last_checked": {
-    "niseko": "2026-09-29T18:26:08+09:00",
-    "rusutsu": "2026-09-29T18:26:08+09:00",
+    "niseko": "2026-10-02T18:18:36+09:00",
+    "rusutsu": "2026-10-02T18:18:36+09:00",
     "kiroro": "2026-09-30T18:16:45+09:00",
     "teine": "2026-09-30T18:16:45+09:00",
     "furano": "2026-10-01T18:44:16+09:00",
@@ -19,10 +19,10 @@
     "zao": "2026-10-01T18:44:16+09:00",
     "hakkoda": "2026-10-01T18:44:16+09:00",
     "happo": "2026-10-01T18:44:16+09:00",
-    "hakuba47": "2026-09-28T18:19:21+09:00",
-    "tsugaike": "2026-09-28T18:19:21+09:00",
-    "cortina": "2026-09-28T18:19:21+09:00",
-    "nozawa": "2026-09-28T18:19:21+09:00",
+    "hakuba47": "2026-10-02T18:18:36+09:00",
+    "tsugaike": "2026-10-02T18:18:36+09:00",
+    "cortina": "2026-10-02T18:18:36+09:00",
+    "nozawa": "2026-10-02T18:18:36+09:00",
     "shiga": "2026-09-29T18:26:08+09:00",
     "madarao": "2026-09-29T18:26:08+09:00",
     "karuizawa": "2026-09-29T18:26:08+09:00",
@@ -134,18 +134,13 @@
             3
           ],
           "severity": "yellow",
-          "note": "2026-2027 雪季預計營業期間為 2026年11月28日 至 2027年3月31日。",
+          "note": "2026-2027冬季營業期間為11月下旬至3月下旬，包含11月。",
           "sources": [
-            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEcufX4OfLTHiYqTQ-4W4UtE_wADsQiiIb1kvUsuflKTLADPHY7lBXTRXY2OS-Y_dg9hSe6DBRqp4D1-Hr5v9_hXERuCw2wtv7hvWctPCCT1MCQrHvcY3Gw5ZbCI6vs8uAC4YCPyh_O-Q==",
-            "https://surfsnow.jp/guide/htm/r0331s.htm",
+            "https://hapisnow.jp/snowresort/rusutsu-resort/",
             "https://surfsnow.jp/guide/htm/r0331fa.htm",
             "https://rusutsu.com/news-and-topics/skipackage/",
-            "https://www.skiing-hokkaido.com/ja/resorts/rusutsu-resort/",
-            "https://rusutsu.com/blog/020/",
-            "https://bus-tabi.net/pref/hokkaido/hokkaido-rusutsuresort/",
-            "https://rusutsu.com/en/access-shuttle-bus-new-chitose-airport/",
-            "https://rusutsu.com/corporate-overview/",
-            "https://rusutsu.com/information/hotel-closed-period/"
+            "https://bigruns.com/basu_group/%E5%86%AC%E5%AD%A3%E9%81%8B%E8%A1%8C-%E3%83%93%E3%83%83%E3%82%B0%E3%83%A9%E3%83%B3%E3%82%BA%E5%8F%B7-%E6%96%B0%E5%8D%83%E6%AD%B3%E7%A9%BA%E6%B8%AF",
+            "https://rusutsu.com/en/news-and-topics/skipackage/"
           ]
         }
       ]
@@ -604,7 +599,7 @@
     },
     {
       "id": "hakuba47",
-      "status": "unverified",
+      "status": "yellow",
       "url_check": {
         "code": 200,
         "final_url": "https://www.hakuba47.co.jp/"
@@ -619,67 +614,27 @@
             3,
             4
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "peak",
-          "current": [
+          "suggested": [
+            12,
             1,
-            2
+            2,
+            3,
+            4,
+            5
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "access",
-          "current": "長野站巴士約 60 分",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "accessMin",
-          "current": 60,
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "name",
-          "current": "白馬 47 & 五竜",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "nameJa",
-          "current": "Hakuba47・白馬五竜",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "place",
-          "current": "長野・白馬村",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "severity": "yellow",
+          "note": "官方資訊顯示雪季通常從12月持續到5月上旬，而非僅到4月。",
+          "sources": [
+            "https://www.hakuba47.co.jp/winter/en/mountain/mountain_info/",
+            "https://goryu47.com/en/",
+            "https://www.snowmonkeyresorts.com/zh-hant/activities/hakuba-47-winter-sports-park/"
+          ]
         }
       ]
     },
     {
       "id": "tsugaike",
-      "status": "unverified",
+      "status": "red",
       "url_check": {
         "code": 200,
         "final_url": "https://www.tsugaike.gr.jp/"
@@ -694,10 +649,23 @@
             3,
             4
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "suggested": [
+            12,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "severity": "yellow",
+          "note": "官方資訊顯示雪場營業期間通常從12月上旬持續到5月上旬。",
+          "sources": [
+            "https://bus-tabi.net/pref/nagano/nagano-tsugaikekogenskiresort/",
+            "https://www.famiski.jp/gelande_guide/tsugaike/",
+            "https://www.highwaybus.com/gp/info/lineDetail?lineGroupNo=8&lineId=248",
+            "https://tsugaike-pmp.book.ntmg.com/about",
+            "https://tsugaike-gondolalift.co.jp/2024lp/"
+          ]
         },
         {
           "field": "peak",
@@ -707,48 +675,36 @@
           ],
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "note": "未找到官方明確指出最佳雪況月份的資訊。",
           "sources": []
         },
         {
           "field": "access",
           "current": "長野站巴士約 80 分",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "accessMin",
-          "current": 80,
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "name",
-          "current": "白馬栂池高原 Tsugaike",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "suggested": "長野站巴士約 95 分",
+          "severity": "yellow",
+          "note": "根據阿爾卑斯交通（Alpico Kotsu）的特急巴士資訊，從JR長野站東口到栂池高原巴士站約需1小時35分鐘（95分鐘）。",
+          "sources": [
+            "https://bus-tabi.net/pref/nagano/nagano-tsugaikekogenskiresort/",
+            "https://www.famiski.jp/gelande_guide/tsugaike/",
+            "https://www.highwaybus.com/gp/info/lineDetail?lineGroupNo=8&lineId=248",
+            "https://tsugaike-pmp.book.ntmg.com/about",
+            "https://tsugaike-gondolalift.co.jp/2024lp/"
+          ]
         },
         {
           "field": "nameJa",
           "current": "白馬つがいけマウンテンリゾート",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "place",
-          "current": "長野・小谷村",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "suggested": "つがいけマウンテンリゾート",
+          "severity": "red",
+          "note": "雪場官方網站及多數官方資料顯示其日文名稱為「つがいけマウンテンリゾート」。",
+          "sources": [
+            "https://bus-tabi.net/pref/nagano/nagano-tsugaikekogenskiresort/",
+            "https://www.famiski.jp/gelande_guide/tsugaike/",
+            "https://www.highwaybus.com/gp/info/lineDetail?lineGroupNo=8&lineId=248",
+            "https://tsugaike-pmp.book.ntmg.com/about",
+            "https://tsugaike-gondolalift.co.jp/2024lp/"
+          ]
         }
       ]
     },
@@ -785,14 +741,20 @@
             3
           ],
           "severity": "yellow",
-          "note": "2026-2027雪季預計營業期間為2026年12月12日至2027年3月29日。",
+          "note": "2026-2027 雪季預計營業期間為 2026 年 12 月 12 日至 2027 年 3 月 29 日。",
           "sources": [
             "https://www.hgp.co.jp/cortina/ski/",
             "https://www.hgp.co.jp/cortina/ski/charge/",
-            "https://www.atpress.ne.jp/news/1910428",
+            "https://newscast.jp/news/1910428",
             "https://bus-tabi.net/pref/nagano/nagano-hakubacortinasnowresort/",
-            "https://www.hgp.co.jp/cortina/ski/plan/",
-            "https://www.hgp.co.jp/cortina/ski/access/"
+            "https://en-1075.site-translation.com/cortina/ski/",
+            "https://japan-skiguide.com/guide/htm/r0033ens.htm",
+            "https://ja.wikipedia.org/wiki/%E7%99%BD%E9%A6%AC%E3%82%B3%E3%83%AB%E3%83%81%E3%83%8A%E5%9B%BD%E9%9A%9B%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4",
+            "https://www.nap-camp.com/mag/100152",
+            "https://www.hgp.co.jp/cortina/ski/access/",
+            "https://www.bushikaku.net/expedition/venue/access/3990450/",
+            "https://www.hgp.co.jp/cortina/ski/green/",
+            "https://www.nori-cor.com/news/new_open/"
           ]
         },
         {
@@ -800,21 +762,48 @@
           "current": "長野站巴士約 90 分",
           "suggested": "長野站巴士約 110 分",
           "severity": "yellow",
-          "note": "從JR長野站東口搭乘Alpico交通的特急巴士至白馬Cortina巴士站約需1小時50分鐘（110分鐘）。",
+          "note": "從 JR 長野站東口搭乘 Alpico 交通的白馬乘鞍方向特急巴士（需預約），約 1 小時 50 分鐘（110 分鐘）可抵達白馬 Cortina 巴士站。",
           "sources": [
             "https://www.hgp.co.jp/cortina/ski/",
             "https://www.hgp.co.jp/cortina/ski/charge/",
-            "https://www.atpress.ne.jp/news/1910428",
+            "https://newscast.jp/news/1910428",
             "https://bus-tabi.net/pref/nagano/nagano-hakubacortinasnowresort/",
-            "https://www.hgp.co.jp/cortina/ski/plan/",
-            "https://www.hgp.co.jp/cortina/ski/access/"
+            "https://en-1075.site-translation.com/cortina/ski/",
+            "https://japan-skiguide.com/guide/htm/r0033ens.htm",
+            "https://ja.wikipedia.org/wiki/%E7%99%BD%E9%A6%AC%E3%82%B3%E3%83%AB%E3%83%81%E3%83%8A%E5%9B%BD%E9%9A%9B%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4",
+            "https://www.nap-camp.com/mag/100152",
+            "https://www.hgp.co.jp/cortina/ski/access/",
+            "https://www.bushikaku.net/expedition/venue/access/3990450/",
+            "https://www.hgp.co.jp/cortina/ski/green/",
+            "https://www.nori-cor.com/news/new_open/"
+          ]
+        },
+        {
+          "field": "nameJa",
+          "current": "白馬コルチナ",
+          "suggested": "白馬コルチナスキー場",
+          "severity": "red",
+          "note": "官方日文名稱為「白馬コルチナスキー場」。",
+          "sources": [
+            "https://www.hgp.co.jp/cortina/ski/",
+            "https://www.hgp.co.jp/cortina/ski/charge/",
+            "https://newscast.jp/news/1910428",
+            "https://bus-tabi.net/pref/nagano/nagano-hakubacortinasnowresort/",
+            "https://en-1075.site-translation.com/cortina/ski/",
+            "https://japan-skiguide.com/guide/htm/r0033ens.htm",
+            "https://ja.wikipedia.org/wiki/%E7%99%BD%E9%A6%AC%E3%82%B3%E3%83%AB%E3%83%81%E3%83%8A%E5%9B%BD%E9%9A%9B%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4",
+            "https://www.nap-camp.com/mag/100152",
+            "https://www.hgp.co.jp/cortina/ski/access/",
+            "https://www.bushikaku.net/expedition/venue/access/3990450/",
+            "https://www.hgp.co.jp/cortina/ski/green/",
+            "https://www.nori-cor.com/news/new_open/"
           ]
         }
       ]
     },
     {
       "id": "nozawa",
-      "status": "unverified",
+      "status": "red",
       "url_check": {
         "code": 200,
         "final_url": "https://nozawaski.com/"
@@ -829,10 +818,23 @@
             3,
             4
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "suggested": [
+            11,
+            12,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "severity": "red",
+          "note": "根據2025-2026雪季官方營業期間為11月29日至5月6日，實際營業月份應包含11月和5月。",
+          "sources": [
+            "https://db.go-nagano.net/topics_detail6/id=17008",
+            "https://www.famiski.jp/gelande_guide/nozawa-onsen/",
+            "https://hapisnow.jp/",
+            "https://www.kkday.com/ja/destination/jp-nozawa-onsen-ski-resort"
+          ]
         },
         {
           "field": "peak",
@@ -840,50 +842,19 @@
             1,
             2
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "access",
-          "current": "飯山站巴士約 25 分（東京→飯山 北陸新幹線約 1 小時 45 分）",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "accessMin",
-          "current": 25,
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "name",
-          "current": "野澤溫泉 Nozawa Onsen",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "nameJa",
-          "current": "野沢温泉スキー場",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "place",
-          "current": "長野・野沢温泉村",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "suggested": [
+            12,
+            1,
+            2
+          ],
+          "severity": "yellow",
+          "note": "官方資訊指出最佳雪況通常在12月至2月。",
+          "sources": [
+            "https://db.go-nagano.net/topics_detail6/id=17008",
+            "https://www.famiski.jp/gelande_guide/nozawa-onsen/",
+            "https://hapisnow.jp/",
+            "https://www.kkday.com/ja/destination/jp-nozawa-onsen-ski-resort"
+          ]
         }
       ]
     },
