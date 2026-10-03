@@ -1,18 +1,18 @@
 {
-  "generated": "2026-10-02T18:18:36+09:00",
+  "generated": "2026-10-03T17:50:04+09:00",
   "checked": [
-    "hakuba47",
-    "tsugaike",
-    "cortina",
-    "nozawa",
-    "niseko",
-    "rusutsu"
+    "shiga",
+    "madarao",
+    "karuizawa",
+    "akakura",
+    "kiroro",
+    "teine"
   ],
   "last_checked": {
     "niseko": "2026-10-02T18:18:36+09:00",
     "rusutsu": "2026-10-02T18:18:36+09:00",
-    "kiroro": "2026-09-30T18:16:45+09:00",
-    "teine": "2026-09-30T18:16:45+09:00",
+    "kiroro": "2026-10-03T17:50:04+09:00",
+    "teine": "2026-10-03T17:50:04+09:00",
     "furano": "2026-10-01T18:44:16+09:00",
     "tomamu": "2026-10-01T18:44:16+09:00",
     "appi": "2026-10-01T18:44:16+09:00",
@@ -23,10 +23,10 @@
     "tsugaike": "2026-10-02T18:18:36+09:00",
     "cortina": "2026-10-02T18:18:36+09:00",
     "nozawa": "2026-10-02T18:18:36+09:00",
-    "shiga": "2026-09-29T18:26:08+09:00",
-    "madarao": "2026-09-29T18:26:08+09:00",
-    "karuizawa": "2026-09-29T18:26:08+09:00",
-    "akakura": "2026-09-29T18:26:08+09:00",
+    "shiga": "2026-10-03T17:50:04+09:00",
+    "madarao": "2026-10-03T17:50:04+09:00",
+    "karuizawa": "2026-10-03T17:50:04+09:00",
+    "akakura": "2026-10-03T17:50:04+09:00",
     "arai": "2026-09-30T18:16:45+09:00",
     "gala": "2026-09-30T18:16:45+09:00",
     "naeba": "2026-09-30T18:16:45+09:00",
@@ -172,24 +172,17 @@
             5
           ],
           "severity": "red",
-          "note": "根據2026-2027雪季官方資訊，營業期間為11月下旬至5月上旬。",
+          "note": "2026/27 雪季預計營業期間為 2026 年 11 月 28 日至 2027 年 5 月 5 日。",
           "sources": [
             "https://hapisnow.jp/snowresort/kiroro-snowworld/",
-            "https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%AD%E3%83%AD%E3%83%AA%E3%82%BE%E3%83%BC%E3%83%88",
-            "https://ogurigo.jp/sheraton-hokkaido/",
-            "https://www.kiroro.co.jp/ja/about_us/",
-            "https://tabiris.com/archives/kiroro/",
-            "https://36kr.jp/220768/",
-            "https://www.kiroro.co.jp/ja/",
-            "https://www.clubmed.co.jp/l/clubmed-kiroro",
-            "https://resort.boy.jp/wordpress/zukisansu/kiroro/"
+            "https://www.clubmed.co.jp/o/winter-2027-snow"
           ]
         }
       ]
     },
     {
       "id": "teine",
-      "status": "red",
+      "status": "unverified",
       "url_check": {
         "code": 200,
         "final_url": "https://www.sapporo-teine.com/"
@@ -203,24 +196,61 @@
             2,
             3
           ],
-          "suggested": [
-            11,
-            12,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
             1,
-            2,
-            3,
-            4,
-            5
+            2
           ],
-          "severity": "red",
-          "note": "根據2026-2027雪季資訊，Highland Zone從11月下旬營業至5月上旬，Olympia Zone從12月上旬營業至3月下旬。整體雪場的實際營業月份應涵蓋Highland Zone的完整期間。",
-          "sources": [
-            "https://www.gutabi.jp/event/detail/1494",
-            "https://surfsnow.jp/guide/htm/r0065m.htm",
-            "https://www.skiing-hokkaido.com/ja/resorts/sapporo-teine/",
-            "https://www.snowjapan.com/ski-areas-in-japan/hokkaido/sapporo-city/sapporo-teine",
-            "https://www.orion-tour.co.jp/air/fair/hokkaido/ski/gelande/teine/?area=tokai"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "札幌市區開車或巴士約 40–60 分",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 50,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "札幌手稻 Sapporo Teine",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "サッポロテイネ",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "北海道・札幌市",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "sources": []
         }
       ]
     },
@@ -884,32 +914,24 @@
             5
           ],
           "severity": "yellow",
-          "note": "根據志賀高原索道協會及志賀高原 SHIGA KOGEN MOUNTAIN RESORT的2026-2027雪季資訊，營業期間為2026年12月5日至2027年5月5日。",
+          "note": "根據志賀高原索道協會及其他官方資訊，2026-2027 雪季營業期間為 2026 年 12 月 5 日至 2027 年 5 月 5 日，因此應包含 5 月份。",
           "sources": [
             "https://shigakogen-ski.or.jp/2026/08/2026-2027.html",
-            "https://shigakogen-ski.or.jp/winter/season-pass/",
-            "https://shigakogen-ski.or.jp/winter/news/2026/08/2026-2027.html"
+            "https://www.princehotels.com/en/ski/shiga_kogen/",
+            "https://www.ichinose.gr.jp/article/feature/26092201/",
+            "https://www.shigakogen.gr.jp/english/topics/spring-skiing-and-early-morning-skiing.html"
           ]
         }
       ]
     },
     {
       "id": "madarao",
-      "status": "red",
+      "status": "unverified",
       "url_check": {
-        "code": null,
-        "final_url": "https://www.madarao.jp/",
-        "error": "<urlopen error timed out>"
+        "code": 200,
+        "final_url": "https://www.madarao.jp/"
       },
       "findings": [
-        {
-          "field": "url",
-          "current": "https://www.madarao.jp/",
-          "suggested": null,
-          "severity": "red",
-          "note": "<urlopen error timed out>",
-          "sources": []
-        },
         {
           "field": "months",
           "current": [
@@ -1002,14 +1024,10 @@
             3
           ],
           "severity": "yellow",
-          "note": "2026-2027 雪季預計於 2026 年 10 月 31 日開始營業，至 2027 年 3 月 31 日結束。",
+          "note": "2026-2027 雪季營業期間為 2026 年 10 月 31 日至 2027 年 3 月 31 日。",
           "sources": [
-            "https://www.princehotels.co.jp/ski/karuizawa/winter/",
-            "https://yukiyama-web.com/skiarea/199",
-            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgB9If2Be9bR9X-O-Gi2M8AeU7pOtQo8ur6GLI6WPtBS-TqTPSAQiVpwFHX_OALftVDwlQvZzYjeoYz1l5Sl_Kxmm9CzV73mLQxsdsiebQPr1TnzKDjbwqQUOWNYLL9Eo2xapyZ8kK6NL67VEC5o7PmVP-8zWblsBCYqE=",
-            "https://www.youtube.com/watch?v=PVQRt5F4DWY",
-            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHAzgKSbIm1wvrvNmddGM_p0UjnkpVeEK227B_BLRdvn_qWPw_BDR4KOTz_hbi41YsksDORB1EyEYK-4J0Q1TeCoFOY0UmtN6zBDIJPxo0xLxA2ZPTJuys8GzBLZXoNUSfGsqfGFNuq5xxv4wsQMDg6",
-            "https://www.travel-inn.co.jp/ski/gelande/karuizawaprince/"
+            "https://report.iko-yo.net/articles/34206",
+            "https://www.princehotels.co.jp/ski/karuizawa/"
           ]
         },
         {
@@ -1020,47 +1038,82 @@
           ],
           "suggested": null,
           "severity": "unverified",
-          "note": "官方資訊未明確指出雪況最佳月份，僅提及使用大量造雪機維持雪場狀況且晴天率高。",
+          "note": "官方資訊未明確指出通常雪況最佳月份。",
           "sources": []
-        },
-        {
-          "field": "access",
-          "current": "輕井澤站步行約 10 分（東京→輕井澤 北陸新幹線約 1 小時）",
-          "suggested": "輕井澤站免費接駁巴士約 2-3 分（東京→輕井澤 北陸新幹線約 1 小時）",
-          "severity": "yellow",
-          "note": "從輕井澤站有免費接駁巴士，車程約 2-3 分鐘。東京至輕井澤站北陸新幹線約 1 小時。",
-          "sources": [
-            "https://www.princehotels.co.jp/ski/karuizawa/winter/",
-            "https://yukiyama-web.com/skiarea/199",
-            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFgB9If2Be9bR9X-O-Gi2M8AeU7pOtQo8ur6GLI6WPtBS-TqTPSAQiVpwFHX_OALftVDwlQvZzYjeoYz1l5Sl_Kxmm9CzV73mLQxsdsiebQPr1TnzKDjbwqQUOWNYLL9Eo2xapyZ8kK6NL67VEC5o7PmVP-8zWblsBCYqE=",
-            "https://www.youtube.com/watch?v=PVQRt5F4DWY",
-            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHAzgKSbIm1wvrvNmddGM_p0UjnkpVeEK227B_BLRdvn_qWPw_BDR4KOTz_hbi41YsksDORB1EyEYK-4J0Q1TeCoFOY0UmtN6zBDIJPxo0xLxA2ZPTJuys8GzBLZXoNUSfGsqfGFNuq5xxv4wsQMDg6",
-            "https://www.travel-inn.co.jp/ski/gelande/karuizawaprince/"
-          ]
         }
       ]
     },
     {
       "id": "akakura",
-      "status": "yellow",
+      "status": "unverified",
       "url_check": {
         "code": 200,
         "final_url": "https://akakura-ski.com/"
       },
       "findings": [
         {
+          "field": "months",
+          "current": [
+            12,
+            1,
+            2,
+            3
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
+            1,
+            2
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
           "field": "access",
           "current": "妙高高原站巴士約 15 分（東京→上越妙高 北陸新幹線約 2 小時）",
-          "suggested": "上越妙高站搭乘えちごトキめき鉄道至妙高高原站約 35 分，轉乘巴士約 15 分",
-          "severity": "yellow",
-          "note": "更新交通描述以從 hub (上越妙高) 開始。",
-          "sources": [
-            "https://www.navitime.co.jp/transfer/searchlist?orvStationCode=00009136&dnvStationCode=00008557&defaultCondition=0",
-            "https://www.jorudan.co.jp/time/to/%E4%B8%8A%E8%B6%8A%E5%A6%99%E9%AB%98_%E5%A6%99%E9%AB%98%E9%AB%98%E5%8E%9F/?r=%E5%A6%99%E9%AB%98%E3%81%AF%E3%81%AD%E3%81%86%E3%81%BE%E3%83%A9%E3%82%A4%E3%83%B3",
-            "https://www.navitime.co.jp/diagram/depArrTimeList?departure=00009136&arrival=00008557&line=00001233&updown=0",
-            "https://bus-tabi.net/pref/niigata/niigata-akakuraonsenskiresort/",
-            "https://niigata-kankou.or.jp/spot/10670"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 40,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "妙高 赤倉溫泉 Akakura",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "赤倉温泉スキー場",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "新潟・妙高市",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
         }
       ]
     },
