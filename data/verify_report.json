@@ -1,20 +1,20 @@
 {
-  "generated": "2026-10-03T17:50:04+09:00",
+  "generated": "2026-10-04T18:17:53+09:00",
   "checked": [
-    "shiga",
-    "madarao",
-    "karuizawa",
-    "akakura",
-    "kiroro",
-    "teine"
+    "arai",
+    "gala",
+    "naeba",
+    "kagura",
+    "furano",
+    "tomamu"
   ],
   "last_checked": {
     "niseko": "2026-10-02T18:18:36+09:00",
     "rusutsu": "2026-10-02T18:18:36+09:00",
     "kiroro": "2026-10-03T17:50:04+09:00",
     "teine": "2026-10-03T17:50:04+09:00",
-    "furano": "2026-10-01T18:44:16+09:00",
-    "tomamu": "2026-10-01T18:44:16+09:00",
+    "furano": "2026-10-04T18:17:53+09:00",
+    "tomamu": "2026-10-04T18:17:53+09:00",
     "appi": "2026-10-01T18:44:16+09:00",
     "zao": "2026-10-01T18:44:16+09:00",
     "hakkoda": "2026-10-01T18:44:16+09:00",
@@ -27,10 +27,10 @@
     "madarao": "2026-10-03T17:50:04+09:00",
     "karuizawa": "2026-10-03T17:50:04+09:00",
     "akakura": "2026-10-03T17:50:04+09:00",
-    "arai": "2026-09-30T18:16:45+09:00",
-    "gala": "2026-09-30T18:16:45+09:00",
-    "naeba": "2026-09-30T18:16:45+09:00",
-    "kagura": "2026-09-30T18:16:45+09:00"
+    "arai": "2026-10-04T18:17:53+09:00",
+    "gala": "2026-10-04T18:17:53+09:00",
+    "naeba": "2026-10-04T18:17:53+09:00",
+    "kagura": "2026-10-04T18:17:53+09:00"
   },
   "results": [
     {
@@ -281,37 +281,53 @@
             5
           ],
           "severity": "red",
-          "note": "富良野スキー場2026-2027雪季預計於2026年11月28日開放，並於2027年5月5日結束營業。",
+          "note": "根據富良野滑雪場官方網站，2026-2027 雪季營業期間為 2026 年 11 月 28 日至 2027 年 5 月 5 日。",
           "sources": [
-            "https://www.princehotels.com/en/ski/furano/",
-            "https://www.princehotels.co.jp/ski/furano/winter/?id=314",
-            "https://www.facebook.com/furanoskiarea/photos/1395721982703970/",
-            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHccp6OUW-ba0rrfx9TykaB5mkYSr4BKtD3x0jm6OpR5eX2T9JWUar-tQlC6KDjcvjMrxkBuuVamBNcCEvXOcz6ivi4knaJH4f9EjdA7KeQxd-BgXx0UUDb5B-l7KbveSu8Od5YP1BufihqWp898m3mdF1I02AbgGc=",
-            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGXkAd5WJR7QXkyreGSCRSbmiwZnubW-5Fpk8ZsSHIpbDz97pBCmP4TlF58MVx8pped4Aq0jn6XWBa_dz6LCRR3EO-nidhS75dRoYsXuTN5QoUNY-cXatc0qPO8LeVmBFBDbSRxchir4-ijQNrADJzDtKN16pWEw==",
-            "https://japantravel.navitime.com/en/area/jp/depArrTimeList/00510092/00060619/00061850?direction=down",
-            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00510092&arrival=00060619&line=00061850"
+            "https://www.princehotels.co.jp/ski/furano/winter/coursemap/",
+            "https://www.skiing-hokkaido.com/ja/resorts/furano-ski-resort/",
+            "https://hapisnow.jp/snowresort/furano/?info=theme",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpeP4NKvv_DrfTgjKqkGGk5h8pGWbvZWFjMBFJDTZJ-KMtoR-eMrlDi79OizV6ANdS7jEK_bRqZm0Z4RwEwl4XBOc50XCITu7_oCxxAiJSOUOnFERIZZteBxD5fFDUWuDKW8tFS6Ersvo=",
+            "https://www.ana.co.jp/domestic/theme/promo_ski/pdf/260917/ski-bus_furano.pdf",
+            "https://www.access-n.jp/winter2025/skibus/detail/asahikawa_ap_furano.html",
+            "https://travel.rakuten.co.jp/bus/bin_page/4000944.html",
+            "https://www.seibuprince.com/ja/furano-ski-resort",
+            "https://www.princehotels.co.jp/ski/furano/winter/access/"
           ]
         },
         {
-          "field": "peak",
-          "current": [
-            1,
-            2
-          ],
-          "suggested": [
-            2,
-            3
-          ],
+          "field": "access",
+          "current": "旭川機場約 1 小時",
+          "suggested": "旭川機場約 1 小時 40 分鐘",
           "severity": "yellow",
-          "note": "根據過去三年的平均積雪量數據，2月和3月的積雪量最高，均為230公分。",
+          "note": "根據 ANA 滑雪巴士時刻表和北海道アクセスネットワーク的資訊，從旭川機場搭乘滑雪巴士至新富良野王子大飯店（滑雪場旁）約需 1 小時 40 分鐘。",
           "sources": [
-            "https://www.princehotels.com/en/ski/furano/",
-            "https://www.princehotels.co.jp/ski/furano/winter/?id=314",
-            "https://www.facebook.com/furanoskiarea/photos/1395721982703970/",
-            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHccp6OUW-ba0rrfx9TykaB5mkYSr4BKtD3x0jm6OpR5eX2T9JWUar-tQlC6KDjcvjMrxkBuuVamBNcCEvXOcz6ivi4knaJH4f9EjdA7KeQxd-BgXx0UUDb5B-l7KbveSu8Od5YP1BufihqWp898m3mdF1I02AbgGc=",
-            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGXkAd5WJR7QXkyreGSCRSbmiwZnubW-5Fpk8ZsSHIpbDz97pBCmP4TlF58MVx8pped4Aq0jn6XWBa_dz6LCRR3EO-nidhS75dRoYsXuTN5QoUNY-cXatc0qPO8LeVmBFBDbSRxchir4-ijQNrADJzDtKN16pWEw==",
-            "https://japantravel.navitime.com/en/area/jp/depArrTimeList/00510092/00060619/00061850?direction=down",
-            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00510092&arrival=00060619&line=00061850"
+            "https://www.princehotels.co.jp/ski/furano/winter/coursemap/",
+            "https://www.skiing-hokkaido.com/ja/resorts/furano-ski-resort/",
+            "https://hapisnow.jp/snowresort/furano/?info=theme",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpeP4NKvv_DrfTgjKqkGGk5h8pGWbvZWFjMBFJDTZJ-KMtoR-eMrlDi79OizV6ANdS7jEK_bRqZm0Z4RwEwl4XBOc50XCITu7_oCxxAiJSOUOnFERIZZteBxD5fFDUWuDKW8tFS6Ersvo=",
+            "https://www.ana.co.jp/domestic/theme/promo_ski/pdf/260917/ski-bus_furano.pdf",
+            "https://www.access-n.jp/winter2025/skibus/detail/asahikawa_ap_furano.html",
+            "https://travel.rakuten.co.jp/bus/bin_page/4000944.html",
+            "https://www.seibuprince.com/ja/furano-ski-resort",
+            "https://www.princehotels.co.jp/ski/furano/winter/access/"
+          ]
+        },
+        {
+          "field": "accessMin",
+          "current": 60,
+          "suggested": 100,
+          "severity": "yellow",
+          "note": "根據 ANA 滑雪巴士時刻表和北海道アクセスネットワーク的資訊，從旭川機場搭乘滑雪巴士至新富良野王子大飯店（滑雪場旁）約需 1 小時 40 分鐘 (100 分鐘)。",
+          "sources": [
+            "https://www.princehotels.co.jp/ski/furano/winter/coursemap/",
+            "https://www.skiing-hokkaido.com/ja/resorts/furano-ski-resort/",
+            "https://hapisnow.jp/snowresort/furano/?info=theme",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpeP4NKvv_DrfTgjKqkGGk5h8pGWbvZWFjMBFJDTZJ-KMtoR-eMrlDi79OizV6ANdS7jEK_bRqZm0Z4RwEwl4XBOc50XCITu7_oCxxAiJSOUOnFERIZZteBxD5fFDUWuDKW8tFS6Ersvo=",
+            "https://www.ana.co.jp/domestic/theme/promo_ski/pdf/260917/ski-bus_furano.pdf",
+            "https://www.access-n.jp/winter2025/skibus/detail/asahikawa_ap_furano.html",
+            "https://travel.rakuten.co.jp/bus/bin_page/4000944.html",
+            "https://www.seibuprince.com/ja/furano-ski-resort",
+            "https://www.princehotels.co.jp/ski/furano/winter/access/"
           ]
         }
       ]
@@ -1143,49 +1159,61 @@
             3,
             4
           ],
-          "suggested": [
-            12,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
             1,
-            2,
-            3,
-            4,
-            5
+            2
           ],
-          "severity": "yellow",
-          "note": "根據2025-2026雪季的營業期間為12月13日至5月10日，包含5月份。",
-          "sources": [
-            "https://surfsnow.jp/guide/htm/r1020m.htm",
-            "https://www.travel.co.jp/senmon/jpn_ski/gi0075_e1w1/%E3%83%AD%E3%83%83%E3%83%86%E3%82%A2%E3%83%A9%E3%82%A4%E3%83%AA%E3%82%BE%E3%83%BC%E3%83%88/",
-            "https://niigata-kankou.or.jp/accommodation/detail_44668.html",
-            "https://www.lottehotel.com/arai-resort/en/about/location",
-            "https://www.lottehotel.com/arai-resort/en/facilities/shuttle-bus-service",
-            "https://www.bushikaku.net/expedition/venue/access/9440020/",
-            "https://www.snowmonkeyresorts.com/access/joetsumyoko-station/",
-            "https://www.lottehotel.com/arai-resort/ja/facilities/shuttle-bus-service",
-            "https://www.jalan.net/yad308602/qa/0006672272.html",
-            "https://iko-yo.net/facilities/90549/map",
-            "https://www.travel-inn.co.jp/ski/hotel-info/lottearai/"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
+          "sources": []
         },
         {
           "field": "access",
           "current": "上越妙高站巴士約 40 分",
-          "suggested": "上越妙高站免費預約制接駁巴士約 30 分",
-          "severity": "yellow",
-          "note": "官方網站及多個來源指出從上越妙高站西口搭乘免費預約制接駁巴士約需30分鐘。",
-          "sources": [
-            "https://surfsnow.jp/guide/htm/r1020m.htm",
-            "https://www.travel.co.jp/senmon/jpn_ski/gi0075_e1w1/%E3%83%AD%E3%83%83%E3%83%86%E3%82%A2%E3%83%A9%E3%82%A4%E3%83%AA%E3%82%BE%E3%83%BC%E3%83%88/",
-            "https://niigata-kankou.or.jp/accommodation/detail_44668.html",
-            "https://www.lottehotel.com/arai-resort/en/about/location",
-            "https://www.lottehotel.com/arai-resort/en/facilities/shuttle-bus-service",
-            "https://www.bushikaku.net/expedition/venue/access/9440020/",
-            "https://www.snowmonkeyresorts.com/access/joetsumyoko-station/",
-            "https://www.lottehotel.com/arai-resort/ja/facilities/shuttle-bus-service",
-            "https://www.jalan.net/yad308602/qa/0006672272.html",
-            "https://iko-yo.net/facilities/90549/map",
-            "https://www.travel-inn.co.jp/ski/hotel-info/lottearai/"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 40,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "Lotte Arai",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "ロッテアライリゾート",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "新潟・妙高市",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
+          "sources": []
         }
       ]
     },
@@ -1207,29 +1235,51 @@
           "sources": []
         },
         {
-          "field": "access",
-          "current": "東京站搭上越新幹線，直達 GALA 湯澤站約 75–90 分（雪季限定）",
-          "suggested": "東京站搭上越新幹線，直達 GALA 湯澤站約 75–90 分",
+          "field": "months",
+          "current": [
+            12,
+            1,
+            2,
+            3,
+            4
+          ],
+          "suggested": [
+            12,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
           "severity": "yellow",
-          "note": "GALA湯澤站的直達新幹線服務已不限於雪季，2026年夏季起亦有部分日期提供服務，故移除「雪季限定」描述。",
+          "note": "GALA湯澤スキー場通常規劃的冬季營業期間會持續到5月初，例如2025-2026雪季原定至2026年5月6日。目前的資料缺少5月。",
           "sources": [
-            "https://hanwa0724.livedoor.blog/archives/52321771.html",
-            "https://www.jreast.co.jp/press/2026/niigata/20260616_ni01.pdf",
-            "https://note.com/wtmnews/n/nea59c2227fe4",
-            "https://niigata-kankou.or.jp/blog/detail_1457.html",
-            "https://www.traicy.com/posts/20260619373732/",
-            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHiIl3B6qDo7CvNuLHbn3QhKqF8uI3QXUy1b4g9z4aGBIo9nWXdwhS3EmuqPp1IjtThm1-hGcAU7Trfw-yD171zK6omqWS1saH45YhY0xiW8ask51LC3EY=",
-            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_UWYrx7pyuFmRL58UpxZcEsNtktEd9v-mNyxQ47lzBdpwlohKUjdGFPCEoUFmV_nvVp8RqraSbHOf4hnQplp_j3IYKVdGb1zReKGZQCTUWCzA87xZo4NEUtIl2FSDpA=="
+            "https://prtimes.jp/main/html/rd/p/000000024.000115189.html",
+            "https://www.jre-travel.com/article/00218/",
+            "https://surfsnow.jp/news/6897",
+            "https://prtimes.jp/main/html/rd/p/000000030.000115189.html",
+            "https://companydata.tsujigawa.com/press-20260617-001/",
+            "https://ja.wikipedia.org/wiki/%E3%82%AC%E3%83%BC%E3%83%A9%E6%B9%AF%E6%B2%A2%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE2w0fLxo-Ru5KO8jjMJtzPRJQ5NElu8Z4QvpmDppx4070KIBQ7u0zksPVNQpZw0lSBIP1HNc1RFpdKb6tqRfVNWm8qH1sM3ujWzi2-ii5MGJvC99CRjg=="
           ]
         }
       ]
     },
     {
       "id": "naeba",
-      "status": "unverified",
+      "status": "green",
       "url_check": {
         "code": 200,
         "final_url": "https://www.princehotels.co.jp/ski/naeba/"
+      },
+      "findings": []
+    },
+    {
+      "id": "kagura",
+      "status": "unverified",
+      "url_check": {
+        "code": 200,
+        "final_url": "https://www.princehotels.co.jp/ski/kagura/"
       },
       "findings": [
         {
@@ -1239,7 +1289,8 @@
             1,
             2,
             3,
-            4
+            4,
+            5
           ],
           "suggested": null,
           "severity": "unverified",
@@ -1250,7 +1301,8 @@
           "field": "peak",
           "current": [
             1,
-            2
+            2,
+            3
           ],
           "suggested": null,
           "severity": "unverified",
@@ -1275,7 +1327,7 @@
         },
         {
           "field": "name",
-          "current": "苗場 Naeba",
+          "current": "神樂 Kagura",
           "suggested": null,
           "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
@@ -1283,7 +1335,7 @@
         },
         {
           "field": "nameJa",
-          "current": "苗場スキー場",
+          "current": "かぐらスキー場",
           "suggested": null,
           "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
@@ -1296,85 +1348,6 @@
           "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
-        }
-      ]
-    },
-    {
-      "id": "kagura",
-      "status": "yellow",
-      "url_check": {
-        "code": 200,
-        "final_url": "https://www.princehotels.co.jp/ski/kagura/"
-      },
-      "findings": [
-        {
-          "field": "months",
-          "current": [
-            12,
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "suggested": [
-            11,
-            12,
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "severity": "yellow",
-          "note": "2026-2027雪季預計從11月下旬（11/28）開放至5月中旬（5/16）。",
-          "sources": [
-            "https://www.seibuprince.com/ja/mtnaeba-kagura-ski-resort",
-            "https://www.princehotels.co.jp/ski/kagura/winter/",
-            "https://japan-skiguide.com/guide/htm/r0070ens.htm",
-            "https://www.jalan.net/yad329714/access/",
-            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00492015&arrival=00492448&line=00077485",
-            "https://niigata-kankou.or.jp/spot/index_1_2__41___-_____.html"
-          ]
-        },
-        {
-          "field": "peak",
-          "current": [
-            1,
-            2,
-            3
-          ],
-          "suggested": [
-            12,
-            1,
-            2,
-            3
-          ],
-          "severity": "yellow",
-          "note": "官方資訊指出可從12月下旬到3月初享受粉雪。",
-          "sources": [
-            "https://www.seibuprince.com/ja/mtnaeba-kagura-ski-resort",
-            "https://www.princehotels.co.jp/ski/kagura/winter/",
-            "https://japan-skiguide.com/guide/htm/r0070ens.htm",
-            "https://www.jalan.net/yad329714/access/",
-            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00492015&arrival=00492448&line=00077485",
-            "https://niigata-kankou.or.jp/spot/index_1_2__41___-_____.html"
-          ]
-        },
-        {
-          "field": "access",
-          "current": "越後湯澤站巴士約 40 分",
-          "suggested": "越後湯澤站巴士約 20 分",
-          "severity": "yellow",
-          "note": "從越後湯澤站搭乘巴士至かぐら三俣スキー場前約18-24分鐘。",
-          "sources": [
-            "https://www.seibuprince.com/ja/mtnaeba-kagura-ski-resort",
-            "https://www.princehotels.co.jp/ski/kagura/winter/",
-            "https://japan-skiguide.com/guide/htm/r0070ens.htm",
-            "https://www.jalan.net/yad329714/access/",
-            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00492015&arrival=00492448&line=00077485",
-            "https://niigata-kankou.or.jp/spot/index_1_2__41___-_____.html"
-          ]
         }
       ]
     }
