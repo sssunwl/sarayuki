@@ -1,16 +1,16 @@
 {
-  "generated": "2026-10-07T18:44:25+09:00",
+  "generated": "2026-10-08T18:55:05+09:00",
   "checked": [
-    "shiga",
-    "madarao",
-    "karuizawa",
-    "akakura",
-    "furano",
-    "tomamu"
+    "arai",
+    "gala",
+    "naeba",
+    "kagura",
+    "niseko",
+    "rusutsu"
   ],
   "last_checked": {
-    "niseko": "2026-10-05T18:58:21+09:00",
-    "rusutsu": "2026-10-05T18:58:21+09:00",
+    "niseko": "2026-10-08T18:55:05+09:00",
+    "rusutsu": "2026-10-08T18:55:05+09:00",
     "kiroro": "2026-10-06T18:44:21+09:00",
     "teine": "2026-10-06T18:44:21+09:00",
     "furano": "2026-10-07T18:44:25+09:00",
@@ -27,10 +27,10 @@
     "madarao": "2026-10-07T18:44:25+09:00",
     "karuizawa": "2026-10-07T18:44:25+09:00",
     "akakura": "2026-10-07T18:44:25+09:00",
-    "arai": "2026-10-04T18:17:53+09:00",
-    "gala": "2026-10-04T18:17:53+09:00",
-    "naeba": "2026-10-04T18:17:53+09:00",
-    "kagura": "2026-10-04T18:17:53+09:00"
+    "arai": "2026-10-08T18:55:05+09:00",
+    "gala": "2026-10-08T18:55:05+09:00",
+    "naeba": "2026-10-08T18:55:05+09:00",
+    "kagura": "2026-10-08T18:55:05+09:00"
   },
   "results": [
     {
@@ -112,7 +112,7 @@
     },
     {
       "id": "rusutsu",
-      "status": "yellow",
+      "status": "unverified",
       "url_check": {
         "code": 200,
         "final_url": "https://rusutsu.com/"
@@ -126,29 +126,61 @@
             2,
             3
           ],
-          "suggested": [
-            11,
-            12,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
             1,
-            2,
-            3
+            2
           ],
-          "severity": "yellow",
-          "note": "2026-2027 雪季預計於 11 月 28 日開始營運，至 3 月 30 或 31 日結束。",
-          "sources": [
-            "https://hapisnow.jp/snowresort/rusutsu-resort/",
-            "https://japanskiexperience.com/blog/japan-ski-resort-opening-dates/",
-            "https://japan-skiguide.com/guide/htm/r0331ens.htm",
-            "https://rusutsu.com/en/information/hotel-closed-period/",
-            "https://rusutsu.com/en/winter-lift-tickets/",
-            "https://rusutsu.com/news-and-topics/skipackage/",
-            "https://www.skiing-hokkaido.com/ja/resorts/rusutsu-resort/",
-            "https://www.nipponstays.com/new-chitose-airport-to-rusutsu/",
-            "https://rusutsu.com/en/access-shuttle-bus-new-chitose-airport/",
-            "https://en.wikipedia.org/wiki/Rusutsu_Resort",
-            "https://rusutsu.com/en/",
-            "https://www.marriott.com/ja/hotels/ctswi-the-westin-rusutsu-resort/overview/"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "新千歲機場巴士約 2 小時",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 120,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "留壽都 Rusutsu",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "ルスツリゾート",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "北海道・留壽都村",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
         }
       ]
     },
@@ -1159,7 +1191,7 @@
           ],
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
         },
         {
@@ -1170,7 +1202,7 @@
           ],
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
         },
         {
@@ -1178,7 +1210,7 @@
           "current": "上越妙高站巴士約 40 分",
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
         },
         {
@@ -1186,7 +1218,7 @@
           "current": 40,
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
         },
         {
@@ -1194,7 +1226,7 @@
           "current": "Lotte Arai",
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
         },
         {
@@ -1202,7 +1234,7 @@
           "current": "ロッテアライリゾート",
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
         },
         {
@@ -1210,7 +1242,7 @@
           "current": "新潟・妙高市",
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
         }
       ]
@@ -1241,36 +1273,138 @@
             3,
             4
           ],
-          "suggested": [
-            12,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Expecting value: line 1 column 1 (char 0)",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
             1,
-            2,
-            3,
-            4,
-            5
+            2
           ],
-          "severity": "yellow",
-          "note": "GALA湯澤スキー場通常規劃的冬季營業期間會持續到5月初，例如2025-2026雪季原定至2026年5月6日。目前的資料缺少5月。",
-          "sources": [
-            "https://prtimes.jp/main/html/rd/p/000000024.000115189.html",
-            "https://www.jre-travel.com/article/00218/",
-            "https://surfsnow.jp/news/6897",
-            "https://prtimes.jp/main/html/rd/p/000000030.000115189.html",
-            "https://companydata.tsujigawa.com/press-20260617-001/",
-            "https://ja.wikipedia.org/wiki/%E3%82%AC%E3%83%BC%E3%83%A9%E6%B9%AF%E6%B2%A2%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4",
-            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE2w0fLxo-Ru5KO8jjMJtzPRJQ5NElu8Z4QvpmDppx4070KIBQ7u0zksPVNQpZw0lSBIP1HNc1RFpdKb6tqRfVNWm8qH1sM3ujWzi2-ii5MGJvC99CRjg=="
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Expecting value: line 1 column 1 (char 0)",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "東京站搭上越新幹線，直達 GALA 湯澤站約 75–90 分（雪季限定）",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Expecting value: line 1 column 1 (char 0)",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 80,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Expecting value: line 1 column 1 (char 0)",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "GALA 湯澤",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Expecting value: line 1 column 1 (char 0)",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "ガーラ湯沢スキー場",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Expecting value: line 1 column 1 (char 0)",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "新潟・湯沢町",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Expecting value: line 1 column 1 (char 0)",
+          "sources": []
         }
       ]
     },
     {
       "id": "naeba",
-      "status": "green",
+      "status": "unverified",
       "url_check": {
         "code": 200,
         "final_url": "https://www.princehotels.co.jp/ski/naeba/"
       },
-      "findings": []
+      "findings": [
+        {
+          "field": "months",
+          "current": [
+            12,
+            1,
+            2,
+            3,
+            4
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
+            1,
+            2
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "越後湯澤站巴士約 40 分",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 40,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "苗場 Naeba",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "苗場スキー場",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "新潟・湯沢町",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        }
+      ]
     },
     {
       "id": "kagura",
