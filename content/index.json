@@ -1,6 +1,15 @@
 {
- "updated": "2026-10-01",
+ "updated": "2026-10-08",
  "articles": [
+  {
+   "slug": "hokkaido-access",
+   "title": "北海道雪場交通：新千歲機場到各雪場的巴士、JR 與包車",
+   "category": "travel",
+   "resort": null,
+   "date": "2026-10-08",
+   "summary": "從新千歲機場（新千歳空港, CTS）前往北海道各大滑雪場，主要有巴士、JR鐵路和包車三種交通方式，各有優缺點，適合不同需求與預算的旅客。本文將詳細介紹這些交通選項，並針對熱門雪場提…",
+   "sources": 10
+  },
   {
    "slug": "tsugaike-guide",
    "title": "白馬栂池高原攻略：新手與親子怎麼玩",

@@ -27,7 +27,7 @@
 
 ## 行程交通 (travel)
 
-- [ ] hokkaido-access｜北海道雪場交通：新千歲機場到各雪場的巴士、JR 與包車
+- [x] 2026-10-08 hokkaido-access｜北海道雪場交通：新千歲機場到各雪場的巴士、JR 與包車
 - [ ] hakuba-access｜東京到白馬：新幹線加巴士、直達巴士與夜行巴士怎麼選
 
 ## 新手入門 (beginner)
