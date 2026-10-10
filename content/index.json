@@ -1,6 +1,15 @@
 {
- "updated": "2026-10-08",
+ "updated": "2026-10-10",
  "articles": [
+  {
+   "slug": "hakuba-access",
+   "title": "東京到白馬：新幹線加巴士、直達巴士與夜行巴士怎麼選",
+   "category": "travel",
+   "resort": null,
+   "date": "2026-10-10",
+   "summary": "從東京前往日本長野縣的白馬（Hakuba）滑雪區，有幾種主要的交通方式，各有優缺點，適合不同需求的旅客。本文將比較新幹線轉巴士、直達高速巴士與夜行巴士這三種常見選項，幫助您選擇最適…",
+   "sources": 10
+  },
   {
    "slug": "hokkaido-access",
    "title": "北海道雪場交通：新千歲機場到各雪場的巴士、JR 與包車",
