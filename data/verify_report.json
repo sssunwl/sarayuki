@@ -1,24 +1,24 @@
 {
-  "generated": "2026-10-12T19:10:32+09:00",
+  "generated": "2026-10-13T19:03:37+09:00",
   "checked": [
-    "arai",
-    "gala",
-    "naeba",
-    "kagura",
-    "kiroro",
-    "teine"
+    "appi",
+    "zao",
+    "hakkoda",
+    "happo",
+    "furano",
+    "tomamu"
   ],
   "last_checked": {
     "niseko": "2026-10-11T18:38:17+09:00",
     "rusutsu": "2026-10-11T18:38:17+09:00",
     "kiroro": "2026-10-12T19:10:32+09:00",
     "teine": "2026-10-12T19:10:32+09:00",
-    "furano": "2026-10-10T18:21:18+09:00",
-    "tomamu": "2026-10-10T18:21:18+09:00",
-    "appi": "2026-10-09T18:58:56+09:00",
-    "zao": "2026-10-09T18:58:56+09:00",
-    "hakkoda": "2026-10-09T18:58:56+09:00",
-    "happo": "2026-10-09T18:58:56+09:00",
+    "furano": "2026-10-13T19:03:37+09:00",
+    "tomamu": "2026-10-13T19:03:37+09:00",
+    "appi": "2026-10-13T19:03:37+09:00",
+    "zao": "2026-10-13T19:03:37+09:00",
+    "hakkoda": "2026-10-13T19:03:37+09:00",
+    "happo": "2026-10-13T19:03:37+09:00",
     "hakuba47": "2026-10-10T18:21:18+09:00",
     "tsugaike": "2026-10-10T18:21:18+09:00",
     "cortina": "2026-10-10T18:21:18+09:00",
@@ -329,30 +329,38 @@
             4
           ],
           "severity": "yellow",
-          "note": "官方營業期間為12月上旬至4月上旬，或具體為2026年12月1日至2027年4月5日。",
+          "note": "2026-2027 雪季預計從 2026 年 12 月 1 日營運至 2027 年 4 月 5 日。",
           "sources": [
-            "https://bus-tabi.net/pref/hokkaido/hokkaido-snowtomamu/",
             "https://hapisnow.jp/snowresort/hoshino-resort-tomamu/",
-            "https://yado.knt.co.jp/ps/yplan.jsp?sno=3646563&pno=17737201&szptn=8848438&szcd=29174831&zcd=0&shcd=01",
-            "https://hoshinoresorts.com/jp/cards/ygos6zueaat/",
-            "https://hoshinoresorts.com/jp/cards/7qi2aobsry/",
+            "https://watabi.org/en/articles/tomamu-ski-guide",
+            "https://www.facebook.com/HoshinoResortsTomamu/posts/mountains-blanketed-in-pure-white-snow-snow-covered-trees-and-soft-fluffy-powder/1468934992068982/",
             "https://www.snowtomamu.jp/winter/access/",
-            "https://hoshinoresorts.com/ja/hotels/tomamuthetower/access/",
-            "https://www.nta.co.jp/dp-yado/hotels/1302-102/detail",
-            "https://www.snowtomamu.jp/summer/",
-            "https://www.snowtomamu.jp/winter/ski/",
-            "https://www.snowtomamu.jp/winter/en/",
-            "https://www.snowtomamu.jp/winter/",
-            "https://www.snowtomamu.jp/summer/reserve/",
+            "https://hoshinoresorts.com/jp/cards/7qi2aobsry/",
             "https://hotel.travel.rakuten.co.jp/hotellist/list/hotelCharacter.do?f_hotel_no=30110&TB_iframe=true&height=570&width=650",
-            "https://skyskysky.net/building-japan/01hokkaido/02/001.html"
+            "https://japan-skiguide.com/guide/htm/r0274ens.htm"
+          ]
+        },
+        {
+          "field": "access",
+          "current": "新千歲機場搭 JR 到 Tomamu 站約 1.5 小時",
+          "suggested": "新千歲機場搭 JR 到 Tomamu 站約 1.5 小時，再轉乘接駁巴士約 5 分鐘",
+          "severity": "yellow",
+          "note": "官方資訊指出從新千歲機場搭乘 JR 到 Tomamu 站約 90 分鐘，抵達 Tomamu 站後有免費接駁巴士約 5 分鐘可達度假村。",
+          "sources": [
+            "https://hapisnow.jp/snowresort/hoshino-resort-tomamu/",
+            "https://watabi.org/en/articles/tomamu-ski-guide",
+            "https://www.facebook.com/HoshinoResortsTomamu/posts/mountains-blanketed-in-pure-white-snow-snow-covered-trees-and-soft-fluffy-powder/1468934992068982/",
+            "https://www.snowtomamu.jp/winter/access/",
+            "https://hoshinoresorts.com/jp/cards/7qi2aobsry/",
+            "https://hotel.travel.rakuten.co.jp/hotellist/list/hotelCharacter.do?f_hotel_no=30110&TB_iframe=true&height=570&width=650",
+            "https://japan-skiguide.com/guide/htm/r0274ens.htm"
           ]
         }
       ]
     },
     {
       "id": "appi",
-      "status": "yellow",
+      "status": "unverified",
       "url_check": {
         "code": 200,
         "final_url": "https://www.appi.co.jp/"
@@ -367,20 +375,61 @@
             3,
             4
           ],
-          "suggested": [
-            12,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
             1,
-            2,
-            3,
-            4,
-            5
+            2
           ],
-          "severity": "yellow",
-          "note": "2026-2027雪季預計於12月5日開放，往年雪季通常持續至5月上旬。",
-          "sources": [
-            "https://ja.wikipedia.org/wiki/%E5%AE%89%E6%AF%94%E9%AB%98%E5%8E%9F%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4",
-            "https://www.iwate-ski.gr.jp/01_appi/index.html"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "盛岡站巴士約 1 小時",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 60,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "安比高原 APPI",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "安比高原スキー場",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "岩手・八幡平市",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
         }
       ]
     },
@@ -470,83 +519,28 @@
     },
     {
       "id": "hakkoda",
-      "status": "unverified",
+      "status": "yellow",
       "url_check": {
         "code": 200,
         "final_url": "https://hakkoda-ropeway.jp/"
       },
       "findings": [
         {
-          "field": "months",
-          "current": [
-            12,
-            1,
-            2,
-            3,
-            4
-          ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "peak",
-          "current": [
-            1,
-            2,
-            3
-          ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
           "field": "access",
           "current": "青森站巴士約 1 小時",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "accessMin",
-          "current": 60,
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "name",
-          "current": "八甲田 Hakkoda",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "nameJa",
-          "current": "八甲田ロープウェー",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "place",
-          "current": "青森・青森市",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "suggested": "青森站巴士約 80 分鐘",
+          "severity": "yellow",
+          "note": "冬季巴士從青森站到八甲田纜車站約需80分鐘。",
+          "sources": [
+            "https://www.tohokukanko.jp/transport/detail_1001187.html",
+            "https://www.atca.info/spot/spot-1033/"
+          ]
         }
       ]
     },
     {
       "id": "happo",
-      "status": "unverified",
+      "status": "yellow",
       "url_check": {
         "code": 200,
         "final_url": "https://www.happo-one.jp/"
@@ -561,10 +555,21 @@
             3,
             4
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "suggested": [
+            12,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "severity": "yellow",
+          "note": "2026-2027雪季營業期間為2026年12月19日至2027年5月5日。",
+          "sources": [
+            "https://www.happo-one.jp/ticket/",
+            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00178442&arrival=00082541&line=00053370",
+            "https://www.alpico.co.jp/traffic/express/nagano_hakuba/"
+          ]
         },
         {
           "field": "peak",
@@ -572,50 +577,18 @@
             1,
             2
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "access",
-          "current": "長野站巴士約 70 分",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "accessMin",
-          "current": 70,
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "name",
-          "current": "白馬八方尾根 Happo-one",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "nameJa",
-          "current": "白馬八方尾根",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "place",
-          "current": "長野・白馬村",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "suggested": [
+            1,
+            2,
+            3
+          ],
+          "severity": "yellow",
+          "note": "2026-2027雪季建議利用期間為2026年12月19日至2027年3月22日，故將三月納入雪況最佳月份。",
+          "sources": [
+            "https://www.happo-one.jp/ticket/",
+            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00178442&arrival=00082541&line=00053370",
+            "https://www.alpico.co.jp/traffic/express/nagano_hakuba/"
+          ]
         }
       ]
     },
