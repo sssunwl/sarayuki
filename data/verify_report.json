@@ -1,18 +1,18 @@
 {
-  "generated": "2026-10-14T17:21:13+09:00",
+  "generated": "2026-10-15T16:58:14+09:00",
   "checked": [
-    "hakuba47",
-    "tsugaike",
-    "cortina",
-    "nozawa",
-    "niseko",
-    "rusutsu"
+    "shiga",
+    "madarao",
+    "karuizawa",
+    "akakura",
+    "kiroro",
+    "teine"
   ],
   "last_checked": {
     "niseko": "2026-10-14T17:21:13+09:00",
     "rusutsu": "2026-10-14T17:21:13+09:00",
-    "kiroro": "2026-10-12T19:10:32+09:00",
-    "teine": "2026-10-12T19:10:32+09:00",
+    "kiroro": "2026-10-15T16:58:14+09:00",
+    "teine": "2026-10-15T16:58:14+09:00",
     "furano": "2026-10-13T19:03:37+09:00",
     "tomamu": "2026-10-13T19:03:37+09:00",
     "appi": "2026-10-13T19:03:37+09:00",
@@ -23,10 +23,10 @@
     "tsugaike": "2026-10-14T17:21:13+09:00",
     "cortina": "2026-10-14T17:21:13+09:00",
     "nozawa": "2026-10-14T17:21:13+09:00",
-    "shiga": "2026-10-11T18:38:17+09:00",
-    "madarao": "2026-10-11T18:38:17+09:00",
-    "karuizawa": "2026-10-11T18:38:17+09:00",
-    "akakura": "2026-10-11T18:38:17+09:00",
+    "shiga": "2026-10-15T16:58:14+09:00",
+    "madarao": "2026-10-15T16:58:14+09:00",
+    "karuizawa": "2026-10-15T16:58:14+09:00",
+    "akakura": "2026-10-15T16:58:14+09:00",
     "arai": "2026-10-12T19:10:32+09:00",
     "gala": "2026-10-12T19:10:32+09:00",
     "naeba": "2026-10-12T19:10:32+09:00",
@@ -186,7 +186,7 @@
     },
     {
       "id": "kiroro",
-      "status": "red",
+      "status": "unverified",
       "url_check": {
         "code": 200,
         "final_url": "https://www.kiroro.co.jp/"
@@ -201,40 +201,61 @@
             3,
             4
           ],
-          "suggested": [
-            11,
-            12,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
             1,
-            2,
-            3,
-            4,
-            5
+            2
           ],
-          "severity": "red",
-          "note": "2026-2027 雪季預計從 11 月下旬（具體為 11 月 28 日）開放至 5 月上旬（具體為 5 月 5 日）。",
-          "sources": [
-            "https://www.clubmed.co.jp/o/winter-2027-snow",
-            "https://www.travel.co.jp/senmon/jpn_ski/go0005_e1w1/%E3%82%AD%E3%83%AD%E3%83%AD%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89/",
-            "https://hapisnow.jp/snowresort/kiroro-snowworld/",
-            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEvPNKmEVQdA7nXVnLeqijJZdcSc8NaVncTwOJlPQrGygGdeyONNzyMT0FnupawGtoVX6KhLMpwmdCt3EDpc_Uzo2g9zLXAsrbbfBKMa0Lfmxt-QZ-tA-dU41isvUOd4Cz-iYkXmlVN3u9n",
-            "https://www.access-n.jp/winter2025/skibus/detail/sapporo_kiroro.html",
-            "https://www.japan-guide.com/e/e6716.html"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
         },
         {
           "field": "access",
           "current": "札幌市區約 1.5 小時、新千歲機場約 2 小時",
-          "suggested": "札幌市區直行巴士約 90 分鐘",
-          "severity": "yellow",
-          "note": "官方及巴士業者資訊顯示，從札幌市區搭乘直行巴士約需 90 分鐘。",
-          "sources": [
-            "https://www.clubmed.co.jp/o/winter-2027-snow",
-            "https://www.travel.co.jp/senmon/jpn_ski/go0005_e1w1/%E3%82%AD%E3%83%AD%E3%83%AD%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89/",
-            "https://hapisnow.jp/snowresort/kiroro-snowworld/",
-            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEvPNKmEVQdA7nXVnLeqijJZdcSc8NaVncTwOJlPQrGygGdeyONNzyMT0FnupawGtoVX6KhLMpwmdCt3EDpc_Uzo2g9zLXAsrbbfBKMa0Lfmxt-QZ-tA-dU41isvUOd4Cz-iYkXmlVN3u9n",
-            "https://www.access-n.jp/winter2025/skibus/detail/sapporo_kiroro.html",
-            "https://www.japan-guide.com/e/e6716.html"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 90,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "喜樂樂 Kiroro",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "キロロリゾート",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "北海道・赤井川村",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
         }
       ]
     },
@@ -264,10 +285,25 @@
             5
           ],
           "severity": "red",
-          "note": "2026-2027雪季，Highland Zone預計於11月21日開放至隔年5月5日，Olympia Zone預計於12月5日開放至隔年3月28日。",
+          "note": "2026-2027雪季預計營業期間為2026年11月21日至2027年5月5日。",
           "sources": [
-            "https://www.orion-tour.co.jp/air/fair/hokkaido/ski/gelande/teine/?area=tokai",
-            "https://hokkaido-campingcar.jp/hokkaido-ski-resort-opening-dates-2026/"
+            "https://sapporo-teine.com/snow/course",
+            "https://sapporo-teine.com/snow/access/other",
+            "https://sapporo-teine.com/snow/access",
+            "https://livejapan.com/ja/in-hokkaido/in-pref-hokkaido/in-sapporo_chitose/article-a1000168/"
+          ]
+        },
+        {
+          "field": "access",
+          "current": "札幌市區開車或巴士約 40–60 分",
+          "suggested": "從JR札幌站搭乘JR列車至JR手稻站，轉乘JR北海道巴士約16分鐘可達雪場。",
+          "severity": "yellow",
+          "note": "官方建議從JR札幌站搭乘JR列車至JR手稻站，再轉乘JR北海道巴士前往雪場。",
+          "sources": [
+            "https://sapporo-teine.com/snow/course",
+            "https://sapporo-teine.com/snow/access/other",
+            "https://sapporo-teine.com/snow/access",
+            "https://livejapan.com/ja/in-hokkaido/in-pref-hokkaido/in-sapporo_chitose/article-a1000168/"
           ]
         }
       ]
@@ -859,9 +895,11 @@
             5
           ],
           "severity": "yellow",
-          "note": "2026-2027雪季共通纜車券營業期間為2026年12月5日至2027年5月5日，包含5月。",
+          "note": "志賀高原共通リフト券的2026-2027雪季營業期間為2026年12月5日至2027年5月5日。",
           "sources": [
-            "https://shigakogen-ski.or.jp/2026/08/2026-2027.html"
+            "https://shigakogen-ski.or.jp/2026/08/2026-2027.html",
+            "https://www.princehotels.com/en/ski/shiga_kogen/",
+            "https://shigakogen-ski.or.jp/winter/news/2026/08/2026-2027.html"
           ]
         }
       ]
@@ -942,7 +980,7 @@
     },
     {
       "id": "karuizawa",
-      "status": "yellow",
+      "status": "unverified",
       "url_check": {
         "code": 200,
         "final_url": "https://www.princehotels.co.jp/ski/karuizawa/"
@@ -957,27 +995,10 @@
             2,
             3
           ],
-          "suggested": [
-            10,
-            11,
-            12,
-            1,
-            2,
-            3
-          ],
-          "severity": "yellow",
-          "note": "2026-2027 雪季官方營業期間為 2026 年 10 月 31 日至 2027 年 3 月 31 日。",
-          "sources": [
-            "https://surfsnow.jp/news/7315",
-            "https://www.princehotels.co.jp/ski/karuizawa/",
-            "https://prtimes.jp/main/html/rd/p/000004056.000024668.html",
-            "https://www.princehotels.co.jp/press/202610_05/",
-            "https://www.navitime.co.jp/diagram/depArrTimeList?departure=00006668&arrival=00002048&line=00000177&updown=1",
-            "https://www.jorudan.co.jp/time/to/%E6%9D%B1%E4%BA%AC_%E8%BB%BD%E4%BA%95%E6%B2%A2/?r=%E5%8C%97%E9%99%B8%E6%96%B0%E5%B9%B9%E7%B7%9A",
-            "https://www.navitime.co.jp/transfer/searchlist?orvStationCode=00006668&dnvStationCode=00002048&defaultCondition=4",
-            "https://db.go-nagano.net/topics_detail6/id=16963",
-            "https://iko-yo.net/facilities/2083/map"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
         },
         {
           "field": "peak",
@@ -987,7 +1008,47 @@
           ],
           "suggested": null,
           "severity": "unverified",
-          "note": "官方來源未明確指出雪況最佳月份。",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "輕井澤站步行約 10 分（東京→輕井澤 北陸新幹線約 1 小時）",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 70,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "輕井澤王子 Karuizawa Prince",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "軽井沢プリンスホテルスキー場",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "長野・軽井沢町",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
         }
       ]
