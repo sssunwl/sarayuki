@@ -1,24 +1,24 @@
 {
-  "generated": "2026-10-16T16:51:55+09:00",
+  "generated": "2026-10-17T16:29:32+09:00",
   "checked": [
-    "arai",
-    "gala",
-    "naeba",
-    "kagura",
-    "furano",
-    "tomamu"
+    "appi",
+    "zao",
+    "hakkoda",
+    "happo",
+    "niseko",
+    "rusutsu"
   ],
   "last_checked": {
-    "niseko": "2026-10-14T17:21:13+09:00",
-    "rusutsu": "2026-10-14T17:21:13+09:00",
+    "niseko": "2026-10-17T16:29:32+09:00",
+    "rusutsu": "2026-10-17T16:29:32+09:00",
     "kiroro": "2026-10-15T16:58:14+09:00",
     "teine": "2026-10-15T16:58:14+09:00",
     "furano": "2026-10-16T16:51:55+09:00",
     "tomamu": "2026-10-16T16:51:55+09:00",
-    "appi": "2026-10-13T19:03:37+09:00",
-    "zao": "2026-10-13T19:03:37+09:00",
-    "hakkoda": "2026-10-13T19:03:37+09:00",
-    "happo": "2026-10-13T19:03:37+09:00",
+    "appi": "2026-10-17T16:29:32+09:00",
+    "zao": "2026-10-17T16:29:32+09:00",
+    "hakkoda": "2026-10-17T16:29:32+09:00",
+    "happo": "2026-10-17T16:29:32+09:00",
     "hakuba47": "2026-10-14T17:21:13+09:00",
     "tsugaike": "2026-10-14T17:21:13+09:00",
     "cortina": "2026-10-14T17:21:13+09:00",
@@ -425,7 +425,7 @@
     },
     {
       "id": "appi",
-      "status": "unverified",
+      "status": "yellow",
       "url_check": {
         "code": 200,
         "final_url": "https://www.appi.co.jp/"
@@ -440,67 +440,43 @@
             3,
             4
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "peak",
-          "current": [
+          "suggested": [
+            12,
             1,
-            2
+            2,
+            3,
+            4,
+            5
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "severity": "yellow",
+          "note": "安比高原スキー場2026-2027シーズン預計於12月5日開放，並通常營運至5月上旬。",
+          "sources": [
+            "https://www.iwate-ski.gr.jp/01_appi/index.html",
+            "https://www.appi.co.jp/snow-mountain-resort/access/",
+            "https://www.appi.co.jp/access-green/",
+            "https://www.appi.co.jp/snow-mountain-resort/",
+            "https://iwatetabi.jp/spots/6651/"
+          ]
         },
         {
           "field": "access",
           "current": "盛岡站巴士約 1 小時",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "accessMin",
-          "current": 60,
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "name",
-          "current": "安比高原 APPI",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "nameJa",
-          "current": "安比高原スキー場",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "place",
-          "current": "岩手・八幡平市",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "suggested": "盛岡站巴士約 1 小時 10 分",
+          "severity": "yellow",
+          "note": "從盛岡站搭乘巴士至安比高原的所需時間約為1小時10分鐘。",
+          "sources": [
+            "https://www.iwate-ski.gr.jp/01_appi/index.html",
+            "https://www.appi.co.jp/snow-mountain-resort/access/",
+            "https://www.appi.co.jp/access-green/",
+            "https://www.appi.co.jp/snow-mountain-resort/",
+            "https://iwatetabi.jp/spots/6651/"
+          ]
         }
       ]
     },
     {
       "id": "zao",
-      "status": "yellow",
+      "status": "red",
       "url_check": {
         "code": 200,
         "final_url": "https://zaomountainresort.com/ski/"
@@ -524,6 +500,93 @@
             2,
             3
           ],
+          "suggested": [
+            12,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "severity": "red",
+          "note": "2026-2027雪季預計營業期間為12月12日至5月5日。",
+          "sources": [
+            "https://www.ski-gelende.com/gelende/tohoku/zao/",
+            "https://zaomountainresort.com/chrage/",
+            "https://yamagatagoto.com/zao-onsen-ski/3768/",
+            "https://www.orion-tour.co.jp/air/fair/tohoku/ski/gelande/zao/",
+            "https://onsenzanmaiblog.com/yamagataeki-zaoonsen/",
+            "https://www.navitime.co.jp/bustransit/search?orvStationCode=00025891&dnvStationCode=00429042",
+            "https://www.yamagatakotsu.jp/busroute1/z90/",
+            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00025891&arrival=00429042&line=00070180",
+            "https://zaomountainresort.com/",
+            "https://zaomountainresort.com/ski/",
+            "https://zaomountainresort.com/ski_news/",
+            "https://www.zao-onsen.co.jp/ski/",
+            "https://zaomountainresort.com/gerende/",
+            "https://zaoropeway.co.jp/winter/",
+            "https://www.asoview.com/base/162430/",
+            "https://www.jalan.net/kankou/spt_guide000000177177/",
+            "https://meito-lucent.com/news/detail.php?id=1189",
+            "https://zaoropeway.co.jp/summer/company.php",
+            "https://surfsnow.jp/guide/htm/r0177s.htm",
+            "https://travel.yahoo.co.jp/kanko/spot-00002650/",
+            "https://www.travel-inn.co.jp/ski/gelande/zao/",
+            "https://www.instagram.com/p/DXdwizrkfYu/",
+            "https://surfsnow.jp/guide/htm/r0177m.htm"
+          ]
+        },
+        {
+          "field": "access",
+          "current": "山形站巴士約 40 分",
+          "suggested": "山形站巴士約 37 分",
+          "severity": "yellow",
+          "note": "從山形站搭乘山交巴士（Z90路線）至藏王溫泉バスターミナル，所需時間約37分鐘。",
+          "sources": [
+            "https://www.ski-gelende.com/gelende/tohoku/zao/",
+            "https://zaomountainresort.com/chrage/",
+            "https://yamagatagoto.com/zao-onsen-ski/3768/",
+            "https://www.orion-tour.co.jp/air/fair/tohoku/ski/gelande/zao/",
+            "https://onsenzanmaiblog.com/yamagataeki-zaoonsen/",
+            "https://www.navitime.co.jp/bustransit/search?orvStationCode=00025891&dnvStationCode=00429042",
+            "https://www.yamagatakotsu.jp/busroute1/z90/",
+            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00025891&arrival=00429042&line=00070180",
+            "https://zaomountainresort.com/",
+            "https://zaomountainresort.com/ski/",
+            "https://zaomountainresort.com/ski_news/",
+            "https://www.zao-onsen.co.jp/ski/",
+            "https://zaomountainresort.com/gerende/",
+            "https://zaoropeway.co.jp/winter/",
+            "https://www.asoview.com/base/162430/",
+            "https://www.jalan.net/kankou/spt_guide000000177177/",
+            "https://meito-lucent.com/news/detail.php?id=1189",
+            "https://zaoropeway.co.jp/summer/company.php",
+            "https://surfsnow.jp/guide/htm/r0177s.htm",
+            "https://travel.yahoo.co.jp/kanko/spot-00002650/",
+            "https://www.travel-inn.co.jp/ski/gelande/zao/",
+            "https://www.instagram.com/p/DXdwizrkfYu/",
+            "https://surfsnow.jp/guide/htm/r0177m.htm"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hakkoda",
+      "status": "unverified",
+      "url_check": {
+        "code": 200,
+        "final_url": "https://hakkoda-ropeway.jp/"
+      },
+      "findings": [
+        {
+          "field": "months",
+          "current": [
+            12,
+            1,
+            2,
+            3,
+            4
+          ],
           "suggested": null,
           "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
@@ -533,7 +596,8 @@
           "field": "peak",
           "current": [
             1,
-            2
+            2,
+            3
           ],
           "suggested": null,
           "severity": "unverified",
@@ -542,7 +606,7 @@
         },
         {
           "field": "access",
-          "current": "山形站巴士約 40 分",
+          "current": "青森站巴士約 1 小時",
           "suggested": null,
           "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
@@ -550,7 +614,7 @@
         },
         {
           "field": "accessMin",
-          "current": 40,
+          "current": 60,
           "suggested": null,
           "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
@@ -558,7 +622,7 @@
         },
         {
           "field": "name",
-          "current": "藏王溫泉 Zao",
+          "current": "八甲田 Hakkoda",
           "suggested": null,
           "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
@@ -566,7 +630,7 @@
         },
         {
           "field": "nameJa",
-          "current": "蔵王温泉スキー場",
+          "current": "八甲田ロープウェー",
           "suggested": null,
           "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
@@ -574,7 +638,7 @@
         },
         {
           "field": "place",
-          "current": "山形・山形市",
+          "current": "青森・青森市",
           "suggested": null,
           "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
@@ -583,29 +647,8 @@
       ]
     },
     {
-      "id": "hakkoda",
-      "status": "yellow",
-      "url_check": {
-        "code": 200,
-        "final_url": "https://hakkoda-ropeway.jp/"
-      },
-      "findings": [
-        {
-          "field": "access",
-          "current": "青森站巴士約 1 小時",
-          "suggested": "青森站巴士約 80 分鐘",
-          "severity": "yellow",
-          "note": "冬季巴士從青森站到八甲田纜車站約需80分鐘。",
-          "sources": [
-            "https://www.tohokukanko.jp/transport/detail_1001187.html",
-            "https://www.atca.info/spot/spot-1033/"
-          ]
-        }
-      ]
-    },
-    {
       "id": "happo",
-      "status": "yellow",
+      "status": "unverified",
       "url_check": {
         "code": 200,
         "final_url": "https://www.happo-one.jp/"
@@ -620,21 +663,10 @@
             3,
             4
           ],
-          "suggested": [
-            12,
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "severity": "yellow",
-          "note": "2026-2027雪季營業期間為2026年12月19日至2027年5月5日。",
-          "sources": [
-            "https://www.happo-one.jp/ticket/",
-            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00178442&arrival=00082541&line=00053370",
-            "https://www.alpico.co.jp/traffic/express/nagano_hakuba/"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
         },
         {
           "field": "peak",
@@ -642,18 +674,50 @@
             1,
             2
           ],
-          "suggested": [
-            1,
-            2,
-            3
-          ],
-          "severity": "yellow",
-          "note": "2026-2027雪季建議利用期間為2026年12月19日至2027年3月22日，故將三月納入雪況最佳月份。",
-          "sources": [
-            "https://www.happo-one.jp/ticket/",
-            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00178442&arrival=00082541&line=00053370",
-            "https://www.alpico.co.jp/traffic/express/nagano_hakuba/"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "長野站巴士約 70 分",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 70,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "白馬八方尾根 Happo-one",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "白馬八方尾根",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "長野・白馬村",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
         }
       ]
     },
