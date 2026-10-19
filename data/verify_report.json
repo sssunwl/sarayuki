@@ -1,20 +1,20 @@
 {
-  "generated": "2026-10-18T16:44:33+09:00",
+  "generated": "2026-10-19T17:27:04+09:00",
   "checked": [
-    "hakuba47",
-    "tsugaike",
-    "cortina",
-    "nozawa",
-    "kiroro",
-    "teine"
+    "shiga",
+    "madarao",
+    "karuizawa",
+    "akakura",
+    "furano",
+    "tomamu"
   ],
   "last_checked": {
     "niseko": "2026-10-17T16:29:32+09:00",
     "rusutsu": "2026-10-17T16:29:32+09:00",
     "kiroro": "2026-10-18T16:44:33+09:00",
     "teine": "2026-10-18T16:44:33+09:00",
-    "furano": "2026-10-16T16:51:55+09:00",
-    "tomamu": "2026-10-16T16:51:55+09:00",
+    "furano": "2026-10-19T17:27:04+09:00",
+    "tomamu": "2026-10-19T17:27:04+09:00",
     "appi": "2026-10-17T16:29:32+09:00",
     "zao": "2026-10-17T16:29:32+09:00",
     "hakkoda": "2026-10-17T16:29:32+09:00",
@@ -23,10 +23,10 @@
     "tsugaike": "2026-10-18T16:44:33+09:00",
     "cortina": "2026-10-18T16:44:33+09:00",
     "nozawa": "2026-10-18T16:44:33+09:00",
-    "shiga": "2026-10-15T16:58:14+09:00",
-    "madarao": "2026-10-15T16:58:14+09:00",
-    "karuizawa": "2026-10-15T16:58:14+09:00",
-    "akakura": "2026-10-15T16:58:14+09:00",
+    "shiga": "2026-10-19T17:27:04+09:00",
+    "madarao": "2026-10-19T17:27:04+09:00",
+    "karuizawa": "2026-10-19T17:27:04+09:00",
+    "akakura": "2026-10-19T17:27:04+09:00",
     "arai": "2026-10-16T16:51:55+09:00",
     "gala": "2026-10-16T16:51:55+09:00",
     "naeba": "2026-10-16T16:51:55+09:00",
@@ -301,7 +301,7 @@
     },
     {
       "id": "furano",
-      "status": "red",
+      "status": "unverified",
       "url_check": {
         "code": 200,
         "final_url": "https://www.princehotels.co.jp/ski/furano/"
@@ -315,46 +315,6 @@
             2,
             3,
             4
-          ],
-          "suggested": [
-            11,
-            12,
-            1,
-            2,
-            3,
-            4,
-            5
-          ],
-          "severity": "red",
-          "note": "富良野スキー場2026-2027雪季營業期間為2026年11月28日至2027年5月5日。",
-          "sources": [
-            "https://www.princehotels.co.jp/ski/furano/winter/?id=314",
-            "https://hapisnow.jp/snowresort/furano/",
-            "https://www.seibuprince.com/ja/furano-ski-resort",
-            "https://www.skiing-hokkaido.com/ja/resorts/furano-ski-resort/",
-            "https://www.princehotels.co.jp/ski/furano/winter/access/",
-            "https://www.furano-rentalski.jp/%E5%AF%8C%E8%89%AF%E9%87%8E%E3%81%B8%E3%81%AE%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/",
-            "https://www.access-n.jp/winter2025/skibus/detail/asahikawa_ap_furano.html",
-            "https://ja.wikipedia.org/wiki/%E5%AF%8C%E8%89%AF%E9%87%8E%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "tomamu",
-      "status": "unverified",
-      "url_check": {
-        "code": 200,
-        "final_url": "https://www.snowtomamu.jp/summer/"
-      },
-      "findings": [
-        {
-          "field": "months",
-          "current": [
-            12,
-            1,
-            2,
-            3
           ],
           "suggested": null,
           "severity": "unverified",
@@ -374,7 +334,7 @@
         },
         {
           "field": "access",
-          "current": "新千歲機場搭 JR 到 Tomamu 站約 1.5 小時",
+          "current": "旭川機場約 1 小時",
           "suggested": null,
           "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
@@ -382,7 +342,7 @@
         },
         {
           "field": "accessMin",
-          "current": 90,
+          "current": 60,
           "suggested": null,
           "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
@@ -390,7 +350,7 @@
         },
         {
           "field": "name",
-          "current": "星野 Tomamu",
+          "current": "富良野 Furano",
           "suggested": null,
           "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
@@ -398,7 +358,7 @@
         },
         {
           "field": "nameJa",
-          "current": "星野リゾート トマム",
+          "current": "富良野スキー場",
           "suggested": null,
           "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
@@ -406,11 +366,42 @@
         },
         {
           "field": "place",
-          "current": "北海道・占冠村",
+          "current": "北海道・富良野市",
           "suggested": null,
           "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
+        }
+      ]
+    },
+    {
+      "id": "tomamu",
+      "status": "yellow",
+      "url_check": {
+        "code": 200,
+        "final_url": "https://www.snowtomamu.jp/summer/"
+      },
+      "findings": [
+        {
+          "field": "months",
+          "current": [
+            12,
+            1,
+            2,
+            3
+          ],
+          "suggested": [
+            12,
+            1,
+            2,
+            3,
+            4
+          ],
+          "severity": "yellow",
+          "note": "2026-2027 雪季營業期間為 2026 年 12 月 1 日至 2027 年 4 月 5 日。",
+          "sources": [
+            "https://hapisnow.jp/snowresort/hoshino-resort-tomamu/"
+          ]
         }
       ]
     },
@@ -1004,12 +995,21 @@
     },
     {
       "id": "shiga",
-      "status": "yellow",
+      "status": "red",
       "url_check": {
-        "code": 200,
-        "final_url": "https://www.shigakogen-ski.or.jp/"
+        "code": null,
+        "final_url": "https://www.shigakogen-ski.or.jp/",
+        "error": "<urlopen error timed out>"
       },
       "findings": [
+        {
+          "field": "url",
+          "current": "https://www.shigakogen-ski.or.jp/",
+          "suggested": null,
+          "severity": "red",
+          "note": "<urlopen error timed out>",
+          "sources": []
+        },
         {
           "field": "months",
           "current": [
@@ -1028,12 +1028,23 @@
             5
           ],
           "severity": "yellow",
-          "note": "志賀高原共通リフト券的2026-2027雪季營業期間為2026年12月5日至2027年5月5日。",
+          "note": "根據志賀高原官方網站，2026-2027 雪季營業期間為 2026 年 12 月 5 日至 2027 年 5 月 5 日。",
           "sources": [
-            "https://shigakogen-ski.or.jp/2026/08/2026-2027.html",
-            "https://www.princehotels.com/en/ski/shiga_kogen/",
-            "https://shigakogen-ski.or.jp/winter/news/2026/08/2026-2027.html"
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEyjowDHcrY-iDuytogaFiHXPmHdfdMjrSIDqncY_Ez6H95Z81oZgGY7UHtgXbogL4MmJwddi55Gx3XRgIwNjyRFX4S9DwezfbYAzuHTr4Ohjs3Tjyevdr3KOp8m-JIOyUaM65xoC49zApOQV1S",
+            "https://www.shigakogen.gr.jp/news/6402.html",
+            "https://www.highwaybus.com/gp/info/lineDetail?lineGroupNo=8&lineId=390"
           ]
+        },
+        {
+          "field": "peak",
+          "current": [
+            1,
+            2
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "官方網站未明確指出雪況最佳月份。",
+          "sources": []
         }
       ]
     },
@@ -1188,75 +1199,36 @@
     },
     {
       "id": "akakura",
-      "status": "unverified",
+      "status": "red",
       "url_check": {
-        "code": 200,
-        "final_url": "https://akakura-ski.com/"
+        "code": null,
+        "final_url": "https://www.akakura-ski.com/",
+        "error": "<urlopen error timed out>"
       },
       "findings": [
         {
-          "field": "months",
-          "current": [
-            12,
-            1,
-            2,
-            3
-          ],
+          "field": "url",
+          "current": "https://www.akakura-ski.com/",
           "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "peak",
-          "current": [
-            1,
-            2
-          ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "severity": "red",
+          "note": "<urlopen error timed out>",
           "sources": []
         },
         {
           "field": "access",
           "current": "妙高高原站巴士約 15 分（東京→上越妙高 北陸新幹線約 2 小時）",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "accessMin",
-          "current": 40,
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "name",
-          "current": "妙高 赤倉溫泉 Akakura",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "nameJa",
-          "current": "赤倉温泉スキー場",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "place",
-          "current": "新潟・妙高市",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "suggested": "上越妙高站搭乘えちごトキめき鉄道至妙高高原站約 36 分，轉乘巴士約 20 分",
+          "severity": "yellow",
+          "note": "從上越妙高站搭乘えちごトキめき鉄道至妙高高原站約需36分鐘。 從妙高高原站轉乘巴士至赤倉溫泉スキー場約需20分鐘。",
+          "sources": [
+            "https://www.asoview.com/channel/ticket/IU5IPSlKay/ticket0000032480/",
+            "https://www.winterplus.jp/ski/ski_detail.cfm?skiarea_code=akakura",
+            "https://ekitan.com/transit/section/sf-3784/st-3749",
+            "https://www.jalan.net/theme/ski/niigata/17_d/17_d_ski01.html",
+            "https://yukiyama-web.com/skiarea/148",
+            "https://myokotourism.jp/akakura-onsen-ski-resort/",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5nB5mjpLowr8PRTIrz1xaeWbh4I0ufhL4do6qIYtyZI6Bd94FRyBsvAnHGaTWxBjb61rqy6Piikf1HaKUS_4ZObegoenkv9jv9MSU5eeSbzBvn4PQdgdbAlayeESQXkSWB7UQ7ULbM2ZcnyjI4_-3OlRoLDEwls4HtdHoPCPXDqegUWXixpzNWvVQu7JmcwnwK4u86EkIF3c9uEgO7CPLV9s="
+          ]
         }
       ]
     },
