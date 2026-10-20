@@ -1,16 +1,16 @@
 {
-  "generated": "2026-10-19T17:27:04+09:00",
+  "generated": "2026-10-20T17:09:16+09:00",
   "checked": [
-    "shiga",
-    "madarao",
-    "karuizawa",
-    "akakura",
-    "furano",
-    "tomamu"
+    "arai",
+    "gala",
+    "naeba",
+    "kagura",
+    "niseko",
+    "rusutsu"
   ],
   "last_checked": {
-    "niseko": "2026-10-17T16:29:32+09:00",
-    "rusutsu": "2026-10-17T16:29:32+09:00",
+    "niseko": "2026-10-20T17:09:16+09:00",
+    "rusutsu": "2026-10-20T17:09:16+09:00",
     "kiroro": "2026-10-18T16:44:33+09:00",
     "teine": "2026-10-18T16:44:33+09:00",
     "furano": "2026-10-19T17:27:04+09:00",
@@ -27,10 +27,10 @@
     "madarao": "2026-10-19T17:27:04+09:00",
     "karuizawa": "2026-10-19T17:27:04+09:00",
     "akakura": "2026-10-19T17:27:04+09:00",
-    "arai": "2026-10-16T16:51:55+09:00",
-    "gala": "2026-10-16T16:51:55+09:00",
-    "naeba": "2026-10-16T16:51:55+09:00",
-    "kagura": "2026-10-16T16:51:55+09:00"
+    "arai": "2026-10-20T17:09:16+09:00",
+    "gala": "2026-10-20T17:09:16+09:00",
+    "naeba": "2026-10-20T17:09:16+09:00",
+    "kagura": "2026-10-20T17:09:16+09:00"
   },
   "results": [
     {
@@ -112,7 +112,7 @@
     },
     {
       "id": "rusutsu",
-      "status": "unverified",
+      "status": "yellow",
       "url_check": {
         "code": 200,
         "final_url": "https://rusutsu.com/"
@@ -126,61 +126,28 @@
             2,
             3
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "peak",
-          "current": [
+          "suggested": [
+            11,
+            12,
             1,
-            2
+            2,
+            3
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "access",
-          "current": "新千歲機場巴士約 2 小時",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "accessMin",
-          "current": 120,
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "name",
-          "current": "留壽都 Rusutsu",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "nameJa",
-          "current": "ルスツリゾート",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "place",
-          "current": "北海道・留壽都村",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "severity": "yellow",
+          "note": "根據2026-2027冬季官方資訊，營業期間預計從11月下旬開始至3月底。",
+          "sources": [
+            "https://hapisnow.jp/snowresort/rusutsu-resort/",
+            "https://rusutsu.com/information/westin-closed-period/",
+            "https://jp-travel.williamlion.tw/jp/japan/rusutsu-resort-four-seasons-guide-2026-skiing-summer-park-rafting-ja/",
+            "https://bigruns.com/basu_group/%E5%86%AC%E5%AD%A3%E9%81%8B%E8%A1%8C-%E3%83%93%E3%83%83%E3%82%B0%E3%83%A9%E3%83%B3%E3%82%BA%E5%8F%B7-%E6%96%B0%E5%8D%83%E6%AD%B3%E7%A9%BA%E6%B8%AF",
+            "https://rusutsu.com/news-and-topics/skipackage/",
+            "https://www.skiing-hokkaido.com/ja/resorts/rusutsu-resort/",
+            "https://rusutsu.com/access-shuttle-bus-new-chitose-airport/",
+            "https://tabi-yasu.com/chitose-airport-rusutsu-access/",
+            "https://rusutsu.com/en/access-shuttle-bus-new-chitose-airport/",
+            "https://rusutsu.com/",
+            "https://oshimachi.jp/spots/68295"
+          ]
         }
       ]
     },
@@ -1258,61 +1225,55 @@
             3,
             4
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "peak",
-          "current": [
+          "suggested": [
+            12,
             1,
-            2
+            2,
+            3,
+            4,
+            5
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "severity": "yellow",
+          "note": "官方資訊顯示雪季通常從12月中旬持續到5月中旬，包含5月。",
+          "sources": [
+            "https://www.travel.co.jp/senmon/jpn_ski/gi0075_e1w1/%E3%83%AD%E3%83%83%E3%83%86%E3%82%A2%E3%83%A9%E3%82%A4%E3%83%AA%E3%82%BE%E3%83%BC%E3%83%88/",
+            "https://shinkansen-ticket.com/pages/lotte-arai-resort",
+            "https://prtimes.jp/main/html/rd/p/000000041.000154803.html",
+            "https://iko-yo.net/facilities/90549/map",
+            "https://www.lottehotel.com/arai-resort/en/facilities/shuttle-bus-service",
+            "https://www.lottehotel.com/arai-resort/ja/facilities/shuttle-bus-service",
+            "https://www.snowmonkeyresorts.com/access/joetsumyoko-station/",
+            "https://www.lottehotel.com/arai-resort/en/about/location",
+            "https://www.lottehotel.com/arai-resort/en",
+            "https://www.lottehotel.com/arai-resort/en/about/overview",
+            "https://www.jalan.net/yad308602/access/",
+            "https://www.j-hotel.or.jp/hotel/284/",
+            "https://www.j-hotel.or.jp/en/hotel/284/",
+            "https://niigata-kankou.or.jp/accommodation/detail_44668.html"
+          ]
         },
         {
           "field": "access",
           "current": "上越妙高站巴士約 40 分",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "accessMin",
-          "current": 40,
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "name",
-          "current": "Lotte Arai",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "nameJa",
-          "current": "ロッテアライリゾート",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "place",
-          "current": "新潟・妙高市",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "suggested": "上越妙高站免費接駁巴士約 30 分 (需預約)",
+          "severity": "yellow",
+          "note": "官方提供從上越妙高站西口出發的免費接駁巴士服務，車程約30分鐘，需預約。",
+          "sources": [
+            "https://www.travel.co.jp/senmon/jpn_ski/gi0075_e1w1/%E3%83%AD%E3%83%83%E3%83%86%E3%82%A2%E3%83%A9%E3%82%A4%E3%83%AA%E3%82%BE%E3%83%BC%E3%83%88/",
+            "https://shinkansen-ticket.com/pages/lotte-arai-resort",
+            "https://prtimes.jp/main/html/rd/p/000000041.000154803.html",
+            "https://iko-yo.net/facilities/90549/map",
+            "https://www.lottehotel.com/arai-resort/en/facilities/shuttle-bus-service",
+            "https://www.lottehotel.com/arai-resort/ja/facilities/shuttle-bus-service",
+            "https://www.snowmonkeyresorts.com/access/joetsumyoko-station/",
+            "https://www.lottehotel.com/arai-resort/en/about/location",
+            "https://www.lottehotel.com/arai-resort/en",
+            "https://www.lottehotel.com/arai-resort/en/about/overview",
+            "https://www.jalan.net/yad308602/access/",
+            "https://www.j-hotel.or.jp/hotel/284/",
+            "https://www.j-hotel.or.jp/en/hotel/284/",
+            "https://niigata-kankou.or.jp/accommodation/detail_44668.html"
+          ]
         }
       ]
     },
@@ -1342,142 +1303,38 @@
             3,
             4
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "peak",
-          "current": [
+          "suggested": [
+            12,
             1,
-            2
+            2,
+            3,
+            4,
+            5
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "access",
-          "current": "東京站搭上越新幹線，直達 GALA 湯澤站約 75–90 分（雪季限定）",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "accessMin",
-          "current": 80,
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "name",
-          "current": "GALA 湯澤",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "nameJa",
-          "current": "ガーラ湯沢スキー場",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "place",
-          "current": "新潟・湯沢町",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "severity": "yellow",
+          "note": "根據官方資訊，2026-2027雪季的滑雪場營業期間（ゲレンデ営業）為2026年12月19日至2027年5月5日。",
+          "sources": [
+            "https://travelscale.jp/spot/gala-yuzawa-snow-resort/",
+            "https://media.jreast.co.jp/articles/6552",
+            "https://travel.watch.impress.co.jp/docs/news/2117864.html",
+            "https://prtimes.jp/main/html/rd/p/000000030.000115189.html",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXWWQ3i7rvjaUxPR1lumc39G3fpoXGkEXFMnzi6dc9QPERK7L2bLc5w3Bi7_BY5h2AtmvQzcVcI19iRZR4xbWPSxyoZi-M1atzZ4sY8QYTIunoWs5XHg=="
+          ]
         }
       ]
     },
     {
       "id": "naeba",
-      "status": "unverified",
+      "status": "green",
       "url_check": {
         "code": 200,
         "final_url": "https://www.princehotels.co.jp/ski/naeba/"
       },
-      "findings": [
-        {
-          "field": "months",
-          "current": [
-            12,
-            1,
-            2,
-            3,
-            4
-          ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "peak",
-          "current": [
-            1,
-            2
-          ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "access",
-          "current": "越後湯澤站巴士約 40 分",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "accessMin",
-          "current": 40,
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "name",
-          "current": "苗場 Naeba",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "nameJa",
-          "current": "苗場スキー場",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "place",
-          "current": "新潟・湯沢町",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        }
-      ]
+      "findings": []
     },
     {
       "id": "kagura",
-      "status": "unverified",
+      "status": "yellow",
       "url_check": {
         "code": 200,
         "final_url": "https://www.princehotels.co.jp/ski/kagura/"
@@ -1493,62 +1350,36 @@
             4,
             5
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "peak",
-          "current": [
+          "suggested": [
+            11,
+            12,
             1,
             2,
-            3
+            3,
+            4,
+            5
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "severity": "yellow",
+          "note": "かぐら・みつまたエリア的2026-2027雪季預計從11月28日開始營業，因此應包含11月。",
+          "sources": [
+            "https://www.princehotels.co.jp/ski/kagura/winter/",
+            "https://www.snowgame.school/en/kagura-ski-resort",
+            "https://roadplan.net/blog/kagura-ski/",
+            "https://niigata-kankou.or.jp/spot/detail_10682.html"
+          ]
         },
         {
           "field": "access",
           "current": "越後湯澤站巴士約 40 分",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "accessMin",
-          "current": 40,
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "name",
-          "current": "神樂 Kagura",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "nameJa",
-          "current": "かぐらスキー場",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "place",
-          "current": "新潟・湯沢町",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "suggested": "越後湯澤站巴士約 20 分",
+          "severity": "yellow",
+          "note": "從越後湯澤站搭乘路線巴士至かぐら三俣スキー場前（みつまたステーション）約需20分鐘。",
+          "sources": [
+            "https://www.princehotels.co.jp/ski/kagura/winter/",
+            "https://www.snowgame.school/en/kagura-ski-resort",
+            "https://roadplan.net/blog/kagura-ski/",
+            "https://niigata-kankou.or.jp/spot/detail_10682.html"
+          ]
         }
       ]
     }
