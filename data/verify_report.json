@@ -1,24 +1,24 @@
 {
-  "generated": "2026-10-20T17:09:16+09:00",
+  "generated": "2026-10-21T17:14:41+09:00",
   "checked": [
-    "arai",
-    "gala",
-    "naeba",
-    "kagura",
-    "niseko",
-    "rusutsu"
+    "appi",
+    "zao",
+    "hakkoda",
+    "happo",
+    "kiroro",
+    "teine"
   ],
   "last_checked": {
     "niseko": "2026-10-20T17:09:16+09:00",
     "rusutsu": "2026-10-20T17:09:16+09:00",
-    "kiroro": "2026-10-18T16:44:33+09:00",
-    "teine": "2026-10-18T16:44:33+09:00",
+    "kiroro": "2026-10-21T17:14:41+09:00",
+    "teine": "2026-10-21T17:14:41+09:00",
     "furano": "2026-10-19T17:27:04+09:00",
     "tomamu": "2026-10-19T17:27:04+09:00",
-    "appi": "2026-10-17T16:29:32+09:00",
-    "zao": "2026-10-17T16:29:32+09:00",
-    "hakkoda": "2026-10-17T16:29:32+09:00",
-    "happo": "2026-10-17T16:29:32+09:00",
+    "appi": "2026-10-21T17:14:41+09:00",
+    "zao": "2026-10-21T17:14:41+09:00",
+    "hakkoda": "2026-10-21T17:14:41+09:00",
+    "happo": "2026-10-21T17:14:41+09:00",
     "hakuba47": "2026-10-18T16:44:33+09:00",
     "tsugaike": "2026-10-18T16:44:33+09:00",
     "cortina": "2026-10-18T16:44:33+09:00",
@@ -178,23 +178,23 @@
             5
           ],
           "severity": "red",
-          "note": "2026-2027 雪季預計從 2026 年 11 月 28 日開始，至 2027 年 5 月 5 日結束。",
+          "note": "2026-2027 雪季預計從 2026 年 11 月 28 日持續到 2027 年 5 月 5 日.",
           "sources": [
+            "https://www.snowjapan.com/ski-areas-in-japan/hokkaido/akaigawa-village/kiroro-snow-world",
             "https://todolist-japan.com/en/kiroro-ski-guide/",
-            "https://www.clubmed.co.jp/o/winter-2027-snow?locale=en-JP",
-            "https://hapisnow.jp/snowresort/kiroro-snowworld/?info=theme",
-            "https://www.clubmed.co.jp/o/winter-2027-snow",
-            "https://www.snowsbest.com/kiroro-ski-resort-club-med/",
-            "https://www.powderlife.com/blog/club-med-owner-buys-niseko-neighbor-kiroro-ski-resort/",
-            "https://www.powderlife.com/blog/niseko-ski-resort-owner-to-sell-central-hokkaido-resort/",
-            "https://www.powderlife.com/blog/club-med-confirms-niseko-resort-at-kiroro-this-winter/"
+            "https://yukiroro.com/ja/kiroro-ski-resort",
+            "https://mountainwatch.travel/japan/kiroro/getting-here/",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpVNLL4He-tHQ6xxPo0az7iCpTxwcdczqAfme9qwTAASA1AYrEPKykxCACb1yacL2qPMTBfKd1dHBu3OxNZqch3QxuTa0t76BvjmD7jCMPcfflfbuhFQc9_zNQNRUxfKfCkAgdxPmv0QsU",
+            "https://www.kiroro.co.jp/ja/about_us/",
+            "https://www.kiroro.co.jp/ja/",
+            "https://www.kiroro.co.jp/access-winter/"
           ]
         }
       ]
     },
     {
       "id": "teine",
-      "status": "unverified",
+      "status": "red",
       "url_check": {
         "code": 200,
         "final_url": "https://www.sapporo-teine.com/"
@@ -208,61 +208,50 @@
             2,
             3
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "peak",
-          "current": [
+          "suggested": [
+            11,
+            12,
             1,
-            2
+            2,
+            3,
+            4,
+            5
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "severity": "red",
+          "note": "2026-2027雪季預計營業期間為2026年11月下旬至2027年5月上旬。",
+          "sources": [
+            "https://www.caranva.app/en/esqui/sapporo-teine/guias/horarios-temporada",
+            "https://www.snowjapan.com/ski-areas-in-japan/hokkaido/sapporo-city/sapporo-teine",
+            "https://nl-hokkaido.com/guides/hokkaido-ski-season",
+            "https://www.orion-tour.co.jp/air/fair/hokkaido/ski/gelande/teine/",
+            "https://www.skiing-hokkaido.com/ja/resorts/sapporo-teine/",
+            "https://sapporo-teine.com/snow/lang/en/access/",
+            "https://sapporo-teine.com/snow/access/other",
+            "https://sapporo-teine.com/snow/lang/en/",
+            "https://sapporo-teine.com/snow/",
+            "https://sapporo-teine.com/snow/contact",
+            "https://sapporo-teine.com/snow/access"
+          ]
         },
         {
           "field": "access",
           "current": "札幌市區開車或巴士約 40–60 分",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "accessMin",
-          "current": 50,
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "name",
-          "current": "札幌手稻 Sapporo Teine",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "nameJa",
-          "current": "サッポロテイネ",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "place",
-          "current": "北海道・札幌市",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "suggested": "從札幌車站搭乘JR列車至手稻站，轉乘JR北海道巴士至滑雪場，約 39 分鐘 (至Highland Ski Center)。",
+          "severity": "yellow",
+          "note": "從JR札幌站搭乘JR列車至JR手稻站約11-18分鐘，再轉乘JR北海道巴士至Highland Ski Center約28分鐘，總計約39分鐘。",
+          "sources": [
+            "https://www.caranva.app/en/esqui/sapporo-teine/guias/horarios-temporada",
+            "https://www.snowjapan.com/ski-areas-in-japan/hokkaido/sapporo-city/sapporo-teine",
+            "https://nl-hokkaido.com/guides/hokkaido-ski-season",
+            "https://www.orion-tour.co.jp/air/fair/hokkaido/ski/gelande/teine/",
+            "https://www.skiing-hokkaido.com/ja/resorts/sapporo-teine/",
+            "https://sapporo-teine.com/snow/lang/en/access/",
+            "https://sapporo-teine.com/snow/access/other",
+            "https://sapporo-teine.com/snow/lang/en/",
+            "https://sapporo-teine.com/snow/",
+            "https://sapporo-teine.com/snow/contact",
+            "https://sapporo-teine.com/snow/access"
+          ]
         }
       ]
     },
@@ -398,34 +387,37 @@
             5
           ],
           "severity": "yellow",
-          "note": "安比高原スキー場2026-2027シーズン預計於12月5日開放，並通常營運至5月上旬。",
+          "note": "官方資訊顯示2026-2027雪季預計於12月5日開幕，並在往年資料中營業至5月初，因此應包含5月。",
           "sources": [
+            "https://iwatetabi.jp/spots/6651/",
+            "https://appi.co.jp/snow-mountain-resort///offseason/",
+            "https://appi-abend.com/snow1.html",
             "https://www.iwate-ski.gr.jp/01_appi/index.html",
-            "https://www.appi.co.jp/snow-mountain-resort/access/",
+            "https://www.appi.co.jp/snow-mountain-resort/offseason/access/",
             "https://www.appi.co.jp/access-green/",
-            "https://www.appi.co.jp/snow-mountain-resort/",
-            "https://iwatetabi.jp/spots/6651/"
+            "https://www.kkday.com/ja/product/260051",
+            "https://www.appi.co.jp/snow-mountain-resort/lp/gondola-project/",
+            "https://mainichi.jp/articles/20241214/k00/00m/020/094000c",
+            "https://surfsnow.jp/guide/htm/r0226m.htm",
+            "https://ekitan.com/transit/access/poi/bmid-53837243a05e13905e5bba7a58502876"
           ]
         },
         {
-          "field": "access",
-          "current": "盛岡站巴士約 1 小時",
-          "suggested": "盛岡站巴士約 1 小時 10 分",
-          "severity": "yellow",
-          "note": "從盛岡站搭乘巴士至安比高原的所需時間約為1小時10分鐘。",
-          "sources": [
-            "https://www.iwate-ski.gr.jp/01_appi/index.html",
-            "https://www.appi.co.jp/snow-mountain-resort/access/",
-            "https://www.appi.co.jp/access-green/",
-            "https://www.appi.co.jp/snow-mountain-resort/",
-            "https://iwatetabi.jp/spots/6651/"
-          ]
+          "field": "peak",
+          "current": [
+            1,
+            2
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "官方網站未明確指出雪況最佳月份。",
+          "sources": []
         }
       ]
     },
     {
       "id": "zao",
-      "status": "red",
+      "status": "yellow",
       "url_check": {
         "code": 200,
         "final_url": "https://zaomountainresort.com/ski/"
@@ -449,79 +441,67 @@
             2,
             3
           ],
-          "suggested": [
-            12,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Expecting value: line 1 column 52 (char 51)",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
             1,
-            2,
-            3,
-            4,
-            5
+            2
           ],
-          "severity": "red",
-          "note": "2026-2027雪季預計營業期間為12月12日至5月5日。",
-          "sources": [
-            "https://www.ski-gelende.com/gelende/tohoku/zao/",
-            "https://zaomountainresort.com/chrage/",
-            "https://yamagatagoto.com/zao-onsen-ski/3768/",
-            "https://www.orion-tour.co.jp/air/fair/tohoku/ski/gelande/zao/",
-            "https://onsenzanmaiblog.com/yamagataeki-zaoonsen/",
-            "https://www.navitime.co.jp/bustransit/search?orvStationCode=00025891&dnvStationCode=00429042",
-            "https://www.yamagatakotsu.jp/busroute1/z90/",
-            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00025891&arrival=00429042&line=00070180",
-            "https://zaomountainresort.com/",
-            "https://zaomountainresort.com/ski/",
-            "https://zaomountainresort.com/ski_news/",
-            "https://www.zao-onsen.co.jp/ski/",
-            "https://zaomountainresort.com/gerende/",
-            "https://zaoropeway.co.jp/winter/",
-            "https://www.asoview.com/base/162430/",
-            "https://www.jalan.net/kankou/spt_guide000000177177/",
-            "https://meito-lucent.com/news/detail.php?id=1189",
-            "https://zaoropeway.co.jp/summer/company.php",
-            "https://surfsnow.jp/guide/htm/r0177s.htm",
-            "https://travel.yahoo.co.jp/kanko/spot-00002650/",
-            "https://www.travel-inn.co.jp/ski/gelande/zao/",
-            "https://www.instagram.com/p/DXdwizrkfYu/",
-            "https://surfsnow.jp/guide/htm/r0177m.htm"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Expecting value: line 1 column 52 (char 51)",
+          "sources": []
         },
         {
           "field": "access",
           "current": "山形站巴士約 40 分",
-          "suggested": "山形站巴士約 37 分",
-          "severity": "yellow",
-          "note": "從山形站搭乘山交巴士（Z90路線）至藏王溫泉バスターミナル，所需時間約37分鐘。",
-          "sources": [
-            "https://www.ski-gelende.com/gelende/tohoku/zao/",
-            "https://zaomountainresort.com/chrage/",
-            "https://yamagatagoto.com/zao-onsen-ski/3768/",
-            "https://www.orion-tour.co.jp/air/fair/tohoku/ski/gelande/zao/",
-            "https://onsenzanmaiblog.com/yamagataeki-zaoonsen/",
-            "https://www.navitime.co.jp/bustransit/search?orvStationCode=00025891&dnvStationCode=00429042",
-            "https://www.yamagatakotsu.jp/busroute1/z90/",
-            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00025891&arrival=00429042&line=00070180",
-            "https://zaomountainresort.com/",
-            "https://zaomountainresort.com/ski/",
-            "https://zaomountainresort.com/ski_news/",
-            "https://www.zao-onsen.co.jp/ski/",
-            "https://zaomountainresort.com/gerende/",
-            "https://zaoropeway.co.jp/winter/",
-            "https://www.asoview.com/base/162430/",
-            "https://www.jalan.net/kankou/spt_guide000000177177/",
-            "https://meito-lucent.com/news/detail.php?id=1189",
-            "https://zaoropeway.co.jp/summer/company.php",
-            "https://surfsnow.jp/guide/htm/r0177s.htm",
-            "https://travel.yahoo.co.jp/kanko/spot-00002650/",
-            "https://www.travel-inn.co.jp/ski/gelande/zao/",
-            "https://www.instagram.com/p/DXdwizrkfYu/",
-            "https://surfsnow.jp/guide/htm/r0177m.htm"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Expecting value: line 1 column 52 (char 51)",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 40,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Expecting value: line 1 column 52 (char 51)",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "藏王溫泉 Zao",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Expecting value: line 1 column 52 (char 51)",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "蔵王温泉スキー場",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Expecting value: line 1 column 52 (char 51)",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "山形・山形市",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Expecting value: line 1 column 52 (char 51)",
+          "sources": []
         }
       ]
     },
     {
       "id": "hakkoda",
-      "status": "unverified",
+      "status": "yellow",
       "url_check": {
         "code": 200,
         "final_url": "https://hakkoda-ropeway.jp/"
@@ -536,62 +516,35 @@
             3,
             4
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "peak",
-          "current": [
+          "suggested": [
+            12,
             1,
             2,
-            3
+            3,
+            4,
+            5
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "severity": "yellow",
+          "note": "滑雪季節從12月持續到5月中旬。",
+          "sources": [
+            "https://hakkoda-ropeway.jp/guide/",
+            "https://www.tohokukanko.jp/transport/detail_1001187.html",
+            "https://hakkoda-ropeway.jp/access/",
+            "https://100meizan.com/ropeway/hakkoda/"
+          ]
         },
         {
           "field": "access",
           "current": "青森站巴士約 1 小時",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "accessMin",
-          "current": 60,
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "name",
-          "current": "八甲田 Hakkoda",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "nameJa",
-          "current": "八甲田ロープウェー",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "place",
-          "current": "青森・青森市",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "suggested": "青森站巴士約 80 分鐘",
+          "severity": "yellow",
+          "note": "冬季從青森站搭乘JR巴士約需80分鐘。",
+          "sources": [
+            "https://hakkoda-ropeway.jp/guide/",
+            "https://www.tohokukanko.jp/transport/detail_1001187.html",
+            "https://hakkoda-ropeway.jp/access/",
+            "https://100meizan.com/ropeway/hakkoda/"
+          ]
         }
       ]
     },
