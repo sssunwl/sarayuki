@@ -1,28 +1,28 @@
 {
-  "generated": "2026-10-21T17:14:41+09:00",
+  "generated": "2026-10-22T17:16:26+09:00",
   "checked": [
-    "appi",
-    "zao",
-    "hakkoda",
-    "happo",
-    "kiroro",
-    "teine"
+    "hakuba47",
+    "tsugaike",
+    "cortina",
+    "nozawa",
+    "furano",
+    "tomamu"
   ],
   "last_checked": {
     "niseko": "2026-10-20T17:09:16+09:00",
     "rusutsu": "2026-10-20T17:09:16+09:00",
     "kiroro": "2026-10-21T17:14:41+09:00",
     "teine": "2026-10-21T17:14:41+09:00",
-    "furano": "2026-10-19T17:27:04+09:00",
-    "tomamu": "2026-10-19T17:27:04+09:00",
+    "furano": "2026-10-22T17:16:26+09:00",
+    "tomamu": "2026-10-22T17:16:26+09:00",
     "appi": "2026-10-21T17:14:41+09:00",
     "zao": "2026-10-21T17:14:41+09:00",
     "hakkoda": "2026-10-21T17:14:41+09:00",
     "happo": "2026-10-21T17:14:41+09:00",
-    "hakuba47": "2026-10-18T16:44:33+09:00",
-    "tsugaike": "2026-10-18T16:44:33+09:00",
-    "cortina": "2026-10-18T16:44:33+09:00",
-    "nozawa": "2026-10-18T16:44:33+09:00",
+    "hakuba47": "2026-10-22T17:16:26+09:00",
+    "tsugaike": "2026-10-22T17:16:26+09:00",
+    "cortina": "2026-10-22T17:16:26+09:00",
+    "nozawa": "2026-10-22T17:16:26+09:00",
     "shiga": "2026-10-19T17:27:04+09:00",
     "madarao": "2026-10-19T17:27:04+09:00",
     "karuizawa": "2026-10-19T17:27:04+09:00",
@@ -257,7 +257,7 @@
     },
     {
       "id": "furano",
-      "status": "unverified",
+      "status": "red",
       "url_check": {
         "code": 200,
         "final_url": "https://www.princehotels.co.jp/ski/furano/"
@@ -272,10 +272,27 @@
             3,
             4
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "suggested": [
+            11,
+            12,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "severity": "red",
+          "note": "富良野スキー場2026-2027雪季預計於2026年11月28日開放，並於2027年5月5日結束營業。",
+          "sources": [
+            "https://hapisnow.jp/snowresort/furano/?info=theme",
+            "https://www.princehotels.com/en/ski/furano/",
+            "https://snow.japanvoyage.jp/ski_resorts/opening-dates",
+            "https://furano.house/furano-skiing-guide-opening-times-lift-price/",
+            "https://www.skiing-hokkaido.com/ja/resorts/furano-ski-resort/",
+            "https://www.ana.co.jp/domestic/theme/promo_ski/pdf/260917/ski-bus_furano.pdf",
+            "https://www.ana.co.jp/domestic/theme/common_ski/pdf/251219/ski-bus-timetable-furano.pdf",
+            "https://jp.wamazing.com/snow/articles/313"
+          ]
         },
         {
           "field": "peak",
@@ -283,50 +300,56 @@
             1,
             2
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "suggested": [
+            2,
+            3
+          ],
+          "severity": "yellow",
+          "note": "根據過去三年平均積雪量數據，2月和3月的平均積雪量最高（230公分）。",
+          "sources": [
+            "https://hapisnow.jp/snowresort/furano/?info=theme",
+            "https://www.princehotels.com/en/ski/furano/",
+            "https://snow.japanvoyage.jp/ski_resorts/opening-dates",
+            "https://furano.house/furano-skiing-guide-opening-times-lift-price/",
+            "https://www.skiing-hokkaido.com/ja/resorts/furano-ski-resort/",
+            "https://www.ana.co.jp/domestic/theme/promo_ski/pdf/260917/ski-bus_furano.pdf",
+            "https://www.ana.co.jp/domestic/theme/common_ski/pdf/251219/ski-bus-timetable-furano.pdf",
+            "https://jp.wamazing.com/snow/articles/313"
+          ]
         },
         {
           "field": "access",
           "current": "旭川機場約 1 小時",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "suggested": "旭川機場約 1 小時 40 分鐘",
+          "severity": "yellow",
+          "note": "從旭川機場搭乘滑雪巴士（例如ANA滑雪巴士或北海道アクセスネットワーク）至新富良野王子大飯店（雪場旁）約需1小時40分鐘。",
+          "sources": [
+            "https://hapisnow.jp/snowresort/furano/?info=theme",
+            "https://www.princehotels.com/en/ski/furano/",
+            "https://snow.japanvoyage.jp/ski_resorts/opening-dates",
+            "https://furano.house/furano-skiing-guide-opening-times-lift-price/",
+            "https://www.skiing-hokkaido.com/ja/resorts/furano-ski-resort/",
+            "https://www.ana.co.jp/domestic/theme/promo_ski/pdf/260917/ski-bus_furano.pdf",
+            "https://www.ana.co.jp/domestic/theme/common_ski/pdf/251219/ski-bus-timetable-furano.pdf",
+            "https://jp.wamazing.com/snow/articles/313"
+          ]
         },
         {
           "field": "accessMin",
           "current": 60,
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "name",
-          "current": "富良野 Furano",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "nameJa",
-          "current": "富良野スキー場",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "place",
-          "current": "北海道・富良野市",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "suggested": 100,
+          "severity": "yellow",
+          "note": "從旭川機場搭乘滑雪巴士至新富良野王子大飯店（雪場旁）約需100分鐘。",
+          "sources": [
+            "https://hapisnow.jp/snowresort/furano/?info=theme",
+            "https://www.princehotels.com/en/ski/furano/",
+            "https://snow.japanvoyage.jp/ski_resorts/opening-dates",
+            "https://furano.house/furano-skiing-guide-opening-times-lift-price/",
+            "https://www.skiing-hokkaido.com/ja/resorts/furano-ski-resort/",
+            "https://www.ana.co.jp/domestic/theme/promo_ski/pdf/260917/ski-bus_furano.pdf",
+            "https://www.ana.co.jp/domestic/theme/common_ski/pdf/251219/ski-bus-timetable-furano.pdf",
+            "https://jp.wamazing.com/snow/articles/313"
+          ]
         }
       ]
     },
@@ -354,9 +377,11 @@
             4
           ],
           "severity": "yellow",
-          "note": "2026-2027 雪季營業期間為 2026 年 12 月 1 日至 2027 年 4 月 5 日。",
+          "note": "2026-2027 雪季預計營業期間為 2026 年 12 月 1 日至 2027 年 4 月 5 日。",
           "sources": [
-            "https://hapisnow.jp/snowresort/hoshino-resort-tomamu/"
+            "https://www.snowjapan.com/ski-areas-in-japan/hokkaido/shimukappu-village/hoshino-resorts-tomamu",
+            "https://www.knt.co.jp/yado/sp/hoshinoresorts_tomamu_ski/",
+            "https://hapisnow.jp/snowresort/hoshino-resort-tomamu/?info=theme"
           ]
         }
       ]
@@ -642,7 +667,7 @@
           ],
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 1203 (char 1202)",
           "sources": []
         },
         {
@@ -653,7 +678,7 @@
           ],
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 1203 (char 1202)",
           "sources": []
         },
         {
@@ -661,7 +686,7 @@
           "current": "長野站巴士約 60 分",
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 1203 (char 1202)",
           "sources": []
         },
         {
@@ -669,7 +694,7 @@
           "current": 60,
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 1203 (char 1202)",
           "sources": []
         },
         {
@@ -677,7 +702,7 @@
           "current": "白馬 47 & 五竜",
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 1203 (char 1202)",
           "sources": []
         },
         {
@@ -685,7 +710,7 @@
           "current": "Hakuba47・白馬五竜",
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 1203 (char 1202)",
           "sources": []
         },
         {
@@ -693,7 +718,7 @@
           "current": "長野・白馬村",
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 1203 (char 1202)",
           "sources": []
         }
       ]
@@ -717,7 +742,7 @@
           ],
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
           "sources": []
         },
         {
@@ -728,7 +753,7 @@
           ],
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
           "sources": []
         },
         {
@@ -736,7 +761,7 @@
           "current": "長野站巴士約 80 分",
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
           "sources": []
         },
         {
@@ -744,7 +769,7 @@
           "current": 80,
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
           "sources": []
         },
         {
@@ -752,7 +777,7 @@
           "current": "白馬栂池高原 Tsugaike",
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
           "sources": []
         },
         {
@@ -760,7 +785,7 @@
           "current": "白馬つがいけマウンテンリゾート",
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
           "sources": []
         },
         {
@@ -768,7 +793,7 @@
           "current": "長野・小谷村",
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
           "sources": []
         }
       ]
@@ -806,16 +831,11 @@
             3
           ],
           "severity": "yellow",
-          "note": "2026-2027雪季預計營業期間為12月中旬至3月下旬。",
+          "note": "2026-2027雪季預計營業期間為12月12日至3月29日。",
           "sources": [
-            "https://www.atpress.ne.jp/news/1910428",
-            "https://bus-tabi.net/pref/nagano/nagano-hakubacortinasnowresort/",
-            "https://www.hakuba.com/ja/resorts/cortina/",
-            "https://en-1075.site-translation.com/cortina/ski/",
             "https://www.hgp.co.jp/cortina/ski/",
-            "https://www.mapion.co.jp/phonebook/M04013/20486/ILSP0000123583_ipclm/",
-            "https://ekitan.com/transit/access/poi/bmid-db026a3f3bf757d25983f2c01f07401b",
-            "https://www.hgp.co.jp/cortina/ski/access/"
+            "https://bus-tabi.net/pref/nagano/nagano-hakubacortinasnowresort/",
+            "https://www.highwaybus.com/gp/info/lineDetail?lineGroupNo=8&lineId=248"
           ]
         },
         {
@@ -823,33 +843,11 @@
           "current": "長野站巴士約 90 分",
           "suggested": "長野站巴士約 110 分",
           "severity": "yellow",
-          "note": "從JR長野站東口搭乘Alpico交通的特急巴士（需預約）至白馬Cortina巴士站約需1小時50分鐘（110分鐘）。",
+          "note": "從長野站東口搭乘Alpico交通特急巴士至白馬コルチナ巴士站約1小時50分。",
           "sources": [
-            "https://www.atpress.ne.jp/news/1910428",
-            "https://bus-tabi.net/pref/nagano/nagano-hakubacortinasnowresort/",
-            "https://www.hakuba.com/ja/resorts/cortina/",
-            "https://en-1075.site-translation.com/cortina/ski/",
             "https://www.hgp.co.jp/cortina/ski/",
-            "https://www.mapion.co.jp/phonebook/M04013/20486/ILSP0000123583_ipclm/",
-            "https://ekitan.com/transit/access/poi/bmid-db026a3f3bf757d25983f2c01f07401b",
-            "https://www.hgp.co.jp/cortina/ski/access/"
-          ]
-        },
-        {
-          "field": "nameJa",
-          "current": "白馬コルチナ",
-          "suggested": "白馬コルチナスキー場",
-          "severity": "red",
-          "note": "官方日文名稱為「白馬コルチナスキー場」。",
-          "sources": [
-            "https://www.atpress.ne.jp/news/1910428",
             "https://bus-tabi.net/pref/nagano/nagano-hakubacortinasnowresort/",
-            "https://www.hakuba.com/ja/resorts/cortina/",
-            "https://en-1075.site-translation.com/cortina/ski/",
-            "https://www.hgp.co.jp/cortina/ski/",
-            "https://www.mapion.co.jp/phonebook/M04013/20486/ILSP0000123583_ipclm/",
-            "https://ekitan.com/transit/access/poi/bmid-db026a3f3bf757d25983f2c01f07401b",
-            "https://www.hgp.co.jp/cortina/ski/access/"
+            "https://www.highwaybus.com/gp/info/lineDetail?lineGroupNo=8&lineId=248"
           ]
         }
       ]
@@ -881,13 +879,18 @@
             5
           ],
           "severity": "red",
-          "note": "根據2026-2027雪季官方資訊，營業期間為11月底至5月初。",
+          "note": "根據2026-2027雪季官方預定營業期間為2026年11月28日至2027年5月5日，營業月份包含11月和5月。",
           "sources": [
-            "https://www.famiski.jp/gelande_guide/nozawa-onsen/",
-            "https://onelife101.com/nozawa-onsen-ski-guide/",
-            "https://en.nozawaski.com/the-mountain/",
-            "https://www.yukiguni-journey.jp/en/37918/",
-            "https://www.yukiguni-journey.jp/37317/"
+            "https://onelife101.com/nozawa-onsen-lift-pass/",
+            "https://todolist-japan.com/en/nozawa-onsen-ski-guide/",
+            "https://surfsnow.jp/guide/htm/r0028s.htm",
+            "https://nozawaski.com/winter/access/train-bus/",
+            "https://en.nozawaski.com/access/coming-train-bus/",
+            "https://nozawakanko.jp/access/",
+            "https://db.go-nagano.net/topics_detail6/id=17008",
+            "https://centrip-japan.com/spot/873.html",
+            "https://www.gltjp.com/en/directory/item/14233/",
+            "https://nozawaski.com/winter/general/"
           ]
         },
         {
@@ -896,20 +899,10 @@
             1,
             2
           ],
-          "suggested": [
-            12,
-            1,
-            2
-          ],
-          "severity": "yellow",
-          "note": "多個來源指出12月至2月是雪況最佳或高峰期。",
-          "sources": [
-            "https://www.famiski.jp/gelande_guide/nozawa-onsen/",
-            "https://onelife101.com/nozawa-onsen-ski-guide/",
-            "https://en.nozawaski.com/the-mountain/",
-            "https://www.yukiguni-journey.jp/en/37918/",
-            "https://www.yukiguni-journey.jp/37317/"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "未找到官方明確指出通常雪況最佳月份的資訊。",
+          "sources": []
         }
       ]
     },
