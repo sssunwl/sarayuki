@@ -1,20 +1,20 @@
 {
-  "generated": "2026-10-30T18:33:47+09:00",
+  "generated": "2026-10-31T18:15:23+09:00",
   "checked": [
-    "hakuba47",
-    "tsugaike",
-    "cortina",
-    "nozawa",
-    "kiroro",
-    "teine"
+    "shiga",
+    "madarao",
+    "karuizawa",
+    "akakura",
+    "furano",
+    "tomamu"
   ],
   "last_checked": {
     "niseko": "2026-10-29T18:17:26+09:00",
     "rusutsu": "2026-10-29T18:17:26+09:00",
     "kiroro": "2026-10-30T18:33:47+09:00",
     "teine": "2026-10-30T18:33:47+09:00",
-    "furano": "2026-10-28T18:16:22+09:00",
-    "tomamu": "2026-10-28T18:16:22+09:00",
+    "furano": "2026-10-31T18:15:23+09:00",
+    "tomamu": "2026-10-31T18:15:23+09:00",
     "appi": "2026-10-29T18:17:26+09:00",
     "zao": "2026-10-29T18:17:26+09:00",
     "hakkoda": "2026-10-29T18:17:26+09:00",
@@ -23,10 +23,10 @@
     "tsugaike": "2026-10-30T18:33:47+09:00",
     "cortina": "2026-10-30T18:33:47+09:00",
     "nozawa": "2026-10-30T18:33:47+09:00",
-    "shiga": "2026-10-27T17:36:16+09:00",
-    "madarao": "2026-10-27T17:36:16+09:00",
-    "karuizawa": "2026-10-27T17:36:16+09:00",
-    "akakura": "2026-10-27T17:36:16+09:00",
+    "shiga": "2026-10-31T18:15:23+09:00",
+    "madarao": "2026-10-31T18:15:23+09:00",
+    "karuizawa": "2026-10-31T18:15:23+09:00",
+    "akakura": "2026-10-31T18:15:23+09:00",
     "arai": "2026-10-28T18:16:22+09:00",
     "gala": "2026-10-28T18:16:22+09:00",
     "naeba": "2026-10-28T18:16:22+09:00",
@@ -238,7 +238,7 @@
     },
     {
       "id": "furano",
-      "status": "red",
+      "status": "unverified",
       "url_check": {
         "code": 200,
         "final_url": "https://www.princehotels.co.jp/ski/furano/"
@@ -253,82 +253,61 @@
             3,
             4
           ],
-          "suggested": [
-            11,
-            12,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
             1,
-            2,
-            3,
-            4,
-            5
+            2
           ],
-          "severity": "red",
-          "note": "富良野Zone預計於2026年11月28日開放，並於2027年5月5日結束營業。北の峰Zone預計於2026年12月28日開放，並於2027年3月下旬結束營業。",
-          "sources": [
-            "https://www.skiing-hokkaido.com/ja/resorts/furano-ski-resort/",
-            "https://www.skiing-hokkaido.com/resorts/furano-ski-resort-4/",
-            "https://www.princehotels.co.jp/ski/furano/",
-            "https://www.princehotels.co.jp/ski/furano/winter/coursemap/",
-            "https://hapisnow.jp/snowresort/furano/",
-            "https://www.veltra.com/en/a_55bs1kw9zjzx-ski-bus-shuttle-service-between-asahikawa-airport-and",
-            "https://www.ana.co.jp/domestic/theme/promo_ski/pdf/260917/ski-bus_furano.pdf",
-            "https://travel.rakuten.co.jp/bus/bin_page/4000943.html",
-            "https://www.ana.co.jp/domestic/theme/promo_ski/pdf/261029/ski-bus_furano.pdf",
-            "https://www.seibuprince.com/furano-ski-resort",
-            "https://www.princehotels.com/en/ski/furano/",
-            "https://www.seibuprince.com/ja/furano-ski-resort",
-            "https://www.princehotels.co.jp/ski/furano/winter/access/",
-            "https://taisetsu-kamui.jp/en/spots/16232",
-            "https://www.visit-hokkaido.jp/spot/detail_10148.html"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
         },
         {
           "field": "access",
           "current": "旭川機場約 1 小時",
-          "suggested": "旭川機場巴士約 1 小時 40 分鐘",
-          "severity": "yellow",
-          "note": "從旭川機場搭乘巴士至新富良野王子大飯店（雪場旁）約需1小時40分鐘。",
-          "sources": [
-            "https://www.skiing-hokkaido.com/ja/resorts/furano-ski-resort/",
-            "https://www.skiing-hokkaido.com/resorts/furano-ski-resort-4/",
-            "https://www.princehotels.co.jp/ski/furano/",
-            "https://www.princehotels.co.jp/ski/furano/winter/coursemap/",
-            "https://hapisnow.jp/snowresort/furano/",
-            "https://www.veltra.com/en/a_55bs1kw9zjzx-ski-bus-shuttle-service-between-asahikawa-airport-and",
-            "https://www.ana.co.jp/domestic/theme/promo_ski/pdf/260917/ski-bus_furano.pdf",
-            "https://travel.rakuten.co.jp/bus/bin_page/4000943.html",
-            "https://www.ana.co.jp/domestic/theme/promo_ski/pdf/261029/ski-bus_furano.pdf",
-            "https://www.seibuprince.com/furano-ski-resort",
-            "https://www.princehotels.com/en/ski/furano/",
-            "https://www.seibuprince.com/ja/furano-ski-resort",
-            "https://www.princehotels.co.jp/ski/furano/winter/access/",
-            "https://taisetsu-kamui.jp/en/spots/16232",
-            "https://www.visit-hokkaido.jp/spot/detail_10148.html"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
         },
         {
           "field": "accessMin",
           "current": 60,
-          "suggested": 100,
-          "severity": "yellow",
-          "note": "從旭川機場搭乘巴士至新富良野王子大飯店（雪場旁）約需1小時40分鐘（100分鐘）。",
-          "sources": [
-            "https://www.skiing-hokkaido.com/ja/resorts/furano-ski-resort/",
-            "https://www.skiing-hokkaido.com/resorts/furano-ski-resort-4/",
-            "https://www.princehotels.co.jp/ski/furano/",
-            "https://www.princehotels.co.jp/ski/furano/winter/coursemap/",
-            "https://hapisnow.jp/snowresort/furano/",
-            "https://www.veltra.com/en/a_55bs1kw9zjzx-ski-bus-shuttle-service-between-asahikawa-airport-and",
-            "https://www.ana.co.jp/domestic/theme/promo_ski/pdf/260917/ski-bus_furano.pdf",
-            "https://travel.rakuten.co.jp/bus/bin_page/4000943.html",
-            "https://www.ana.co.jp/domestic/theme/promo_ski/pdf/261029/ski-bus_furano.pdf",
-            "https://www.seibuprince.com/furano-ski-resort",
-            "https://www.princehotels.com/en/ski/furano/",
-            "https://www.seibuprince.com/ja/furano-ski-resort",
-            "https://www.princehotels.co.jp/ski/furano/winter/access/",
-            "https://taisetsu-kamui.jp/en/spots/16232",
-            "https://www.visit-hokkaido.jp/spot/detail_10148.html"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "富良野 Furano",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "富良野スキー場",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "北海道・富良野市",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
         }
       ]
     },
@@ -356,10 +335,11 @@
             4
           ],
           "severity": "yellow",
-          "note": "2026-2027雪季營業期間為2026年12月1日至2027年4月5日。",
+          "note": "星野リゾート トマム滑雪場2026-2027雪季營業期間為2026年12月1日至2027年4月5日。",
           "sources": [
+            "https://www.snowtomamu.jp/winter/en/ski/ski-slope/",
             "https://hapisnow.jp/snowresort/hoshino-resort-tomamu/?info=theme",
-            "https://www.orion-tour.co.jp/air/fair/hokkaido/ski/gelande/tomamu/"
+            "https://uchijapan.com/news/japan-ski-resort-opening-dates"
           ]
         }
       ]
@@ -896,12 +876,78 @@
     },
     {
       "id": "shiga",
-      "status": "green",
+      "status": "unverified",
       "url_check": {
         "code": 200,
         "final_url": "https://www.shigakogen-ski.or.jp/"
       },
-      "findings": []
+      "findings": [
+        {
+          "field": "months",
+          "current": [
+            12,
+            1,
+            2,
+            3,
+            4
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
+            1,
+            2
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "長野站巴士約 70 分",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 70,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "志賀高原 Shiga Kogen",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "志賀高原",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "長野・山ノ内町",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        }
+      ]
     },
     {
       "id": "madarao",
@@ -1003,22 +1049,13 @@
             3
           ],
           "severity": "yellow",
-          "note": "2026-2027雪季預計於2026年10月31日開放，並於2027年3月31日結束。",
+          "note": "2026-2027 雪季預計於 2026 年 10 月 31 日開放，並持續至 2027 年 3 月 31 日。",
           "sources": [
-            "https://release.traicy.com/posts/202610021427217/",
-            "https://prtimes.jp/main/html/rd/p/000004056.000024668.html",
-            "https://surfsnow.jp/guide/htm/r0129m.htm",
-            "https://hapisnow.jp/snowresort/karuizawa-princehotel/?info=theme",
-            "https://www.bizilabe.elhuyar.eus/Yusuke-Nonaka-Suzuki/9839638/",
             "https://jp.trip.com/guide/info/karuizawa-prince-hotel-ski-resort-opening-date.html",
-            "https://jp.wamazing.com/snow/articles/19",
-            "https://jp-travel.williamlion.tw/jp/japan/karuizawa-prince-snow-resort-guide-2026-ja/",
-            "https://www.princehotels.co.jp/ski/karuizawa/winter/access/",
-            "https://www.princehotels.co.jp/ski/karuizawa/informations/westopen2026/",
-            "https://www.princehotels.co.jp/ski/karuizawa/",
-            "https://www.seibuprince.com/ja/karuizawa-ski-resort",
-            "https://bus-tabi.net/pref/nagano/nagano-karuizawaprincehotelskiresort/",
-            "https://ja.wikipedia.org/wiki/%E8%BB%BD%E4%BA%95%E6%B2%A2%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B9%E3%83%9B%E3%83%86%E3%83%AB%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4"
+            "https://release.traicy.com/posts/202610021427217/",
+            "https://hapisnow.jp/snowresort/karuizawa-princehotel/",
+            "https://prtimes.jp/main/html/rd/p/000004056.000024668.html",
+            "https://hapisnow.jp/snowresort/karuizawa-princehotel/?info=theme"
           ]
         },
         {
@@ -1029,49 +1066,16 @@
           ],
           "suggested": [
             12,
-            1,
-            2
+            1
           ],
           "severity": "yellow",
-          "note": "12月至1月為雪況穩定且全面開放的旺季。12月下旬至2月上旬為積雪量和遊客量最高的時期。",
+          "note": "12 月至 1 月是雪況最佳的時期，雪質穩定，預計可全面滑行。",
           "sources": [
-            "https://release.traicy.com/posts/202610021427217/",
-            "https://prtimes.jp/main/html/rd/p/000004056.000024668.html",
-            "https://surfsnow.jp/guide/htm/r0129m.htm",
-            "https://hapisnow.jp/snowresort/karuizawa-princehotel/?info=theme",
-            "https://www.bizilabe.elhuyar.eus/Yusuke-Nonaka-Suzuki/9839638/",
             "https://jp.trip.com/guide/info/karuizawa-prince-hotel-ski-resort-opening-date.html",
-            "https://jp.wamazing.com/snow/articles/19",
-            "https://jp-travel.williamlion.tw/jp/japan/karuizawa-prince-snow-resort-guide-2026-ja/",
-            "https://www.princehotels.co.jp/ski/karuizawa/winter/access/",
-            "https://www.princehotels.co.jp/ski/karuizawa/informations/westopen2026/",
-            "https://www.princehotels.co.jp/ski/karuizawa/",
-            "https://www.seibuprince.com/ja/karuizawa-ski-resort",
-            "https://bus-tabi.net/pref/nagano/nagano-karuizawaprincehotelskiresort/",
-            "https://ja.wikipedia.org/wiki/%E8%BB%BD%E4%BA%95%E6%B2%A2%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B9%E3%83%9B%E3%83%86%E3%83%AB%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4"
-          ]
-        },
-        {
-          "field": "access",
-          "current": "輕井澤站步行約 10 分（東京→輕井澤 北陸新幹線約 1 小時）",
-          "suggested": "輕井澤站步行約 10 分（東京→輕井澤 北陸新幹線約 70-80 分）",
-          "severity": "yellow",
-          "note": "從東京搭乘北陸新幹線至輕井澤站約需70-80分鐘，從輕井澤站南口步行至雪場約10分鐘。",
-          "sources": [
             "https://release.traicy.com/posts/202610021427217/",
+            "https://hapisnow.jp/snowresort/karuizawa-princehotel/",
             "https://prtimes.jp/main/html/rd/p/000004056.000024668.html",
-            "https://surfsnow.jp/guide/htm/r0129m.htm",
-            "https://hapisnow.jp/snowresort/karuizawa-princehotel/?info=theme",
-            "https://www.bizilabe.elhuyar.eus/Yusuke-Nonaka-Suzuki/9839638/",
-            "https://jp.trip.com/guide/info/karuizawa-prince-hotel-ski-resort-opening-date.html",
-            "https://jp.wamazing.com/snow/articles/19",
-            "https://jp-travel.williamlion.tw/jp/japan/karuizawa-prince-snow-resort-guide-2026-ja/",
-            "https://www.princehotels.co.jp/ski/karuizawa/winter/access/",
-            "https://www.princehotels.co.jp/ski/karuizawa/informations/westopen2026/",
-            "https://www.princehotels.co.jp/ski/karuizawa/",
-            "https://www.seibuprince.com/ja/karuizawa-ski-resort",
-            "https://bus-tabi.net/pref/nagano/nagano-karuizawaprincehotelskiresort/",
-            "https://ja.wikipedia.org/wiki/%E8%BB%BD%E4%BA%95%E6%B2%A2%E3%83%97%E3%83%AA%E3%83%B3%E3%82%B9%E3%83%9B%E3%83%86%E3%83%AB%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4"
+            "https://hapisnow.jp/snowresort/karuizawa-princehotel/?info=theme"
           ]
         }
       ]
@@ -1087,13 +1091,22 @@
         {
           "field": "access",
           "current": "妙高高原站巴士約 15 分（東京→上越妙高 北陸新幹線約 2 小時）",
-          "suggested": "上越妙高站搭乘えちごトキめき鉄道妙高はねうま線至妙高高原站約 25-30 分，轉乘巴士約 12-20 分",
+          "suggested": "上越妙高站搭乘越後心跳鐵道妙高躍馬線至妙高高原站約 30 分，轉乘巴士約 15 分",
           "severity": "yellow",
-          "note": "官方資訊顯示從上越妙高站需搭乘えちごトキめき鉄道妙高はねうま線至妙高高原站，再轉乘巴士前往雪場。目前的描述將東京至上越妙高的新幹線時間包含在內，且未明確說明上越妙高至妙高高原站的交通方式。",
+          "note": "從上越妙高站搭乘越後心跳鐵道妙高躍馬線至妙高高原站約需 25-30 分鐘，再轉乘巴士至赤倉溫泉滑雪場約需 10-20 分鐘。",
           "sources": [
+            "https://www.asoview.com/channel/ticket/IU5IPSlKay/ticket0000032480/",
+            "https://www.winterplus.jp/ski/ski_detail.cfm?skiarea_code=akakura",
+            "https://www.yukiguni-journey.jp/37299/",
+            "https://akakura.gr.jp/skiinfo/%E8%B5%A4%E5%80%89%E6%B8%A9%E6%B3%89%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4/",
+            "https://suzukishokai.jp/distinations/ski-akakura",
+            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00455872&arrival=00601933&line=00090850",
             "https://www.ski-gelende.com/gelende/myoko/akakuraonsen/",
             "https://akr-ski.com/access/",
-            "https://www.winterplus.jp/ski/ski_detail.cfm?skiarea_code=akakura"
+            "https://myokotourism.jp/akakura-onsen-ski-resort/",
+            "https://akakura-ski.com/info/7203/",
+            "https://niigata-kigyo-navi.jp/search/company/1738",
+            "https://niigata-kankou.or.jp/spot/detail_10670.html"
           ]
         }
       ]
