@@ -1,18 +1,18 @@
 {
-  "generated": "2026-11-04T19:24:19+09:00",
+  "generated": "2026-11-05T19:18:06+09:00",
   "checked": [
-    "shiga",
-    "madarao",
-    "karuizawa",
-    "akakura",
-    "niseko",
-    "rusutsu"
+    "arai",
+    "gala",
+    "naeba",
+    "kagura",
+    "kiroro",
+    "teine"
   ],
   "last_checked": {
     "niseko": "2026-11-04T19:24:19+09:00",
     "rusutsu": "2026-11-04T19:24:19+09:00",
-    "kiroro": "2026-11-02T19:29:19+09:00",
-    "teine": "2026-11-02T19:29:19+09:00",
+    "kiroro": "2026-11-05T19:18:06+09:00",
+    "teine": "2026-11-05T19:18:06+09:00",
     "furano": "2026-11-03T19:26:06+09:00",
     "tomamu": "2026-11-03T19:26:06+09:00",
     "appi": "2026-11-02T19:29:19+09:00",
@@ -27,10 +27,10 @@
     "madarao": "2026-11-04T19:24:19+09:00",
     "karuizawa": "2026-11-04T19:24:19+09:00",
     "akakura": "2026-11-04T19:24:19+09:00",
-    "arai": "2026-11-01T19:01:44+09:00",
-    "gala": "2026-11-01T19:01:44+09:00",
-    "naeba": "2026-11-01T19:01:44+09:00",
-    "kagura": "2026-11-01T19:01:44+09:00"
+    "arai": "2026-11-05T19:18:06+09:00",
+    "gala": "2026-11-05T19:18:06+09:00",
+    "naeba": "2026-11-05T19:18:06+09:00",
+    "kagura": "2026-11-05T19:18:06+09:00"
   },
   "results": [
     {
@@ -178,19 +178,23 @@
             5
           ],
           "severity": "red",
-          "note": "官方資料與目前值不同",
+          "note": "2026-2027雪季預計從11月下旬/28日開始，至2027年5月5日/6日結束。",
           "sources": [
-            "https://36kr.jp/220768/"
-          ]
-        },
-        {
-          "field": "access",
-          "current": "札幌市區約 1.5 小時、新千歲機場約 2 小時",
-          "suggested": "札幌車站北口巴士約 1.5 小時",
-          "severity": "yellow",
-          "note": "官方資料與目前值不同",
-          "sources": [
-            "https://36kr.jp/220768/"
+            "https://www.nipponstays.com/kiroro-snow-season-when-to-go/",
+            "https://www.snowjapan.com/ski-areas-in-japan/hokkaido/akaigawa-village/kiroro-snow-world",
+            "https://www.travel.co.jp/senmon/jpn_ski/go0005_e1w1/%E3%82%AD%E3%83%AD%E3%83%AD%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89/",
+            "https://www.skiinsky.com/ja/kiroro/",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGTgRsXtgFUV-cD2Is47yp9iUtJ9Mvj5q0Y_H_j3CLuJXhNA7i1PvAJqM84Leh0RSBBKfE-txiDUij2Ee7vZW5XyftjGtlRDFi13xgZzLPvzueyX8dWtVRMDVlhBFVNUJHbVbxp2vJPOl3v",
+            "https://www.japan-guide.com/e/e6716.html",
+            "https://livejapan.com/en/in-hokkaido/in-pref-hokkaido/in-otaru/article-a1000289/",
+            "https://www.snowsbest.com/kiroro-ski-resort-club-med/",
+            "https://www.powderlife.com/blog/club-med-owner-buys-niseko-neighbor-kiroro-ski-resort/",
+            "https://www.powderlife.com/blog/niseko-ski-resort-owner-to-sell-central-hokkaido-resort/",
+            "https://pitchbook.com/profiles/company/500949-73",
+            "https://www.powderlife.com/blog/club-med-confirms-niseko-resort-at-kiroro-this-winter/",
+            "https://ja.wikipedia.org/wiki/%E8%B5%A4%E4%BA%95%E5%B7%9D%E6%9D%91",
+            "https://hokkaido-chiikiokoshi.jp/regional-introduction/akaigawa/",
+            "https://www.visit-hokkaido.jp/spot/detail_10349.html"
           ]
         },
         {
@@ -198,9 +202,23 @@
           "current": "喜樂樂 Kiroro",
           "suggested": null,
           "severity": "red",
-          "note": "2023年由中國復星集團旗下企業收購營運公司。",
+          "note": "Kiroro Resort曾於2021年和2023年多次易主，目前由Club Med主要股東Fosun Group持有。",
           "sources": [
-            "https://36kr.jp/220768/"
+            "https://www.nipponstays.com/kiroro-snow-season-when-to-go/",
+            "https://www.snowjapan.com/ski-areas-in-japan/hokkaido/akaigawa-village/kiroro-snow-world",
+            "https://www.travel.co.jp/senmon/jpn_ski/go0005_e1w1/%E3%82%AD%E3%83%AD%E3%83%AD%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89/",
+            "https://www.skiinsky.com/ja/kiroro/",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGTgRsXtgFUV-cD2Is47yp9iUtJ9Mvj5q0Y_H_j3CLuJXhNA7i1PvAJqM84Leh0RSBBKfE-txiDUij2Ee7vZW5XyftjGtlRDFi13xgZzLPvzueyX8dWtVRMDVlhBFVNUJHbVbxp2vJPOl3v",
+            "https://www.japan-guide.com/e/e6716.html",
+            "https://livejapan.com/en/in-hokkaido/in-pref-hokkaido/in-otaru/article-a1000289/",
+            "https://www.snowsbest.com/kiroro-ski-resort-club-med/",
+            "https://www.powderlife.com/blog/club-med-owner-buys-niseko-neighbor-kiroro-ski-resort/",
+            "https://www.powderlife.com/blog/niseko-ski-resort-owner-to-sell-central-hokkaido-resort/",
+            "https://pitchbook.com/profiles/company/500949-73",
+            "https://www.powderlife.com/blog/club-med-confirms-niseko-resort-at-kiroro-this-winter/",
+            "https://ja.wikipedia.org/wiki/%E8%B5%A4%E4%BA%95%E5%B7%9D%E6%9D%91",
+            "https://hokkaido-chiikiokoshi.jp/regional-introduction/akaigawa/",
+            "https://www.visit-hokkaido.jp/spot/detail_10349.html"
           ]
         },
         {
@@ -208,16 +226,30 @@
           "current": "キロロリゾート",
           "suggested": null,
           "severity": "red",
-          "note": "2023年由中國復星集團旗下企業收購營運公司。",
+          "note": "キロロリゾート曾於2021年和2023年多次易主，目前由Club Med主要股東Fosun Group持有。官方日文名稱仍為「キロロリゾート」或「キロロスノーワールド」。",
           "sources": [
-            "https://36kr.jp/220768/"
+            "https://www.nipponstays.com/kiroro-snow-season-when-to-go/",
+            "https://www.snowjapan.com/ski-areas-in-japan/hokkaido/akaigawa-village/kiroro-snow-world",
+            "https://www.travel.co.jp/senmon/jpn_ski/go0005_e1w1/%E3%82%AD%E3%83%AD%E3%83%AD%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89/",
+            "https://www.skiinsky.com/ja/kiroro/",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGTgRsXtgFUV-cD2Is47yp9iUtJ9Mvj5q0Y_H_j3CLuJXhNA7i1PvAJqM84Leh0RSBBKfE-txiDUij2Ee7vZW5XyftjGtlRDFi13xgZzLPvzueyX8dWtVRMDVlhBFVNUJHbVbxp2vJPOl3v",
+            "https://www.japan-guide.com/e/e6716.html",
+            "https://livejapan.com/en/in-hokkaido/in-pref-hokkaido/in-otaru/article-a1000289/",
+            "https://www.snowsbest.com/kiroro-ski-resort-club-med/",
+            "https://www.powderlife.com/blog/club-med-owner-buys-niseko-neighbor-kiroro-ski-resort/",
+            "https://www.powderlife.com/blog/niseko-ski-resort-owner-to-sell-central-hokkaido-resort/",
+            "https://pitchbook.com/profiles/company/500949-73",
+            "https://www.powderlife.com/blog/club-med-confirms-niseko-resort-at-kiroro-this-winter/",
+            "https://ja.wikipedia.org/wiki/%E8%B5%A4%E4%BA%95%E5%B7%9D%E6%9D%91",
+            "https://hokkaido-chiikiokoshi.jp/regional-introduction/akaigawa/",
+            "https://www.visit-hokkaido.jp/spot/detail_10349.html"
           ]
         }
       ]
     },
     {
       "id": "teine",
-      "status": "red",
+      "status": "unverified",
       "url_check": {
         "code": 200,
         "final_url": "https://www.sapporo-teine.com/"
@@ -231,27 +263,61 @@
             2,
             3
           ],
-          "suggested": [
-            11,
-            12,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
             1,
-            2,
-            3,
-            4,
-            5
+            2
           ],
-          "severity": "red",
-          "note": "2026-2027雪季預計營業期間為11月22日至5月5日，其中4月6日後僅週末及假日營業。",
-          "sources": [
-            "https://www.skiing-hokkaido.com/ja/resorts/sapporo-teine/",
-            "https://visit.sapporo.travel/discover/snow/sapporo-teine/",
-            "https://www.tabirai.net/sightseeing/hokkaido/info/useful/gelande-sapporo-teine.aspx",
-            "https://sapporo-teine.com/snow/access",
-            "https://sapporo-teine.com/snow/access/other",
-            "https://sapporo-teine.com/snow/lang/en/",
-            "https://www.gutabi.jp/event/detail/1494",
-            "https://www.city.sapporo.jp/shisetsuannai/485.html"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "札幌市區開車或巴士約 40–60 分",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 50,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "札幌手稻 Sapporo Teine",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "サッポロテイネ",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "北海道・札幌市",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+          "sources": []
         }
       ]
     },
@@ -1250,7 +1316,7 @@
           ],
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 677 (char 676)",
           "sources": []
         },
         {
@@ -1261,7 +1327,7 @@
           ],
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 677 (char 676)",
           "sources": []
         },
         {
@@ -1269,7 +1335,7 @@
           "current": "上越妙高站巴士約 40 分",
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 677 (char 676)",
           "sources": []
         },
         {
@@ -1277,7 +1343,7 @@
           "current": 40,
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 677 (char 676)",
           "sources": []
         },
         {
@@ -1285,7 +1351,7 @@
           "current": "Lotte Arai",
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 677 (char 676)",
           "sources": []
         },
         {
@@ -1293,7 +1359,7 @@
           "current": "ロッテアライリゾート",
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 677 (char 676)",
           "sources": []
         },
         {
@@ -1301,7 +1367,7 @@
           "current": "新潟・妙高市",
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 677 (char 676)",
           "sources": []
         }
       ]
@@ -1341,67 +1407,37 @@
             5
           ],
           "severity": "yellow",
-          "note": "2026-27雪季預計從2026年12月19日開放至2027年5月5日。",
+          "note": "2026-2027雪季滑雪場營業期間為2026年12月19日至2027年5月5日。",
           "sources": [
-            "https://livejapan.com/ja/in-tohoku/in-pref-niigata/in-joetsu_uonuma_yuzawa/article-a0003934/",
-            "https://tabiris.com/archives/gala-ticket2027/",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEE81rN27nTHN7MRGqVZT1tvyVkcSFY4YyTND5dPnQrJGKruSC3XnaEhSaRS3s8w60lU52IJX2gEjobdyEHpnkXk79WkLI07l5L6HWUpwLjI-Xy-JT8OeYSNBzPID9geEMXg-4=",
             "https://niigata-kankou.or.jp/spot/detail_10692.html",
-            "https://event.jreast.co.jp/pages/gala-yuzawa",
-            "https://numamen.com/%E3%80%90%E6%B9%AF%E6%B2%A2%E7%94%BA%E3%80%91gala%E6%B9%AF%E6%B2%A2%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4%EF%BC%81%E6%9D%B1%E4%BA%AC%E9%A7%85%E3%81%8B%E3%82%89%E6%9C%80%E9%80%9F71%E5%88%86%E3%81%A7/",
-            "https://bi-to-be.com/20231101_21490/",
-            "https://surfsnow.jp/guide/htm/r0001m.htm",
-            "https://weathernews.jp/ski/spot/35430/",
-            "https://travel.watch.impress.co.jp/docs/news/2117864.html",
-            "https://companydata.tsujigawa.com/press-20260617-001/",
-            "https://media.jreast.co.jp/articles/6552",
-            "https://ameblo.jp/akakura-love/entry-12970029098.html",
-            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEhXtZAOGZgo_thpa0c_kAfdeQMcjEBiL0GRsAbRQrVMzLiIOeAvhMiAroP5RBl4s6dXnCe8PzeZsuwLc4qCYY47ujt3zS48XD-HQJjFl5JQLnHKt7DS7V0Sk2vZz_e_DmhlA==",
-            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGrMVNVitV14gTsR0xmkr6YQeGDSd9pfQSBU7SDofqo2_XKwWaufntkEkIRCwGSl6RAYLYMUwsGG8RfxYc6sxbCXCWAHWIofUSrzb7vT7KynXT47kIfPMlscA==",
-            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0EeA89mdmcyH0uartI_39pMIixxVDB91ILIYZD3y8yoTY14s6BD5_2VZAkSoH2XTevcWKfWKDyJx2fFKGMemx-0277pM3EO3v2Q2LVITSbSngOdpm4NOTavTcde0-rqQkr7wQkwhXt-FwpDjV7jOgzgH9yUMuqZ_7yGK3qKX7",
-            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfvVupcX-6lX-Na_E2T4-7CidoZtVppcZJz-ujgL_0y4U3mVXUYoMrRAGacEsA4i_bbsENq1XmmvujCV3jF_Y5SILUfu-6XITBCw5lGrDJ1WSzsEtxfIlh_TayTG95UpuE_1mLPB1tT4Sa-MycyydgCLc=",
-            "https://www.mapion.co.jp/phonebook/M06007/15461/ILSP0060180492_ipclm/"
+            "https://enjoyniigata.com/tc/spot/44410",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHktzABSuxHC_29ZYwrzx6eHM3oYVNIQA1cxjxV8Vzf4yzRx2wJGNtozxL6chwJ4NMU8t8Md_Bc9IU4mc9SbGeDCC6HqqjS-R_qoGM3loMUs4DMZwl7",
+            "https://www.jreast.co.jp/zh-CHT/multi/destinations/gala.html"
           ]
         },
         {
-          "field": "peak",
-          "current": [
-            1,
-            2
-          ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "官方資訊未明確指出2026-2027雪季的最佳雪況月份。",
-          "sources": []
+          "field": "access",
+          "current": "東京站搭上越新幹線，直達 GALA 湯澤站約 75–90 分（雪季限定）",
+          "suggested": "東京站搭上越新幹線，直達 GALA 湯澤站約 71-74 分（雪季限定）",
+          "severity": "yellow",
+          "note": "從東京站搭乘上越新幹線直達GALA湯澤站最快約71-74分鐘，此服務為雪季限定。",
+          "sources": [
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEE81rN27nTHN7MRGqVZT1tvyVkcSFY4YyTND5dPnQrJGKruSC3XnaEhSaRS3s8w60lU52IJX2gEjobdyEHpnkXk79WkLI07l5L6HWUpwLjI-Xy-JT8OeYSNBzPID9geEMXg-4=",
+            "https://niigata-kankou.or.jp/spot/detail_10692.html",
+            "https://enjoyniigata.com/tc/spot/44410",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHktzABSuxHC_29ZYwrzx6eHM3oYVNIQA1cxjxV8Vzf4yzRx2wJGNtozxL6chwJ4NMU8t8Md_Bc9IU4mc9SbGeDCC6HqqjS-R_qoGM3loMUs4DMZwl7",
+            "https://www.jreast.co.jp/zh-CHT/multi/destinations/gala.html"
+          ]
         }
       ]
     },
     {
       "id": "naeba",
-      "status": "yellow",
-      "url_check": {
-        "code": 200,
-        "final_url": "https://www.princehotels.co.jp/ski/naeba/"
-      },
-      "findings": [
-        {
-          "field": "access",
-          "current": "越後湯澤站巴士約 40 分",
-          "suggested": "越後湯澤站路線巴士約 45 分",
-          "severity": "yellow",
-          "note": "根據官方及交通業者資訊，從越後湯澤站搭乘一般路線巴士至苗場スキー場約需 45 分鐘。原資料的 40 分鐘可能指苗場王子大飯店的住客專用接駁巴士時間.",
-          "sources": [
-            "https://www.snowjapan.com/ski-areas-in-japan/niigata-prefecture/yuzawa-town/naeba/location",
-            "https://hapisnow.jp/snowresort/naeba/"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "kagura",
       "status": "unverified",
       "url_check": {
         "code": 200,
-        "final_url": "https://www.princehotels.co.jp/ski/kagura/"
+        "final_url": "https://www.princehotels.co.jp/ski/naeba/"
       },
       "findings": [
         {
@@ -1411,8 +1447,7 @@
             1,
             2,
             3,
-            4,
-            5
+            4
           ],
           "suggested": null,
           "severity": "unverified",
@@ -1423,8 +1458,7 @@
           "field": "peak",
           "current": [
             1,
-            2,
-            3
+            2
           ],
           "suggested": null,
           "severity": "unverified",
@@ -1449,7 +1483,7 @@
         },
         {
           "field": "name",
-          "current": "神樂 Kagura",
+          "current": "苗場 Naeba",
           "suggested": null,
           "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
@@ -1457,7 +1491,7 @@
         },
         {
           "field": "nameJa",
-          "current": "かぐらスキー場",
+          "current": "苗場スキー場",
           "suggested": null,
           "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
@@ -1470,6 +1504,55 @@
           "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
+        }
+      ]
+    },
+    {
+      "id": "kagura",
+      "status": "yellow",
+      "url_check": {
+        "code": 200,
+        "final_url": "https://www.princehotels.co.jp/ski/kagura/"
+      },
+      "findings": [
+        {
+          "field": "months",
+          "current": [
+            12,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "suggested": [
+            11,
+            12,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "severity": "yellow",
+          "note": "根據2026-2027雪季官方營業期間，かぐら・みつまたエリア為2026年11月28日至2027年5月16日。",
+          "sources": [
+            "https://www.princehotels.co.jp/ski/kagura/winter/",
+            "https://www.minamiechigo.co.jp/pdf/news/skibus-jikokuhyo.pdf",
+            "https://www.kagura-mitsumata.com/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9map"
+          ]
+        },
+        {
+          "field": "access",
+          "current": "越後湯澤站巴士約 40 分",
+          "suggested": "越後湯澤站巴士約 20 分",
+          "severity": "yellow",
+          "note": "根據南越後觀光巴士時刻表及かぐら・みつまた觀光協會資訊，從越後湯澤站搭乘急行巴士至かぐら三俣スキー場前約需20分鐘。",
+          "sources": [
+            "https://www.princehotels.co.jp/ski/kagura/winter/",
+            "https://www.minamiechigo.co.jp/pdf/news/skibus-jikokuhyo.pdf",
+            "https://www.kagura-mitsumata.com/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9map"
+          ]
         }
       ]
     }
