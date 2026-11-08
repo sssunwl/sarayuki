@@ -1,18 +1,18 @@
 {
-  "generated": "2026-11-07T18:35:04+09:00",
+  "generated": "2026-11-08T18:49:53+09:00",
   "checked": [
-    "hakuba47",
-    "tsugaike",
-    "cortina",
-    "nozawa",
-    "niseko",
-    "rusutsu"
+    "shiga",
+    "madarao",
+    "karuizawa",
+    "akakura",
+    "kiroro",
+    "teine"
   ],
   "last_checked": {
     "niseko": "2026-11-07T18:35:04+09:00",
     "rusutsu": "2026-11-07T18:35:04+09:00",
-    "kiroro": "2026-11-05T19:18:06+09:00",
-    "teine": "2026-11-05T19:18:06+09:00",
+    "kiroro": "2026-11-08T18:49:53+09:00",
+    "teine": "2026-11-08T18:49:53+09:00",
     "furano": "2026-11-06T19:20:31+09:00",
     "tomamu": "2026-11-06T19:20:31+09:00",
     "appi": "2026-11-06T19:20:31+09:00",
@@ -23,10 +23,10 @@
     "tsugaike": "2026-11-07T18:35:04+09:00",
     "cortina": "2026-11-07T18:35:04+09:00",
     "nozawa": "2026-11-07T18:35:04+09:00",
-    "shiga": "2026-11-04T19:24:19+09:00",
-    "madarao": "2026-11-04T19:24:19+09:00",
-    "karuizawa": "2026-11-04T19:24:19+09:00",
-    "akakura": "2026-11-04T19:24:19+09:00",
+    "shiga": "2026-11-08T18:49:53+09:00",
+    "madarao": "2026-11-08T18:49:53+09:00",
+    "karuizawa": "2026-11-08T18:49:53+09:00",
+    "akakura": "2026-11-08T18:49:53+09:00",
     "arai": "2026-11-05T19:18:06+09:00",
     "gala": "2026-11-05T19:18:06+09:00",
     "naeba": "2026-11-05T19:18:06+09:00",
@@ -186,7 +186,7 @@
     },
     {
       "id": "kiroro",
-      "status": "red",
+      "status": "unverified",
       "url_check": {
         "code": 200,
         "final_url": "https://www.kiroro.co.jp/"
@@ -201,88 +201,67 @@
             3,
             4
           ],
-          "suggested": [
-            11,
-            12,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
             1,
-            2,
-            3,
-            4,
-            5
+            2
           ],
-          "severity": "red",
-          "note": "2026-2027雪季預計從11月下旬/28日開始，至2027年5月5日/6日結束。",
-          "sources": [
-            "https://www.nipponstays.com/kiroro-snow-season-when-to-go/",
-            "https://www.snowjapan.com/ski-areas-in-japan/hokkaido/akaigawa-village/kiroro-snow-world",
-            "https://www.travel.co.jp/senmon/jpn_ski/go0005_e1w1/%E3%82%AD%E3%83%AD%E3%83%AD%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89/",
-            "https://www.skiinsky.com/ja/kiroro/",
-            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGTgRsXtgFUV-cD2Is47yp9iUtJ9Mvj5q0Y_H_j3CLuJXhNA7i1PvAJqM84Leh0RSBBKfE-txiDUij2Ee7vZW5XyftjGtlRDFi13xgZzLPvzueyX8dWtVRMDVlhBFVNUJHbVbxp2vJPOl3v",
-            "https://www.japan-guide.com/e/e6716.html",
-            "https://livejapan.com/en/in-hokkaido/in-pref-hokkaido/in-otaru/article-a1000289/",
-            "https://www.snowsbest.com/kiroro-ski-resort-club-med/",
-            "https://www.powderlife.com/blog/club-med-owner-buys-niseko-neighbor-kiroro-ski-resort/",
-            "https://www.powderlife.com/blog/niseko-ski-resort-owner-to-sell-central-hokkaido-resort/",
-            "https://pitchbook.com/profiles/company/500949-73",
-            "https://www.powderlife.com/blog/club-med-confirms-niseko-resort-at-kiroro-this-winter/",
-            "https://ja.wikipedia.org/wiki/%E8%B5%A4%E4%BA%95%E5%B7%9D%E6%9D%91",
-            "https://hokkaido-chiikiokoshi.jp/regional-introduction/akaigawa/",
-            "https://www.visit-hokkaido.jp/spot/detail_10349.html"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "札幌市區約 1.5 小時、新千歲機場約 2 小時",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 90,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "sources": []
         },
         {
           "field": "name",
           "current": "喜樂樂 Kiroro",
           "suggested": null,
-          "severity": "red",
-          "note": "Kiroro Resort曾於2021年和2023年多次易主，目前由Club Med主要股東Fosun Group持有。",
-          "sources": [
-            "https://www.nipponstays.com/kiroro-snow-season-when-to-go/",
-            "https://www.snowjapan.com/ski-areas-in-japan/hokkaido/akaigawa-village/kiroro-snow-world",
-            "https://www.travel.co.jp/senmon/jpn_ski/go0005_e1w1/%E3%82%AD%E3%83%AD%E3%83%AD%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89/",
-            "https://www.skiinsky.com/ja/kiroro/",
-            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGTgRsXtgFUV-cD2Is47yp9iUtJ9Mvj5q0Y_H_j3CLuJXhNA7i1PvAJqM84Leh0RSBBKfE-txiDUij2Ee7vZW5XyftjGtlRDFi13xgZzLPvzueyX8dWtVRMDVlhBFVNUJHbVbxp2vJPOl3v",
-            "https://www.japan-guide.com/e/e6716.html",
-            "https://livejapan.com/en/in-hokkaido/in-pref-hokkaido/in-otaru/article-a1000289/",
-            "https://www.snowsbest.com/kiroro-ski-resort-club-med/",
-            "https://www.powderlife.com/blog/club-med-owner-buys-niseko-neighbor-kiroro-ski-resort/",
-            "https://www.powderlife.com/blog/niseko-ski-resort-owner-to-sell-central-hokkaido-resort/",
-            "https://pitchbook.com/profiles/company/500949-73",
-            "https://www.powderlife.com/blog/club-med-confirms-niseko-resort-at-kiroro-this-winter/",
-            "https://ja.wikipedia.org/wiki/%E8%B5%A4%E4%BA%95%E5%B7%9D%E6%9D%91",
-            "https://hokkaido-chiikiokoshi.jp/regional-introduction/akaigawa/",
-            "https://www.visit-hokkaido.jp/spot/detail_10349.html"
-          ]
+          "severity": "unverified",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "sources": []
         },
         {
           "field": "nameJa",
           "current": "キロロリゾート",
           "suggested": null,
-          "severity": "red",
-          "note": "キロロリゾート曾於2021年和2023年多次易主，目前由Club Med主要股東Fosun Group持有。官方日文名稱仍為「キロロリゾート」或「キロロスノーワールド」。",
-          "sources": [
-            "https://www.nipponstays.com/kiroro-snow-season-when-to-go/",
-            "https://www.snowjapan.com/ski-areas-in-japan/hokkaido/akaigawa-village/kiroro-snow-world",
-            "https://www.travel.co.jp/senmon/jpn_ski/go0005_e1w1/%E3%82%AD%E3%83%AD%E3%83%AD%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89/",
-            "https://www.skiinsky.com/ja/kiroro/",
-            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGTgRsXtgFUV-cD2Is47yp9iUtJ9Mvj5q0Y_H_j3CLuJXhNA7i1PvAJqM84Leh0RSBBKfE-txiDUij2Ee7vZW5XyftjGtlRDFi13xgZzLPvzueyX8dWtVRMDVlhBFVNUJHbVbxp2vJPOl3v",
-            "https://www.japan-guide.com/e/e6716.html",
-            "https://livejapan.com/en/in-hokkaido/in-pref-hokkaido/in-otaru/article-a1000289/",
-            "https://www.snowsbest.com/kiroro-ski-resort-club-med/",
-            "https://www.powderlife.com/blog/club-med-owner-buys-niseko-neighbor-kiroro-ski-resort/",
-            "https://www.powderlife.com/blog/niseko-ski-resort-owner-to-sell-central-hokkaido-resort/",
-            "https://pitchbook.com/profiles/company/500949-73",
-            "https://www.powderlife.com/blog/club-med-confirms-niseko-resort-at-kiroro-this-winter/",
-            "https://ja.wikipedia.org/wiki/%E8%B5%A4%E4%BA%95%E5%B7%9D%E6%9D%91",
-            "https://hokkaido-chiikiokoshi.jp/regional-introduction/akaigawa/",
-            "https://www.visit-hokkaido.jp/spot/detail_10349.html"
-          ]
+          "severity": "unverified",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "北海道・赤井川村",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "sources": []
         }
       ]
     },
     {
       "id": "teine",
-      "status": "unverified",
+      "status": "red",
       "url_check": {
         "code": 200,
         "final_url": "https://www.sapporo-teine.com/"
@@ -296,61 +275,44 @@
             2,
             3
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-          "sources": []
-        },
-        {
-          "field": "peak",
-          "current": [
+          "suggested": [
+            11,
+            12,
             1,
-            2
+            2,
+            3,
+            4,
+            5
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-          "sources": []
-        },
-        {
-          "field": "access",
-          "current": "札幌市區開車或巴士約 40–60 分",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-          "sources": []
-        },
-        {
-          "field": "accessMin",
-          "current": 50,
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-          "sources": []
-        },
-        {
-          "field": "name",
-          "current": "札幌手稻 Sapporo Teine",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-          "sources": []
-        },
-        {
-          "field": "nameJa",
-          "current": "サッポロテイネ",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-          "sources": []
-        },
-        {
-          "field": "place",
-          "current": "北海道・札幌市",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-          "sources": []
+          "severity": "red",
+          "note": "根據2026-2027雪季官方資訊，雪場預計於11月21日開放至隔年5月5日。",
+          "sources": [
+            "https://www.fuyuski.co/en/blog/teine-ski-guide",
+            "https://www.skiing-hokkaido.com/ja/resorts/sapporo-teine/",
+            "https://www.snowjapan.com/ski-areas-in-japan/hokkaido/sapporo-city/sapporo-teine",
+            "https://nl-hokkaido.com/guides/hokkaido-ski-season",
+            "https://hokkaido-campingcar.jp/en/hokkaido-ski-resort-opening-dates-2026-en/",
+            "https://sapporo.8agarage.co.jp/teine-ski-open-20261121/",
+            "https://watabi.org/articles/sapporo-teine-ski-guide",
+            "https://www.japan.travel/en/spot/1915/",
+            "https://sapporo-teine.com/snow/lang/en/access/",
+            "https://www.orion-tour.co.jp/air/fair/hokkaido/ski/gelande/teine/",
+            "https://onedayawaytravel.com/how-to-get-to-sapporo-teine-ski-resort/",
+            "https://www.powderhounds.com/Japan/Hokkaido/Sapporo-Teine/Getting-There.aspx",
+            "https://www.ski-ichiba.jp/navi/article/109/",
+            "https://sapporo-teine.com/snow/access/other",
+            "https://sapporo-teine.com/snow/news/30497",
+            "https://sapporo-teine.com/snow/news/31210",
+            "https://www.sapporo-teine.com/",
+            "https://sapporo-teine.com/snow/",
+            "https://sapporo-teine.com/snow/contact",
+            "https://kamori.co.jp/kamori_group/teine",
+            "https://ja.wikipedia.org/wiki/%E6%89%8B%E7%A8%B2%E5%8C%BA",
+            "https://minchizu.jp/hokkaido/s-teine.html",
+            "https://map-it.azurewebsites.net/Map/%E5%8C%97%E6%B5%B7%E9%81%93_%E7%9F%B3%E7%8B%A9%E6%8C%AF%E8%88%88%E5%B1%80_%E6%9C%AD%E5%B9%8C%E5%B8%82_%E6%89%8B%E7%A8%B2%E5%8C%BA/kiwi?maplang=_",
+            "https://www.city.sapporo.jp/shimin/koseki/jukyo-hyoji/genchomei/genchomei-teine.html",
+            "https://www.city.sapporo.jp/kankobunka/maibun/toriatukai/map/houzouti-address-search10-teineku.html"
+          ]
         }
       ]
     },
@@ -980,22 +942,51 @@
     },
     {
       "id": "shiga",
-      "status": "unverified",
+      "status": "red",
       "url_check": {
         "code": 200,
         "final_url": "https://www.shigakogen-ski.or.jp/"
       },
       "findings": [
         {
-          "field": "peak",
+          "field": "months",
           "current": [
+            12,
             1,
-            2
+            2,
+            3,
+            4
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "未找到2026-2027雪季官方明確的最佳雪況月份資訊。",
-          "sources": []
+          "suggested": [
+            11,
+            12,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "severity": "red",
+          "note": "2026-2027雪季共通雪票營業期間為12月5日至5月5日，部分區域如橫手山和熊之湯預計11月14日開放，因此實際營業月份包含11月和5月。",
+          "sources": [
+            "https://snow.japanvoyage.jp/guides/when-does-japan-ski-season-start-2026-2027-guide",
+            "https://thestandardjapan.com/ja/travel/shiga-kogen-ski-guide",
+            "https://www.shigakogen.gr.jp/english/topics/faq-for-winter-season-bookings.html",
+            "https://www.japan-guide.com/e/e6026.html",
+            "https://shigakogen-ski.or.jp/winter/news/2026/11/2026-2027.html",
+            "https://www.snowjapan.com/news/2026-2027-season-early-ski-area-openings",
+            "https://www.shigakogen.gr.jp/english/topics/winter-bus-access.html",
+            "https://shigakogenhub.com/blog/nagano-to-shiga-kogen-bus-schedule",
+            "https://shigakogenhub.com/blog/nagano-station-to-shiga-kogen-bus-winter-2026-27",
+            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00178442&arrival=00455799&line=00073220",
+            "https://www.shigakogen.gr.jp/",
+            "https://shigakogen-ski.or.jp/",
+            "https://ja.wikipedia.org/wiki/%E5%BF%97%E8%B3%80%E9%AB%98%E5%8E%9F%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4",
+            "https://db.go-nagano.net/topics_detail6/id=16961",
+            "https://japan-skiguide.com/guides/htm/r0130ens.htm",
+            "https://www.shinkin.co.jp/sk-matching/exhibitor/detail/?cid=184",
+            "https://en.wikipedia.org/wiki/Shiga_Highlands"
+          ]
         }
       ]
     },
@@ -1092,6 +1083,80 @@
           ],
           "suggested": null,
           "severity": "unverified",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
+            1,
+            2
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "輕井澤站步行約 10 分（東京→輕井澤 北陸新幹線約 1 小時）",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 70,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "輕井澤王子 Karuizawa Prince",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "軽井沢プリンスホテルスキー場",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "長野・軽井沢町",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "akakura",
+      "status": "unverified",
+      "url_check": {
+        "code": 200,
+        "final_url": "https://akakura-ski.com/"
+      },
+      "findings": [
+        {
+          "field": "months",
+          "current": [
+            12,
+            1,
+            2,
+            3
+          ],
+          "suggested": null,
+          "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
         },
@@ -1108,7 +1173,7 @@
         },
         {
           "field": "access",
-          "current": "輕井澤站步行約 10 分（東京→輕井澤 北陸新幹線約 1 小時）",
+          "current": "妙高高原站巴士約 15 分（東京→上越妙高 北陸新幹線約 2 小時）",
           "suggested": null,
           "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
@@ -1116,7 +1181,7 @@
         },
         {
           "field": "accessMin",
-          "current": 70,
+          "current": 40,
           "suggested": null,
           "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
@@ -1124,7 +1189,7 @@
         },
         {
           "field": "name",
-          "current": "輕井澤王子 Karuizawa Prince",
+          "current": "妙高 赤倉溫泉 Akakura",
           "suggested": null,
           "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
@@ -1132,7 +1197,7 @@
         },
         {
           "field": "nameJa",
-          "current": "軽井沢プリンスホテルスキー場",
+          "current": "赤倉温泉スキー場",
           "suggested": null,
           "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
@@ -1140,36 +1205,11 @@
         },
         {
           "field": "place",
-          "current": "長野・軽井沢町",
+          "current": "新潟・妙高市",
           "suggested": null,
           "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
-        }
-      ]
-    },
-    {
-      "id": "akakura",
-      "status": "yellow",
-      "url_check": {
-        "code": 200,
-        "final_url": "https://akakura-ski.com/"
-      },
-      "findings": [
-        {
-          "field": "access",
-          "current": "妙高高原站巴士約 15 分（東京→上越妙高 北陸新幹線約 2 小時）",
-          "suggested": "上越妙高站搭乘えちごトキめき鉄道至妙高高原站約 40 分，轉乘妙高市市營巴士約 20 分。",
-          "severity": "yellow",
-          "note": "從上越妙高站搭乘えちごトキめき鉄道至妙高高原站約40分鐘，再轉乘妙高市市營巴士至赤倉溫泉スキー場約20分鐘。",
-          "sources": [
-            "https://www.winterplus.jp/ski/ski_detail.cfm?skiarea_code=akakura",
-            "https://akakura-ski.com/",
-            "https://surfsnow.jp/guide/htm/r0814m.htm",
-            "https://bus-tabi.net/pref/niigata/niigata-akakuraonsenskiresort/",
-            "https://www.jorudan.co.jp/bus/rosen/timetable/%E5%A6%99%E9%AB%98%E9%AB%98%E5%8E%9F%E9%A7%85%E3%80%94%E5%A6%99%E9%AB%98%E5%B8%82%E5%B8%82%E5%96%B6%E3%83%90%E3%82%B9%E3%80%95/%E8%B5%A4%E5%80%89%E7%B7%9A/%E6%96%B0%E6%97%A5%E6%9C%AC%E9%9B%BB%E5%B7%A5%E5%89%8D/",
-            "https://www.city.myoko.niigata.jp/docs/892.html"
-          ]
         }
       ]
     },
