@@ -45,7 +45,7 @@
 
 ## 老手進階 (advanced)
 
-- [ ] powder-basics｜日本粉雪怎麼滑：板子、技巧與雪況判斷
+- [x] 2026-11-08 powder-basics｜日本粉雪怎麼滑：板子、技巧與雪況判斷
 - [ ] backcountry-safety｜日本的非壓雪區與 gate 系統：規則、雪崩風險、嚮導與必備裝備
 - [ ] tree-run｜樹林滑入門：樹井（tree well）風險與夥伴制度
 
