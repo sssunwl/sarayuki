@@ -1,0 +1,47 @@
+name: Sarayuki 雪況觀測
+on:
+  schedule:
+    - cron: '10 21,3,9 * 11,12,1,2,3,4,5 *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: sarayuki-snow
+  cancel-in-progress: false
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - name: 更新並提交觀測值
+        shell: bash
+        run: |
+          set +e
+          (
+            set -e
+            python3 _pipeline/fetch_snow.py
+            if ! git diff --quiet -- data/snow.json; then
+              git config user.name 'github-actions[bot]'
+              git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+              git add data/snow.json
+              git commit -m "雪況更新 $(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M')"
+              git pull --rebase origin main
+              git push origin main
+            fi
+          ) 2>&1 | tee /tmp/snow.log
+          code=${PIPESTATUS[0]}
+          set -e
+          if [[ "$code" -ne 0 ]]; then
+            echo '::warning::雪況更新失敗，詳見 Summary'
+            {
+              echo '## 雪況更新失敗'
+              echo "退出碼：$code"
+              echo '```'
+              tail -n 30 /tmp/snow.log
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
+          exit 0

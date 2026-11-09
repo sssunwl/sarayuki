@@ -224,6 +224,9 @@
     *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
     .reveal{opacity:1;transform:none}
   }
+.article-band{height:200px}.article-band>img{display:block;width:100%;height:100%;object-fit:cover}
+
+.today-snow{background:var(--frost)}.snow-headline{max-width:900px;font-size:clamp(22px,3.5vw,36px);font-weight:700;line-height:1.4}.snow-time,.snow-footnote{color:var(--dim);font-size:12px;line-height:1.8}.snow-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:30px 0}.snow-card{display:block;min-width:0;padding:24px;border-radius:22px;background:var(--card);box-shadow:0 1px 0 var(--line)}.snow-card h3{margin:0 0 8px;font-size:20px;line-height:1.4}.snow-station{font-size:12px;color:var(--dim)}.snow-numbers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:24px}.snow-numbers strong{display:block;color:var(--glacier);font:500 30px/1.2 "Outfit",sans-serif}.snow-numbers span{font-size:11px;color:var(--dim)}@media(max-width:700px){.snow-grid{grid-template-columns:1fr}.snow-card{padding:20px}}@media(prefers-reduced-motion:reduce){.today-snow *{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
@@ -266,6 +269,15 @@
 </header>
 
 <main>
+  <section class="section today-snow" aria-labelledby="snow-title">
+    <div class="wrap">
+      <div class="eyebrow reveal">TODAY'S SNOW</div>
+      <h2 class="section-title reveal" id="snow-title">今日雪況</h2>
+      <div id="snowReport" class="reveal"><p class="snow-headline">雪季觀測從 12 月開始，各站目前還沒有積雪紀錄。</p></div>
+      <p class="reveal"><a class="btn btn-primary" href="resorts/">看全部 22 個雪場的雪況 →</a></p>
+      <p class="snow-footnote reveal">數值為氣象廳 AMeDAS 觀測站原始觀測值，未經加工。觀測站多在山腳，山上積雪通常更深；出發前請看雪場官方雪況。出典：<a href="https://www.jma.go.jp/" target="_blank" rel="noopener">気象庁ホームページ</a></p>
+    </div>
+  </section>
   <section class="section start" aria-labelledby="start-title">
     <div class="wrap">
       <div class="eyebrow reveal">START HERE</div>
@@ -466,10 +478,28 @@ Promise.allSettled([
   const articles=(articleResult.value.articles||[]).slice(0,3);if(!articles.length)return;
   document.getElementById("journalGrid").innerHTML=articles.map((a,i)=>{
     const resortName=a.resort&&resortNames.get(a.resort);
-    return `<a class="article-card reveal" style="transition-delay:${i*.08}s;--band:${bandColors[a.category]||bandColors.beginner}" href="articles/view.html?slug=${encodeURIComponent(a.slug)}"><div class="article-band">${bandWave}</div><div class="article-body"><div class="article-meta">${escapeHtml(a.date)} · ${escapeHtml(articleCategories[a.category]||a.category)}</div><h3>${escapeHtml(a.title)}</h3><p class="article-summary">${escapeHtml(a.summary)}</p><div class="article-foot">${resortName?`<span class="article-resort">📍 ${escapeHtml(resortName)}</span>`:""}<span class="article-read">READ →</span></div></div></a>`;
+    return `<a class="article-card reveal" style="transition-delay:${i*.08}s;--band:${bandColors[a.category]||bandColors.beginner}" href="articles/view.html?slug=${encodeURIComponent(a.slug)}"><div class="article-band"><img src="${escapeHtml(a.cover||`content/covers/${a.slug}.svg`)}" alt="" loading="lazy">${bandWave}</div><div class="article-body"><div class="article-meta">${escapeHtml(a.date)} · ${escapeHtml(articleCategories[a.category]||a.category)}</div><h3>${escapeHtml(a.title)}</h3><p class="article-summary">${escapeHtml(a.summary)}</p><div class="article-foot">${resortName?`<span class="article-resort">📍 ${escapeHtml(resortName)}</span>`:""}<span class="article-read">READ →</span></div></div></a>`;
   }).join("");
   const j=document.getElementById("journal");j.classList.add("show");observeReveal(j);
 });
+</script>
+<script>
+(async()=>{
+  try{
+    const read=async url=>{const response=await fetch(url);if(!response.ok)throw Error(url);return response.json()};
+    const [snow,data]=await Promise.all([read('data/snow.json'),read('data/resorts.json')]);
+    if(!snow.season)return;
+    const stations=snow.stations||{},cards=data.resorts.filter(r=>stations[r.amedas?.code]);
+    const rank=(r,key)=>stations[r.amedas.code][key]??-Infinity;
+    cards.sort((a,b)=>(rank(b,'snow24h')-rank(a,'snow24h')||0)||(rank(b,'snow')-rank(a,'snow')||0));
+    const value=v=>v==null?'—':escapeHtml(v);
+    const observed=stations[snow.headline?.stationCode]?.observedAt||cards.map(r=>stations[r.amedas.code].observedAt).filter(Boolean).sort().pop();
+
+    const parts=observed?new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Tokyo',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date(observed)):[];
+    const part=k=>parts.find(p=>p.type===k)?.value||'';
+    document.getElementById('snowReport').innerHTML=`<p class="snow-headline">${escapeHtml(snow.headline.text)}</p><p class="snow-time">觀測時間 ${observed?`${part('month')}/${part('day')} ${part('hour')}:${part('minute')}`:'—'}・資料：氣象廳 AMeDAS</p><div class="snow-grid">${cards.slice(0,6).map(r=>{const st=stations[r.amedas.code];return `<a class="snow-card" href="resorts/?focus=${encodeURIComponent(r.id)}"><h3>${escapeHtml(r.name)}</h3><div class="snow-station">${escapeHtml(st.name)}站・${escapeHtml(st.alt)}m</div><div class="snow-numbers"><div><strong>${value(st.snow)}</strong><span>積雪 cm</span></div><div><strong>${value(st.snow24h)}</strong><span>24h 降雪 cm</span></div><div><strong>${value(st.temp)}</strong><span>氣溫 °C</span></div></div></a>`}).join('')}</div>`;
+  }catch(error){/* Keep the season-opening message and link. */}
+})();
 </script>
 </body>
 </html>

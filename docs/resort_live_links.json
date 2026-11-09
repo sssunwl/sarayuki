@@ -1,0 +1,263 @@
+{
+ "niseko": {
+  "camUrl": "https://www.niseko.ne.jp/en/livecamera/",
+  "liftUrl": "https://www.niseko.ne.jp/en/niseko-lift-status/",
+  "youtube": [],
+  "amedas": {
+   "code": "16217",
+   "name": "倶知安",
+   "alt": 176,
+   "km": 6.4
+  }
+ },
+ "rusutsu": {
+  "camUrl": "https://rusutsu.com/live-mountain-cams/",
+  "liftUrl": "https://rusutsu.com/lift-and-trail-status/",
+  "youtube": [],
+  "amedas": {
+   "code": "16286",
+   "name": "喜茂別",
+   "alt": 264,
+   "km": 6.2
+  }
+ },
+ "kiroro": {
+  "camUrl": "https://www.kiroro.co.jp/livecamera/",
+  "liftUrl": "https://www.kiroro.co.jp/dashboard/",
+  "youtube": [],
+  "amedas": {
+   "code": "16091",
+   "name": "小樽",
+   "alt": 25,
+   "km": 11.7
+  }
+ },
+ "teine": {
+  "camUrl": "https://sapporo-teine.com/snow/gelande-report",
+  "liftUrl": "https://sapporo-teine.com/snow/gelande-report",
+  "youtube": [],
+  "amedas": {
+   "code": "14163",
+   "name": "札幌",
+   "alt": 17,
+   "km": 10.7
+  }
+ },
+ "furano": {
+  "camUrl": "https://www.princehotels.co.jp/ski/furano/livecamera/",
+  "liftUrl": "https://www.princehotels.co.jp/ski/furano/informations/snowreport/",
+  "youtube": [],
+  "amedas": {
+   "code": "12626",
+   "name": "富良野",
+   "alt": 174,
+   "km": 4.1
+  }
+ },
+ "tomamu": {
+  "camUrl": null,
+  "liftUrl": "https://www.snowtomamu.jp/winter/ski/ski-slope/condition/",
+  "youtube": [],
+  "amedas": {
+   "code": "12691",
+   "name": "幾寅",
+   "alt": 350,
+   "km": 11.7
+  }
+ },
+ "appi": {
+  "camUrl": "https://www.appi.co.jp/live-camera/",
+  "liftUrl": null,
+  "youtube": [
+   {
+    "id": "xrn4ifcQwj4",
+    "label": "山麓"
+   },
+   {
+    "id": "lhUjcOp4lBI",
+    "label": "山頂"
+   }
+  ],
+  "amedas": {
+   "code": "33226",
+   "name": "岩手松尾",
+   "alt": 275,
+   "km": 7.5
+  }
+ },
+ "zao": {
+  "camUrl": "https://zaomountainresort.com/livecamera/",
+  "liftUrl": "https://zaomountainresort.com/ropeway-lift-information/",
+  "youtube": [],
+  "amedas": {
+   "code": "35426",
+   "name": "山形",
+   "alt": 153,
+   "km": 10.6
+  }
+ },
+ "hakkoda": {
+  "camUrl": null,
+  "liftUrl": "https://hakkoda-ropeway.jp/",
+  "youtube": [],
+  "amedas": {
+   "code": "31482",
+   "name": "酸ケ湯",
+   "alt": 890,
+   "km": 1.6
+  }
+ },
+ "happo": {
+  "camUrl": "https://www.happo-one.jp/gelande/livecamera",
+  "liftUrl": "https://www.happo-one.jp/gelande/lift",
+  "youtube": [],
+  "amedas": {
+   "code": "48141",
+   "name": "白馬",
+   "alt": 703,
+   "km": 2.8
+  }
+ },
+ "hakuba47": {
+  "camUrl": "https://www.youtube.com/watch?v=nzJj0EZxMqg",
+  "liftUrl": "https://hakuba47.co.jp/en/mountain-report",
+  "youtube": [
+   {
+    "id": "nzJj0EZxMqg",
+    "label": "Hakuba47"
+   }
+  ],
+  "amedas": {
+   "code": "48141",
+   "name": "白馬",
+   "alt": 703,
+   "km": 4.2
+  }
+ },
+ "tsugaike": {
+  "camUrl": "https://www.tsugaike.gr.jp/livecamera",
+  "liftUrl": null,
+  "youtube": [],
+  "amedas": {
+   "code": "48097",
+   "name": "小谷",
+   "alt": 550,
+   "km": 9.3
+  }
+ },
+ "cortina": {
+  "camUrl": null,
+  "liftUrl": null,
+  "youtube": [],
+  "amedas": {
+   "code": "48097",
+   "name": "小谷",
+   "alt": 550,
+   "km": 5.4
+  }
+ },
+ "nozawa": {
+  "camUrl": "https://nozawaski.com/winter/course/livecam_map/",
+  "liftUrl": "https://nozawaski.com/winter/lift_price/lift_time/#lift_more",
+  "youtube": [],
+  "amedas": {
+   "code": "48031",
+   "name": "野沢温泉",
+   "alt": 576,
+   "km": 1.2
+  }
+ },
+ "shiga": {
+  "camUrl": "https://shigakogen-ski.or.jp/#contents-d",
+  "liftUrl": "https://shigakogen-ski.or.jp/lift/index.php",
+  "youtube": [
+   {
+    "id": "n4G4iQTme1g",
+    "label": "熊の湯"
+   }
+  ],
+  "amedas": {
+   "code": "42121",
+   "name": "草津",
+   "alt": 1223,
+   "km": 14.1
+  }
+ },
+ "madarao": {
+  "camUrl": "https://www.madarao.jp/ski/live-camera",
+  "liftUrl": "https://www.madarao.jp/ski/conditions",
+  "youtube": [],
+  "amedas": {
+   "code": "48066",
+   "name": "飯山",
+   "alt": 313,
+   "km": 6.0
+  }
+ },
+ "karuizawa": {
+  "camUrl": "https://www.princehotels.co.jp/ski/karuizawa/winter/#tab-body01",
+  "liftUrl": "https://www.princehotels.co.jp/ski/karuizawa/winter/coursemap/",
+  "youtube": [],
+  "amedas": {
+   "code": "48331",
+   "name": "軽井沢",
+   "alt": 999,
+   "km": 7.5
+  }
+ },
+ "akakura": {
+  "camUrl": null,
+  "liftUrl": null,
+  "youtube": [],
+  "amedas": {
+   "code": "54816",
+   "name": "関山",
+   "alt": 350,
+   "km": 7.0
+  }
+ },
+ "arai": {
+  "camUrl": null,
+  "liftUrl": null,
+  "youtube": [],
+  "amedas": {
+   "code": "54816",
+   "name": "関山",
+   "alt": 350,
+   "km": 7.9
+  }
+ },
+ "gala": {
+  "camUrl": null,
+  "liftUrl": null,
+  "youtube": [],
+  "amedas": {
+   "code": "54841",
+   "name": "湯沢",
+   "alt": 340,
+   "km": 1.3
+  }
+ },
+ "naeba": {
+  "camUrl": "https://www.princehotels.co.jp/ski/naeba/livecamera/",
+  "liftUrl": "https://www.princehotels.co.jp/ski/naeba/winter/coursemap/",
+  "youtube": [],
+  "amedas": {
+   "code": "54841",
+   "name": "湯沢",
+   "alt": 340,
+   "km": 17.1
+  }
+ },
+ "kagura": {
+  "camUrl": "https://www.princehotels.co.jp/ski/kagura/livecamera/",
+  "liftUrl": "https://www.princehotels.co.jp/ski/kagura/winter/coursemap/",
+  "youtube": [],
+  "amedas": {
+   "code": "54841",
+   "name": "湯沢",
+   "alt": 340,
+   "km": 11.1
+  }
+ }
+}

@@ -78,6 +78,10 @@ jobs:
           } >> "${GITHUB_STEP_SUMMARY}"
           exit 0
 
+      - name: 生成文章封面
+        if: steps.enrich_content.outputs.wrote_content == 'true'
+        run: python3 _pipeline/make_covers.py
+
       - name: 顯示 Gemini 執行後狀態
         if: always()
         shell: bash
@@ -94,7 +98,7 @@ jobs:
         shell: bash
         run: |
           # 只看內容路徑，避免暫存雜物被誤認為產出。
-          CONTENT_PATHS=(content/articles content/index.json)
+          CONTENT_PATHS=(content/articles content/index.json content/covers)
           if [[ -z "$(git status --porcelain -- "${CONTENT_PATHS[@]}")" ]]; then
             echo "::notice::本次沒有產出內容"
             exit 0

@@ -8,7 +8,8 @@
    "resort": null,
    "date": "2026-11-08",
    "summary": "日本的粉雪（Powder Snow），被滑雪愛好者暱稱為「Japow」（Japan powder snow 的縮寫），以其輕盈、乾燥、鬆軟的特性聞名全球，吸引無數滑雪客前來體驗在雪…",
-   "sources": 12
+   "sources": 12,
+   "cover": "content/covers/powder-basics.svg"
   },
   {
    "slug": "happo-guide",
@@ -17,7 +18,8 @@
    "resort": "happo",
    "date": "2026-11-06",
    "summary": "白馬八方尾根（Hakuba Happo-one Ski Resort，白馬八方尾根スキー場）是日本長野縣白馬村的指標性滑雪場，曾是1998年長野冬季奧運的舉辦地，以其壯闊的山景、豐…",
-   "sources": 18
+   "sources": 18,
+   "cover": "content/covers/happo-guide.svg"
   },
   {
    "slug": "teine-guide",
@@ -26,7 +28,8 @@
    "resort": "teine",
    "date": "2026-10-30",
    "summary": "札幌手稻滑雪場（札幌手稲スキー場, Sapporo Teine）是北海道札幌市區近郊的熱門滑雪場，這篇攻略將協助你規劃從札幌市區出發的一日來回滑雪行程，讓你輕鬆體驗奧運級雪道與優質…",
-   "sources": 10
+   "sources": 10,
+   "cover": "content/covers/teine-guide.svg"
   },
   {
    "slug": "zao-guide",
@@ -35,7 +38,8 @@
    "resort": "zao",
    "date": "2026-10-28",
    "summary": "藏王溫泉（蔵王温泉）是日本東北地區山形縣（山形県）一座歷史悠久的溫泉滑雪度假村，以其冬季獨特的「樹冰」（樹氷）奇景、優質粉雪滑道與硫磺溫泉聞名。這篇攻略將協助您了解藏王溫泉的樹冰季…",
-   "sources": 13
+   "sources": 13,
+   "cover": "content/covers/zao-guide.svg"
   },
   {
    "slug": "rusutsu-guide",
@@ -44,7 +48,8 @@
    "resort": "rusutsu",
    "date": "2026-10-26",
    "summary": "北海道的留壽都度假村（ルスツリゾート）是日本知名的綜合型滑雪度假村，擁有三座山頭、豐富的雪道選擇，以及完善的親子設施與多元住宿，非常適合家庭或不同程度的滑雪愛好者。這篇攻略將帶你了…",
-   "sources": 9
+   "sources": 9,
+   "cover": "content/covers/rusutsu-guide.svg"
   },
   {
    "slug": "slope-rules",
@@ -53,7 +58,8 @@
    "resort": null,
    "date": "2026-10-25",
    "summary": "這篇文章旨在幫助所有華語滑雪愛好者，特別是前往日本雪場的雪友，了解雪道上的基本規矩與安全事項，確保您能盡興又安全地享受滑雪樂趣。",
-   "sources": 15
+   "sources": 15,
+   "cover": "content/covers/slope-rules.svg"
   },
   {
    "slug": "lift-tickets",
@@ -62,7 +68,8 @@
    "resort": null,
    "date": "2026-10-24",
    "summary": "前往日本滑雪，纜車票是您暢遊雪道的通行證。了解不同種類的纜車票、購買管道以及注意事項，能幫助您更有效率地規劃行程，省下寶貴時間與金錢，讓滑雪體驗更加順暢。",
-   "sources": 14
+   "sources": 14,
+   "cover": "content/covers/lift-tickets.svg"
   },
   {
    "slug": "layering",
@@ -71,7 +78,8 @@
    "resort": null,
    "date": "2026-10-15",
    "summary": "滑雪時的穿著，並非單純穿得厚重就好，而是要透過「洋蔥式穿法」來有效調節體溫、排汗與防護，以應對雪場多變的環境。同時，日本北海道與本州地區的氣溫差異，也會影響衣物選擇的側重。",
-   "sources": 7
+   "sources": 7,
+   "cover": "content/covers/layering.svg"
   },
   {
    "slug": "hakuba-access",
@@ -80,7 +88,8 @@
    "resort": null,
    "date": "2026-10-10",
    "summary": "從東京前往日本長野縣的白馬（Hakuba）滑雪區，有幾種主要的交通方式，各有優缺點，適合不同需求的旅客。本文將比較新幹線轉巴士、直達高速巴士與夜行巴士這三種常見選項，幫助您選擇最適…",
-   "sources": 10
+   "sources": 10,
+   "cover": "content/covers/hakuba-access.svg"
   },
   {
    "slug": "hokkaido-access",
@@ -89,7 +98,8 @@
    "resort": null,
    "date": "2026-10-08",
    "summary": "從新千歲機場（新千歳空港, CTS）前往北海道各大滑雪場，主要有巴士、JR鐵路和包車三種交通方式，各有優缺點，適合不同需求與預算的旅客。本文將詳細介紹這些交通選項，並針對熱門雪場提…",
-   "sources": 10
+   "sources": 10,
+   "cover": "content/covers/hokkaido-access.svg"
   },
   {
    "slug": "tsugaike-guide",
@@ -98,7 +108,8 @@
    "resort": "tsugaike",
    "date": "2026-10-01",
    "summary": "白馬栂池高原（Hakuba Tsugaike Kogen）滑雪場以其寬廣平緩的雪道聞名，非常適合滑雪新手與親子家庭。",
-   "sources": 13
+   "sources": 13,
+   "cover": "content/covers/tsugaike-guide.svg"
   },
   {
    "slug": "nozawa-guide",
@@ -107,7 +118,8 @@
    "resort": "nozawa",
    "date": "2026-09-29",
    "summary": "前往野澤溫泉（野沢温泉）滑雪，除了享受優質粉雪，體驗歷史悠久的「外湯」溫泉文化更是不可錯過的環節。這篇攻略將協助您規劃一趟結合滑雪與泡湯的行程，讓您在雪場馳騁後，能沉浸在溫暖的泉水…",
-   "sources": 12
+   "sources": 12,
+   "cover": "content/covers/nozawa-guide.svg"
   },
   {
    "slug": "rental-gear",
@@ -116,7 +128,8 @@
    "resort": null,
    "date": "2026-09-28",
    "summary": "前往日本滑雪，對於初學者或不常滑雪的旅客來說，租借裝備是個經濟實惠又方便的選擇。在日本租借滑雪裝備主要有兩種方式：在雪場內租借，或是在市區、雪場周邊的專門店租借。了解兩者的差異以及…",
-   "sources": 12
+   "sources": 12,
+   "cover": "content/covers/rental-gear.svg"
   },
   {
    "slug": "ski-school",
@@ -125,7 +138,8 @@
    "resort": null,
    "date": "2026-09-26",
    "summary": "在日本雪場學習滑雪，選擇適合自己的滑雪課程是確保安全與享受樂趣的關鍵。本篇將協助你了解團體課與私人課的差異，以及如何找到合適的中英文教練。",
-   "sources": 12
+   "sources": 12,
+   "cover": "content/covers/ski-school.svg"
   },
   {
    "slug": "niseko-guide",
@@ -134,7 +148,8 @@
    "resort": "niseko",
    "date": "2026-09-24",
    "summary": "二世古 Grand Hirafu（ニセコ東急 グラン・ヒラフ）是北海道二世古聯合滑雪場（Niseko United）四大雪場中規模最大、也最熱鬧的區域，本篇將為你解析其聯票選擇、非…",
-   "sources": 13
+   "sources": 13,
+   "cover": "content/covers/niseko-guide.svg"
   },
   {
    "slug": "gala-guide",
@@ -143,7 +158,8 @@
    "resort": "gala",
    "date": "2026-09-23",
    "summary": "GALA湯澤（GALA湯沢スキー場）是位於新潟縣湯澤町的滑雪度假村，以其從東京搭乘新幹線即可一日來回的便利性而聞名，非常適合想要輕鬆體驗滑雪或玩雪的旅客。",
-   "sources": 12
+   "sources": 12,
+   "cover": "content/covers/gala-guide.svg"
   },
   {
    "slug": "ski-or-snowboard",
@@ -152,7 +168,8 @@
    "resort": null,
    "date": "2026-09-22",
    "summary": "第一次接觸滑雪運動時，許多人會猶豫該選擇雙板（Ski）還是單板（Snowboard）。這兩種滑雪方式各有特色，學習曲線與適合的族群也不同，了解它們的差異能幫助你做出最適合自己的選擇…",
-   "sources": 10
+   "sources": 10,
+   "cover": "content/covers/ski-or-snowboard.svg"
   },
   {
    "slug": "first-trip",
@@ -161,7 +178,8 @@
    "resort": null,
    "date": "2026-09-22",
    "summary": "第一次前往日本滑雪，要規劃一趟安全又盡興的旅程，需要考量行程天數、雪場選擇、裝備準備與滑雪教學等面向。這篇文章將為你整理第一次日本滑雪的行程安排建議與必備物品清單，幫助你輕鬆踏上雪…",
-   "sources": 13
+   "sources": 13,
+   "cover": "content/covers/first-trip.svg"
   }
  ]
 }
