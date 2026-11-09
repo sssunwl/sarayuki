@@ -162,6 +162,8 @@ def build_request(task, today):
             # 2.5-flash 是 thinking 模型，思考 token 也計入此額度；
             # 1600 會讓 600 字正文被硬生生截斷，且截斷後長度剛好通過檢查。
             "maxOutputTokens": 8192,
+            # 不設上限時思考會吃光額度，正文被截斷（finishReason=MAX_TOKENS）。
+            "thinkingConfig": {"thinkingBudget": 2048},
         },
     }
 
@@ -458,7 +460,8 @@ def banned_phrases(body):
 def revise_body(key, body, instruction, api_caller):
     # No grounding: revision must retain the original facts, not research new ones.
     payload = {"contents": [{"role": "user", "parts": [{"text": instruction + "\n\n" + body}]}],
-               "generationConfig": {"temperature": .1, "maxOutputTokens": 8192}}
+               "generationConfig": {"temperature": .1, "maxOutputTokens": 8192,
+                                    "thinkingConfig": {"thinkingBudget": 0}}}
     response, error = api_caller(key, payload)
     if error:
         raise RuntimeError(error)
@@ -472,6 +475,9 @@ def prepare_body(key, body, api_caller):
     if body_length(body) > 1500:
         body = revise_body(key, body, "壓縮至 1300 字以內，保留全部事實及「⚠️需覆核」標記，不改變帶有引文主張的段落順序。只輸出正文。", api_caller)
         changed = True
+        if body_length(body) > 1500:
+            # 模型對中文字數常常算不準，給它實際字數再壓一次
+            body = revise_body(key, body, f"這篇目前約 {body_length(body)} 字，太長。刪掉重複與鋪陳，壓到 1200 字以內，保留全部數字、地名、規則與「⚠️需覆核」標記。只輸出正文。", api_caller)
         if body_length(body) > 1600:
             raise ValueError("壓縮後正文仍超過 1600 字，拒絕寫入")
     found = banned_phrases(body)
@@ -578,14 +584,35 @@ def parse_args(argv=None):
     parser = argparse.ArgumentParser(description="以 Gemini Search grounding 豐富一筆內容")
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument("--rewrite", help="重寫既有文章，保留原日期")
+    mode.add_argument("--rewrite-next", action="store_true",
+                      help="挑一篇最長、超過 1500 字且還沒重寫過的舊文來重寫；沒有就跳過")
     mode.add_argument("--task", help="覆寫路線圖題目（slug｜題目）；使用時不打勾路線圖")
     parser.add_argument("--category", choices=CATEGORIES, help="搭配 --task 的分類")
     parser.add_argument("--dry-run", action="store_true", help="呼叫 API 並預覽，不寫任何檔案")
     return parser.parse_args(argv)
 
 
+def next_rewrite_slug(db_root=DB_ROOT):
+    """免費額度一天只夠多寫一篇，舊文逐日消化：最長的先改。"""
+    index = json.loads((db_root / INDEX).read_text(encoding="utf-8"))
+    candidates = []
+    for entry in index.get("articles", []):
+        path = db_root / ARTICLES / f"{entry['slug']}.md"
+        if entry.get("updated") or not path.exists():
+            continue
+        length = existing_body_length(path)
+        if length > 1500:
+            candidates.append((length, entry["slug"]))
+    return max(candidates)[1] if candidates else None
+
+
 def main(argv=None):
     args = parse_args(argv)
+    if args.rewrite_next:
+        args.rewrite = next_rewrite_slug()
+        if not args.rewrite:
+            print("::notice::沒有需要重寫的舊文")
+            return 0
     try:
         run(task_override=args.task, dry_run=args.dry_run, category=args.category, rewrite=args.rewrite)
     except (OSError, ValueError, RuntimeError) as error:

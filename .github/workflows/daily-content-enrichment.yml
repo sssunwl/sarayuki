@@ -82,6 +82,16 @@ jobs:
         if: steps.enrich_content.outputs.wrote_content == 'true'
         run: python3 _pipeline/make_covers.py
 
+      # 免費額度一次改不完 17 篇舊文，改成每天順手改一篇（最長的先），失敗不影響當天新文
+      - name: 順手重寫一篇超長舊文
+        if: steps.enrich_content.outputs.status == 'ok'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        shell: bash
+        run: |
+          sleep 20
+          python3 _pipeline/enrich_content.py --rewrite-next || echo "::warning::今天的舊文重寫失敗，明天再試"
+
       - name: 顯示 Gemini 執行後狀態
         if: always()
         shell: bash
