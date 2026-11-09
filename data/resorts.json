@@ -28,7 +28,11 @@
   ],
   "months": "開放月份（概略）",
   "peak": "粉雪/雪況最佳月份（概略）",
-  "accessMin": "從 hub 出發的大約分鐘數"
+  "accessMin": "從 hub 出發的大約分鐘數",
+  "camUrl": "官方 Live Cam 頁面；無資料為 null",
+  "liftUrl": "官方纜車／雪道運行頁面；無資料為 null",
+  "youtube": "官方 YouTube 直播清單：id 為影片代碼，label 為鏡頭名稱；無資料為 []",
+  "amedas": "最近有積雪觀測的 AMeDAS 站：code 站碼、name 站名、alt 海拔公尺、km 距雪場公里"
  },
  "resorts": [
   {
@@ -71,7 +75,16 @@
    "see": "世界級 JAPOW。四個雪場共用 Niseko United 聯票，山頂有依規定開放的 gate 通往非壓雪區，還有夜滑。",
    "note": "外國旅客最多，住宿和物價都偏高。gate 外是非壓雪地形，需要雪崩裝備與經驗。",
    "url": "https://www.niseko.ne.jp/",
-   "verify": true
+   "verify": true,
+   "camUrl": "https://www.niseko.ne.jp/en/livecamera/",
+   "liftUrl": "https://www.niseko.ne.jp/en/niseko-lift-status/",
+   "youtube": [],
+   "amedas": {
+    "code": "16217",
+    "name": "倶知安",
+    "alt": 176,
+    "km": 6.4
+   }
   },
   {
    "id": "rusutsu",
@@ -109,7 +122,16 @@
    "see": "三座山相連，樹林滑出名；飯店直通雪場，親子設施齊全。",
    "note": "雪場分散在三座山，之間要靠纜車或接駁移動。",
    "url": "https://rusutsu.com/",
-   "verify": true
+   "verify": true,
+   "camUrl": "https://rusutsu.com/live-mountain-cams/",
+   "liftUrl": "https://rusutsu.com/lift-and-trail-status/",
+   "youtube": [],
+   "amedas": {
+    "code": "16286",
+    "name": "喜茂別",
+    "alt": 264,
+    "km": 6.2
+   }
   },
   {
    "id": "kiroro",
@@ -147,7 +169,16 @@
    "see": "北海道降雪量數一數二的雪場之一，粉雪穩定。",
    "note": "天候差時山頂纜車容易停駛。",
    "url": "https://www.kiroro.co.jp/",
-   "verify": true
+   "verify": true,
+   "camUrl": "https://www.kiroro.co.jp/livecamera/",
+   "liftUrl": "https://www.kiroro.co.jp/dashboard/",
+   "youtube": [],
+   "amedas": {
+    "code": "16091",
+    "name": "小樽",
+    "alt": 25,
+    "km": 11.7
+   }
   },
   {
    "id": "teine",
@@ -183,7 +214,16 @@
    "see": "1972 札幌冬奧場地，邊滑邊看石狩灣海景；住札幌也能當天來回。",
    "note": "週末札幌在地人多。",
    "url": "https://www.sapporo-teine.com/",
-   "verify": true
+   "verify": true,
+   "camUrl": "https://sapporo-teine.com/snow/gelande-report",
+   "liftUrl": "https://sapporo-teine.com/snow/gelande-report",
+   "youtube": [],
+   "amedas": {
+    "code": "14163",
+    "name": "札幌",
+    "alt": 17,
+    "km": 10.7
+   }
   },
   {
    "id": "furano",
@@ -220,7 +260,16 @@
    "see": "北海道內陸氣候乾冷，雪質輕；長滑道適合練技術。",
    "note": "壓雪道以外的區域有管制，請遵守雪場規定。",
    "url": "https://www.princehotels.co.jp/ski/furano/",
-   "verify": true
+   "verify": true,
+   "camUrl": "https://www.princehotels.co.jp/ski/furano/livecamera/",
+   "liftUrl": "https://www.princehotels.co.jp/ski/furano/informations/snowreport/",
+   "youtube": [],
+   "amedas": {
+    "code": "12626",
+    "name": "富良野",
+    "alt": 174,
+    "km": 4.1
+   }
   },
   {
    "id": "tomamu",
@@ -257,7 +306,16 @@
    "see": "度假村型雪場，有冰之村等雪上活動，親子友善。",
    "note": "氣溫非常低，保暖要做足。",
    "url": "https://www.snowtomamu.jp/",
-   "verify": true
+   "verify": true,
+   "camUrl": null,
+   "liftUrl": "https://www.snowtomamu.jp/winter/ski/ski-slope/condition/",
+   "youtube": [],
+   "amedas": {
+    "code": "12691",
+    "name": "幾寅",
+    "alt": 350,
+    "km": 11.7
+   }
   },
   {
    "id": "appi",
@@ -294,7 +352,25 @@
    "see": "長滑道多、雪質乾爽，東北最大級的度假村型雪場。",
    "note": "",
    "url": "https://www.appi.co.jp/",
-   "verify": true
+   "verify": true,
+   "camUrl": "https://www.appi.co.jp/live-camera/",
+   "liftUrl": null,
+   "youtube": [
+    {
+     "id": "xrn4ifcQwj4",
+     "label": "山麓"
+    },
+    {
+     "id": "lhUjcOp4lBI",
+     "label": "山頂"
+    }
+   ],
+   "amedas": {
+    "code": "33226",
+    "name": "岩手松尾",
+    "alt": 275,
+    "km": 7.5
+   }
   },
   {
    "id": "zao",
@@ -330,7 +406,16 @@
    "see": "樹冰（冰怪）冬季最壯觀，滑完直接泡硫磺溫泉。",
    "note": "樹冰的最佳觀賞期受天候影響，出發前請確認。",
    "url": "https://zao-ski.or.jp/",
-   "verify": true
+   "verify": true,
+   "camUrl": "https://zaomountainresort.com/livecamera/",
+   "liftUrl": "https://zaomountainresort.com/ropeway-lift-information/",
+   "youtube": [],
+   "amedas": {
+    "code": "35426",
+    "name": "山形",
+    "alt": 153,
+    "km": 10.6
+   }
   },
   {
    "id": "hakkoda",
@@ -366,7 +451,16 @@
    "see": "整座山只有一條纜車，滑的是非壓雪的自然地形與樹冰林。",
    "note": "幾乎都是非壓雪地形，新手不適合。建議請嚮導，並帶齊雪崩裝備。",
    "url": "https://www.hakkoda-ropeway.jp/",
-   "verify": true
+   "verify": true,
+   "camUrl": null,
+   "liftUrl": "https://hakkoda-ropeway.jp/",
+   "youtube": [],
+   "amedas": {
+    "code": "31482",
+    "name": "酸ケ湯",
+    "alt": 890,
+    "km": 1.6
+   }
   },
   {
    "id": "happo",
@@ -402,7 +496,16 @@
    "see": "1998 長野冬奧場地，北阿爾卑斯大景＋長距離滑降。",
    "note": "上層天氣變化快；白馬山谷各雪場另有通用聯票。",
    "url": "https://www.happo-one.jp/",
-   "verify": true
+   "verify": true,
+   "camUrl": "https://www.happo-one.jp/gelande/livecamera",
+   "liftUrl": "https://www.happo-one.jp/gelande/lift",
+   "youtube": [],
+   "amedas": {
+    "code": "48141",
+    "name": "白馬",
+    "alt": 703,
+    "km": 2.8
+   }
   },
   {
    "id": "hakuba47",
@@ -439,7 +542,21 @@
    "see": "兩個雪場相連、可互通；Hakuba47 的地形公園有名。",
    "note": "",
    "url": "https://www.hakuba47.co.jp/",
-   "verify": true
+   "verify": true,
+   "camUrl": "https://www.youtube.com/watch?v=nzJj0EZxMqg",
+   "liftUrl": "https://hakuba47.co.jp/en/mountain-report",
+   "youtube": [
+    {
+     "id": "nzJj0EZxMqg",
+     "label": "Hakuba47"
+    }
+   ],
+   "amedas": {
+    "code": "48141",
+    "name": "白馬",
+    "alt": 703,
+    "km": 4.2
+   }
   },
   {
    "id": "tsugaike",
@@ -474,7 +591,16 @@
    "see": "山腳下是超寬的緩坡，新手與親子的首選之一。",
    "note": "",
    "url": "https://www.tsugaike.gr.jp/",
-   "verify": true
+   "verify": true,
+   "camUrl": "https://www.tsugaike.gr.jp/livecamera",
+   "liftUrl": null,
+   "youtube": [],
+   "amedas": {
+    "code": "48097",
+    "name": "小谷",
+    "alt": 550,
+    "km": 9.3
+   }
   },
   {
    "id": "cortina",
@@ -509,7 +635,16 @@
    "see": "白馬山谷最北端、降雪量多，樹林滑出名。",
    "note": "樹林區有開放規定，請遵守雪場公告。",
    "url": null,
-   "verify": true
+   "verify": true,
+   "camUrl": null,
+   "liftUrl": null,
+   "youtube": [],
+   "amedas": {
+    "code": "48097",
+    "name": "小谷",
+    "alt": 550,
+    "km": 5.4
+   }
   },
   {
    "id": "nozawa",
@@ -546,7 +681,16 @@
    "see": "雪場就在溫泉街上方，村裡有 13 座免費的公共溫泉「外湯」。",
    "note": "溫泉街坡道多，路面容易結冰。",
    "url": "https://www.nozawaski.com/",
-   "verify": true
+   "verify": true,
+   "camUrl": "https://nozawaski.com/winter/course/livecam_map/",
+   "liftUrl": "https://nozawaski.com/winter/lift_price/lift_time/#lift_more",
+   "youtube": [],
+   "amedas": {
+    "code": "48031",
+    "name": "野沢温泉",
+    "alt": 576,
+    "km": 1.2
+   }
   },
   {
    "id": "shiga",
@@ -582,7 +726,21 @@
    "see": "日本最大級的雪場群，海拔高、雪質乾，雪季也長。",
    "note": "雪場範圍非常大，先看好地圖和接駁方式。",
    "url": "https://www.shigakogen-ski.or.jp/",
-   "verify": true
+   "verify": true,
+   "camUrl": "https://shigakogen-ski.or.jp/#contents-d",
+   "liftUrl": "https://shigakogen-ski.or.jp/lift/index.php",
+   "youtube": [
+    {
+     "id": "n4G4iQTme1g",
+     "label": "熊の湯"
+    }
+   ],
+   "amedas": {
+    "code": "42121",
+    "name": "草津",
+    "alt": 1223,
+    "km": 14.1
+   }
   },
   {
    "id": "madarao",
@@ -617,7 +775,16 @@
    "see": "樹林滑與非壓雪區規劃得完整，粉雪玩家很愛。",
    "note": "",
    "url": "https://www.madarao.jp/",
-   "verify": true
+   "verify": true,
+   "camUrl": "https://www.madarao.jp/ski/live-camera",
+   "liftUrl": "https://www.madarao.jp/ski/conditions",
+   "youtube": [],
+   "amedas": {
+    "code": "48066",
+    "name": "飯山",
+    "alt": 313,
+    "km": 6.0
+   }
   },
   {
    "id": "karuizawa",
@@ -652,7 +819,16 @@
    "see": "東京出發約 1 小時；人工造雪讓它開季早，旁邊就是 outlet。",
    "note": "以人工雪為主，雪質偏硬。",
    "url": "https://www.princehotels.co.jp/ski/karuizawa/",
-   "verify": true
+   "verify": true,
+   "camUrl": "https://www.princehotels.co.jp/ski/karuizawa/winter/#tab-body01",
+   "liftUrl": "https://www.princehotels.co.jp/ski/karuizawa/winter/coursemap/",
+   "youtube": [],
+   "amedas": {
+    "code": "48331",
+    "name": "軽井沢",
+    "alt": 999,
+    "km": 7.5
+   }
   },
   {
    "id": "akakura",
@@ -688,7 +864,16 @@
    "see": "日本數一數二的豪雪地帶，山腳就是溫泉街。",
    "note": "",
    "url": "https://www.akakura-ski.com/",
-   "verify": true
+   "verify": true,
+   "camUrl": null,
+   "liftUrl": null,
+   "youtube": [],
+   "amedas": {
+    "code": "54816",
+    "name": "関山",
+    "alt": 350,
+    "km": 7.0
+   }
   },
   {
    "id": "arai",
@@ -724,7 +909,16 @@
    "see": "降雪量大，開放的非壓雪區多。",
    "note": "非壓雪區風險高，請遵守雪場規定與開放公告。",
    "url": null,
-   "verify": true
+   "verify": true,
+   "camUrl": null,
+   "liftUrl": null,
+   "youtube": [],
+   "amedas": {
+    "code": "54816",
+    "name": "関山",
+    "alt": 350,
+    "km": 7.9
+   }
   },
   {
    "id": "gala",
@@ -760,7 +954,16 @@
    "see": "新幹線直接停在雪場纜車站，東京出發一日來回最方便。",
    "note": "週末人潮多；新幹線只在雪季停靠這一站。",
    "url": "https://gala.co.jp/",
-   "verify": true
+   "verify": true,
+   "camUrl": null,
+   "liftUrl": null,
+   "youtube": [],
+   "amedas": {
+    "code": "54841",
+    "name": "湯沢",
+    "alt": 340,
+    "km": 1.3
+   }
   },
   {
    "id": "naeba",
@@ -797,7 +1000,16 @@
    "see": "王子飯店直通雪場；可搭 Dragondola 纜車到隔壁的神樂。",
    "note": "",
    "url": "https://www.princehotels.co.jp/ski/naeba/",
-   "verify": true
+   "verify": true,
+   "camUrl": "https://www.princehotels.co.jp/ski/naeba/livecamera/",
+   "liftUrl": "https://www.princehotels.co.jp/ski/naeba/winter/coursemap/",
+   "youtube": [],
+   "amedas": {
+    "code": "54841",
+    "name": "湯沢",
+    "alt": 340,
+    "km": 17.1
+   }
   },
   {
    "id": "kagura",
@@ -835,7 +1047,16 @@
    "see": "雪季可以滑到 5 月，有粉雪和非壓雪區。",
    "note": "非壓雪區要自行判斷雪崩風險。",
    "url": "https://www.princehotels.co.jp/ski/kagura/",
-   "verify": true
+   "verify": true,
+   "camUrl": "https://www.princehotels.co.jp/ski/kagura/livecamera/",
+   "liftUrl": "https://www.princehotels.co.jp/ski/kagura/winter/coursemap/",
+   "youtube": [],
+   "amedas": {
+    "code": "54841",
+    "name": "湯沢",
+    "alt": 340,
+    "km": 11.1
+   }
   }
  ]
 }

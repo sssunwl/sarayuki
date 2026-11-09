@@ -51,6 +51,8 @@ JST = datetime.timezone(datetime.timedelta(hours=9))
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
       "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36")
 
+BANNED_PHRASES = tuple("至關重要, 不容錯過, 絕佳, 完美, 無與倫比, 首選, 一站式, 讓我們, 夢想, 終極, 必去, 必玩, 輕鬆踏上, 盡情享受, 不二之選, 令人難忘, 獨一無二, 深度體驗, 帶你, 一次搞懂, 總而言之, 綜上所述, 這篇文章將, 本文將, 希望這篇, 您".split(", "))
+
 SYSTEM_PROMPT = """你是 Sarayuki さら雪的內容作者。Sarayuki 是給華語滑雪客的日本雪場中立指南：新手要看得懂、敢出發，老手要真資訊；不收錢排名、不寫業配。
 你的唯一任務是針對指定題目，使用 Google 搜尋 grounding 查證後寫出一篇短篇 Markdown 正文。
 
@@ -64,7 +66,9 @@ SYSTEM_PROMPT = """你是 Sarayuki さら雪的內容作者。Sarayuki 是給華
 7. 用 ## 小標分段，結尾加一段「## 給第一次去的你」或「## 出發前確認」的重點清單（3–5 點）。
 8. 只輸出文章正文，不要輸出檔名、來源清單、URL、前言、說明或 Markdown code fence。來源連結與抓取日會由程式依 groundingMetadata 加入。
 9. 完成這一篇就停止，不延伸成其他題目，也不提出後續任務。
+10. 使用「你」不用「您」；第一段不得以「X 是……的滑雪場」開頭。每段至少包含一項具體事實（數字、地名、時間或規則），不得只有形容詞句子。
 """
+SYSTEM_PROMPT += "\n11. 禁用詞：" + "、".join(BANNED_PHRASES) + "。"
 
 
 @dataclass(frozen=True)
@@ -351,9 +355,17 @@ def fix_source_urls(markdown, sources):
 
 
 def body_length(markdown):
-    plain = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", markdown)
+    plain = re.sub(r"<sup>.*?</sup>", "", markdown, flags=re.S)
+    plain = re.sub(r"<[^>]+>", "", plain)
+    plain = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", plain)
     plain = re.sub(r"[#*_>`~-]", "", plain)
     return len(re.sub(r"\s+", "", plain))
+
+
+def existing_body_length(path):
+    body = path.read_text(encoding="utf-8").split("## 來源")[0]
+    body = re.sub(r"^# [^\n]*\n", "", body, count=1)
+    return body_length(body)
 
 
 def resort_for_slug(db_root, slug):
@@ -388,7 +400,7 @@ def update_index(db_root, entry):
     articles = [a for a in data.get("articles", []) if a.get("slug") != entry["slug"]]
     articles.insert(0, entry)
     data["articles"] = articles
-    data["updated"] = entry["date"]
+    data["updated"] = entry.get("updated", entry["date"])
     atomic_write(path, json.dumps(data, ensure_ascii=False, indent=1))
 
 
@@ -429,8 +441,9 @@ def atomic_write(path, text):
             os.unlink(temp_name)
 
 
-def render_markdown(task, body, candidate, sources, today):
-    body = insert_grounding_citations(body, candidate, sources, today)
+def render_markdown(task, body, candidate, sources, today, inline=True):
+    if inline:
+        body = insert_grounding_citations(body, candidate, sources, today)
     body = fix_source_urls(body, sources).strip()
     source_lines = [f'- <a id="src-{source.number}"></a>{source.number}. '
                     f"[{source.title}]({source.url})（抓取：{today}）"
@@ -438,10 +451,61 @@ def render_markdown(task, body, candidate, sources, today):
     return f"# {task}\n\n{body}\n\n## 來源\n\n" + "\n".join(source_lines) + "\n"
 
 
+def banned_phrases(body):
+    return [phrase for phrase in BANNED_PHRASES if phrase in body]
+
+
+def revise_body(key, body, instruction, api_caller):
+    # No grounding: revision must retain the original facts, not research new ones.
+    payload = {"contents": [{"role": "user", "parts": [{"text": instruction + "\n\n" + body}]}],
+               "generationConfig": {"temperature": .1, "maxOutputTokens": 8192}}
+    response, error = api_caller(key, payload)
+    if error:
+        raise RuntimeError(error)
+    return get_candidate(response)[1]
+
+
+def prepare_body(key, body, api_caller):
+    changed = False
+    if body_length(body) < 300:
+        raise ValueError("Gemini 正文過短，拒絕寫入")
+    if body_length(body) > 1500:
+        body = revise_body(key, body, "壓縮至 1300 字以內，保留全部事實及「⚠️需覆核」標記，不改變帶有引文主張的段落順序。只輸出正文。", api_caller)
+        changed = True
+        if body_length(body) > 1600:
+            raise ValueError("壓縮後正文仍超過 1600 字，拒絕寫入")
+    found = banned_phrases(body)
+    if found:
+        body = revise_body(key, body, "在原句中逐一等義替換以下禁用詞，不新增內容、不改變事實、段落順序或「⚠️需覆核」標記。使用「你」不用「您」。只輸出正文。禁用詞：" + "、".join(BANNED_PHRASES), api_caller)
+        changed = True
+        if banned_phrases(body):
+            print("::warning::替換後仍有禁用詞：" + "、".join(banned_phrases(body)))
+    length = body_length(body)
+    if length < 300 or length > 1600:
+        raise ValueError(f"Gemini 正文 {length} 字，拒絕寫入")
+    if not 800 <= length <= 1400:
+        print(f"::warning::正文 {length} 字，未達 800–1400 字目標")
+    return body, not changed
+
+
+def rewrite_task(db_root, slug):
+    if not SLUG_RE.fullmatch(slug):
+        raise ValueError("Invalid rewrite slug")
+    entries = json.loads((db_root / INDEX).read_text(encoding="utf-8"))["articles"]
+    entry = next((a for a in entries if a["slug"] == slug), None)
+    if entry is None:
+        raise ValueError(f"Unknown rewrite slug: {slug}")
+    return SelectedTask(slug + "｜" + entry["title"], None, None, slug, entry["title"], entry["category"]), entry
+
+
 def run(task_override=None, dry_run=False, db_root=DB_ROOT, key=None,
-        api_caller=call_gemini, resolver=resolve_source_url, category=None):
+        api_caller=call_gemini, resolver=resolve_source_url, category=None, rewrite=None):
     roadmap = db_root / ROADMAP
-    selected = select_task(roadmap, task_override, category)
+    old_entry = None
+    if rewrite:
+        selected, old_entry = rewrite_task(db_root, rewrite)
+    else:
+        selected = select_task(roadmap, task_override, category)
     if selected is None:
         print("::notice::內容路線圖沒有未完成項目，本次跳過")
         write_github_output("has_task", "false")
@@ -461,22 +525,16 @@ def run(task_override=None, dry_run=False, db_root=DB_ROOT, key=None,
     if error:
         raise RuntimeError(error)
     candidate, body = get_candidate(response)
-    length = body_length(body)
-    # 只擋過短(空殼或殘缺)。過長不是缺陷,模型對中文字數指示本來就不精確,
-    # 真正的守門是 finishReason 未截斷、有 grounding 來源、不覆寫既有檔。
-    if length < 300:
-        raise ValueError(f"Gemini 正文只有 {length} 字，過短，拒絕寫入")
-    if length > 2400:
-        print(f"  ⚠️ 正文 {length} 字，超出建議的 800–1400 字，仍照常寫入")
+    body, inline = prepare_body(key, body, api_caller)
     sources = extract_sources(candidate, resolver)
     if not sources:
         raise ValueError("Gemini 回應沒有可用的 groundingMetadata 來源，拒絕寫檔")
-    markdown = render_markdown(selected.title, body, candidate, sources, today)
+    markdown = render_markdown(selected.title, body, candidate, sources, today, inline=inline)
 
     path = db_root / ARTICLES / f"{selected.slug}.md"
     if path.exists() and path.is_symlink():
         raise ValueError("推導出的輸出路徑是 symlink，拒絕寫入")
-    if path.exists() and not dry_run:
+    if path.exists() and not dry_run and not rewrite:
         raise ValueError(
             f"{path.name} 已存在，拒絕覆寫既有內容。"
             "若要重寫請先人工確認並移除該檔，或改用別的題目。")
@@ -487,16 +545,26 @@ def run(task_override=None, dry_run=False, db_root=DB_ROOT, key=None,
         return path
 
     verify_roadmap_task(roadmap, selected)
+    old_count = existing_body_length(path) if path.exists() else 0
     atomic_write(path, markdown)
     update_index(db_root, {
+        **(old_entry or {}),
         "slug": selected.slug,
         "title": selected.title,
         "category": selected.category,
-        "resort": resort_for_slug(db_root, selected.slug),
-        "date": today,
+        "resort": old_entry.get("resort") if old_entry else resort_for_slug(db_root, selected.slug),
+        "date": old_entry["date"] if old_entry else today,
+        **({"updated": today} if rewrite else {}),
         "summary": summary_from_body(body),
         "sources": len(sources),
     })
+    if rewrite:
+        from make_covers import generate
+        generate(root=db_root, slug=selected.slug)
+        summary = os.environ.get("GITHUB_STEP_SUMMARY")
+        if summary:
+            with open(summary, "a", encoding="utf-8") as output:
+                output.write(f"| {selected.slug} | {old_count} | {body_length(body)} | 成功 |\n")
     marked = mark_task_complete(roadmap, selected, today)
     write_github_output("output_path", str(path.relative_to(db_root)))
     write_github_output("wrote_content", "true")
@@ -508,7 +576,9 @@ def run(task_override=None, dry_run=False, db_root=DB_ROOT, key=None,
 
 def parse_args(argv=None):
     parser = argparse.ArgumentParser(description="以 Gemini Search grounding 豐富一筆內容")
-    parser.add_argument("--task", help="覆寫路線圖題目（slug｜題目）；使用時不打勾路線圖")
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--rewrite", help="重寫既有文章，保留原日期")
+    mode.add_argument("--task", help="覆寫路線圖題目（slug｜題目）；使用時不打勾路線圖")
     parser.add_argument("--category", choices=CATEGORIES, help="搭配 --task 的分類")
     parser.add_argument("--dry-run", action="store_true", help="呼叫 API 並預覽，不寫任何檔案")
     return parser.parse_args(argv)
@@ -517,7 +587,7 @@ def parse_args(argv=None):
 def main(argv=None):
     args = parse_args(argv)
     try:
-        run(task_override=args.task, dry_run=args.dry_run, category=args.category)
+        run(task_override=args.task, dry_run=args.dry_run, category=args.category, rewrite=args.rewrite)
     except (OSError, ValueError, RuntimeError) as error:
         print(f"::error::{error}", file=sys.stderr)
         return 1

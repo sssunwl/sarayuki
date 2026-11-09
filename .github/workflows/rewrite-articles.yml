@@ -1,0 +1,64 @@
+name: Sarayuki 重寫文章
+on:
+  workflow_dispatch:
+    inputs:
+      slugs:
+        description: 依序重寫的 slug（逗號分隔）
+        required: true
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: sarayuki-daily-content-enrichment
+  cancel-in-progress: false
+jobs:
+  rewrite:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - name: 逐篇改寫
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SLUGS: ${{ inputs.slugs }}
+        shell: bash
+        run: |
+          echo '| 文章 | 原字數 | 新字數 | 結果 |' >> "$GITHUB_STEP_SUMMARY"
+          echo '| --- | ---: | ---: | --- |' >> "$GITHUB_STEP_SUMMARY"
+          IFS=',' read -ra articles <<< "$SLUGS"
+          first=true
+          for raw in "${articles[@]}"; do
+            slug="${raw//[[:space:]]/}"
+            if [[ ! "$slug" =~ ^[a-z0-9]+(-[a-z0-9]+)*$ ]]; then
+              echo '::warning::略過無效 slug'
+              continue
+            fi
+            if [[ "$first" == false ]]; then sleep 30; fi
+            first=false
+            old_count=$(python3 - "$slug" <<'PY'
+          import pathlib, sys
+          sys.path.insert(0, '_pipeline')
+          from enrich_content import existing_body_length
+          p = pathlib.Path('content/articles') / (sys.argv[1] + '.md')
+          print(existing_body_length(p) if p.exists() else 0)
+          PY
+            )
+            if python3 _pipeline/enrich_content.py --rewrite "$slug"; then
+              new_count=$(python3 -c "import pathlib,sys;sys.path.insert(0,'_pipeline');from enrich_content import existing_body_length;print(existing_body_length(pathlib.Path('content/articles/$slug.md')))")
+              echo "| $slug | $old_count | $new_count | 完成 |" >> "$GITHUB_STEP_SUMMARY"
+            else
+              echo "| $slug | $old_count | — | 失敗，詳見執行記錄 |" >> "$GITHUB_STEP_SUMMARY"
+            fi
+          done
+      - name: 一次提交所有成功文章
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- content/articles content/index.json content/covers
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m '重寫文章'
+          git pull --rebase origin main
+          git push origin main
