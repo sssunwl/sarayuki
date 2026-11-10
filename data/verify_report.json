@@ -1,24 +1,24 @@
 {
-  "generated": "2026-11-09T19:51:53+09:00",
+  "generated": "2026-11-10T19:44:08+09:00",
   "checked": [
-    "arai",
-    "gala",
-    "naeba",
-    "kagura",
-    "furano",
-    "tomamu"
+    "appi",
+    "zao",
+    "hakkoda",
+    "happo",
+    "niseko",
+    "rusutsu"
   ],
   "last_checked": {
-    "niseko": "2026-11-07T18:35:04+09:00",
-    "rusutsu": "2026-11-07T18:35:04+09:00",
+    "niseko": "2026-11-10T19:44:08+09:00",
+    "rusutsu": "2026-11-10T19:44:08+09:00",
     "kiroro": "2026-11-08T18:49:53+09:00",
     "teine": "2026-11-08T18:49:53+09:00",
     "furano": "2026-11-09T19:51:53+09:00",
     "tomamu": "2026-11-09T19:51:53+09:00",
-    "appi": "2026-11-06T19:20:31+09:00",
-    "zao": "2026-11-06T19:20:31+09:00",
-    "hakkoda": "2026-11-06T19:20:31+09:00",
-    "happo": "2026-11-06T19:20:31+09:00",
+    "appi": "2026-11-10T19:44:08+09:00",
+    "zao": "2026-11-10T19:44:08+09:00",
+    "hakkoda": "2026-11-10T19:44:08+09:00",
+    "happo": "2026-11-10T19:44:08+09:00",
     "hakuba47": "2026-11-07T18:35:04+09:00",
     "tsugaike": "2026-11-07T18:35:04+09:00",
     "cortina": "2026-11-07T18:35:04+09:00",
@@ -112,7 +112,7 @@
     },
     {
       "id": "rusutsu",
-      "status": "unverified",
+      "status": "yellow",
       "url_check": {
         "code": 200,
         "final_url": "https://rusutsu.com/"
@@ -126,61 +126,54 @@
             2,
             3
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "peak",
-          "current": [
+          "suggested": [
+            11,
+            12,
             1,
-            2
+            2,
+            3
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "access",
-          "current": "新千歲機場巴士約 2 小時",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "accessMin",
-          "current": 120,
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "name",
-          "current": "留壽都 Rusutsu",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "nameJa",
-          "current": "ルスツリゾート",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "place",
-          "current": "北海道・留壽都村",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "severity": "yellow",
+          "note": "2026-2027冬季營業期間為2026年11月28日至2027年3月31日。",
+          "sources": [
+            "https://www.skiing-hokkaido.com/resorts/rusutsu-resort/",
+            "https://japan-skiguide.com/guide/htm/r0331ens.htm",
+            "https://www.snowjapan.com/ski-areas-in-japan/hokkaido/rusutsu-village/rusutsu-resort",
+            "https://surfsnow.jp/guide/htm/r0331pu.htm",
+            "https://japanskiexperience.com/blog/japan-ski-resort-opening-dates/",
+            "https://www.japan-guide.com/e/e6715.html",
+            "https://rusutsu.com/en/information/hotel-closed-period/",
+            "https://www.onthesnow.com/hokkaido/rusutsu/ski-resort",
+            "https://snowway.app/resorts/rusutsu/best-time-to-ski",
+            "https://auski.com.au/blogs/news/snowboarding-rusutsu-hokkaido",
+            "https://where-to-ski.com/ski-resorts/japan/rusutsu/best-time-to-ski/",
+            "https://rusutsu-snowboard.com/blog/best-season-hokkaido-skiresort/",
+            "https://jp.trip.com/moments/theme/poi-the-westin-rusutsu-resort-28419583-skiing-990145/",
+            "https://livejapan.com/ja/in-hokkaido/in-pref-hokkaido/in-niseko_rusutsu/article-a1000366/",
+            "https://japavista.com/en/japavista/rusutsu/guide",
+            "https://www.kkday.com/en/blog/101519/rusutsu-ski-resort",
+            "https://bigruns.com/basu_group/%E5%A4%8F%E5%AD%A3%E9%81%8B%E8%A1%8C-%E3%83%93%E3%83%83%E3%82%B0%E3%83%A9%E3%83%B3%E3%82%BA%E5%8F%B7-%E6%96%B0%E5%8D%83%E6%AD%B3%E7%A9%BA%E6%B8%AF-%E3%83%AB%E3%82%B9%E3%83%84%E3%83%AA",
+            "https://www.marriott.com/ja/hotels/ctswi-the-westin-rusutsu-resort/overview/",
+            "https://rusutsu.com/kamori-group/",
+            "https://rusutsu.com/en/kamori-group/",
+            "https://jl-db.nfaj.go.jp/en/location/010100256/",
+            "https://en.wikipedia.org/wiki/Rusutsu_Resort",
+            "https://kamori.co.jp/recruit/kamori_group/%E3%83%AB%E3%82%B9%E3%83%84%E3%83%AA%E3%82%BE%E3%83%BC%E3%83%88",
+            "https://oshimachi.jp/spots/66686",
+            "https://www.skiing-hokkaido.com/ja/resorts/rusutsu-resort/",
+            "https://travel.rakuten.co.jp/HOTEL/10656/CUSTOM/GW10656101006174609.html",
+            "https://www.jalan.net/yad346832/topics/entry0006768648.html",
+            "https://rusutsu.com/information/westin-closed-period/",
+            "https://rusutsu.com/news-and-topics/skipackage/",
+            "https://www.skiing-hokkaido.com/ja/article/rusutsu-resort/",
+            "https://www.ana.co.jp/domestic/theme/promo_ski/rusutsu/pdf/bus_rusutsu_2202000015_220926.pdf",
+            "https://www.clubgets.com/hokkaido_ski/rusutsu/shuttle_bus/",
+            "https://rusutsu.com/",
+            "https://rusutsu.com/news-and-topics/spring-ski-2026/",
+            "https://surfsnow.jp/guide/htm/r0331s.htm",
+            "https://bigruns.com/basu_group/%E5%86%AC%E5%AD%A3%E9%81%8B%E8%A1%8C-%E3%83%93%E3%83%83%E3%82%B0%E3%83%A9%E3%83%B3%E3%82%BA%E5%8F%B7-%E6%96%B0%E5%8D%83%E6%AD%B3%E7%A9%BA%E6%B8%AF",
+            "https://www.jalan.net/yad346832/access/"
+          ]
         }
       ]
     },
@@ -402,7 +395,7 @@
     },
     {
       "id": "appi",
-      "status": "yellow",
+      "status": "unverified",
       "url_check": {
         "code": 200,
         "final_url": "https://www.appi.co.jp/"
@@ -417,21 +410,61 @@
             3,
             4
           ],
-          "suggested": [
-            12,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
             1,
-            2,
-            3,
-            4,
-            5
+            2
           ],
-          "severity": "yellow",
-          "note": "2026-2027雪季預計營業期間為2026年12月5日至2027年5月5日。",
-          "sources": [
-            "https://appi-abend.com/snow1.html",
-            "https://slopelink.app/ja/blog/appi-kogen-ski-guide/",
-            "https://www.iwate-ski.gr.jp/01_appi/index.html"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "盛岡站巴士約 1 小時",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 60,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "安比高原 APPI",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "安比高原スキー場",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "岩手・八幡平市",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
         }
       ]
     },
@@ -470,21 +503,46 @@
             5
           ],
           "severity": "red",
-          "note": "2026-2027 雪季預計營業期間為 2026 年 12 月 12 日至 2027 年 5 月 5 日。",
+          "note": "2026-2027シーズン預計營業期間為2026年12月12日至2027年5月5日。",
           "sources": [
             "https://www.ski-gelende.com/gelende/tohoku/zao/",
             "https://zaomountainresort.com/chrage/",
             "https://yamagatagoto.com/zao-onsen-ski/3768/",
             "https://snow.japanvoyage.jp/ja/guides/when-does-japan-ski-season-start-2026-2027-guide-ja",
             "https://www.zao-jurin.com/cms/2026/11/01/%E8%94%B5%E7%8E%8B%E6%B8%A9%E6%B3%89%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4-2026%E5%B9%B412%E6%9C%8812%E6%97%A5%E5%9C%9F%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4%E9%96%8B%E3%81%8D%E4%BA%88%E5%AE%9A%EF%BC%81/",
-            "https://www.meito-lucent.com/news/detail.php?id=1722"
+            "https://bus-tabi.net/pref/yamagata/yamagata-zaoonsenskiresort/",
+            "https://onsenzanmaiblog.com/yamagataeki-zaoonsen/",
+            "https://ja.wikipedia.org/wiki/%E5%B1%B1%E5%BD%A2%E8%94%B5%E7%8E%8B%E6%B8%A9%E6%B3%89%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4",
+            "https://travel.yahoo.co.jp/kanko/spot-00002650/",
+            "https://www.japowdb.com/ja/resorts/zao-onsen/night/",
+            "https://www.mapion.co.jp/phonebook/M04013/06201/ILSP0000123368_ipclm/",
+            "https://www.jal.co.jp/jp/ja/domtour/jaldp/skisp/thu/yamagata_full/index04.html",
+            "https://www.nap-camp.com/mag/111731",
+            "https://zaomountainresort.com/ski_news/ski_news-7397/",
+            "https://www.zao-onsen.co.jp/ski/",
+            "https://zaomountainresort.com/gerende/",
+            "https://www.zaoropeway.co.jp/winter/index.php",
+            "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14324475284",
+            "https://zaomountainresort.com/ski/",
+            "https://www.jalan.net/kankou/spt_guide000000177177/"
           ]
+        },
+        {
+          "field": "peak",
+          "current": [
+            1,
+            2
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "官方資料未明確指出雪況最佳月份。",
+          "sources": []
         }
       ]
     },
     {
       "id": "hakkoda",
-      "status": "yellow",
+      "status": "red",
       "url_check": {
         "code": 200,
         "final_url": "https://hakkoda-ropeway.jp/"
@@ -500,58 +558,64 @@
             4
           ],
           "suggested": [
+            7,
+            8,
+            9,
+            10,
+            11,
             12,
             1,
             2,
             3,
             4,
-            5
+            5,
+            6
           ],
-          "severity": "yellow",
-          "note": "官方資訊指出滑雪季節為12月至5月中旬。",
+          "severity": "red",
+          "note": "八甲田ロープウェー全年運行，每年11月上旬至中旬有定期檢修運休，但整體而言為全年營業。",
           "sources": [
-            "https://aomori-tourism.com/spot/detail_122.html",
-            "https://hakkoda-ropeway.jp/guide/",
-            "https://hakkoda-ropeway.jp/access/",
-            "https://www.gltjp.com/ja/directory/item/13547/",
-            "https://hakkoda-ropeway.jp/contact/",
-            "https://www.asoview.com/spot/02201ee4570112111/",
-            "https://compalyze.co.jp/company/9420001001707",
-            "https://ja.wikipedia.org/wiki/%E5%85%AB%E7%94%B2%E7%94%B0%E3%83%AD%E3%83%BC%E3%83%97%E3%82%A6%E3%82%A7%E3%83%BC",
-            "https://hakkoda-ropeway.jp/about/",
-            "https://www.mapion.co.jp/phonebook/M04013/02201/20230013455/",
-            "https://hakkoda9spa.com/sightseeing/hakkodaropeway/",
+            "https://www.tohokukanko.jp/transport/detail_1001187.html",
             "https://hakkoda-ropeway.jp/",
-            "https://spring.walkerplus.com/gw/detail/ar0202s609254/map.html"
+            "https://aomori-tourism.com/spot/detail_122.html",
+            "https://www.atca.info/spot/spot-1033/",
+            "https://hakkoda9spa.com/sightseeing/hakkodaropeway/",
+            "https://spring.walkerplus.com/gw/detail/ar0202s609254/data.html",
+            "https://hakkoda-ropeway.jp/news/",
+            "https://travel.yahoo.co.jp/kanko/spot-00002688/",
+            "https://hakkoda-ropeway.jp/access/",
+            "https://hakkoda-ropeway.jp/about/",
+            "https://compalyze.co.jp/company/9420001001707",
+            "https://jp.trip.com/moments/poi-hakkda-ropeway-sanroku-station-129757543/",
+            "https://www.city.aomori.aomori.jp/bunka_sports_kankou/kankou/1005230/1005263/1005267.html"
           ]
         },
         {
           "field": "access",
           "current": "青森站巴士約 1 小時",
-          "suggested": "青森站巴士約 80 分鐘",
+          "suggested": "青森站巴士約 80 分鐘 (冬季)",
           "severity": "yellow",
-          "note": "官方網站指出冬季從青森站搭乘JR巴士至八甲田纜車站約需80分鐘。",
+          "note": "根據官方資訊，冬季從青森站搭乘JR巴士至八甲田纜車站約需80分鐘。",
           "sources": [
-            "https://aomori-tourism.com/spot/detail_122.html",
-            "https://hakkoda-ropeway.jp/guide/",
-            "https://hakkoda-ropeway.jp/access/",
-            "https://www.gltjp.com/ja/directory/item/13547/",
-            "https://hakkoda-ropeway.jp/contact/",
-            "https://www.asoview.com/spot/02201ee4570112111/",
-            "https://compalyze.co.jp/company/9420001001707",
-            "https://ja.wikipedia.org/wiki/%E5%85%AB%E7%94%B2%E7%94%B0%E3%83%AD%E3%83%BC%E3%83%97%E3%82%A6%E3%82%A7%E3%83%BC",
-            "https://hakkoda-ropeway.jp/about/",
-            "https://www.mapion.co.jp/phonebook/M04013/02201/20230013455/",
-            "https://hakkoda9spa.com/sightseeing/hakkodaropeway/",
+            "https://www.tohokukanko.jp/transport/detail_1001187.html",
             "https://hakkoda-ropeway.jp/",
-            "https://spring.walkerplus.com/gw/detail/ar0202s609254/map.html"
+            "https://aomori-tourism.com/spot/detail_122.html",
+            "https://www.atca.info/spot/spot-1033/",
+            "https://hakkoda9spa.com/sightseeing/hakkodaropeway/",
+            "https://spring.walkerplus.com/gw/detail/ar0202s609254/data.html",
+            "https://hakkoda-ropeway.jp/news/",
+            "https://travel.yahoo.co.jp/kanko/spot-00002688/",
+            "https://hakkoda-ropeway.jp/access/",
+            "https://hakkoda-ropeway.jp/about/",
+            "https://compalyze.co.jp/company/9420001001707",
+            "https://jp.trip.com/moments/poi-hakkda-ropeway-sanroku-station-129757543/",
+            "https://www.city.aomori.aomori.jp/bunka_sports_kankou/kankou/1005230/1005263/1005267.html"
           ]
         }
       ]
     },
     {
       "id": "happo",
-      "status": "yellow",
+      "status": "unverified",
       "url_check": {
         "code": 200,
         "final_url": "https://www.happo-one.jp/"
@@ -566,34 +630,61 @@
             3,
             4
           ],
-          "suggested": [
-            12,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
             1,
-            2,
-            3,
-            4,
-            5
+            2
           ],
-          "severity": "yellow",
-          "note": "根據官方網站2026-2027雪季資訊，營業期間為2026年12月19日至2027年5月5日。",
-          "sources": [
-            "https://www.happo-one.jp/ticket/",
-            "https://www.hakubaland.com/ja/guides/hakuba-ski-season-dates/",
-            "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11290406041",
-            "https://www.jalan.net/kankou/spt_20485ca3470058012/",
-            "https://nagano.boooon.site/travel/hakubahappo-one/access.html",
-            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00178442&arrival=00082541&line=00053370",
-            "https://www.navitime.co.jp/bustransit/search?orvStationCode=00178442&dnvStationCode=00082541",
-            "https://hakuba-sci.jp/members/happo-one/",
-            "https://db.go-nagano.net/topics_detail6/id=17009",
-            "https://www.realhakuba.com/ja/discover/ski-resorts/hakuba-happo-one",
-            "https://www.vill.hakuba.nagano.jp/spots/happo-one/",
-            "https://www.hakubavalley.com/weather/detail_happo/",
-            "https://www.mapion.co.jp/phonebook/M04013/20485/ILSP0000123735_ipclm/",
-            "https://surfsnow.jp/guide/htm/r0142m.htm",
-            "https://yukinohara70.com/%E3%80%90%E3%81%A9%E3%81%86%E8%A1%8C%E3%81%8F%EF%BC%9F%E3%80%91%E7%99%BD%E9%A6%AC%E5%85%AB%E6%96%B9%E5%B0%BE%E6%A0%B9%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4/",
-            "https://travel.yahoo.co.jp/kanko/spot-00003409/"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "長野站巴士約 70 分",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 70,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "白馬八方尾根 Happo-one",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "白馬八方尾根",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "長野・白馬村",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
         }
       ]
     },
