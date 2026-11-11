@@ -1,146 +1,147 @@
 {
-  "generated": "2026-11-11T02:00:04.641657+09:00",
+  "generated": "2026-11-11T10:13:50.348259+09:00",
   "source": "気象庁 アメダス（観測値をそのまま掲載）",
   "stations": {
     "16217": {
       "name": "倶知安",
       "alt": 176,
-      "observedAt": "2026-11-11T01:50:00+09:00",
-      "snow": null,
-      "snow24h": null,
-      "temp": -9.6
+      "observedAt": "2026-11-11T10:00:00+09:00",
+      "snow": 36,
+      "snow24h": 0,
+      "temp": -3.5
     },
     "16286": {
       "name": "喜茂別",
       "alt": 264,
-      "observedAt": "2026-11-11T01:50:00+09:00",
-      "snow": null,
-      "snow24h": null,
-      "temp": -10.7
+      "observedAt": "2026-11-11T10:00:00+09:00",
+      "snow": 21,
+      "snow24h": 0,
+      "temp": -2.4
     },
     "16091": {
       "name": "小樽",
       "alt": 25,
-      "observedAt": "2026-11-11T01:50:00+09:00",
-      "snow": null,
-      "snow24h": null,
-      "temp": -0.6
+      "observedAt": "2026-11-11T10:00:00+09:00",
+      "snow": 1,
+      "snow24h": 4,
+      "temp": 1.7
     },
     "14163": {
       "name": "札幌",
       "alt": 17,
-      "observedAt": "2026-11-11T01:50:00+09:00",
-      "snow": null,
-      "snow24h": null,
-      "temp": -1.5
+      "observedAt": "2026-11-11T10:00:00+09:00",
+      "snow": 1,
+      "snow24h": 2,
+      "temp": 2.6
     },
     "12626": {
       "name": "富良野",
       "alt": 174,
-      "observedAt": "2026-11-11T01:50:00+09:00",
-      "snow": null,
-      "snow24h": null,
-      "temp": -9.7
+      "observedAt": "2026-11-11T10:00:00+09:00",
+      "snow": 0,
+      "snow24h": 0,
+      "temp": -5.5
     },
     "12691": {
       "name": "幾寅",
       "alt": 350,
-      "observedAt": "2026-11-11T01:50:00+09:00",
-      "snow": null,
-      "snow24h": null,
-      "temp": -14.1
+      "observedAt": "2026-11-11T10:00:00+09:00",
+      "snow": 0,
+      "snow24h": 0,
+      "temp": -6.4
     },
     "33226": {
       "name": "岩手松尾",
       "alt": 275,
-      "observedAt": "2026-11-11T01:50:00+09:00",
-      "snow": null,
-      "snow24h": null,
-      "temp": 0.0
+      "observedAt": "2026-11-11T10:00:00+09:00",
+      "snow": 0,
+      "snow24h": 0,
+      "temp": 2.9
     },
     "35426": {
       "name": "山形",
       "alt": 153,
-      "observedAt": "2026-11-11T01:50:00+09:00",
-      "snow": null,
-      "snow24h": null,
-      "temp": 2.6
+      "observedAt": "2026-11-11T10:00:00+09:00",
+      "snow": 0,
+      "snow24h": 0,
+      "temp": null
     },
     "31482": {
       "name": "酸ケ湯",
       "alt": 890,
-      "observedAt": "2026-11-11T01:50:00+09:00",
-      "snow": null,
-      "snow24h": null,
-      "temp": -4.8
+      "observedAt": "2026-11-11T10:00:00+09:00",
+      "snow": 21,
+      "snow24h": 1,
+      "temp": -3.5
     },
     "48141": {
       "name": "白馬",
       "alt": 703,
-      "observedAt": "2026-11-11T01:50:00+09:00",
-      "snow": null,
-      "snow24h": null,
-      "temp": 1.1
+      "observedAt": "2026-11-11T10:00:00+09:00",
+      "snow": 0,
+      "snow24h": 0,
+      "temp": 5.9
     },
     "48097": {
       "name": "小谷",
       "alt": 550,
-      "observedAt": "2026-11-11T01:50:00+09:00",
-      "snow": null,
-      "snow24h": null,
+      "observedAt": "2026-11-11T10:00:00+09:00",
+      "snow": 0,
+      "snow24h": 0,
       "temp": null
     },
     "48031": {
       "name": "野沢温泉",
       "alt": 576,
-      "observedAt": "2026-11-11T01:50:00+09:00",
-      "snow": null,
-      "snow24h": null,
-      "temp": 3.0
+      "observedAt": "2026-11-11T10:00:00+09:00",
+      "snow": 0,
+      "snow24h": 0,
+      "temp": 4.4
     },
     "42121": {
       "name": "草津",
       "alt": 1223,
-      "observedAt": "2026-11-11T01:50:00+09:00",
-      "snow": null,
-      "snow24h": null,
-      "temp": 0.3
+      "observedAt": "2026-11-11T10:00:00+09:00",
+      "snow": 0,
+      "snow24h": 0,
+      "temp": 4.0
     },
     "48066": {
       "name": "飯山",
       "alt": 313,
-      "observedAt": "2026-11-11T01:50:00+09:00",
-      "snow": null,
-      "snow24h": null,
-      "temp": 3.2
+      "observedAt": "2026-11-11T10:00:00+09:00",
+      "snow": 0,
+      "snow24h": 0,
+      "temp": 7.1
     },
     "48331": {
       "name": "軽井沢",
       "alt": 999,
-      "observedAt": "2026-11-11T01:50:00+09:00",
-      "snow": null,
-      "snow24h": null,
-      "temp": 0.4
+      "observedAt": "2026-11-11T10:00:00+09:00",
+      "snow": 0,
+      "snow24h": 0,
+      "temp": 4.3
     },
     "54816": {
       "name": "関山",
       "alt": 350,
-      "observedAt": "2026-11-11T01:50:00+09:00",
-      "snow": null,
-      "snow24h": null,
-      "temp": 4.1
+      "observedAt": "2026-11-11T10:00:00+09:00",
+      "snow": 0,
+      "snow24h": 0,
+      "temp": 8.1
     },
     "54841": {
       "name": "湯沢",
       "alt": 340,
-      "observedAt": "2026-11-11T01:50:00+09:00",
-      "snow": null,
-      "snow24h": null,
-      "temp": 3.5
+      "observedAt": "2026-11-11T10:00:00+09:00",
+      "snow": 0,
+      "snow24h": 0,
+      "temp": 6.3
     }
   },
   "headline": {
-    "text": "各觀測站目前還沒有積雪紀錄"
+    "text": "過去 24 小時降雪最多：小樽 4 cm",
+    "stationCode": "16091"
   },
-  "season": false
+  "season": true
 }
