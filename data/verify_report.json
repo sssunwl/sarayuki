@@ -1,28 +1,28 @@
 {
-  "generated": "2026-11-10T19:44:08+09:00",
+  "generated": "2026-11-11T19:15:57+09:00",
   "checked": [
-    "appi",
-    "zao",
-    "hakkoda",
-    "happo",
-    "niseko",
-    "rusutsu"
+    "hakuba47",
+    "tsugaike",
+    "cortina",
+    "nozawa",
+    "kiroro",
+    "teine"
   ],
   "last_checked": {
     "niseko": "2026-11-10T19:44:08+09:00",
     "rusutsu": "2026-11-10T19:44:08+09:00",
-    "kiroro": "2026-11-08T18:49:53+09:00",
-    "teine": "2026-11-08T18:49:53+09:00",
+    "kiroro": "2026-11-11T19:15:57+09:00",
+    "teine": "2026-11-11T19:15:57+09:00",
     "furano": "2026-11-09T19:51:53+09:00",
     "tomamu": "2026-11-09T19:51:53+09:00",
     "appi": "2026-11-10T19:44:08+09:00",
     "zao": "2026-11-10T19:44:08+09:00",
     "hakkoda": "2026-11-10T19:44:08+09:00",
     "happo": "2026-11-10T19:44:08+09:00",
-    "hakuba47": "2026-11-07T18:35:04+09:00",
-    "tsugaike": "2026-11-07T18:35:04+09:00",
-    "cortina": "2026-11-07T18:35:04+09:00",
-    "nozawa": "2026-11-07T18:35:04+09:00",
+    "hakuba47": "2026-11-11T19:15:57+09:00",
+    "tsugaike": "2026-11-11T19:15:57+09:00",
+    "cortina": "2026-11-11T19:15:57+09:00",
+    "nozawa": "2026-11-11T19:15:57+09:00",
     "shiga": "2026-11-08T18:49:53+09:00",
     "madarao": "2026-11-08T18:49:53+09:00",
     "karuizawa": "2026-11-08T18:49:53+09:00",
@@ -179,7 +179,7 @@
     },
     {
       "id": "kiroro",
-      "status": "unverified",
+      "status": "red",
       "url_check": {
         "code": 200,
         "final_url": "https://www.kiroro.co.jp/"
@@ -194,61 +194,32 @@
             3,
             4
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
-          "sources": []
-        },
-        {
-          "field": "peak",
-          "current": [
+          "suggested": [
+            11,
+            12,
             1,
-            2
+            2,
+            3,
+            4,
+            5
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
-          "sources": []
+          "severity": "red",
+          "note": "2026-2027雪季營業期間為2026年11月28日至2027年5月5日。",
+          "sources": [
+            "https://hapisnow.jp/snowresort/kiroro-snowworld/?info=theme",
+            "https://yukiroro.com/ja/access"
+          ]
         },
         {
           "field": "access",
           "current": "札幌市區約 1.5 小時、新千歲機場約 2 小時",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
-          "sources": []
-        },
-        {
-          "field": "accessMin",
-          "current": 90,
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
-          "sources": []
-        },
-        {
-          "field": "name",
-          "current": "喜樂樂 Kiroro",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
-          "sources": []
-        },
-        {
-          "field": "nameJa",
-          "current": "キロロリゾート",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
-          "sources": []
-        },
-        {
-          "field": "place",
-          "current": "北海道・赤井川村",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
-          "sources": []
+          "suggested": "札幌市區約 100 分鐘 (接駁巴士)",
+          "severity": "yellow",
+          "note": "從札幌車站搭乘接駁巴士至Yu Kiroro約需100分鐘。",
+          "sources": [
+            "https://hapisnow.jp/snowresort/kiroro-snowworld/?info=theme",
+            "https://yukiroro.com/ja/access"
+          ]
         }
       ]
     },
@@ -278,33 +249,17 @@
             5
           ],
           "severity": "red",
-          "note": "根據2026-2027雪季官方資訊，雪場預計於11月21日開放至隔年5月5日。",
+          "note": "2026-2027雪季預計營業期間為2026年11月21日或22日至2027年5月5日。",
           "sources": [
-            "https://www.fuyuski.co/en/blog/teine-ski-guide",
             "https://www.skiing-hokkaido.com/ja/resorts/sapporo-teine/",
-            "https://www.snowjapan.com/ski-areas-in-japan/hokkaido/sapporo-city/sapporo-teine",
-            "https://nl-hokkaido.com/guides/hokkaido-ski-season",
-            "https://hokkaido-campingcar.jp/en/hokkaido-ski-resort-opening-dates-2026-en/",
-            "https://sapporo.8agarage.co.jp/teine-ski-open-20261121/",
-            "https://watabi.org/articles/sapporo-teine-ski-guide",
-            "https://www.japan.travel/en/spot/1915/",
-            "https://sapporo-teine.com/snow/lang/en/access/",
-            "https://www.orion-tour.co.jp/air/fair/hokkaido/ski/gelande/teine/",
-            "https://onedayawaytravel.com/how-to-get-to-sapporo-teine-ski-resort/",
-            "https://www.powderhounds.com/Japan/Hokkaido/Sapporo-Teine/Getting-There.aspx",
-            "https://www.ski-ichiba.jp/navi/article/109/",
+            "https://www.travel.co.jp/senmon/jpn_ski/go0030_e1w1/%E3%82%B5%E3%83%83%E3%83%9D%E3%83%AD%E3%83%86%E3%82%A4%E3%83%8D/",
+            "https://hokkaido-michi-navi.com/sapporo-teine-access/",
+            "https://www.tabirai.net/sightseeing/hokkaido/info/useful/gelande-sapporo-teine.aspx",
+            "https://surfsnow.jp/article/ski-snowboard/detail/sapporo001/",
             "https://sapporo-teine.com/snow/access/other",
-            "https://sapporo-teine.com/snow/news/30497",
-            "https://sapporo-teine.com/snow/news/31210",
-            "https://www.sapporo-teine.com/",
+            "https://watabi.org/articles/sapporo-teine-ski-guide",
             "https://sapporo-teine.com/snow/",
-            "https://sapporo-teine.com/snow/contact",
-            "https://kamori.co.jp/kamori_group/teine",
-            "https://ja.wikipedia.org/wiki/%E6%89%8B%E7%A8%B2%E5%8C%BA",
-            "https://minchizu.jp/hokkaido/s-teine.html",
-            "https://map-it.azurewebsites.net/Map/%E5%8C%97%E6%B5%B7%E9%81%93_%E7%9F%B3%E7%8B%A9%E6%8C%AF%E8%88%88%E5%B1%80_%E6%9C%AD%E5%B9%8C%E5%B8%82_%E6%89%8B%E7%A8%B2%E5%8C%BA/kiwi?maplang=_",
-            "https://www.city.sapporo.jp/shimin/koseki/jukyo-hyoji/genchomei/genchomei-teine.html",
-            "https://www.city.sapporo.jp/kankobunka/maibun/toriatukai/map/houzouti-address-search10-teineku.html"
+            "https://h-sakudo.jp/facility/028/"
           ]
         }
       ]
@@ -715,23 +670,74 @@
             5
           ],
           "severity": "red",
-          "note": "白馬五竜預計於2026年11月21日開放，而Hakuba47通常在11月底至12月初開放，兩者皆計劃營運至5月初。",
+          "note": "Hakuba 47 and Hakuba Goryu are scheduled to operate from late November 2026 until May 5, 2027.",
           "sources": [
             "https://www.snowjapan.com/ski-areas-in-japan/nagano-prefecture/hakuba-village/hakuba-47-winter-sports-park",
+            "https://www.snownavi.com/en/topics/news_26100101en",
             "https://japanskiexperience.com/blog/hakuba-ski-resort-opening-dates/",
-            "https://www.snownavi.com/topics/news_26100101",
-            "https://where-to-ski.com/ski-resorts/japan/hakuba-47/",
-            "https://www.okami-villa.com/2026/10/26/%E7%99%BD%E9%A6%AC%E6%9D%91%E3%81%AE%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4%E3%80%812026-2027%E3%82%B7%E3%83%BC%E3%82%BA%E3%83%B3%E3%81%AF%E3%81%84%E3%81%A4%E9%A0%83%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3/",
-            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHeTfSfyfDtPAbB-9cg8zTblvy_oJY4Wj73LDKMiP8058zcwAMNbrkr7EaHHExUEpKat9tE1MG9jMaGUecRAqek4ZqUdNIMGzsnblR-6e-StKr0q5R0G-mQnAVpzOu_9amF95HQMyZBgpBCJEI-OierUJw3JqhMxxVRCcM8qVsiZEEYSSOcbjhqTtunAVDZLxWboxDnBbBKqSLUJWsTj1mhHDhLmYT0BTdPU6GH-AqABMWH8hkw93k-ehTFhjNS6VTAUmxGf3Gmj3XMTaieQIRxs8mw0wYBE93XHiwbZHkOQDiMQHPtatn4OW9GFenqQ_hDIiEbuxPoFFsw0Yomh3ZO_eoW_jT5LH-AyKpMoLk=",
-            "https://hakubahub.com/blog/hakuba-ski-season-2026-27-opening-dates",
-            "https://japanskiexperience.com/blog/japan-ski-resort-opening-dates/"
+            "https://hakuba47.co.jp/en/getting-here/",
+            "https://www.hakuba47.co.jp/season/summer/",
+            "https://thehakubacollection.com/hakuba/access/nagano-to-hakuba",
+            "https://visit-nagano.alpico.co.jp/timetable/hakuba-nagano-green",
+            "https://kuri-board.jp/en-snowliner-nagano/",
+            "https://jamjamliner.jp/nagano_ski/?SEARCH_ARR=158&SEARCH_YEAR=&SEARCH_MONTH=&SEARCH_DAY=",
+            "https://kuri-board.jp/tw-snowliner-nagano-hakuba/",
+            "https://www.hakubagoryu.jp/en/?season=winter",
+            "https://goryu47.com/en/",
+            "https://www.hakuba.com/resorts/hakuba-47/",
+            "https://hakuba.com/resorts/goryu/",
+            "https://snowresortjapan.com/course/47-2/",
+            "https://www.powderhounds.com/Japan/Honshu/Goryu.aspx",
+            "https://hakuba47.co.jp/en/season-pass/",
+            "https://www.hakuba.com/zh/resorts/hakuba-47/",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFewXC5IY4pwuR-ZiHRsozjEjjaZc8bdv654Zb89INBI7AN98SaTqU4gI910XpzcC9OfJlLnDVtk-t5y7slSaQBG-AjaCTca_P513c3AEdmKBtgka3piFoFuVYcHnUsfUd0L1gV2WrZDno=",
+            "https://pitchbook.com/profiles/company/740889-37",
+            "https://travel.gaijinpot.com/hakuba-goryu-snow-resort/"
+          ]
+        },
+        {
+          "field": "peak",
+          "current": [
+            1,
+            2
+          ],
+          "suggested": [
+            12,
+            1,
+            2,
+            3
+          ],
+          "severity": "yellow",
+          "note": "The peak season for lift tickets covering Hakuba 47 and Hakuba Goryu is from December 16, 2026, until March 14, 2027.",
+          "sources": [
+            "https://www.snowjapan.com/ski-areas-in-japan/nagano-prefecture/hakuba-village/hakuba-47-winter-sports-park",
+            "https://www.snownavi.com/en/topics/news_26100101en",
+            "https://japanskiexperience.com/blog/hakuba-ski-resort-opening-dates/",
+            "https://hakuba47.co.jp/en/getting-here/",
+            "https://www.hakuba47.co.jp/season/summer/",
+            "https://thehakubacollection.com/hakuba/access/nagano-to-hakuba",
+            "https://visit-nagano.alpico.co.jp/timetable/hakuba-nagano-green",
+            "https://kuri-board.jp/en-snowliner-nagano/",
+            "https://jamjamliner.jp/nagano_ski/?SEARCH_ARR=158&SEARCH_YEAR=&SEARCH_MONTH=&SEARCH_DAY=",
+            "https://kuri-board.jp/tw-snowliner-nagano-hakuba/",
+            "https://www.hakubagoryu.jp/en/?season=winter",
+            "https://goryu47.com/en/",
+            "https://www.hakuba.com/resorts/hakuba-47/",
+            "https://hakuba.com/resorts/goryu/",
+            "https://snowresortjapan.com/course/47-2/",
+            "https://www.powderhounds.com/Japan/Honshu/Goryu.aspx",
+            "https://hakuba47.co.jp/en/season-pass/",
+            "https://www.hakuba.com/zh/resorts/hakuba-47/",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFewXC5IY4pwuR-ZiHRsozjEjjaZc8bdv654Zb89INBI7AN98SaTqU4gI910XpzcC9OfJlLnDVtk-t5y7slSaQBG-AjaCTca_P513c3AEdmKBtgka3piFoFuVYcHnUsfUd0L1gV2WrZDno=",
+            "https://pitchbook.com/profiles/company/740889-37",
+            "https://travel.gaijinpot.com/hakuba-goryu-snow-resort/"
           ]
         }
       ]
     },
     {
       "id": "tsugaike",
-      "status": "unverified",
+      "status": "yellow",
       "url_check": {
         "code": 200,
         "final_url": "https://www.tsugaike.gr.jp/"
@@ -746,61 +752,57 @@
             3,
             4
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "peak",
-          "current": [
+          "suggested": [
+            12,
             1,
-            2
+            2,
+            3,
+            4,
+            5
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "severity": "yellow",
+          "note": "2026-2027雪季預計營業期間為2026年12月1日至2027年5月5日。",
+          "sources": [
+            "https://snow.japanvoyage.jp/guides/when-does-japan-ski-season-start-2026-2027-guide",
+            "https://japowguides.com/resorts/tsugaike",
+            "https://japan-skiguide.com/guide/htm/r0144ens.htm?ref=jtr",
+            "https://www.haveagood-holiday.com/en/articles/tsugaike-mountain-resort-winter-2026-27-opening",
+            "https://www.tsugaike.gr.jp/archives/19253",
+            "https://www.nippon-ski.jp/uploads/2026-10-16_tsugaike_season_open.pdf",
+            "https://surfsnow.jp/guide/htm/r0144s.htm",
+            "https://www.snowjapan.com/ski-areas-in-japan/nagano-prefecture/otari-village/tsugaike-mountain-resort",
+            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00178442&arrival=00083390&line=00053370",
+            "https://www.navitime.co.jp/transfer/searchlist?orvStationCode=00178442&dnvStationCode=00083390&defaultCondition=0",
+            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00083390&arrival=00178442&line=00053370",
+            "https://www.alpico.co.jp/traffic/express/nagano_hakuba/",
+            "https://www.tsugaike.gr.jp/",
+            "https://www.tsugaike.gr.jp/green",
+            "https://www.tsugaike.gr.jp/snow/gelande"
+          ]
         },
         {
           "field": "access",
           "current": "長野站巴士約 80 分",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "accessMin",
-          "current": 80,
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "name",
-          "current": "白馬栂池高原 Tsugaike",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "nameJa",
-          "current": "白馬つがいけマウンテンリゾート",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "place",
-          "current": "長野・小谷村",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "suggested": "長野站巴士約 95 分",
+          "severity": "yellow",
+          "note": "從長野站東口搭乘Alpico特急巴士至栂池高原，車程約92-105分鐘。",
+          "sources": [
+            "https://snow.japanvoyage.jp/guides/when-does-japan-ski-season-start-2026-2027-guide",
+            "https://japowguides.com/resorts/tsugaike",
+            "https://japan-skiguide.com/guide/htm/r0144ens.htm?ref=jtr",
+            "https://www.haveagood-holiday.com/en/articles/tsugaike-mountain-resort-winter-2026-27-opening",
+            "https://www.tsugaike.gr.jp/archives/19253",
+            "https://www.nippon-ski.jp/uploads/2026-10-16_tsugaike_season_open.pdf",
+            "https://surfsnow.jp/guide/htm/r0144s.htm",
+            "https://www.snowjapan.com/ski-areas-in-japan/nagano-prefecture/otari-village/tsugaike-mountain-resort",
+            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00178442&arrival=00083390&line=00053370",
+            "https://www.navitime.co.jp/transfer/searchlist?orvStationCode=00178442&dnvStationCode=00083390&defaultCondition=0",
+            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00083390&arrival=00178442&line=00053370",
+            "https://www.alpico.co.jp/traffic/express/nagano_hakuba/",
+            "https://www.tsugaike.gr.jp/",
+            "https://www.tsugaike.gr.jp/green",
+            "https://www.tsugaike.gr.jp/snow/gelande"
+          ]
         }
       ]
     },
@@ -837,27 +839,59 @@
             3
           ],
           "severity": "yellow",
-          "note": "2026-2027雪季營業期間為2026年12月12日至2027年3月29日。",
+          "note": "2026-2027雪季預計營業期間為2026年12月12日至2027年3月29日。",
           "sources": [
-            "https://surfsnow.jp/guide/htm/r0033s.htm",
-            "https://www.snownavi.co.jp/news/news-4159",
+            "https://senconcierge.com/en/hakuba-cortina-ski-guide/",
+            "https://japanskiexperience.com/blog/hakuba-ski-resort-opening-dates/",
+            "https://surfsnow.jp/guide/htm/r0033m.htm",
             "https://hapisnow.jp/snowresort/hakuba-cortina/?info=theme",
+            "https://www.snownavi.co.jp/news/news-4159",
+            "https://hapisnow.jp/snowresort/hakuba-cortina/",
             "https://bus-tabi.net/pref/nagano/nagano-hakubacortinasnowresort/",
-            "https://www.alpico.co.jp/traffic/express/nagano_hakuba/"
+            "https://www.alpico.co.jp/traffic/express/nagano_hakuba/",
+            "https://www.google.com/search?q=time+in+%E5%8C%97%E5%AE%89%E6%9B%87%E9%83%A1,+JP",
+            "https://www.expedia.com/Nagano-Hotels-Hotel-Green-Plaza-Hakuba.h5271776.Hotel-Information",
+            "https://www.powderhounds.com/Japan/Honshu/Hakuba/Accommodation/Hotel-Green-Plaza-Hakuba.aspx"
           ]
         },
         {
           "field": "access",
           "current": "長野站巴士約 90 分",
-          "suggested": "長野站巴士約 110 分",
+          "suggested": "長野站巴士約 110 分 (アルピコ交通)",
           "severity": "yellow",
-          "note": "從長野站搭乘Alpico交通特急巴士至白馬コルチナ巴士站約需1小時50分（110分鐘）。",
+          "note": "從長野站東口搭乘アルピコ交通特急巴士至白馬コルチナ巴士站約1小時50分鐘 (110分鐘)。",
           "sources": [
-            "https://surfsnow.jp/guide/htm/r0033s.htm",
-            "https://www.snownavi.co.jp/news/news-4159",
+            "https://senconcierge.com/en/hakuba-cortina-ski-guide/",
+            "https://japanskiexperience.com/blog/hakuba-ski-resort-opening-dates/",
+            "https://surfsnow.jp/guide/htm/r0033m.htm",
             "https://hapisnow.jp/snowresort/hakuba-cortina/?info=theme",
+            "https://www.snownavi.co.jp/news/news-4159",
+            "https://hapisnow.jp/snowresort/hakuba-cortina/",
             "https://bus-tabi.net/pref/nagano/nagano-hakubacortinasnowresort/",
-            "https://www.alpico.co.jp/traffic/express/nagano_hakuba/"
+            "https://www.alpico.co.jp/traffic/express/nagano_hakuba/",
+            "https://www.google.com/search?q=time+in+%E5%8C%97%E5%AE%89%E6%9B%87%E9%83%A1,+JP",
+            "https://www.expedia.com/Nagano-Hotels-Hotel-Green-Plaza-Hakuba.h5271776.Hotel-Information",
+            "https://www.powderhounds.com/Japan/Honshu/Hakuba/Accommodation/Hotel-Green-Plaza-Hakuba.aspx"
+          ]
+        },
+        {
+          "field": "nameJa",
+          "current": "白馬コルチナ",
+          "suggested": "白馬コルチナスキー場",
+          "severity": "red",
+          "note": "官方日文名稱為「白馬コルチナスキー場」。",
+          "sources": [
+            "https://senconcierge.com/en/hakuba-cortina-ski-guide/",
+            "https://japanskiexperience.com/blog/hakuba-ski-resort-opening-dates/",
+            "https://surfsnow.jp/guide/htm/r0033m.htm",
+            "https://hapisnow.jp/snowresort/hakuba-cortina/?info=theme",
+            "https://www.snownavi.co.jp/news/news-4159",
+            "https://hapisnow.jp/snowresort/hakuba-cortina/",
+            "https://bus-tabi.net/pref/nagano/nagano-hakubacortinasnowresort/",
+            "https://www.alpico.co.jp/traffic/express/nagano_hakuba/",
+            "https://www.google.com/search?q=time+in+%E5%8C%97%E5%AE%89%E6%9B%87%E9%83%A1,+JP",
+            "https://www.expedia.com/Nagano-Hotels-Hotel-Green-Plaza-Hakuba.h5271776.Hotel-Information",
+            "https://www.powderhounds.com/Japan/Honshu/Hakuba/Accommodation/Hotel-Green-Plaza-Hakuba.aspx"
           ]
         }
       ]
