@@ -1,20 +1,20 @@
 {
-  "generated": "2026-11-11T19:15:57+09:00",
+  "generated": "2026-11-12T19:36:58+09:00",
   "checked": [
-    "hakuba47",
-    "tsugaike",
-    "cortina",
-    "nozawa",
-    "kiroro",
-    "teine"
+    "shiga",
+    "madarao",
+    "karuizawa",
+    "akakura",
+    "furano",
+    "tomamu"
   ],
   "last_checked": {
     "niseko": "2026-11-10T19:44:08+09:00",
     "rusutsu": "2026-11-10T19:44:08+09:00",
     "kiroro": "2026-11-11T19:15:57+09:00",
     "teine": "2026-11-11T19:15:57+09:00",
-    "furano": "2026-11-09T19:51:53+09:00",
-    "tomamu": "2026-11-09T19:51:53+09:00",
+    "furano": "2026-11-12T19:36:58+09:00",
+    "tomamu": "2026-11-12T19:36:58+09:00",
     "appi": "2026-11-10T19:44:08+09:00",
     "zao": "2026-11-10T19:44:08+09:00",
     "hakkoda": "2026-11-10T19:44:08+09:00",
@@ -23,10 +23,10 @@
     "tsugaike": "2026-11-11T19:15:57+09:00",
     "cortina": "2026-11-11T19:15:57+09:00",
     "nozawa": "2026-11-11T19:15:57+09:00",
-    "shiga": "2026-11-08T18:49:53+09:00",
-    "madarao": "2026-11-08T18:49:53+09:00",
-    "karuizawa": "2026-11-08T18:49:53+09:00",
-    "akakura": "2026-11-08T18:49:53+09:00",
+    "shiga": "2026-11-12T19:36:58+09:00",
+    "madarao": "2026-11-12T19:36:58+09:00",
+    "karuizawa": "2026-11-12T19:36:58+09:00",
+    "akakura": "2026-11-12T19:36:58+09:00",
     "arai": "2026-11-09T19:51:53+09:00",
     "gala": "2026-11-09T19:51:53+09:00",
     "naeba": "2026-11-09T19:51:53+09:00",
@@ -291,19 +291,17 @@
             5
           ],
           "severity": "red",
-          "note": "富良野スキー場2026-2027雪季預計從2026年11月28日開放至2027年5月5日。",
+          "note": "富良野區預計從11月下旬營業至5月上旬，北之峰區預計從12月下旬營業至3月下旬。綜合考量，實際營業月份為11月至5月。",
           "sources": [
+            "https://www.skiing-hokkaido.com/ja/resorts/furano-ski-resort/",
             "https://www.princehotels.co.jp/ski/furano/2026.2027_sk_iresorts_infor/",
-            "https://www.princehotels.co.jp/ski/furano/winter/?id=314",
-            "https://www.princehotels.co.jp/ski/furano/",
-            "https://japanskiexperience.com/blog/furano-ski-resort-opening-dates/",
-            "https://en.wikipedia.org/wiki/Furano_Ski_Resort",
-            "https://japantravel.navitime.com/en/area/jp/depArrTimeList/00510092/00060619/00061850?direction=down",
-            "https://airportski.com/routes/asahikawa-airport-to-furano-ski-resort",
+            "https://hapisnow.jp/snowresort/furano/",
+            "https://travel.yahoo.co.jp/kanko/spot-00002531/",
+            "https://www.princehotels.co.jp/ski/furano/winter/access/",
+            "https://bus-tabi.net/pref/hokkaido/hokkaido-furanoskiresort/",
             "https://www.seibuprince.com/ja/furano-ski-resort",
-            "https://japan-skiguide.com/guide/htm/r0118ens.htm",
-            "https://hapisnow.jp/snowresort/furano/?info=theme",
-            "https://snowlife.hk/en/resort/furano-ski-resort"
+            "https://www.princehotels.co.jp/ski/furano/winter/?id=314",
+            "https://www.furanotourism.com/jp/bigkey/ski/"
           ]
         }
       ]
@@ -332,18 +330,12 @@
             4
           ],
           "severity": "yellow",
-          "note": "2026-2027雪季預計營業期間為2026年12月1日至2027年4月5日。",
+          "note": "根據官方資訊，2026-2027雪季營業期間為12月1日至4月5日。",
           "sources": [
+            "https://hapisnow.jp/snowresort/hoshino-resort-tomamu/",
             "https://surfsnow.jp/guide/htm/r0274s.htm",
-            "https://www.knt.co.jp/yado/sp/hoshinoresorts_tomamu_ski/",
-            "https://skii-navi.com/ski/tomamu/",
-            "https://hoshinoresorts.com/jp/cards/ygos6zueaat/",
-            "https://hoshinoresorts.com/jp/cards/7qi2aobsry/",
-            "https://www.nta.co.jp/dp-yado/hotels/1302-102/detail",
-            "https://hoshinoresorts.com/ja/hotels/tomamuthetower/access/",
-            "https://www.snowtomamu.jp/winter/access/",
-            "https://www.snowtomamu.jp/winter/ski/",
-            "https://www.visit-hokkaido.jp/spot/detail_10175.html"
+            "https://www.jalan.net/kankou/spt_guide000000188577/",
+            "https://hoshinoresorts.com/jp/information/cxaa81x7g3/"
           ]
         }
       ]
@@ -973,7 +965,7 @@
     },
     {
       "id": "shiga",
-      "status": "red",
+      "status": "yellow",
       "url_check": {
         "code": 200,
         "final_url": "https://www.shigakogen-ski.or.jp/"
@@ -989,7 +981,6 @@
             4
           ],
           "suggested": [
-            11,
             12,
             1,
             2,
@@ -997,26 +988,26 @@
             4,
             5
           ],
-          "severity": "red",
-          "note": "2026-2027雪季共通雪票營業期間為12月5日至5月5日，部分區域如橫手山和熊之湯預計11月14日開放，因此實際營業月份包含11月和5月。",
+          "severity": "yellow",
+          "note": "2026-2027雪季官方營業期間為2026年12月5日至2027年5月5日。",
           "sources": [
-            "https://snow.japanvoyage.jp/guides/when-does-japan-ski-season-start-2026-2027-guide",
             "https://thestandardjapan.com/ja/travel/shiga-kogen-ski-guide",
-            "https://www.shigakogen.gr.jp/english/topics/faq-for-winter-season-bookings.html",
-            "https://www.japan-guide.com/e/e6026.html",
             "https://shigakogen-ski.or.jp/winter/news/2026/11/2026-2027.html",
-            "https://www.snowjapan.com/news/2026-2027-season-early-ski-area-openings",
-            "https://www.shigakogen.gr.jp/english/topics/winter-bus-access.html",
-            "https://shigakogenhub.com/blog/nagano-to-shiga-kogen-bus-schedule",
-            "https://shigakogenhub.com/blog/nagano-station-to-shiga-kogen-bus-winter-2026-27",
-            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00178442&arrival=00455799&line=00073220",
-            "https://www.shigakogen.gr.jp/",
-            "https://shigakogen-ski.or.jp/",
-            "https://ja.wikipedia.org/wiki/%E5%BF%97%E8%B3%80%E9%AB%98%E5%8E%9F%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4",
             "https://db.go-nagano.net/topics_detail6/id=16961",
-            "https://japan-skiguide.com/guides/htm/r0130ens.htm",
+            "https://www.shigakogen.gr.jp/winter/index.html",
+            "https://www.youtube.com/watch?v=VC1KurWY1-k",
+            "https://steep.jp/mountain/3471/",
+            "https://www.shigakogen.gr.jp/news/summer-bus.html",
+            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00178442&arrival=00455799&line=00073220",
+            "https://yamanouchi.com/ja/destinations/shiga-kogen/",
+            "https://www.shigakogen.gr.jp/news/winter-bus.html",
+            "https://www.shigakogen.gr.jp/area/index.html",
+            "https://kanko-zukan.com/kanko/9012156/",
+            "https://shigakogen-ski.or.jp/",
+            "https://www.shigakogen.gr.jp/",
             "https://www.shinkin.co.jp/sk-matching/exhibitor/detail/?cid=184",
-            "https://en.wikipedia.org/wiki/Shiga_Highlands"
+            "https://ja.wikipedia.org/wiki/%E5%BF%97%E8%B3%80%E9%AB%98%E5%8E%9F%E3%83%AA%E3%82%BE%E3%83%BC%E3%83%88%E9%96%8B%E7%99%BA",
+            "https://www.jalan.net/kankou/spt_20561ca3470058051/"
           ]
         }
       ]
@@ -1114,7 +1105,7 @@
           ],
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
         },
         {
@@ -1125,7 +1116,7 @@
           ],
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
         },
         {
@@ -1133,7 +1124,7 @@
           "current": "輕井澤站步行約 10 分（東京→輕井澤 北陸新幹線約 1 小時）",
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
         },
         {
@@ -1141,7 +1132,7 @@
           "current": 70,
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
         },
         {
@@ -1149,7 +1140,7 @@
           "current": "輕井澤王子 Karuizawa Prince",
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
         },
         {
@@ -1157,7 +1148,7 @@
           "current": "軽井沢プリンスホテルスキー場",
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
         },
         {
@@ -1165,32 +1156,19 @@
           "current": "長野・軽井沢町",
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 未正常結束（finishReason=MAX_TOKENS）",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
           "sources": []
         }
       ]
     },
     {
       "id": "akakura",
-      "status": "unverified",
+      "status": "yellow",
       "url_check": {
         "code": 200,
         "final_url": "https://akakura-ski.com/"
       },
       "findings": [
-        {
-          "field": "months",
-          "current": [
-            12,
-            1,
-            2,
-            3
-          ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
         {
           "field": "peak",
           "current": [
@@ -1199,48 +1177,26 @@
           ],
           "suggested": null,
           "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "note": "官方資料未明確指出雪況最佳月份。",
           "sources": []
         },
         {
           "field": "access",
           "current": "妙高高原站巴士約 15 分（東京→上越妙高 北陸新幹線約 2 小時）",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "accessMin",
-          "current": 40,
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "name",
-          "current": "妙高 赤倉溫泉 Akakura",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "nameJa",
-          "current": "赤倉温泉スキー場",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "place",
-          "current": "新潟・妙高市",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "suggested": "上越妙高站搭乘妙高はねうまライン至妙高高原站約 35 分，轉乘妙高市營巴士或預約制免費接駁巴士約 10-15 分",
+          "severity": "yellow",
+          "note": "調整為從 hub (上越妙高) 出發的完整交通描述。",
+          "sources": [
+            "https://www.navitime.co.jp/transfer/searchlist?orvStationCode=00009136&dnvStationCode=00008557&defaultCondition=0",
+            "https://www.jorudan.co.jp/time/to/%E4%B8%8A%E8%B6%8A%E5%A6%99%E9%AB%98_%E5%A6%99%E9%AB%98%E9%AB%98%E5%8E%9F/?r=%E5%A6%99%E9%AB%98%E3%81%AF%E3%81%AD%E3%81%86%E3%81%BE%E3%83%A9%E3%82%A4%E3%83%B3",
+            "https://www.navitime.co.jp/diagram/depArrTimeList?departure=00009136&arrival=00008557&line=00001233&updown=0",
+            "https://www.jorudan.co.jp/bus/rosen/timetable/%E5%A6%99%E9%AB%98%E9%AB%98%E5%8E%9F%E9%A7%85%E3%80%94%E5%A6%99%E9%AB%98%E5%B8%82%E5%B8%82%E5%96%B6%E3%83%90%E3%82%B9%E3%80%95/%E8%B5%A4%E5%80%89%E7%B7%9A/%E6%96%B0%E6%97%A5%E6%9C%AC%E9%9B%BB%E5%B7%A5%E5%89%8D/",
+            "https://rurubu.jp/andmore/spot/80015195",
+            "https://niigata-kankou.or.jp/spot/detail_10670.html",
+            "https://myokotourism.jp/wp-content/uploads/2023/11/Akakura-Suginosawa-timetable.pdf",
+            "https://www.ski-gelende.com/gelende/myoko/akakuraonsen/",
+            "https://akr-ski.com/wp-content/themes/akakurakanko/pdf/myoko_city_bus_akakura_line.pdf"
+          ]
         }
       ]
     },
