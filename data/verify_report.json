@@ -1,16 +1,16 @@
 {
-  "generated": "2026-11-12T19:36:58+09:00",
+  "generated": "2026-11-13T19:28:34+09:00",
   "checked": [
-    "shiga",
-    "madarao",
-    "karuizawa",
-    "akakura",
-    "furano",
-    "tomamu"
+    "arai",
+    "gala",
+    "naeba",
+    "kagura",
+    "niseko",
+    "rusutsu"
   ],
   "last_checked": {
-    "niseko": "2026-11-10T19:44:08+09:00",
-    "rusutsu": "2026-11-10T19:44:08+09:00",
+    "niseko": "2026-11-13T19:28:34+09:00",
+    "rusutsu": "2026-11-13T19:28:34+09:00",
     "kiroro": "2026-11-11T19:15:57+09:00",
     "teine": "2026-11-11T19:15:57+09:00",
     "furano": "2026-11-12T19:36:58+09:00",
@@ -27,10 +27,10 @@
     "madarao": "2026-11-12T19:36:58+09:00",
     "karuizawa": "2026-11-12T19:36:58+09:00",
     "akakura": "2026-11-12T19:36:58+09:00",
-    "arai": "2026-11-09T19:51:53+09:00",
-    "gala": "2026-11-09T19:51:53+09:00",
-    "naeba": "2026-11-09T19:51:53+09:00",
-    "kagura": "2026-11-09T19:51:53+09:00"
+    "arai": "2026-11-13T19:28:34+09:00",
+    "gala": "2026-11-13T19:28:34+09:00",
+    "naeba": "2026-11-13T19:28:34+09:00",
+    "kagura": "2026-11-13T19:28:34+09:00"
   },
   "results": [
     {
@@ -134,45 +134,18 @@
             3
           ],
           "severity": "yellow",
-          "note": "2026-2027冬季營業期間為2026年11月28日至2027年3月31日。",
+          "note": "根據官方資訊，2026-2027雪季預計從11月28日開始營運至3月31日。",
           "sources": [
-            "https://www.skiing-hokkaido.com/resorts/rusutsu-resort/",
-            "https://japan-skiguide.com/guide/htm/r0331ens.htm",
-            "https://www.snowjapan.com/ski-areas-in-japan/hokkaido/rusutsu-village/rusutsu-resort",
-            "https://surfsnow.jp/guide/htm/r0331pu.htm",
-            "https://japanskiexperience.com/blog/japan-ski-resort-opening-dates/",
-            "https://www.japan-guide.com/e/e6715.html",
-            "https://rusutsu.com/en/information/hotel-closed-period/",
-            "https://www.onthesnow.com/hokkaido/rusutsu/ski-resort",
-            "https://snowway.app/resorts/rusutsu/best-time-to-ski",
-            "https://auski.com.au/blogs/news/snowboarding-rusutsu-hokkaido",
-            "https://where-to-ski.com/ski-resorts/japan/rusutsu/best-time-to-ski/",
-            "https://rusutsu-snowboard.com/blog/best-season-hokkaido-skiresort/",
-            "https://jp.trip.com/moments/theme/poi-the-westin-rusutsu-resort-28419583-skiing-990145/",
-            "https://livejapan.com/ja/in-hokkaido/in-pref-hokkaido/in-niseko_rusutsu/article-a1000366/",
-            "https://japavista.com/en/japavista/rusutsu/guide",
-            "https://www.kkday.com/en/blog/101519/rusutsu-ski-resort",
-            "https://bigruns.com/basu_group/%E5%A4%8F%E5%AD%A3%E9%81%8B%E8%A1%8C-%E3%83%93%E3%83%83%E3%82%B0%E3%83%A9%E3%83%B3%E3%82%BA%E5%8F%B7-%E6%96%B0%E5%8D%83%E6%AD%B3%E7%A9%BA%E6%B8%AF-%E3%83%AB%E3%82%B9%E3%83%84%E3%83%AA",
-            "https://www.marriott.com/ja/hotels/ctswi-the-westin-rusutsu-resort/overview/",
-            "https://rusutsu.com/kamori-group/",
-            "https://rusutsu.com/en/kamori-group/",
-            "https://jl-db.nfaj.go.jp/en/location/010100256/",
-            "https://en.wikipedia.org/wiki/Rusutsu_Resort",
-            "https://kamori.co.jp/recruit/kamori_group/%E3%83%AB%E3%82%B9%E3%83%84%E3%83%AA%E3%82%BE%E3%83%BC%E3%83%88",
-            "https://oshimachi.jp/spots/66686",
-            "https://www.skiing-hokkaido.com/ja/resorts/rusutsu-resort/",
-            "https://travel.rakuten.co.jp/HOTEL/10656/CUSTOM/GW10656101006174609.html",
-            "https://www.jalan.net/yad346832/topics/entry0006768648.html",
-            "https://rusutsu.com/information/westin-closed-period/",
-            "https://rusutsu.com/news-and-topics/skipackage/",
-            "https://www.skiing-hokkaido.com/ja/article/rusutsu-resort/",
-            "https://www.ana.co.jp/domestic/theme/promo_ski/rusutsu/pdf/bus_rusutsu_2202000015_220926.pdf",
-            "https://www.clubgets.com/hokkaido_ski/rusutsu/shuttle_bus/",
-            "https://rusutsu.com/",
-            "https://rusutsu.com/news-and-topics/spring-ski-2026/",
             "https://surfsnow.jp/guide/htm/r0331s.htm",
-            "https://bigruns.com/basu_group/%E5%86%AC%E5%AD%A3%E9%81%8B%E8%A1%8C-%E3%83%93%E3%83%83%E3%82%B0%E3%83%A9%E3%83%B3%E3%82%BA%E5%8F%B7-%E6%96%B0%E5%8D%83%E6%AD%B3%E7%A9%BA%E6%B8%AF",
-            "https://www.jalan.net/yad346832/access/"
+            "https://www.skiing-hokkaido.com/ja/resorts/rusutsu-resort/",
+            "https://hapisnow.jp/snowresort/rusutsu-resort/",
+            "https://www.jalan.net/yad346832/topics/entry0006768648.html",
+            "https://www.jalan.net/kankou/spt_guide000000154486/",
+            "https://rusutsu.com/access-shuttle-bus-new-chitose-airport/",
+            "https://www.nta.co.jp/kokunai/special/eventinfo/10617329.htm",
+            "https://rusutsu.com/kamori-group/",
+            "https://rusutsu.com/",
+            "https://oshimachi.jp/spots/68295"
           ]
         }
       ]
@@ -1235,47 +1208,23 @@
             5
           ],
           "severity": "yellow",
-          "note": "根據官方資訊，2026-2027雪季預計從12月12日開放至5月9日。",
+          "note": "根據官方資訊，2026-2027 雪季營業期間為 2026 年 12 月 12 日至 2027 年 5 月 9 日。",
           "sources": [
-            "https://japowguides.com/news/arai-open-2627-en",
             "https://myokotourism.com/ski-resorts/arai-snow-resort/",
+            "https://japowguides.com/news/arai-open-2627-en",
+            "https://hapisnow.jp/snowresort/lotte-arai-resort/",
+            "https://www.snowsure.ai/resorts/lotte-arai",
+            "https://www.snowmonkeyresorts.com/access/joetsumyoko-station/",
             "https://www.lottehotel.com/arai-resort/en/facilities/shuttle-bus-service",
-            "https://www.bushikaku.net/expedition/venue/access/9440020/",
-            "https://shinkansen-ticket.com/pages/lotte-arai-resort",
-            "https://www.travel-inn.co.jp/ski/hotel-info/lottearai/",
-            "https://www.lottehotel.com/arai-resort/en",
+            "https://iko-yo.net/facilities/90549/map",
             "https://www.lottehotel.com/arai-resort/en/about/overview",
+            "https://www.lottehotel.com/arai-resort/en",
+            "https://www.lottehotel.com/arai-resort/en/snow-season",
             "https://www.lottehotel.com/arai-resort/ja/facilities/shuttle-bus-service",
             "https://www.lottehotel.com/arai-resort/ja",
-            "https://www.lottehotel.com/arai-resort/en/about/location",
-            "https://niigata-kankou.or.jp/accommodation/detail_44668.html"
-          ]
-        },
-        {
-          "field": "peak",
-          "current": [
-            1,
-            2
-          ],
-          "suggested": [
-            1,
-            2,
-            3
-          ],
-          "severity": "yellow",
-          "note": "官方資訊指出2026-2027雪季的高峰期持續到3月21日。",
-          "sources": [
-            "https://japowguides.com/news/arai-open-2627-en",
-            "https://myokotourism.com/ski-resorts/arai-snow-resort/",
-            "https://www.lottehotel.com/arai-resort/en/facilities/shuttle-bus-service",
-            "https://www.bushikaku.net/expedition/venue/access/9440020/",
-            "https://shinkansen-ticket.com/pages/lotte-arai-resort",
-            "https://www.travel-inn.co.jp/ski/hotel-info/lottearai/",
-            "https://www.lottehotel.com/arai-resort/en",
-            "https://www.lottehotel.com/arai-resort/en/about/overview",
-            "https://www.lottehotel.com/arai-resort/ja/facilities/shuttle-bus-service",
-            "https://www.lottehotel.com/arai-resort/ja",
-            "https://www.lottehotel.com/arai-resort/en/about/location",
+            "https://www.lottehotel.com/arai-resort/ja/about/location",
+            "https://www.japan.travel/en/sports/snow/top-recommendations/lotte-arai-resort/",
+            "https://www.nagano-cvb.or.jp/modules/member/page/639",
             "https://niigata-kankou.or.jp/accommodation/detail_44668.html"
           ]
         },
@@ -1284,19 +1233,23 @@
           "current": "上越妙高站巴士約 40 分",
           "suggested": "上越妙高站免費接駁巴士約 30 分 (需預約)",
           "severity": "yellow",
-          "note": "官方網站及多個來源顯示，從上越妙高站有免費接駁巴士，車程約30分鐘，且需要提前預約。",
+          "note": "Lotte Arai Resort 提供從上越妙高站西口出發的免費預約制接駁巴士，車程約 30 分鐘。",
           "sources": [
-            "https://japowguides.com/news/arai-open-2627-en",
             "https://myokotourism.com/ski-resorts/arai-snow-resort/",
+            "https://japowguides.com/news/arai-open-2627-en",
+            "https://hapisnow.jp/snowresort/lotte-arai-resort/",
+            "https://www.snowsure.ai/resorts/lotte-arai",
+            "https://www.snowmonkeyresorts.com/access/joetsumyoko-station/",
             "https://www.lottehotel.com/arai-resort/en/facilities/shuttle-bus-service",
-            "https://www.bushikaku.net/expedition/venue/access/9440020/",
-            "https://shinkansen-ticket.com/pages/lotte-arai-resort",
-            "https://www.travel-inn.co.jp/ski/hotel-info/lottearai/",
-            "https://www.lottehotel.com/arai-resort/en",
+            "https://iko-yo.net/facilities/90549/map",
             "https://www.lottehotel.com/arai-resort/en/about/overview",
+            "https://www.lottehotel.com/arai-resort/en",
+            "https://www.lottehotel.com/arai-resort/en/snow-season",
             "https://www.lottehotel.com/arai-resort/ja/facilities/shuttle-bus-service",
             "https://www.lottehotel.com/arai-resort/ja",
-            "https://www.lottehotel.com/arai-resort/en/about/location",
+            "https://www.lottehotel.com/arai-resort/ja/about/location",
+            "https://www.japan.travel/en/sports/snow/top-recommendations/lotte-arai-resort/",
+            "https://www.nagano-cvb.or.jp/modules/member/page/639",
             "https://niigata-kankou.or.jp/accommodation/detail_44668.html"
           ]
         }
@@ -1328,61 +1281,59 @@
             3,
             4
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "peak",
-          "current": [
+          "suggested": [
+            12,
             1,
-            2
+            2,
+            3,
+            4,
+            5
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "access",
-          "current": "東京站搭上越新幹線，直達 GALA 湯澤站約 75–90 分（雪季限定）",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "accessMin",
-          "current": 80,
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "name",
-          "current": "GALA 湯澤",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "nameJa",
-          "current": "ガーラ湯沢スキー場",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "place",
-          "current": "新潟・湯沢町",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "severity": "yellow",
+          "note": "GALA湯澤滑雪場2026-2027雪季預計於2026年12月19日開放滑雪，並持續至2027年5月5日。在此之前，12月12日至18日為觀光營業，不開放滑雪。",
+          "sources": [
+            "https://watabi.org/en/articles/gala-yuzawa-ski-guide",
+            "https://canyons.jp/en/news-en/blog/tokyo-to-gala-yuzawa-day-trip-guide/",
+            "https://japowguides.com/news/gala-open-2627-en",
+            "https://digitalearninglab.jp/2026/10/30/gala-yuzawa-ski-day-trip-from-tokyo-2026/",
+            "https://www.kkday.com/en/blog/102137/gala-yuzawa-guide",
+            "https://snow.japanvoyage.jp/guides/when-does-japan-ski-season-start-2026-2027-guide",
+            "https://hiddenjapan-gems.com/gala-yuzawa-guide/",
+            "https://www.japan-travel-kit.com/guides/attractions/gala-yuzawa-ski-day-trip-from-tokyo",
+            "https://todolist-japan.com/en/gala-yuzawa-ski-guide/",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWF48qyo6ot4fk4kd41VqLHY2XaA6VrkUlll0GkkmTICePjRFdkHVCJ6qB8Q62SjqT1808odfWOvCFzVEGXIbfzu99kn4aruNP3plbBBwuNFjenzoIV9tyzvB2dAhHgU9KmPjvATQ_uD-BIU3QKAM=",
+            "https://watabi.org/articles/gala-yuzawa-ski-guide",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHPHaFa0N5BFq7m7HFsF75GWRfWvdLZSFS_JJul0CS9WbfgoxhlxAhswdZmaF8CcqRyXNXHNJJXY8XLlJCQb68RC8smjb0BHMqP-9fkFbuEKZ_6qflRx-YBGXuGLgm2Haz115EeISbaOmcc_g==",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEswRy5Vm54V6hQ8HBEX_RivYV-Z3P2IPvwDAozoDdrf12Pwo9CSBC0pKKnXtvDY5S2Q1eWs6c97GuPUYmBpoy3Ya6XEkzdNKtdyZeTNP-Oh551WgWoJjgnbRy6s0CcD4KvNjs=",
+            "https://livejapan.com/ja/in-tohoku/in-pref-niigata/in-joetsu_uonuma_yuzawa/article-a0003934/",
+            "https://event.jreast.co.jp/pages/gala-yuzawa",
+            "https://todolist-japan.com/en/tokyo-to-gala-yuzawa-transportation/",
+            "https://www.jrailpass.com/blog/gala-yuzawa-shinkansen",
+            "https://shinkansen-ticket.com/pages/gala-yuzawa-snow-resort",
+            "https://www.jre-travel.com/article/00218/",
+            "https://surfsnow.jp/guide/htm/r0001m.htm",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVO-KgXlQPtnYZ4kj1bY4NPQItzAnz9NViyzwQBMfbFq4K_UCnJKeowehRnM8bRjczc6A4f9ZLWwlXu9kodSaVNHIeETXAY3PlTso9Ib8cb84lFa8mOg==",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHgn34oZh0r0yoE8mhIT7MHr118vybLZRWLvwZeCYot_DDIknJcJUUOQOZzv3-yqwTZvAMnjze-iWc8VFpYbE8rJrXGqCPp3N8laqd_Dr0DgO56SmIZ6Sqa2VXBGXc21vweSdo=",
+            "https://jp.trip.com/moments/detail/yuzawa-60538-155682788/",
+            "https://www.jalan.net/kankou/spt_15461ca3470058044/",
+            "https://jp.wamazing.com/snow/articles/48",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYI6D2IO9ZqVUfnkZ1Mub9eWmP2PeWyLZqmFhhtwCHkkf7FR6jT1mmbVIMPTjPxtIuCL7CSPFyjoUrz8pib2AGCMeWOUGsXSr4GDi_OBiDEPj8nrBI",
+            "https://www.jreast.co.jp/multi/destinations/gala.html",
+            "https://www.winterplus.jp/ski/ski_detail.cfm?skiarea_code=gala",
+            "https://numamen.com/%E3%80%90%E6%B9%AF%E6%B2%A2%E7%94%BA%E3%80%91gala%E6%B9%AF%E6%B2%A2%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4%EF%BC%81%E6%9D%B1%E4%BA%AC%E9%A7%85%E3%81%8B%E3%82%89%E6%9C%80%E9%80%9F71%E5%88%86%E3%81%A7/",
+            "https://bi-to-be.com/20231101_21490/",
+            "https://www.jreast.co.jp/en/multi/destinations/gala.html",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEg71TFvKSmA9Q1-kqEgQSMiuVg7xx_4ce0FKW19XVHN_3oc3v1ZdJ2_mNo9M13W1b14H3GMWt7JLYoQ9JDbcv__3RqqACAi9dxUXDTtL0=",
+            "https://prtimes.jp/main/html/rd/p/000000035.000115189.html",
+            "https://ja.wikipedia.org/wiki/%E3%82%AC%E3%83%BC%E3%83%A9%E6%B9%AF%E6%B2%A2%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4",
+            "https://www.e-yuzawa.gr.jp/yuzawa_snow/gala/",
+            "https://glostravel.com/ja/article/gala-yuzawa-ski",
+            "https://www.e-yuzawa.gr.jp/ski_p/gala_yuzawa_ski_resort/",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0mjxQHmQPPZE-tRoE3rO5i8MutIkic4I_DfdVnX9upADuNEKhgRbH1JaxcnIdw8jfpI8cC8yOwTiN6iAqYX8czItPD-iR8PNMRgfQJNEOpcjrMzG5rue-t1QljA==",
+            "https://www.mapion.co.jp/phonebook/M06007/15461/ILSP0060180492_ipclm/",
+            "https://japan-skiguide.com/guide/htm/r0001ens.htm",
+            "https://www.e-yuzawa.gr.jp/exp_p/summer_park/"
+          ]
         }
       ]
     },
@@ -1397,29 +1348,18 @@
         {
           "field": "access",
           "current": "越後湯澤站巴士約 40 分",
-          "suggested": "越後湯澤站巴士約 50 分",
+          "suggested": "越後湯澤站巴士約 45 分",
           "severity": "yellow",
-          "note": "多個來源指出從越後湯澤站搭乘巴士約需 40-50 分鐘，其中 50 分鐘為常見描述。",
+          "note": "根據南越後交通巴士時刻表，從越後湯澤站到苗場王子飯店的巴士約需 45 分鐘。",
           "sources": [
-            "https://www.princehotels.co.jp/ski/naeba/winter/",
-            "https://www.princehotels.co.jp/ski/naeba/winter/coursemap/",
-            "https://www.jalan.net/kankou/spt_15461ca3372107434/",
-            "https://www.naeba.gr.jp/access/",
-            "https://miutabi.com/niigata-naeba-echigoyuzawa-bus/",
-            "https://www.seibuprince.com/ja/mtnaeba-naeba-ski-resort",
-            "https://www.niikei.jp/2074747/",
-            "https://prtimes.jp/main/html/rd/p/000003838.000024668.html",
-            "https://www.youtube.com/watch?v=euVbjLBvk3c",
-            "https://ja.wikipedia.org/wiki/%E8%8B%97%E5%A0%B4%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4",
-            "https://www.e-yuzawa.gr.jp/ski_p/naeba_ski_resort/",
-            "https://www.jalan.net/kankou/spt_15461ca3470058299/map/"
+            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00492448&arrival=00492264&line=00077489&date=2026-04-11"
           ]
         }
       ]
     },
     {
       "id": "kagura",
-      "status": "yellow",
+      "status": "unverified",
       "url_check": {
         "code": 200,
         "final_url": "https://www.princehotels.co.jp/ski/kagura/"
@@ -1435,36 +1375,62 @@
             4,
             5
           ],
-          "suggested": [
-            11,
-            12,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
             1,
             2,
-            3,
-            4,
-            5
+            3
           ],
-          "severity": "yellow",
-          "note": "かぐら・みつまたエリア的營業期間為2026年11月28日至2027年5月16日。",
-          "sources": [
-            "https://www.princehotels.co.jp/ski/kagura/winter/",
-            "https://japan-skiguide.com/guide/htm/r0070ens.htm",
-            "https://surfsnow.jp/guide/htm/r0070m.htm",
-            "https://roadplan.net/blog/kagura-ski/"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
         },
         {
           "field": "access",
           "current": "越後湯澤站巴士約 40 分",
-          "suggested": "越後湯澤站巴士約 20 分 (至みつまたステーション)",
-          "severity": "yellow",
-          "note": "從越後湯澤站搭乘巴士至みつまたステーション（Mitsumata Station）約需20分鐘。",
-          "sources": [
-            "https://www.princehotels.co.jp/ski/kagura/winter/",
-            "https://japan-skiguide.com/guide/htm/r0070ens.htm",
-            "https://surfsnow.jp/guide/htm/r0070m.htm",
-            "https://roadplan.net/blog/kagura-ski/"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 40,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "神樂 Kagura",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "かぐらスキー場",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "新潟・湯沢町",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
         }
       ]
     }
