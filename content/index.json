@@ -1,6 +1,16 @@
 {
- "updated": "2026-11-08",
+ "updated": "2026-11-15",
  "articles": [
+  {
+   "slug": "backcountry-safety",
+   "title": "日本的非壓雪區與 gate 系統：規則、雪崩風險、嚮導與必備裝備",
+   "category": "advanced",
+   "resort": null,
+   "date": "2026-11-15",
+   "summary": "非壓雪區（Non-groomed area）是雪場內未經壓雪機整理的區域，積雪鬆軟、地形不規則，適合中高級滑雪者。新手應避免進入。",
+   "sources": 8,
+   "cover": "content/covers/backcountry-safety.svg"
+  },
   {
    "slug": "powder-basics",
    "title": "日本粉雪怎麼滑：板子、技巧與雪況判斷",
