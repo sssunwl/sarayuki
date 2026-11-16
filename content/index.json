@@ -1,6 +1,27 @@
 {
- "updated": "2026-11-15",
+ "updated": "2026-11-16",
  "articles": [
+  {
+   "slug": "niseko-guide",
+   "title": "二世古 Grand Hirafu 攻略：聯票、gate 規則、住宿區與交通",
+   "category": "resort",
+   "resort": "niseko",
+   "date": "2026-09-24",
+   "summary": "二世古安努普利山由Grand Hirafu、Hanazono、Niseko Village和Annupuri四個雪場組成。",
+   "sources": 15,
+   "cover": "content/covers/niseko-guide.svg",
+   "updated": "2026-11-16"
+  },
+  {
+   "slug": "tree-run",
+   "title": "樹林滑入門：樹井（tree well）風險與夥伴制度",
+   "category": "advanced",
+   "resort": null,
+   "date": "2026-11-16",
+   "summary": "樹林滑雪樂趣獨特，但樹井等潛在危險不容忽視。了解風險並實施夥伴制度是確保安全的關鍵。",
+   "sources": 9,
+   "cover": "content/covers/tree-run.svg"
+  },
   {
    "slug": "backcountry-safety",
    "title": "日本的非壓雪區與 gate 系統：規則、雪崩風險、嚮導與必備裝備",
@@ -150,16 +171,6 @@
    "summary": "在日本雪場學習滑雪，選擇適合自己的滑雪課程是確保安全與享受樂趣的關鍵。本篇將協助你了解團體課與私人課的差異，以及如何找到合適的中英文教練。",
    "sources": 12,
    "cover": "content/covers/ski-school.svg"
-  },
-  {
-   "slug": "niseko-guide",
-   "title": "二世古 Grand Hirafu 攻略：聯票、gate 規則、住宿區與交通",
-   "category": "resort",
-   "resort": "niseko",
-   "date": "2026-09-24",
-   "summary": "二世古 Grand Hirafu（ニセコ東急 グラン・ヒラフ）是北海道二世古聯合滑雪場（Niseko United）四大雪場中規模最大、也最熱鬧的區域，本篇將為你解析其聯票選擇、非…",
-   "sources": 13,
-   "cover": "content/covers/niseko-guide.svg"
   },
   {
    "slug": "gala-guide",
