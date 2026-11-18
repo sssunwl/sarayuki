@@ -1,24 +1,24 @@
 {
-  "generated": "2026-11-17T20:26:59+09:00",
+  "generated": "2026-11-18T20:03:43+09:00",
   "checked": [
-    "arai",
-    "gala",
-    "naeba",
-    "kagura",
-    "kiroro",
-    "teine"
+    "appi",
+    "zao",
+    "hakkoda",
+    "happo",
+    "furano",
+    "tomamu"
   ],
   "last_checked": {
     "niseko": "2026-11-16T19:34:59+09:00",
     "rusutsu": "2026-11-16T19:34:59+09:00",
     "kiroro": "2026-11-17T20:26:59+09:00",
     "teine": "2026-11-17T20:26:59+09:00",
-    "furano": "2026-11-15T19:20:54+09:00",
-    "tomamu": "2026-11-15T19:20:54+09:00",
-    "appi": "2026-11-14T18:47:04+09:00",
-    "zao": "2026-11-14T18:47:04+09:00",
-    "hakkoda": "2026-11-14T18:47:04+09:00",
-    "happo": "2026-11-14T18:47:04+09:00",
+    "furano": "2026-11-18T20:03:43+09:00",
+    "tomamu": "2026-11-18T20:03:43+09:00",
+    "appi": "2026-11-18T20:03:43+09:00",
+    "zao": "2026-11-18T20:03:43+09:00",
+    "hakkoda": "2026-11-18T20:03:43+09:00",
+    "happo": "2026-11-18T20:03:43+09:00",
     "hakuba47": "2026-11-15T19:20:54+09:00",
     "tsugaike": "2026-11-15T19:20:54+09:00",
     "cortina": "2026-11-15T19:20:54+09:00",
@@ -307,7 +307,7 @@
     },
     {
       "id": "furano",
-      "status": "red",
+      "status": "unverified",
       "url_check": {
         "code": 200,
         "final_url": "https://www.princehotels.co.jp/ski/furano/"
@@ -322,35 +322,61 @@
             3,
             4
           ],
-          "suggested": [
-            11,
-            12,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
             1,
-            2,
-            3,
-            4,
-            5
+            2
           ],
-          "severity": "red",
-          "note": "富良野スキー場2026-2027雪季預計從11月28日開放至5月5日。",
-          "sources": [
-            "https://www.skiing-hokkaido.com/ja/resorts/furano-ski-resort/",
-            "https://japanskiexperience.com/blog/furano-ski-resort-opening-dates/",
-            "https://furano.house/furano-skiing-ultimate-guide/",
-            "https://www.skiing-hokkaido.com/resorts/furano-ski-resort-4/",
-            "https://biei-info.jp/furano-ski-resort-2026-2027/",
-            "https://surfsnow.jp/guide/htm/r0118m.htm",
-            "https://hapisnow.jp/snowresort/furano/?info=theme",
-            "https://surfsnow.jp/guide/htm/r0118s.htm",
-            "https://www.princehotels.co.jp/ski/furano/",
-            "https://www.snowfurano.com/access-map/",
-            "https://www.rome2rio.com/s/Asahikawa-Airport-AKJ/Furano-Ski-Resort",
-            "https://japan-skiguide.com/guide/htm/r0118ens.htm",
-            "https://bus-tabi.net/pref/hokkaido/hokkaido-furanoskiresort/",
-            "https://www.seibuprince.com/ja/furano-ski-resort",
-            "https://www.princehotels.co.jp/ski/furano/winter/access/",
-            "https://hapisnow.jp/snowresort/furano/"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "旭川機場約 1 小時",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 60,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "富良野 Furano",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "富良野スキー場",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "北海道・富良野市",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
         }
       ]
     },
@@ -378,32 +404,33 @@
             4
           ],
           "severity": "yellow",
-          "note": "2026-2027 雪季預計從 2026 年 12 月 1 日開放至 2027 年 4 月 5 日。",
+          "note": "2026-2027雪季預計營業期間為2026年12月1日至2027年4月5日。",
           "sources": [
-            "https://www.snowjapan.com/ski-areas-in-japan/hokkaido/shimukappu-village/hoshino-resorts-tomamu",
-            "https://watabi.org/en/articles/tomamu-ski-guide",
-            "https://www.snowtomamu.jp/winter/en/",
+            "https://www.knt.co.jp/yado/sp/hoshinoresorts_tomamu_ski/",
             "https://surfsnow.jp/guide/htm/r0274s.htm",
-            "https://www.haveagood-holiday.com/en/articles/hoshino-resorts-tomamu-adventure-base-ski-hub-2026",
-            "https://todolist-japan.com/en/tomamu-ski-guide-2/",
-            "https://senconcierge.com/en/tomamu-ski-guide/",
-            "https://hoshinoresorts.com/jp/cards/7qi2aobsry/",
-            "https://www.snowtomamu.jp/winter/en/access/",
-            "https://www.kkday.com/en-hk/category/jp-hoshino-resorts-tomamu/airport-transfers/list",
-            "https://hoshinoresorts.com/ja/hotels/tomamuthetower/access/",
-            "https://hoshinoresorts.com/en/hotels/tomamuthetower/access/",
-            "https://hoshinoresorts.com/jp/information/cxaa81x7g3/",
-            "https://toyokeizai.net/articles/-/95118?display=b",
-            "https://www.snowtomamu.jp/winter/access/",
-            "https://www.visit-hokkaido.jp/spot/detail_10175.html",
-            "https://oshimachi.jp/spots/66306",
-            "https://sbn.japaho.com/resort/tomamu/",
             "https://www.nta.co.jp/dp-yado/hotels/1302-102/detail",
-            "https://roadplan.net/skis/snowtomamu-jp-winter-ski/",
-            "https://www.jalan.net/kankou/spt_guide000000188577/",
-            "https://www.famiski.jp/gelande_guide/tomamu/",
-            "https://job.career-tasu.jp/corp/00062021/"
+            "https://www.hondarent.com/blog/tourist/new-chitose-airport-tomamu-distance.html",
+            "https://www.snowtomamu.jp/winter/access/",
+            "https://www.snowtomamu.jp/summer/access/",
+            "https://hoshinoresorts.com/jp/information/cxaa81x7g3/",
+            "https://blog.skibumpslabo.com/archives/9004",
+            "https://note.com/long_egret9073/n/na903d6413e84",
+            "https://www.businessinsider.jp/article/289959/",
+            "https://ja.wikipedia.org/wiki/%E6%98%9F%E9%87%8E%E3%83%AA%E3%82%BE%E3%83%BC%E3%83%88_%E3%83%88%E3%83%9E%E3%83%A0",
+            "https://compalyze.co.jp/company/6450001006631",
+            "https://www.visit-hokkaido.jp/spot/detail_10175.html"
           ]
+        },
+        {
+          "field": "peak",
+          "current": [
+            1,
+            2
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "官方資訊未明確指出通常雪況最佳的月份。",
+          "sources": []
         }
       ]
     },
@@ -433,11 +460,9 @@
             5
           ],
           "severity": "yellow",
-          "note": "根據2026-2027雪季官方資訊，預計營業期間為12月5日至5月5日。",
+          "note": "根據官網，2026-27雪季營業期間為2026年12月5日至2027年5月5日，包含5月。",
           "sources": [
-            "https://surfsnow.jp/guide/htm/r0226s.htm",
-            "https://www.appi.co.jp/",
-            "https://www.iwate-ski.gr.jp/01_appi/index.html"
+            "https://www.appi.co.jp/snow-mountain-resort/course/"
           ]
         },
         {
@@ -448,7 +473,7 @@
           ],
           "suggested": null,
           "severity": "unverified",
-          "note": "官方資訊未明確指出雪況最佳月份。",
+          "note": "官方網站或官方觀光機構未明確指出雪況最佳月份。",
           "sources": []
         }
       ]
@@ -488,30 +513,14 @@
             5
           ],
           "severity": "red",
-          "note": "官方營業期間為12月12日至隔年5月5日",
+          "note": "2026-2027 雪季預計從12月12日開放，最長營業至5月5日。",
           "sources": [
-            "https://www.ski-gelende.com/gelende/tohoku/zao/",
+            "https://zakkiburogu67.com/zao-onsen-ski-2026/",
             "https://yamagatagoto.com/zao-onsen-ski/3768/",
-            "https://www.orion-tour.co.jp/air/fair/tohoku/ski/gelande/zao/",
-            "https://skiski.jp/jr/access/zao/",
-            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00429042&arrival=00025891&line=00070180",
-            "https://www.zao-onsen.co.jp/ski/",
-            "https://zaomountainresort.com/gerende/",
-            "https://travel.yahoo.co.jp/kanko/spot-00002650/",
-            "https://surfsnow.jp/guide/htm/r0177m.htm",
-            "https://www.mapion.co.jp/phonebook/M04013/06201/ILSP0000123368_ipclm/"
+            "https://zaomountainresort.com/chrage/",
+            "https://snow.japanvoyage.jp/ja/guides/when-does-japan-ski-season-start-2026-2027-guide-ja",
+            "https://www.orion-tour.co.jp/air/fair/tohoku/ski/gelande/zao/"
           ]
-        },
-        {
-          "field": "peak",
-          "current": [
-            1,
-            2
-          ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "未找到官方資料明確指出雪況最佳月份",
-          "sources": []
         }
       ]
     },
@@ -545,12 +554,9 @@
           "note": "官方資訊指出冬季滑雪期間為11月下旬至5月中旬。",
           "sources": [
             "https://aomori-tourism.com/spot/detail_122.html",
+            "https://glostravel.com/ja/article/hakkoda-snow-monsters",
             "https://www.tohokukanko.jp/transport/detail_1001187.html",
-            "https://www.navitime.co.jp/bustransit/search?orvStationCode=00026387&dnvStationCode=00501133",
-            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00026387&arrival=00501133&line=00078994",
-            "https://dive-aomori.com/articles/nature/article-1285",
-            "https://hakkoda-ropeway.jp/",
-            "https://hakkoda-ropeway.jp/contact/"
+            "https://hakkoda-ropeway.jp/access/"
           ]
         },
         {
@@ -565,15 +571,25 @@
             2
           ],
           "severity": "yellow",
-          "note": "官方資訊指出1月至2月為粉雪時期，3月至5月為春季滑雪（粗雪）。因此，最佳雪況月份為1月和2月。",
+          "note": "樹冰（雪怪）的觀賞期通常為1月至2月下旬，這也是冬季的旺季。",
           "sources": [
             "https://aomori-tourism.com/spot/detail_122.html",
+            "https://glostravel.com/ja/article/hakkoda-snow-monsters",
             "https://www.tohokukanko.jp/transport/detail_1001187.html",
-            "https://www.navitime.co.jp/bustransit/search?orvStationCode=00026387&dnvStationCode=00501133",
-            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00026387&arrival=00501133&line=00078994",
-            "https://dive-aomori.com/articles/nature/article-1285",
-            "https://hakkoda-ropeway.jp/",
-            "https://hakkoda-ropeway.jp/contact/"
+            "https://hakkoda-ropeway.jp/access/"
+          ]
+        },
+        {
+          "field": "access",
+          "current": "青森站巴士約 1 小時",
+          "suggested": "青森站JR巴士約 80 分鐘",
+          "severity": "yellow",
+          "note": "冬季從青森站搭乘JR巴士至八甲田纜車站前約需80分鐘。",
+          "sources": [
+            "https://aomori-tourism.com/spot/detail_122.html",
+            "https://glostravel.com/ja/article/hakkoda-snow-monsters",
+            "https://www.tohokukanko.jp/transport/detail_1001187.html",
+            "https://hakkoda-ropeway.jp/access/"
           ]
         }
       ]
