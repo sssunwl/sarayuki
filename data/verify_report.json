@@ -1,18 +1,18 @@
 {
-  "generated": "2026-11-19T20:04:51+09:00",
+  "generated": "2026-11-20T19:52:50+09:00",
   "checked": [
-    "hakuba47",
-    "tsugaike",
-    "cortina",
-    "nozawa",
-    "niseko",
-    "rusutsu"
+    "shiga",
+    "madarao",
+    "karuizawa",
+    "akakura",
+    "kiroro",
+    "teine"
   ],
   "last_checked": {
     "niseko": "2026-11-19T20:04:51+09:00",
     "rusutsu": "2026-11-19T20:04:51+09:00",
-    "kiroro": "2026-11-17T20:26:59+09:00",
-    "teine": "2026-11-17T20:26:59+09:00",
+    "kiroro": "2026-11-20T19:52:50+09:00",
+    "teine": "2026-11-20T19:52:50+09:00",
     "furano": "2026-11-18T20:03:43+09:00",
     "tomamu": "2026-11-18T20:03:43+09:00",
     "appi": "2026-11-18T20:03:43+09:00",
@@ -23,10 +23,10 @@
     "tsugaike": "2026-11-19T20:04:51+09:00",
     "cortina": "2026-11-19T20:04:51+09:00",
     "nozawa": "2026-11-19T20:04:51+09:00",
-    "shiga": "2026-11-16T19:34:59+09:00",
-    "madarao": "2026-11-16T19:34:59+09:00",
-    "karuizawa": "2026-11-16T19:34:59+09:00",
-    "akakura": "2026-11-16T19:34:59+09:00",
+    "shiga": "2026-11-20T19:52:50+09:00",
+    "madarao": "2026-11-20T19:52:50+09:00",
+    "karuizawa": "2026-11-20T19:52:50+09:00",
+    "akakura": "2026-11-20T19:52:50+09:00",
     "arai": "2026-11-17T20:26:59+09:00",
     "gala": "2026-11-17T20:26:59+09:00",
     "naeba": "2026-11-17T20:26:59+09:00",
@@ -186,7 +186,7 @@
     },
     {
       "id": "kiroro",
-      "status": "unverified",
+      "status": "red",
       "url_check": {
         "code": 200,
         "final_url": "https://www.kiroro.co.jp/"
@@ -201,67 +201,42 @@
             3,
             4
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 535 (char 534)",
-          "sources": []
-        },
-        {
-          "field": "peak",
-          "current": [
+          "suggested": [
+            11,
+            12,
             1,
-            2
+            2,
+            3,
+            4,
+            5
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 535 (char 534)",
-          "sources": []
-        },
-        {
-          "field": "access",
-          "current": "札幌市區約 1.5 小時、新千歲機場約 2 小時",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 535 (char 534)",
-          "sources": []
-        },
-        {
-          "field": "accessMin",
-          "current": 90,
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 535 (char 534)",
-          "sources": []
-        },
-        {
-          "field": "name",
-          "current": "喜樂樂 Kiroro",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 535 (char 534)",
-          "sources": []
-        },
-        {
-          "field": "nameJa",
-          "current": "キロロリゾート",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 535 (char 534)",
-          "sources": []
-        },
-        {
-          "field": "place",
-          "current": "北海道・赤井川村",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 535 (char 534)",
-          "sources": []
+          "severity": "red",
+          "note": "2026-2027雪季營業期間為2026年11月28日至2027年5月5日。",
+          "sources": [
+            "https://letsoto.com/ja/resort/kiroro-resort",
+            "https://www.snownavi.com/topics/news_26082801",
+            "https://hokkai-matsuri.jp/510.html",
+            "https://www.kiroro.co.jp/ja/operating_hours/",
+            "https://surfsnow.jp/guide/htm/r0030s.htm",
+            "https://www.kiroro.co.jp/operating_hours/",
+            "https://jp-travel.williamlion.tw/jp/japan/kiroro-snow-world-guide-2026-ja/",
+            "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0GHq8fQ771iPygN2qjccDPhY8gkoZQQWDGtUvdX3hJdRgxapVLAhoC_WaJO5kkxjrwYblpfB-uPq_j7v_JfV8UgrENVd-9txMFeB5JCI6xqb-epJT36o26tARyFJyKNse-YyFMz1DhEgN",
+            "http://love-snow.jp/kiroro/access.html",
+            "https://yukiroro.com/ja/kiroro-ski-resort",
+            "https://www.kiroro.co.jp/ja/about_us/",
+            "https://www.kiroro.co.jp/ja/news/2026-27-seasonpasssaleseb/",
+            "https://www.kiroro.co.jp/ja/access-winter/",
+            "https://www.kiroro.co.jp/",
+            "https://www.kiroro.co.jp/ja/",
+            "https://www.mapion.co.jp/phonebook/M04013/01409/20130353522/",
+            "https://hokkaidodo.jp/ski/kiroro-resort/"
+          ]
         }
       ]
     },
     {
       "id": "teine",
-      "status": "red",
+      "status": "unverified",
       "url_check": {
         "code": 200,
         "final_url": "https://www.sapporo-teine.com/"
@@ -275,33 +250,61 @@
             2,
             3
           ],
-          "suggested": [
-            11,
-            12,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 665 (char 664)",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
             1,
-            2,
-            3,
-            4,
-            5
+            2
           ],
-          "severity": "red",
-          "note": "2026-2027 雪季預計從 11 月 21 日開放至 5 月 5 日。",
-          "sources": [
-            "https://www.skiing-hokkaido.com/ja/resorts/sapporo-teine/",
-            "https://surfsnow.jp/guide/htm/r0065s.htm",
-            "https://sapporo.8agarage.co.jp/teine-ski-open-20261121/",
-            "https://sapporo-teine.com/snow/access",
-            "https://www.tabirai.net/sightseeing/hokkaido/info/useful/gelande-sapporo-teine.aspx",
-            "https://sapporo-teine.com/snow/access/other",
-            "https://surfsnow.jp/article/ski-snowboard/detail/sapporo001/",
-            "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%83%83%E3%83%9D%E3%83%AD%E3%83%86%E3%82%A4%E3%83%8D",
-            "https://www.sapporo-teine.com/",
-            "https://www.gutabi.jp/event/detail/1494",
-            "https://h-sakudo.jp/facility/028/",
-            "https://sapporo-teine.com/snow/news/30497",
-            "https://sapporo-teine.com/snow/access/by-car",
-            "https://kamori.co.jp/kamori_group/teine"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 665 (char 664)",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "札幌市區開車或巴士約 40–60 分",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 665 (char 664)",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 50,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 665 (char 664)",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "札幌手稻 Sapporo Teine",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 665 (char 664)",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "サッポロテイネ",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 665 (char 664)",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "北海道・札幌市",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 665 (char 664)",
+          "sources": []
         }
       ]
     },
@@ -951,7 +954,7 @@
     },
     {
       "id": "shiga",
-      "status": "yellow",
+      "status": "unverified",
       "url_check": {
         "code": 200,
         "final_url": "https://www.shigakogen-ski.or.jp/"
@@ -966,31 +969,137 @@
             3,
             4
           ],
-          "suggested": [
-            12,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 510 (char 509)",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
             1,
-            2,
-            3,
-            4,
-            5
+            2
           ],
-          "severity": "yellow",
-          "note": "志賀高原共通リフト券的營業期間為2026年12月5日至2027年5月5日。",
-          "sources": [
-            "https://shigakogen-ski.or.jp/winter/news/2026/11/2026-2027.html",
-            "https://snow.japanvoyage.jp/ja/guides/when-does-japan-ski-season-start-2026-2027-guide-ja"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 510 (char 509)",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "長野站巴士約 70 分",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 510 (char 509)",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 70,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 510 (char 509)",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "志賀高原 Shiga Kogen",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 510 (char 509)",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "志賀高原",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 510 (char 509)",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "長野・山ノ内町",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 510 (char 509)",
+          "sources": []
         }
       ]
     },
     {
       "id": "madarao",
-      "status": "green",
+      "status": "unverified",
       "url_check": {
         "code": 200,
         "final_url": "https://www.madarao.jp/"
       },
-      "findings": []
+      "findings": [
+        {
+          "field": "months",
+          "current": [
+            12,
+            1,
+            2,
+            3
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
+            1,
+            2
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "飯山站接駁約 30 分",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 30,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "斑尾高原 Madarao",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "斑尾高原スキー場",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "長野・飯山市",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        }
+      ]
     },
     {
       "id": "karuizawa",
@@ -1069,75 +1178,21 @@
     },
     {
       "id": "akakura",
-      "status": "unverified",
+      "status": "yellow",
       "url_check": {
         "code": 200,
         "final_url": "https://akakura-ski.com/"
       },
       "findings": [
         {
-          "field": "months",
-          "current": [
-            12,
-            1,
-            2,
-            3
-          ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
-          "sources": []
-        },
-        {
-          "field": "peak",
-          "current": [
-            1,
-            2
-          ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
-          "sources": []
-        },
-        {
           "field": "access",
           "current": "妙高高原站巴士約 15 分（東京→上越妙高 北陸新幹線約 2 小時）",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
-          "sources": []
-        },
-        {
-          "field": "accessMin",
-          "current": 40,
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
-          "sources": []
-        },
-        {
-          "field": "name",
-          "current": "妙高 赤倉溫泉 Akakura",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
-          "sources": []
-        },
-        {
-          "field": "nameJa",
-          "current": "赤倉温泉スキー場",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
-          "sources": []
-        },
-        {
-          "field": "place",
-          "current": "新潟・妙高市",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應格式異常，可能被安全過濾或沒有候選內容",
-          "sources": []
+          "suggested": "上越妙高站搭乘越後心跳鐵道至妙高高原站約 30 分，轉乘免費接駁巴士約 10 分",
+          "severity": "yellow",
+          "note": "官方網站顯示從上越妙高站需先搭乘越後心跳鐵道至妙高高原站，再轉乘免費接駁巴士。",
+          "sources": [
+            "https://www.ski-gelende.com/gelende/myoko/akakuraonsen/"
+          ]
         }
       ]
     },
