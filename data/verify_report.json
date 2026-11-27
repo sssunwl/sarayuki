@@ -1,28 +1,28 @@
 {
-  "generated": "2026-11-26T20:51:21+09:00",
+  "generated": "2026-11-27T20:43:26+09:00",
   "checked": [
-    "appi",
-    "zao",
-    "hakkoda",
-    "happo",
-    "kiroro",
-    "teine"
+    "hakuba47",
+    "tsugaike",
+    "cortina",
+    "nozawa",
+    "furano",
+    "tomamu"
   ],
   "last_checked": {
     "niseko": "2026-11-25T21:03:50+09:00",
     "rusutsu": "2026-11-25T21:03:50+09:00",
     "kiroro": "2026-11-26T20:51:21+09:00",
     "teine": "2026-11-26T20:51:21+09:00",
-    "furano": "2026-11-24T22:14:28+09:00",
-    "tomamu": "2026-11-24T22:14:28+09:00",
+    "furano": "2026-11-27T20:43:26+09:00",
+    "tomamu": "2026-11-27T20:43:26+09:00",
     "appi": "2026-11-26T20:51:21+09:00",
     "zao": "2026-11-26T20:51:21+09:00",
     "hakkoda": "2026-11-26T20:51:21+09:00",
     "happo": "2026-11-26T20:51:21+09:00",
-    "hakuba47": "2026-11-23T20:44:33+09:00",
-    "tsugaike": "2026-11-23T20:44:33+09:00",
-    "cortina": "2026-11-23T20:44:33+09:00",
-    "nozawa": "2026-11-23T20:44:33+09:00",
+    "hakuba47": "2026-11-27T20:43:26+09:00",
+    "tsugaike": "2026-11-27T20:43:26+09:00",
+    "cortina": "2026-11-27T20:43:26+09:00",
+    "nozawa": "2026-11-27T20:43:26+09:00",
     "shiga": "2026-11-24T22:14:28+09:00",
     "madarao": "2026-11-24T22:14:28+09:00",
     "karuizawa": "2026-11-24T22:14:28+09:00",
@@ -218,18 +218,23 @@
             5
           ],
           "severity": "red",
-          "note": "富良野スキー場2026-2027雪季預計營業期間為2026年11月28日至2027年5月5日。",
+          "note": "富良野スキー場2026-2027雪季預計從2026年11月28日開放至2027年5月5日。",
           "sources": [
-            "https://www.princehotels.co.jp/ski/furano/winter/?id=314",
             "https://www.princehotels.co.jp/ski/furano/2026.2027_sk_iresorts_infor/",
-            "https://www.princehotels.co.jp/ski/furano/"
+            "https://www.princehotels.co.jp/ski/furano/winter/?id=314",
+            "https://www.skiing-hokkaido.com/resorts/furano-ski-resort-4/",
+            "https://www.skiing-hokkaido.com/ja/resorts/furano-ski-resort/",
+            "https://japanskiexperience.com/blog/furano-ski-resort-opening-dates/",
+            "https://www.furanotourism.com/areaguide2026/pdf/15.pdf",
+            "https://www.hokkaido-airports.com/ja/asahikawa/access/bus/",
+            "https://www.rome2rio.com/s/Asahikawa-Airport-AKJ/Furano-Ski-Resort"
           ]
         }
       ]
     },
     {
       "id": "tomamu",
-      "status": "yellow",
+      "status": "unverified",
       "url_check": {
         "code": 200,
         "final_url": "https://www.snowtomamu.jp/winter/"
@@ -243,22 +248,61 @@
             2,
             3
           ],
-          "suggested": [
-            12,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 617 (char 616)",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
             1,
-            2,
-            3,
-            4
+            2
           ],
-          "severity": "yellow",
-          "note": "2026-2027 雪季預計從 2026 年 12 月 1 日開放至 2027 年 4 月 5 日。",
-          "sources": [
-            "https://www.snowjapan.com/ski-areas-in-japan/hokkaido/shimukappu-village/hoshino-resorts-tomamu",
-            "https://www.skiing-hokkaido.com/resorts/hoshino-resorts-tomamu/",
-            "https://surfsnow.jp/guide/htm/r0274s.htm",
-            "https://www.snowtomamu.jp/winter/en/",
-            "https://sunouperson.com/resorts/hoshino-tomamu/"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 617 (char 616)",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "新千歲機場搭 JR 到 Tomamu 站約 1.5 小時",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 617 (char 616)",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 90,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 617 (char 616)",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "星野 Tomamu",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 617 (char 616)",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "星野リゾート トマム",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 617 (char 616)",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "北海道・占冠村",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 文字不是指定的 JSON 格式：Unterminated string starting at: line 1 column 617 (char 616)",
+          "sources": []
         }
       ]
     },
@@ -511,44 +555,102 @@
             5
           ],
           "severity": "red",
-          "note": "エイブル白馬五竜＆Hakuba47的2026-2027雪季預計於2026年11月21日開放，並於2027年5月5日結束。",
+          "note": "白馬五竜與Hakuba47於2026年11月21日開放，預計營運至2027年5月5日。",
           "sources": [
-            "https://www.snownavi.com/topics/news_26100101",
-            "https://www.hakubagoryu.jp/information/news/7649/",
-            "https://paipunokemuri.com/%E3%80%9011%E6%9C%8821%E6%97%A5%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%EF%BC%81%E3%80%91%E3%82%A8%E3%82%A4%E3%83%96%E3%83%AB%E7%99%BD%E9%A6%AC%E4%BA%94%E7%AB%9C%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4/",
+            "https://www.hakubagoryu.jp/en/information/news/12047/",
+            "https://surfsnow.jp/guide/htm/r0061s.htm",
+            "https://japowguides.com/zh/news/goryu-opening-day-2627-en",
+            "https://tabidachi.travel/hakuba/ski",
             "https://www.hakubaland.com/ja/guides/hakuba-ski-season-dates/",
-            "https://prtimes.jp/main/html/rd/p/000000044.000079579.html",
-            "https://news.dellows.jp/1293419/",
-            "https://sunouperson.com/resorts/hakuba-goryu-47/",
-            "https://www.sportsentry.ne.jp/sports_news/43207",
-            "https://hakuba47.co.jp/en/",
-            "https://hakuba47.co.jp/ja/",
-            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00178442&arrival=00082539&line=00053370",
-            "https://www.s-goryu.com/access/",
-            "https://www.navitime.co.jp/bustransit/search?orvStationCode=00178442&dnvStationCode=00082539",
-            "https://bus-tabi.net/pref/nagano/nagano-hakuba47wintersportspark/",
-            "https://bus-tabi.net/pref/nagano/nagano-hakubagoryuskiresort/",
-            "https://www.bushikaku.net/expedition/venue/access/3990370/",
-            "https://hakuba47.co.jp/ja/getting-here/",
-            "https://www.hakuba47.co.jp/season/summer/access/",
-            "https://www.asoview.com/base/155542/",
-            "https://hakuba-sci.jp/members/hakuba47/",
+            "https://www.snowsure.ai/resorts/hakuba-47/guide",
+            "https://prtimes.jp/main/html/rd/p/000000070.000060409.html",
+            "https://where-to-ski.com/ski-resorts/japan/hakuba-47/best-time-to-ski/",
+            "https://hakubaskiing.com/guides/hakuba-snow-report/",
+            "https://hotelwohnen.jp/en-blog/japan-snow-season-hakuba/",
+            "https://tabidachi.travel/routes/nagano-to-hakuba",
+            "https://kuri-board.jp/en-snowliner-nagano/",
+            "https://spur.jamjamliner.jp/search/type-snowliner/dest_area-chubu/dest_pref-nagano/dest_city-hakuba/dest_stop-hakuba47/",
+            "https://www.snowjapan.com/ski-areas-in-japan/nagano-prefecture/hakuba-village/hakuba47-mountain-resort",
             "https://www.vill.hakuba.nagano.jp/spots/hakubaescal/",
-            "https://www.mapion.co.jp/phonebook/M04013/20485/ILSP0000123575_ipclm/",
-            "https://goryu47.com/",
-            "https://goryu47.com/en/",
+            "https://ja.wikipedia.org/wiki/Hakuba47%E3%82%A6%E3%82%A3%E3%83%B3%E3%82%BF%E3%83%BC%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E3%83%91%E3%83%BC%E3%82%AF",
+            "https://www.hakubagoryu.jp/about/company/",
+            "https://www.snowjapan.com/ski-areas-in-japan/nagano-prefecture/hakuba-village/hakuba47-mountain-resort/location",
+            "https://hakuba.com/experiences/snow-activities/hakuba-47-tree-riding-zone/",
+            "https://skijpn.com/contact/",
             "https://www.mapion.co.jp/phonebook/M04013/20485/22030223022/",
-            "https://travel.yahoo.co.jp/kanko/spot-00025342/",
-            "https://surfsnow.jp/guide/htm/r0061m.htm",
-            "https://surfsnow.jp/guide/htm/r0041s.htm",
-            "https://yukinohara70.com/%E3%80%90%E3%81%A9%E3%81%86%E8%A1%8C%E3%81%8F%EF%BC%9F%E3%80%91%E7%99%BD%E9%A6%AC%E4%BA%94%E7%AB%9C%E3%83%BBhakuba%EF%BC%94%EF%BC%97%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4/"
+            "https://hakuba47.co.jp/en/contact/",
+            "https://travel.yahoo.co.jp/kanko/spot-00025342/"
+          ]
+        },
+        {
+          "field": "access",
+          "current": "長野站巴士約 60 分",
+          "suggested": "長野站巴士約 70 分",
+          "severity": "yellow",
+          "note": "根據官方巴士資訊，從長野站搭乘巴士至白馬五竜約需70分鐘，至Hakuba47約需75分鐘。",
+          "sources": [
+            "https://www.hakubagoryu.jp/en/information/news/12047/",
+            "https://surfsnow.jp/guide/htm/r0061s.htm",
+            "https://japowguides.com/zh/news/goryu-opening-day-2627-en",
+            "https://tabidachi.travel/hakuba/ski",
+            "https://www.hakubaland.com/ja/guides/hakuba-ski-season-dates/",
+            "https://www.snowsure.ai/resorts/hakuba-47/guide",
+            "https://prtimes.jp/main/html/rd/p/000000070.000060409.html",
+            "https://where-to-ski.com/ski-resorts/japan/hakuba-47/best-time-to-ski/",
+            "https://hakubaskiing.com/guides/hakuba-snow-report/",
+            "https://hotelwohnen.jp/en-blog/japan-snow-season-hakuba/",
+            "https://tabidachi.travel/routes/nagano-to-hakuba",
+            "https://kuri-board.jp/en-snowliner-nagano/",
+            "https://spur.jamjamliner.jp/search/type-snowliner/dest_area-chubu/dest_pref-nagano/dest_city-hakuba/dest_stop-hakuba47/",
+            "https://www.snowjapan.com/ski-areas-in-japan/nagano-prefecture/hakuba-village/hakuba47-mountain-resort",
+            "https://www.vill.hakuba.nagano.jp/spots/hakubaescal/",
+            "https://ja.wikipedia.org/wiki/Hakuba47%E3%82%A6%E3%82%A3%E3%83%B3%E3%82%BF%E3%83%BC%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E3%83%91%E3%83%BC%E3%82%AF",
+            "https://www.hakubagoryu.jp/about/company/",
+            "https://www.snowjapan.com/ski-areas-in-japan/nagano-prefecture/hakuba-village/hakuba47-mountain-resort/location",
+            "https://hakuba.com/experiences/snow-activities/hakuba-47-tree-riding-zone/",
+            "https://skijpn.com/contact/",
+            "https://www.mapion.co.jp/phonebook/M04013/20485/22030223022/",
+            "https://hakuba47.co.jp/en/contact/",
+            "https://travel.yahoo.co.jp/kanko/spot-00025342/"
+          ]
+        },
+        {
+          "field": "nameJa",
+          "current": "Hakuba47・白馬五竜",
+          "suggested": "Hakuba47マウンテンリゾート・エイブル白馬五竜",
+          "severity": "red",
+          "note": "Hakuba47的官方日文名稱已於2026年末從「Hakuba47ウィンタースポーツパーク」變更為「Hakuba47マウンテンリゾート」。白馬五竜的官方日文名稱為「エイブル白馬五竜」。",
+          "sources": [
+            "https://www.hakubagoryu.jp/en/information/news/12047/",
+            "https://surfsnow.jp/guide/htm/r0061s.htm",
+            "https://japowguides.com/zh/news/goryu-opening-day-2627-en",
+            "https://tabidachi.travel/hakuba/ski",
+            "https://www.hakubaland.com/ja/guides/hakuba-ski-season-dates/",
+            "https://www.snowsure.ai/resorts/hakuba-47/guide",
+            "https://prtimes.jp/main/html/rd/p/000000070.000060409.html",
+            "https://where-to-ski.com/ski-resorts/japan/hakuba-47/best-time-to-ski/",
+            "https://hakubaskiing.com/guides/hakuba-snow-report/",
+            "https://hotelwohnen.jp/en-blog/japan-snow-season-hakuba/",
+            "https://tabidachi.travel/routes/nagano-to-hakuba",
+            "https://kuri-board.jp/en-snowliner-nagano/",
+            "https://spur.jamjamliner.jp/search/type-snowliner/dest_area-chubu/dest_pref-nagano/dest_city-hakuba/dest_stop-hakuba47/",
+            "https://www.snowjapan.com/ski-areas-in-japan/nagano-prefecture/hakuba-village/hakuba47-mountain-resort",
+            "https://www.vill.hakuba.nagano.jp/spots/hakubaescal/",
+            "https://ja.wikipedia.org/wiki/Hakuba47%E3%82%A6%E3%82%A3%E3%83%B3%E3%82%BF%E3%83%BC%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E3%83%91%E3%83%BC%E3%82%AF",
+            "https://www.hakubagoryu.jp/about/company/",
+            "https://www.snowjapan.com/ski-areas-in-japan/nagano-prefecture/hakuba-village/hakuba47-mountain-resort/location",
+            "https://hakuba.com/experiences/snow-activities/hakuba-47-tree-riding-zone/",
+            "https://skijpn.com/contact/",
+            "https://www.mapion.co.jp/phonebook/M04013/20485/22030223022/",
+            "https://hakuba47.co.jp/en/contact/",
+            "https://travel.yahoo.co.jp/kanko/spot-00025342/"
           ]
         }
       ]
     },
     {
       "id": "tsugaike",
-      "status": "red",
+      "status": "unverified",
       "url_check": {
         "code": 200,
         "final_url": "https://www.tsugaike.gr.jp/"
@@ -563,54 +665,61 @@
             3,
             4
           ],
-          "suggested": [
-            12,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
             1,
-            2,
-            3,
-            4,
-            5
+            2
           ],
-          "severity": "yellow",
-          "note": "2026-27雪季營業期間為2026年12月1日至2027年5月5日。",
-          "sources": [
-            "https://locapop.jp/event/shinshu-hakuba-tsugaike-winter-2026/",
-            "https://www.gltjp.com/ja/directory/item/16919/",
-            "https://surfsnow.jp/guide/htm/r0144m.htm",
-            "https://www.tsugaike.gr.jp/",
-            "https://tenki.jp/season/ski/3/23/15131/access.html",
-            "https://www.nippon-ski.jp/manage-winter/"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
         },
         {
           "field": "access",
           "current": "長野站巴士約 80 分",
-          "suggested": "長野站特急巴士約 90 分",
-          "severity": "yellow",
-          "note": "從長野站搭乘長野・白馬特急巴士約需1小時30分鐘（90分鐘）。",
-          "sources": [
-            "https://locapop.jp/event/shinshu-hakuba-tsugaike-winter-2026/",
-            "https://www.gltjp.com/ja/directory/item/16919/",
-            "https://surfsnow.jp/guide/htm/r0144m.htm",
-            "https://www.tsugaike.gr.jp/",
-            "https://tenki.jp/season/ski/3/23/15131/access.html",
-            "https://www.nippon-ski.jp/manage-winter/"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "accessMin",
+          "current": 80,
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
         },
         {
           "field": "name",
           "current": "白馬栂池高原 Tsugaike",
-          "suggested": "白馬つがいけマウンテンリゾート Tsugaike",
-          "severity": "red",
-          "note": "雪場已於2024年更名為「つがいけマウンテンリゾート」。官方網站使用「白馬つがいけマウンテンリゾート」。",
-          "sources": [
-            "https://locapop.jp/event/shinshu-hakuba-tsugaike-winter-2026/",
-            "https://www.gltjp.com/ja/directory/item/16919/",
-            "https://surfsnow.jp/guide/htm/r0144m.htm",
-            "https://www.tsugaike.gr.jp/",
-            "https://tenki.jp/season/ski/3/23/15131/access.html",
-            "https://www.nippon-ski.jp/manage-winter/"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "白馬つがいけマウンテンリゾート",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "長野・小谷村",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
         }
       ]
     },
@@ -725,38 +834,24 @@
             5
           ],
           "severity": "red",
-          "note": "2026-2027雪季預計從11月28日開放至5月5日。",
+          "note": "2026-2027 雪季預計營業期間為 2026 年 11 月 28 日至 2027 年 5 月 5 日。",
           "sources": [
+            "https://glostravel.com/en/article/nozawa-onsen-ski",
             "https://glostravel.com/ja/article/nozawa-onsen-ski",
             "https://www.japan-guide.com/e/e6017.html",
-            "https://xn--nckxa6ri84l.com/ski/nozawa/",
-            "https://www.ishii-sports.com/topics/nozawa26_27/",
-            "https://nozawapeaks.com/en/getting-to-nozawa-onsen",
-            "https://www.no-to-ma-bus.com/",
-            "https://en.nozawaski.com/access/coming-train-bus/",
-            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00455802&arrival=00083659&line=00079980",
-            "https://www.navitime.co.jp/bustransit/search?orvStationCode=00083659&dnvStationCode=00455802",
-            "https://www.vill.nozawaonsen.nagano.jp/www/contents/1050000000201/index.html"
+            "https://www.ishii-sports.com/topics/nozawa26_27/"
           ]
         },
         {
-          "field": "access",
-          "current": "飯山站巴士約 25 分（東京→飯山 北陸新幹線約 1 小時 45 分）",
-          "suggested": "飯山站巴士約 30-35 分（東京→飯山 北陸新幹線約 1 小時 40 分）",
-          "severity": "yellow",
-          "note": "飯山站至野澤溫泉的巴士時間為25-35分鐘不等，其中野澤溫泉Liner巴士約25分鐘，而2026-2027冬季的NOTOMA BUS時刻表顯示為30-35分鐘。北陸新幹線東京至飯山約1小時40分鐘。",
-          "sources": [
-            "https://glostravel.com/ja/article/nozawa-onsen-ski",
-            "https://www.japan-guide.com/e/e6017.html",
-            "https://xn--nckxa6ri84l.com/ski/nozawa/",
-            "https://www.ishii-sports.com/topics/nozawa26_27/",
-            "https://nozawapeaks.com/en/getting-to-nozawa-onsen",
-            "https://www.no-to-ma-bus.com/",
-            "https://en.nozawaski.com/access/coming-train-bus/",
-            "https://www.navitime.co.jp/bus/diagram/timelist?departure=00455802&arrival=00083659&line=00079980",
-            "https://www.navitime.co.jp/bustransit/search?orvStationCode=00083659&dnvStationCode=00455802",
-            "https://www.vill.nozawaonsen.nagano.jp/www/contents/1050000000201/index.html"
-          ]
+          "field": "peak",
+          "current": [
+            1,
+            2
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "未找到官方資料明確指出通常雪況最佳月份。",
+          "sources": []
         }
       ]
     },
