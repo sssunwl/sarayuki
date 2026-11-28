@@ -1,16 +1,16 @@
 {
-  "generated": "2026-11-27T20:43:26+09:00",
+  "generated": "2026-11-28T20:18:31+09:00",
   "checked": [
-    "hakuba47",
-    "tsugaike",
-    "cortina",
-    "nozawa",
-    "furano",
-    "tomamu"
+    "shiga",
+    "madarao",
+    "karuizawa",
+    "akakura",
+    "niseko",
+    "rusutsu"
   ],
   "last_checked": {
-    "niseko": "2026-11-25T21:03:50+09:00",
-    "rusutsu": "2026-11-25T21:03:50+09:00",
+    "niseko": "2026-11-28T20:18:31+09:00",
+    "rusutsu": "2026-11-28T20:18:31+09:00",
     "kiroro": "2026-11-26T20:51:21+09:00",
     "teine": "2026-11-26T20:51:21+09:00",
     "furano": "2026-11-27T20:43:26+09:00",
@@ -23,10 +23,10 @@
     "tsugaike": "2026-11-27T20:43:26+09:00",
     "cortina": "2026-11-27T20:43:26+09:00",
     "nozawa": "2026-11-27T20:43:26+09:00",
-    "shiga": "2026-11-24T22:14:28+09:00",
-    "madarao": "2026-11-24T22:14:28+09:00",
-    "karuizawa": "2026-11-24T22:14:28+09:00",
-    "akakura": "2026-11-24T22:14:28+09:00",
+    "shiga": "2026-11-28T20:18:31+09:00",
+    "madarao": "2026-11-28T20:18:31+09:00",
+    "karuizawa": "2026-11-28T20:18:31+09:00",
+    "akakura": "2026-11-28T20:18:31+09:00",
     "arai": "2026-11-25T21:03:50+09:00",
     "gala": "2026-11-25T21:03:50+09:00",
     "naeba": "2026-11-25T21:03:50+09:00",
@@ -35,21 +35,78 @@
   "results": [
     {
       "id": "niseko",
-      "status": "yellow",
+      "status": "unverified",
       "url_check": {
         "code": 200,
         "final_url": "https://www.niseko.ne.jp/en/"
       },
       "findings": [
         {
+          "field": "months",
+          "current": [
+            11,
+            12,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "peak",
+          "current": [
+            1,
+            2
+          ],
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "access",
+          "current": "新千歲機場巴士約 2.5–3 小時",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
           "field": "accessMin",
           "current": 165,
-          "suggested": 213,
-          "severity": "yellow",
-          "note": "根據北海道中央巴士官方資訊，新千歲機場至二世古Grand Hirafu Welcome Center的巴士車程約為3小時33分鐘 (213分鐘)。",
-          "sources": [
-            "https://teikan.chuo-bus.co.jp/en/course/18958"
-          ]
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "name",
+          "current": "二世古 Grand Hirafu",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "nameJa",
+          "current": "ニセコ東急 グラン・ヒラフ",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
+        },
+        {
+          "field": "place",
+          "current": "北海道・倶知安町",
+          "suggested": null,
+          "severity": "unverified",
+          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "sources": []
         }
       ]
     },
@@ -77,25 +134,43 @@
             3
           ],
           "severity": "yellow",
-          "note": "2026-2027 雪季預計於11月28日開始，並持續至3月31日。",
+          "note": "ルスツリゾート2026-2027雪季預計於2026年11月28日開放，並持續至2027年3月31日。",
           "sources": [
-            "https://surfsnow.jp/guide/htm/r0331s.htm",
-            "https://hapisnow.jp/snowresort/rusutsu-resort/",
-            "https://xn--nckxa6ri84l.com/ski/rusutsu/",
-            "https://travel.rakuten.co.jp/HOTEL/149357/CUSTOM/GW149357160301213512.html",
             "https://www.skiing-hokkaido.com/ja/resorts/rusutsu-resort/",
-            "https://rusutsu.com/access-shuttle-bus-new-chitose-airport/",
-            "https://bus-tabi.net/pref/hokkaido/hokkaido-rusutsuresort/",
-            "https://www.stay-rusutsu.com/access",
-            "https://rusutsu.com/information/hotel-closed-period/",
-            "https://rusutsu.com/all_deals_packages_category/winter-early-booking-offer/?pcat=r",
+            "https://www.skiing-hokkaido.com/resorts/rusutsu-resort/",
+            "https://rusutsu-estate.com/en/niseko-rusutsu-season-calendar-2026-2027-en/",
+            "https://japanskiexperience.com/blog/japan-ski-resort-opening-dates/",
+            "https://livejapan.com/en/in-hokkaido/in-pref-hokkaido/in-niseko_rusutsu/article-a1000366/",
+            "https://surfsnow.jp/guide/htm/r0331fa.htm",
+            "https://www.jalan.net/yad346832/topics/entry0006768648.html",
+            "https://xn--nckxa6ri84l.com/ski/rusutsu/",
+            "https://snowway.app/resorts/rusutsu/best-time-to-ski",
+            "https://www.tripbase.com/destinations/rusutsu-japan/when-to-visit/",
+            "https://www.onthesnow.com/hokkaido/rusutsu/ski-resort",
+            "https://www.rome2rio.com/Bus/Rusutsu-Resort/New-Chitose-Airport-CTS",
+            "https://citytrailedit.jp/en/guide/rusutsu/",
+            "https://www.samuraisnow.com/rusutsu-transfers/chitose-airport-rusutsu-bus",
+            "https://bigruns.com/basu_group/%E5%86%AC%E5%AD%A3%E9%81%8B%E8%A1%8C-%E3%83%93%E3%83%83%E3%82%B0%E3%83%A9%E3%83%B3%E3%82%BA%E5%8F%B7-%E6%96%B0%E5%8D%83%E6%AD%B3%E7%A9%BA%E6%B8%AF?lang=en",
+            "https://rusutsulocal.com/getting-here/",
+            "https://bigruns.com/basu_group/%E5%A4%8F%E5%AD%A3%E9%81%8B%E8%A1%8C-%E3%83%93%E3%83%83%E3%82%B0%E3%83%A9%E3%83%B3%E3%82%BA%E5%8F%B7-%E6%96%B0%E5%8D%83%E6%AD%B3%E7%A9%BA%E6%B8%AF-%E3%83%AB%E3%82%B9%E3%83%84%E3%83%AA",
+            "https://www.access-n.jp/winter2026/skibus/detail/101chitose_rusutsu_niseko.html",
+            "https://www.kosokubus.com/?dir=sp&page=_hokkaidoresortliner",
+            "https://bigruns.com/basu_group/%E5%86%AC%E5%AD%A3%E9%81%8B%E8%A1%8C-%E3%83%93%E3%83%83%E3%82%B0%E3%83%A9%E3%83%B3%E3%82%BA%E5%8F%B7-%E6%96%B0%E5%8D%83%E6%AD%B3%E7%A9%BA%E6%B8%AF",
+            "https://www.ana.co.jp/domestic/theme/promo_ski/rusutsu/pdf/bus_rusutsu_2202000015_220926.pdf",
+            "https://jp.wamazing.com/snow/articles/7",
+            "https://jp-travel.williamlion.tw/jp/japan/rusutsu-resort-four-seasons-guide-2026-skiing-summer-park-rafting-ja/",
+            "https://www.burton.com/en-us/blogs/the-burton-blog/burtons-official-guide-to-snowboarding-rusutsu",
+            "https://japan-skiguide.com/guide/htm/r0331ens.htm",
+            "https://www.japan-guide.com/e/e6715.html",
+            "https://aeo.idaeo.ai/rusutsu-com/en/",
             "https://rusutsu.com/news-and-topics/skipackage/",
-            "https://yado.knt.co.jp/st/S010277/",
-            "https://rusutsu.com/",
-            "https://www.visit-hokkaido.jp/spot/detail_10332.html",
-            "https://finders.me/kqFQxAhHGT9qnarFxg",
-            "https://www.jalan.net/yad346832/access/",
-            "https://oshimachi.jp/spots/66686"
+            "https://hapisnow.jp/column/rusutsu-resort/",
+            "https://www.japan.travel/en/spot/1906/",
+            "https://harelens.com/travel/spot/%E3%83%AB%E3%82%B9%E3%83%84",
+            "https://www.rusutsu-resort.app/en/support.html",
+            "https://rusutsulodges.com/attraction/%E3%82%B9%E3%82%AD%E3%83%BC%E3%83%AA%E3%82%BE%E3%83%BC%E3%83%88/",
+            "https://surfsnow.jp/guide/htm/r0331s.htm",
+            "https://www.rusutsu-resort.app/"
           ]
         }
       ]
@@ -857,7 +932,7 @@
     },
     {
       "id": "shiga",
-      "status": "unverified",
+      "status": "red",
       "url_check": {
         "code": 200,
         "final_url": "https://www.shigakogen-ski.or.jp/"
@@ -872,6 +947,40 @@
             3,
             4
           ],
+          "suggested": [
+            11,
+            12,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "severity": "red",
+          "note": "志賀高原橫手山・渋峠スキー場預計於2026年11月21日開放，而共通纜車票的營業期間為2026年12月5日至2027年5月5日。",
+          "sources": [
+            "https://yokoteyama2307.com/2026/11/18/%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E6%97%A5%E5%BB%B6%E6%9C%9F%E3%81%8A%E3%82%88%E3%81%B311%E6%9C%8820%E6%97%A5%E9%87%91%E3%83%97%E3%83%AC%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%81%AE%E3%81%8A/",
+            "https://shigakogen-ski.or.jp/winter/news/2026/11/2026-2027.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "madarao",
+      "status": "unverified",
+      "url_check": {
+        "code": 200,
+        "final_url": "https://www.madarao.jp/"
+      },
+      "findings": [
+        {
+          "field": "months",
+          "current": [
+            12,
+            1,
+            2,
+            3
+          ],
           "suggested": null,
           "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
@@ -890,7 +999,7 @@
         },
         {
           "field": "access",
-          "current": "長野站巴士約 70 分",
+          "current": "飯山站接駁約 30 分",
           "suggested": null,
           "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
@@ -898,7 +1007,7 @@
         },
         {
           "field": "accessMin",
-          "current": 70,
+          "current": 30,
           "suggested": null,
           "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
@@ -906,7 +1015,7 @@
         },
         {
           "field": "name",
-          "current": "志賀高原 Shiga Kogen",
+          "current": "斑尾高原 Madarao",
           "suggested": null,
           "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
@@ -914,7 +1023,7 @@
         },
         {
           "field": "nameJa",
-          "current": "志賀高原",
+          "current": "斑尾高原スキー場",
           "suggested": null,
           "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
@@ -922,7 +1031,7 @@
         },
         {
           "field": "place",
-          "current": "長野・山ノ内町",
+          "current": "長野・飯山市",
           "suggested": null,
           "severity": "unverified",
           "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
@@ -931,40 +1040,8 @@
       ]
     },
     {
-      "id": "madarao",
-      "status": "red",
-      "url_check": {
-        "code": 200,
-        "final_url": "https://www.madarao.jp/"
-      },
-      "findings": [
-        {
-          "field": "name",
-          "current": "斑尾高原 Madarao",
-          "suggested": null,
-          "severity": "red",
-          "note": "斑尾高原スキー場自2025年起由株式会社JSPG（クロスプロジェクトグループ）負責經營協力與營運。",
-          "sources": [
-            "https://x-project.group/work/madarao_ski_resorts/",
-            "https://x-project.group/group_company/jspg/"
-          ]
-        },
-        {
-          "field": "nameJa",
-          "current": "斑尾高原スキー場",
-          "suggested": null,
-          "severity": "red",
-          "note": "斑尾高原スキー場自2025年起由株式会社JSPG（クロスプロジェクトグループ）負責經營協力與營運。",
-          "sources": [
-            "https://x-project.group/work/madarao_ski_resorts/",
-            "https://x-project.group/group_company/jspg/"
-          ]
-        }
-      ]
-    },
-    {
       "id": "karuizawa",
-      "status": "unverified",
+      "status": "yellow",
       "url_check": {
         "code": 200,
         "final_url": "https://www.princehotels.co.jp/ski/karuizawa/"
@@ -979,135 +1056,76 @@
             2,
             3
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "peak",
-          "current": [
-            1,
-            2
-          ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "access",
-          "current": "輕井澤站步行約 10 分（東京→輕井澤 北陸新幹線約 1 小時）",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "accessMin",
-          "current": 70,
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "name",
-          "current": "輕井澤王子 Karuizawa Prince",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "nameJa",
-          "current": "軽井沢プリンスホテルスキー場",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "place",
-          "current": "長野・軽井沢町",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        }
-      ]
-    },
-    {
-      "id": "akakura",
-      "status": "unverified",
-      "url_check": {
-        "code": 200,
-        "final_url": "https://akakura-ski.com/"
-      },
-      "findings": [
-        {
-          "field": "months",
-          "current": [
+          "suggested": [
+            10,
+            11,
             12,
             1,
             2,
             3
           ],
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
+          "severity": "yellow",
+          "note": "2026-2027 雪季營業期間為 2026 年 10 月 31 日至 2027 年 3 月 31 日。",
+          "sources": [
+            "https://surfsnow.jp/news/7315",
+            "https://prtimes.jp/main/html/rd/p/000004056.000024668.html",
+            "https://surfsnow.jp/guide/htm/r0129m.htm",
+            "https://hotelbank.jp/lifestyle/karuizawa-prince-ski-2026-27-open-lift-ticket-hotel-price/",
+            "https://www.princehotels.co.jp/press/202610_05/",
+            "https://www.leanwisdom.com/sweets/karuizawapurinsuhoterusukiiba-karuizawa-princehotel-snow-res-95139/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "akakura",
+      "status": "red",
+      "url_check": {
+        "code": null,
+        "final_url": "https://www.akakura-ski.com/",
+        "error": "<urlopen error [Errno -2] Name or service not known>"
+      },
+      "findings": [
         {
-          "field": "peak",
-          "current": [
-            1,
-            2
-          ],
+          "field": "url",
+          "current": "https://www.akakura-ski.com/",
           "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
+          "severity": "red",
+          "note": "<urlopen error [Errno -2] Name or service not known>",
           "sources": []
         },
         {
           "field": "access",
           "current": "妙高高原站巴士約 15 分（東京→上越妙高 北陸新幹線約 2 小時）",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "accessMin",
-          "current": 40,
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "name",
-          "current": "妙高 赤倉溫泉 Akakura",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "nameJa",
-          "current": "赤倉温泉スキー場",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
-        },
-        {
-          "field": "place",
-          "current": "新潟・妙高市",
-          "suggested": null,
-          "severity": "unverified",
-          "note": "Gemini 回應沒有可用的 groundingMetadata，未採用建議值",
-          "sources": []
+          "suggested": "從上越妙高站搭乘えちごトキめき鉄道妙高はねうまライン至妙高高原站約 35 分，轉乘巴士約 15-20 分鐘。",
+          "severity": "yellow",
+          "note": "從上越妙高站到妙高高原站需搭乘えちごトキめき鉄道妙高はねうまライン，約33-38分鐘。從妙高高原站到赤倉溫泉滑雪場搭乘巴士約10-20分鐘。",
+          "sources": [
+            "https://www.asoview.com/channel/ticket/IU5IPSlKay/ticket0000032480/",
+            "https://niigata-kankou.or.jp/spot/detail_10670.html",
+            "https://www.ski-gelende.com/gelende/myoko/akakuraonsen/",
+            "https://myoko.bona.jp/myokojp/single-post2.html",
+            "https://www.winterplus.jp/ski/ski_detail.cfm?skiarea_code=akakura",
+            "https://www.jorudan.co.jp/time/timetable/%E4%B8%8A%E8%B6%8A%E5%A6%99%E9%AB%98/%E5%A6%99%E9%AB%98%E3%81%AF%E3%81%AD%E3%81%86%E3%81%BE%E3%83%A9%E3%82%A4%E3%83%B3/%E5%8C%97%E6%96%B0%E4%BA%95/",
+            "https://www.navitime.co.jp/diagram/depArrTimeList?departure=00009136&arrival=00008557&line=00001233&updown=0",
+            "https://www.jorudan.co.jp/time/to/%E4%B8%8A%E8%B6%8A%E5%A6%99%E9%AB%98_%E5%A6%99%E9%AB%98%E9%AB%98%E5%8E%9F/?r=%E5%A6%99%E9%AB%98%E3%81%AF%E3%81%AD%E3%81%86%E3%81%BE%E3%83%A9%E3%82%A4%E3%83%B3",
+            "https://akakura-ski.com/",
+            "https://akakura.gr.jp/skiinfo/%E8%B5%A4%E5%80%89%E6%B8%A9%E6%B3%89%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4/",
+            "https://www.travel-inn.co.jp/ski/gelande/akakura/",
+            "https://suzukishokai.jp/",
+            "https://www.snownavi.co.jp/news/news-4246",
+            "https://www.snownavi.com/topics/news_26092401",
+            "https://surfsnow.jp/guide/htm/r0814m.htm",
+            "https://myokotourism.jp/akakura-onsen-ski-resort/",
+            "https://roadplan.net/skis/akakura-ski/",
+            "https://www.niikei.jp/45641/",
+            "https://suzukishokai.jp/company",
+            "https://suzukishokai.jp/distinations/ski-akakura",
+            "http://www.akakura.gr.jp/wakui/entry4.htm",
+            "https://www.travel.co.jp/senmon/jpn_ski/gi0030_e1w1/%E8%B5%A4%E5%80%89%E6%B8%A9%E6%B3%89/",
+            "https://myoko.bona.jp/myokojp/resort.html",
+            "https://niigata-kigyo-navi.jp/search/company/1738"
+          ]
         }
       ]
     },
